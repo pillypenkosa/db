@@ -1,0 +1,36 @@
+cmp-win-index {
+	/*
+	all: unset;
+*/
+
+	display: block;
+
+/*
+
+	height: 100%;
+	width: 100%;
+
+	/*display: flex;*/
+	/*
+	justify-content: center; /* Центр горизонталь */
+	/*
+
+	align-items: center;     /* Центр вертикаль */
+	/*
+	text-align: center;
+	*/
+
+
+	background: red;
+	background: var( --bg-r );
+	color: lime;
+}
+
+
+
+
+
+
+
+
+
