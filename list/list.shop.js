@@ -19,7 +19,6 @@ const arrListShopCat = [
 	{ id: 'newline' 		, title: 'НоваЛінія'		, },
 	{ id: 'rost' 			, title: 'Рост'				, },
 	{ id: 'market' 			, title: 'Ц.Ринок'			, },
-
 	{ id: 'pc' 				, title: 'PC' 				, },
 	{ id: 'car' 			, title: 'Авто' 			, },
 	{ id: 'household' 		, title: 'Господарство' 	, },
