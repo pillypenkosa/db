@@ -7,6 +7,8 @@ LoadDependences.load();
 
 
 window.onload = function() { 
+
+	//alert();
 	
 	Router.loadApp();
 
@@ -32,17 +34,18 @@ window.onload = function() {
 
 
 
-
+/*
 let txt = 'https://djs.com.ua/url?q=qwerty&win=page1#anyhash';
 
 
-
 let url = new URL( txt );
-
 //console.log( txt );
 
-
 let aaa = null;
+*/
+
+
+
 
 //cns( 'ok', 'Все зашибись...', );
 //cns( 'err', 'Якась дічь...', aaa );
