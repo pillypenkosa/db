@@ -31,19 +31,36 @@ class ComponentWinManufacturer {
  
  
  
-
+/*
 		let html = `
 			<div>Виробники</div>
 			${ Component( 'Table', { 
-					keys: [ 'id', 'title', 'country', 'year', ], 
+					keys: [ 'id', 'title', 'year', ], 
 					arr: arrManufacturer, 
 				} 
 			)}
 		`;
- 
- 
+ */
 
  
+
+
+
+		let html = `
+			<div>Виробники</div>
+			${ Component( 'Spoyler', 
+				{ 
+					key 	: 'qwertyKEY' 	, 
+					data 	: {
+
+						id 		: 'qwertyID' 	, 
+
+					},
+				} 
+			)}
+		`;
+
+
 
 
 		setMeta({ 

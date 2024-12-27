@@ -37,15 +37,14 @@ const dependences = [
 	// компоненти загальні --------------------------------------------------------------------------------------------------------
 
 
-	{ cmp: 'Win-Err404' 			, },
-	{ cmp: 'Footer' 				, },
-	{ cmp: 'Menu' 					, },
-	{ cmp: 'Header' 				, },
+	{ cmp: 'Win-Err404' 				, },
+	{ cmp: 'Footer' 					, },
+	{ cmp: 'Menu' 						, },
+	{ cmp: 'Header' 					, },
 
-	{ cmp: 'Table' 					, },
-
-
-
+	{ cmp: 'Spoyler-Body-Manufacturer' 	, },
+	{ cmp: 'Spoyler' 					, },
+	{ cmp: 'Table' 						, },
 
 
 

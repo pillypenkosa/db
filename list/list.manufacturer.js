@@ -1,12 +1,8 @@
-const arrCat = [
+const arrManufacturerCat = [
 
-
-{ id: 'car_industry' 			, title: 'Автомобільна промисловість' 		, } // The automotive industry // Автомобільна промисловість
-{ id: 'electronic_industry' 	, title: 'Електронна промисловість' 		, } // 
-{ id: 'food_industry' 			, title: 'Харчова промисловість' 			, } // 
-
-
-
+{ id: 'car_industry' 			, title: 'Автомобільна промисловість' 		, }, // The automotive industry // Автомобільна промисловість
+{ id: 'electronic_industry' 	, title: 'Електронна промисловість' 		, }, // 
+{ id: 'food_industry' 			, title: 'Харчова промисловість' 			, }, // 
 
 ];
 
