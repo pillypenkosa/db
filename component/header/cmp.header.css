@@ -34,15 +34,18 @@ cmp-header {
 
 	cmp-header .filter {
 		position: absolute;
-		right: 0;
+		top: 40px;
+		right: 50px;
 		font-size: 20px;
 	}
-
-
-
-
-
-
+		cmp-header .filter .wrap {
+			padding: 5px 5px;
+			border-radius: 5px;
+			background: linear-gradient( to bottom, #ccc, #fff ); 
+		}
+			cmp-header .filter select.color {
+				color: #f00;
+			}
 
 
 
@@ -55,6 +58,18 @@ cmp-header {
 		top: 5px;
 		right: 5px;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

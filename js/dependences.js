@@ -39,13 +39,19 @@ const dependences = [
 
 	// компоненти загальні --------------------------------------------------------------------------------------------------------
 
-	{ cmp: 'Filter-People' 			, },
+	//{ cmp: 'Filter-People' 					, },
 
-	{ cmp: 'Spoyler' 				, },
-	{ cmp: 'Menu' 					, },
 
-	{ cmp: 'Spoyler-Body-People' 	, },
-	{ cmp: 'Spoyler-Body-Movie' 	, },
+
+
+
+	{ cmp: 'Table-Key-Val' 					, },
+	{ cmp: 'Spoyler' 						, },
+	{ cmp: 'Menu' 							, },
+	
+	{ cmp: 'Spoyler-Body-Manufacturer' 		, },
+	{ cmp: 'Spoyler-Body-People' 			, },
+	{ cmp: 'Spoyler-Body-Movie' 			, },
 
 
 

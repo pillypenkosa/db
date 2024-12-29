@@ -50,17 +50,17 @@ class ComponentHeader {
 				<div class="title">${ appProjectName }</div>
 
 				<div class="nav">
-					<div class="btn pointer" onclick="ComponentHeader.clcFilter()">
+					<div class="btn pointer" onclick="${ this.name }.clcFilter()">
 						<img src="img/pic/filter.png" alt="menu">
 					</div>
 
-					<div class="btn pointer" onclick="ComponentHeader.clcMenu()">
+					<div class="btn pointer" onclick="${ this.name }.clcMenu()">
 						<img src="img/pic/menu.png" alt="menu">
 					</div>
 				</div>
 			</div>
-			<div class="nav-menu"></div>
-			<div class="filter"></div>
+			<div class="filter unvisible"></div>
+			<div class="nav-menu unvisible">${ Component( 'Menu' ) }</div>
 		`;
 			//<div class="nav-menu ${ clsUnvisible }">${ Component( 'Menu' ) }</div>
 
@@ -71,7 +71,7 @@ class ComponentHeader {
 
 
 	static clcMenu() {
-		const fooName = this.name + '.clc()';
+		const fooName = this.name + '.clcMenu()';
 		//console.log( 'fooName', fooName );
 		//console.log( 'data', data );
 
@@ -79,6 +79,11 @@ class ComponentHeader {
 		//document.querySelector( '.nav-menu' ).classList.toggle( 'unvisible' );
 
 
+		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+
+		document.querySelector( 'cmp-header .nav-menu' ).classList.toggle( 'unvisible' );
+
+/*
 		let bodyMenu = document.querySelector( 'cmp-header .nav-menu' );
 
 		if ( bodyMenu.innerHTML ) 
@@ -86,6 +91,9 @@ class ComponentHeader {
 
 		else 
 			this.addHtmlMenu();
+
+*/
+
 	}
 
 
@@ -94,20 +102,149 @@ class ComponentHeader {
 
 
 	static clcFilter() {
-		const fooName = this.name + '.clc()';
+		const fooName = this.name + '.clcFilter()';
 		//console.log( 'fooName', fooName );
 		//console.log( 'data', data );
 
-		//document.querySelector( '.nav-menu' ).classList.toggle( 'unvisible' );
+		//console.log( Router.urlGET );
 
-		let bodyMenu = document.querySelector( 'cmp-header .filter' );
 
-		if ( bodyMenu.innerHTML ) 
-			this.delHtmlFilter();
+		let elemFilter = document.querySelector( 'cmp-header .filter' );
+		//elemFilter.innerHTML = '';
 
-		else 
-			this.addHtmlFilter();
+
+		document.querySelector( 'cmp-header .nav-menu' ).classList.add( 'unvisible' );
+
+
+
+
+
+
+
+
+		if ( !elemFilter.innerHTML ) {
+
+			elemFilter.innerHTML = this.insertHtmlFilter();
+			elemFilter.classList.remove( 'unvisible' );
+
+		} else 
+			elemFilter.classList.toggle( 'unvisible' );		
 	}
+
+
+
+
+	static insertHtmlFilter() {
+		const fooName = this.name + '.insertHtmlFilter()';
+		//console.log( 'fooName', fooName );
+		//console.log( 'data', data );
+	
+		let html = '';
+
+
+
+		if ( Router.urlGET && Router.urlGET.win ) {
+
+			if ( Router.urlGET.win == 'manufacturers' ) 
+				html = ComponentWinManufacturers.getHtmlFilter();
+
+
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+		return html;
+	}
+
+
+
+
+
+
+	static changeFilter( elem ) {
+		const fooName = this.name + '.changeFilter()';
+		//console.log( 'fooName: ', fooName );
+		
+		//console.log( 'elem:', elem );
+
+		//document.querySelector( 'cmp-header .filter' ).classList.toggle( 'unvisible' );
+
+
+
+
+
+		console.log( 'elem: ', elem );
+
+		console.log( 'value: ', elem.value );
+
+
+		if ( elem.value == 'all' ) 
+			elem.style.color = '#000';
+		
+		else 
+			elem.style.color = '#f00';
+		
+		
+
+
+
+
+
+
+		//console.log( 'elem.dataset.id: ', elem.dataset.id  );
+
+
+
+		Router.link([
+
+			{ k: 'win' 					, v: 'manufacturers' 	, },
+			{ k: elem.dataset.id 		, v: elem.value 		, },
+			
+		]);
+
+		//alert( fooName );
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +255,11 @@ class ComponentHeader {
 	}
 
 	static delHtmlMenu() {
-		document.querySelector( 'cmp-header .nav-menu' ).innerHTML = '';
+		//document.querySelector( 'cmp-header .nav-menu' ).innerHTML = '';
+
+
+
+		document.querySelector( 'cmp-header .nav-menu' ).classList.add( 'unvisible' );
 
 		//document.querySelector( '.nav-menu' ).classList.add( 'unvisible' );
 	}

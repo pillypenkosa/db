@@ -1,5 +1,6 @@
 const appProjectName = 'DataBase DJS';
 
+const htmlHrefSign = '&#11023;'; 	// ⬏
 
 
 

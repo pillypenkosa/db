@@ -96,7 +96,9 @@ class Router {
 
 		const objGetParams = {
 
-			win: 1,
+			win 		: 1,
+			country 	: 1,
+			hash 		: 1,
 
 		};
 
@@ -104,6 +106,9 @@ class Router {
 		//console.log( 'Здеся...' );
 
 		let tfErr404 = false;
+
+
+
 
 		for ( let k in this.urlGET ) {
 			//console.log( k );
@@ -113,6 +118,8 @@ class Router {
 				break;
 			}
 		}
+
+
 
 
 
@@ -300,6 +307,11 @@ class Router {
 		//console.log( this.urlGET );
 		//console.log( params );
 
+		//console.log( 'fooName: ', fooName );
+
+
+
+
 
 		arrParams.forEach( params => {
 
@@ -341,9 +353,9 @@ class Router {
 		}
 
 
+
 		// загрузка контентк
 		this.loadContent();
-
 
 
 		window.scrollTo( 0, 0 );

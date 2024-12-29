@@ -292,12 +292,12 @@ class ComponentSpoylerBodyPeople {
 
 					if ( obj.internet.imdb ) 
 						htmlTBody += `<tr><td class="key">internet.wiki_ua</td><td class="val">
-							<a href="https://www.imdb.com/name/nm${ obj.internet.imdb }/" target="_blank">IMDb&#11023;</a>
+							<a href="https://www.imdb.com/name/nm${ obj.internet.imdb }/" target="_blank">IMDb${ htmlHrefSign }</a>
 						</td></tr>`;
 
 					if ( obj.internet.wiki_ua ) 
 						htmlTBody += `<tr><td class="key">internet.wiki_ua</td><td class="val">
-							<a href="https://uk.wikipedia.org/wiki/${ obj.internet.wiki_ua }" target="_blank">WikiUa&#11023;</a>
+							<a href="https://uk.wikipedia.org/wiki/${ obj.internet.wiki_ua }" target="_blank">WikiUa${ htmlHrefSign }</a>
 						</td></tr>`;
 				}
 

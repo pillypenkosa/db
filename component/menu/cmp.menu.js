@@ -91,7 +91,7 @@ class ComponentMenu {
 
  		let html = '';
 		arrMenu.forEach( k => {
-			html += `<div class="btn2" data-href="${ k.href }" onclick="${ this.name }.clcBtnFilter( this )">${ k.title }</div>`;
+			html += `<div class="btn2" data-href="${ k.href }" onclick="${ this.name }.clc( this )">${ k.title }</div>`;
 		});
 
 
@@ -102,19 +102,29 @@ class ComponentMenu {
 
 
 
-	static clcBtnFilter( elem ) {
-		const fooName = this.name + '.clcBtnFilter()';
+	static clc( elem ) {
+		const fooName = this.name + '.clc()';
 		//console.log( 'fooName: ', fooName );
 		//console.log( elem );
 
 		//let href = elem.dataset.href;
+
+
+		// видаляємо будь-який фільтр при натисканні на будь-який пункт Меню
+		document.querySelector( 'cmp-header .filter' ).innerHTML = '';
+
+
+
 
 		Router.urlGET = {}; 
 		Router.link([
 			{ k: 'win', v: elem.dataset.href, },
 		]);
 
-		ComponentHeader.delHtmlMenu();
+		//ComponentHeader.delHtmlMenu();
+
+
+
 	}
 
 

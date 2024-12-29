@@ -1,10 +1,25 @@
-const arrManufacturerCat = [
 
-{ id: 'car_industry' 			, title: 'Автомобільна промисловість' 		, }, // The automotive industry // Автомобільна промисловість
-{ id: 'electronic_industry' 	, title: 'Електронна промисловість' 		, }, // 
-{ id: 'food_industry' 			, title: 'Харчова промисловість' 			, }, // 
+const arrManufacturerHash = [
+
+{ id: 'carparts' 				, title: 'Автозапчастини' 		, },
+{ id: 'cars' 					, title: 'Автомобілі' 			, },
+{ id: 'electronic' 				, title: 'Електроніка' 			, }, 
+{ id: 'eltech' 					, title: 'Електротехніка' 		, }, 
+{ id: 'tools' 					, title: 'Інструмент' 			, }, 
+{ id: 'pc' 						, title: 'Комп\'ютери' 			, }, 
+{ id: 'hhtech' 					, title: 'Побутова техніка' 	, }, 	// household
+{ id: 'food' 					, title: 'Харчі' 				, }, 
+
 
 ];
+
+
+
+let objManufacturerHash = {};
+arrManufacturerHash.forEach( k => {
+	objManufacturerHash[ k.id ] = k;
+});
+
 
 
 
@@ -144,11 +159,17 @@ title 		: '', wiki: { ru: '', },
 
 
 
-
-
+{
+	id: '555', title: '555', country: { jpn: 1, }, year: 1960, parent: 'sankei_industry',
+	hash: { carparts: 1, },
+	internet: { 
+		official: 'http://www.sankei-555.com/', 
+		avtopro: '555/',  								//	https://avtopro.ua/makers/febi/
+	},
+},
 {
 	id: 'alfa_romeo', title: 'Alfa Romeo', country: { ita: 1, }, year: 1910,
-	hash: { carmaker: 1, },
+	hash: { cars: 1, },
 	internet: { 
 		wiki_ua: 'Alfa_Romeo', // https://uk.wikipedia.org/wiki/
 	},
@@ -158,20 +179,65 @@ title 		: '', wiki: { ru: '', },
 
 
 
-/*
+{
+	id: 'bosch', title: 'Bosch', country: { deu: 1, }, year: 1886, 
+	hash: { eltech: 1, hhtech: 1, carparts: 1, tools: 1, }, 			// phone: 1, 
+	internet: { 
+		official 	: 'https://www.bosch.com/' 		,
+		avtopro 	: 'bosch/' 						, 
+		wiki_ru 	: 'Robert_Bosch_GmbH' 			, 
+	},
+
+
+
+
+
+
+},
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 {
-	id 			: '555',
-	title 		: '555',
-	year 		: 1960,
-	country 	: 'jpn',
-	parent 		: 'Sankei Industry Co.',
-	internet 	: { avtopro: '555/', official: 'http://www.sankei-555.com/', },
-	hash: { transport: 1, parts: 1, },
+	id: 'sankei_industry', title: 'Sankei Industry Co.Ltd', country: { jpn: 1, }, year: 1960,
+	hash: { carparts: 1, },
+	internet: { 
+		official: 'http://www.sankei-555.com/', 
+	},
 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
 {
 	id 			: 'abs',
 	title 		: 'ABS',
@@ -180,6 +246,11 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { avtopro: 'abs/', },
 	hash: { transport: 1, parts: 1, },
 },
+
+
+
+
+
 {
 	id 			: 'adriauto',
 	title 		: 'Adriauto',
@@ -320,14 +391,8 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { avtopro: 'blue-print/', official: 'http://www.blueprint-adl.co.uk/', },
 	hash: { transport: 1, parts: 1, },
 },
-{
-	id 			: 'bosch',
-	title 		: 'Bosch',
-	year 		: 1886,
-	country 	: 'deu',
-	internet 	: { avtopro: 'bosch/', wiki_ru: 'Robert_Bosch_GmbH', },
-	ps 			: { technics: { appliances: {}, electronics: { phone: 1, }, }, transport: { parts: { auto: 1, }, }, },
-},
+
+
 {
 	id 			: 'bremi',
 	title 		: 'Bremi',

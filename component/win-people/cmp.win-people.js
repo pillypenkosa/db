@@ -37,6 +37,13 @@ class ComponentWinPeople {
 		//console.log( objData ); 
 
 
+		//document.querySelector( 'cmp-header .filter' ).innerHTML = this.getHtmlFilter();
+		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+
+
+
+
+
 
 		if ( objData ) {
 
@@ -92,7 +99,21 @@ class ComponentWinPeople {
 
 
 
+ 	static getHtmlFilter( elem ) { 
+		const fooName = this.name + '.clcSpoyler()'; 
  
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem:', elem ); 
+
+		let html = ''; 
+
+
+
+
+
+
+		return html; 
+	}
  
  
 } 

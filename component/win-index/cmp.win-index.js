@@ -58,6 +58,12 @@ class ComponentWinIndex {
 
 
 
+		//document.querySelector( 'cmp-header .filter' ).innerHTML = this.getHtmlFilter();
+		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+
+
+
+
 		return { tagParam, html };
 	}
 
@@ -79,8 +85,40 @@ class ComponentWinIndex {
 
 
 
+	static getHtmlFilter() {
+		const fooName = this.name + '.insertFilter()';
+		//console.log( 'fooName', fooName );
+		//console.log( 'data', data );
+
+
+		let html = '';
+
+
+
+		return html;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// відбір фільмів за вказаною категорією
-	static getSelectedFilms( data ) {
+	static getSelectedFilms222( data ) {
 		const fooName = this.name + '.getSelectedFilms()';
 
 
@@ -234,7 +272,7 @@ class ComponentWinIndex {
 
 
 	// добірка
-	static getSelection( data ) {
+	static getSelection222( data ) {
 		const fooName = this.name + '.getSelection()';
 
 		//console.log( 'fooName: ', fooName );
