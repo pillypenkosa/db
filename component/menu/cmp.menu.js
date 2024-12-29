@@ -80,11 +80,14 @@ class ComponentMenu {
 
 		const arrMenu = [
 
-			{ href: 'index' 		, title: 'Головна' 		, },
-			{ href: 'people' 		, title: 'Люди' 		, },
-			{ href: 'movies' 		, title: 'Фільми' 		, },
+			{ href: 'index' 				, title: 'Головна' 		, },
+			{ href: 'people' 				, title: 'Люди' 		, },
+			{ href: 'movies' 				, title: 'Фільми' 		, },
+			{ href: 'manufacturers' 		, title: 'Виробники' 	, },
 
 		];
+
+		
 
  		let html = '';
 		arrMenu.forEach( k => {

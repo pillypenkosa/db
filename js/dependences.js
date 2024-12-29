@@ -77,7 +77,8 @@ const dependences = [
 
 	// компоненти-контенти // win-сторiнки ----------------------------------------------------------------------------------------
 	
-	{ cmp: 'Win-Index' 				, win: /^index$/ 					, }, 	// regexp - url-маршрут (route) в адресному рядку
+	{ cmp: 'Win-Index' 				, win: /^index$/ 				, }, 	// regexp - url-маршрут (route) в адресному рядку
+	{ cmp: 'Win-Manufacturers' 		, win: /^manufacturers$/ 		, }, 	
 	{ cmp: 'Win-Movies' 			, win: /^movies$/ 				, }, 	
 	{ cmp: 'Win-People' 			, win: /^people$/ 				, }, 	
 	
