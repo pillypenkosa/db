@@ -19,6 +19,7 @@ class App {
 			<div id="middle">
 				<div id="content"></div>
 			</div>
+			${ Component( 'Logo' ) }
 			${ Component( 'Footer' ) }
 		`;
 
@@ -26,20 +27,6 @@ class App {
 
 		return html;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

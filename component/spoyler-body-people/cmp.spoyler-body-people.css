@@ -1,0 +1,107 @@
+cmp-spoyler-body-people {
+
+}
+
+
+
+	cmp-spoyler-body-people .body-wrap {
+		margin: 10px 10px 30px 10px;
+	}
+
+
+
+
+		cmp-spoyler-body-people .body-wrap .obj-cat {
+			margin: 10px 0;
+			
+		}
+
+
+
+	cmp-spoyler-body-people .body-wrap .key {
+		color: #999;
+	}
+
+
+
+	cmp-spoyler-body-people .body-wrap .key {
+		color: #999;
+	}
+
+
+
+
+	cmp-spoyler-body-people .table-key-val img {
+		height: 100px;
+		width: 100px;
+		margin: 1px;
+		border-radius: 5px;
+	}
+
+
+	cmp-spoyler-body-people .table-key-val a {
+		text-decoration: none;
+		color: #ff0;
+	}
+
+
+
+	cmp-spoyler-body-people .table-key-val .big-poster img {
+		height: 550px;
+		width: 550px;
+		border-radius: 20px;
+	}
+
+
+
+
+	cmp-spoyler-body-people .main-info {
+		text-align: center;
+	}
+		cmp-spoyler-body-people .main-info .name-title {
+			margin: 0 0 0px 0;
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		cmp-spoyler-body-people .main-info .date {
+			margin: 0 0 10px 0;
+
+		}
+
+
+
+
+		cmp-spoyler-body-people .main-info .poster {
+			position: relative;
+			display: inline-block;
+		}
+			cmp-spoyler-body-people .main-info .poster img.avatar {
+				height: 512px;
+				width: 512px;
+				border-radius: 20px;
+			}
+
+			cmp-spoyler-body-people .main-info .poster img.ribbon {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 512px;
+				width: 512px;
+			}
+
+
+
+
+
+	cmp-spoyler-body-people .galery img {
+		height: 100px;
+		width: 100px;
+		margin: 1px;
+		border-radius: 5px;
+	}
+
+
+
+
+ 

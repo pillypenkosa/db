@@ -33,9 +33,9 @@ class ComponentSpoyler {
 			//'class' 		: '', 
 			//'name' 		: '', 
 			//'title' 		: '', 
-			//'data-key' 		: objData.key, 
-			'data-id' 		: objData.id, 
-			//'onclick' 		: `${ this.name }.clc( this )`,
+			//'data-key' 	: '', 
+			'data-id' 		: objData.id,
+			//'onclick' 	: '',
 			//'selected' 	: '', 
 			//'defer' 		: '', 
 		}; 
@@ -51,7 +51,7 @@ class ComponentSpoyler {
 
  
 		let html = `
-			<div class="title" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
+			<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
 				<div class="txt">${ htmlTitle }</div>
 				<div class="pm" title="Розгорнути / згорнути">${ this.pmClose }</div>
 			</div>
@@ -79,8 +79,15 @@ class ComponentSpoyler {
 		//console.log( 'fooName: ', fooName ); 
 		//console.log( 'elem: ', elem );
 
+
+
+
+
+
 		let elemParent 		= elem.closest( 'cmp-spoyler' );
-		let id 				= elemParent.dataset.id;
+		let id 				= elem.dataset.id;
+
+		//console.log( 'elemParent: ', elemParent );
 
 
 		let cmpName 		= elem.dataset.cmp;
@@ -88,19 +95,33 @@ class ComponentSpoyler {
 		//console.log( 'insert: ', insert );
 		//console.log( 'id: ', id );
 
-		let elemBody 		= document.querySelector( `cmp-spoyler[ data-id="${ id }" ] .body` );
+		//let elemBody 		= document.querySelector( `cmp-spoyler[ data-id="${ id }" ] .body` );
+
+
+
+		let elemBody 		= elemParent.querySelector( '.body' );
+
+
+		//console.log( 'elemBody: ', elemBody );
+		//console.log( 'cmpName: ', cmpName );
 
 		//console.log( 'elemBody: ', elemBody );
 
 		if ( !elemBody.innerHTML ) 
 			elemBody.innerHTML = Component( cmpName, id ); 
+			//this.insertSpoyler( id );
 			//elemBody.innerHTML = eval( `${ cmpName }.insertHtmlBody( '${ id }' )`  ); // insertHtmlBody() - має бути прописаним у компоненті, назва якого залітає сюди
 		
 			//elemBody.innerHTML = this.getHtml( id );
 		else 
 			elemBody.classList.toggle( 'unvisible' );
+			//this.closeSpoyler( id );
 
 
+
+
+
+/*
 		let htmlPM = '';
 		if ( elemBody.classList.contains( 'unvisible' ) ) 
 			htmlPM = this.pmClose;
@@ -108,181 +129,88 @@ class ComponentSpoyler {
 			htmlPM = this.pmOpen;
 
 		elem.querySelector( '.title .pm' ).innerHTML = htmlPM;
+
+
+*/
+
 	} 
  
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	static getHtml( data = {} ) {
-		const fooName = this.name + '.getHtml()'; 
+/*
+	static insertSpoyler( cmp, id ) { 
+		const fooName = this.name + '.insertSpoyler()'; 
 
 		//console.log( 'fooName: ', fooName ); 
-		//console.log( 'data: ', data ); 
-
-		let obj = {};
-
-		//console.log( 'objListPcVga: ', objListPcVga ); 
-
-		let html = '';
-
-		if ( objListPcVga ) {
-			if ( objListPcVga[ data ] ) {
-
-
-				obj = objListPcVga[ data ];
-
-
-				//console.log( 'obj: ', obj ); 
-
-				let htmlSites = '';
-				if ( obj.site ) {
-
-					if ( obj.site.elmir ) 
-						htmlSites += `<a href="${ obj.site.elmir }" title="ElMir" target="_blank"><img src="img/pic/favicon_elmir.png" alt=""></a>`;
-					
-					if ( obj.site.rozetka ) 
-						htmlSites += `<a href="${ obj.site.rozetka }" title="Rozetka" target="_blank"><img src="img/pic/favicon_rozetka.png" alt=""></a>`;
-					
-					if ( obj.site.pcshop ) 
-						htmlSites += `<a href="${ obj.site.pcshop }" title="PC Shop" target="_blank"><img src="img/pic/favicon_pcshop.png" alt=""></a>`;
-					
-					if ( obj.site.stylus ) 
-						htmlSites += `<a href="${ obj.site.stylus }" title="Stylus" target="_blank"><img src="img/pic/favicon_stylus.png" alt=""></a>`;
-					
-					if ( obj.site.telemart ) 
-						htmlSites += `<a href="${ obj.site.telemart }" title="TeleMart" target="_blank"><img src="img/pic/favicon_telemart.png" alt=""></a>`;
-					
-					if ( obj.site.compx ) 
-						htmlSites += `<a href="${ obj.site.compx }" title="CompX" target="_blank"><img src="img/pic/favicon_compx.png" alt=""></a>`;
-					
-					if ( obj.site.click ) 
-						htmlSites += `<a href="${ obj.site.click }" title="Click" target="_blank"><img src="img/pic/favicon_click.png" alt=""></a>`;
-					
-					if ( obj.site.teraflops ) 
-						htmlSites += `<a href="${ obj.site.teraflops }" title="TeraFlops" target="_blank"><img src="img/pic/favicon_teraflops.png" alt=""></a>`;					
-
-					if ( obj.site.v_comp ) 
-						htmlSites += `<a href="${ obj.site.v_comp }" title="V-Comp" target="_blank"><img src="img/pic/favicon_v_comp.png" alt=""></a>`;
-					
-
-
-					if ( htmlSites )
-						htmlSites = `<div class="sites">${ htmlSites }</div>`;
-				}
-
-
-
-				let htmlThroughput = '';
-				if ( obj.bit && obj.rate ) {
-
-					htmlThroughput = `<div class="throughput">
-						<span class="txt-key">продуктивність:</span>
-						<span class="txt-val">${ this.getThroughput( obj.bit, obj.rate ) }</span>
-						<span class="txt-unit">GB/s</span>
-					</div>`;
-				}
-
-				let htmlBit = '';
-				if ( obj.bit ) {
-
-					htmlBit = `<div class="bit">
-						<span class="txt-key">шина:</span>
-						${ obj.bit }
-						<span class="txt-unit">bit</span>
-					</div>`;
-				}
-
-				let htmlRate = '';
-				if ( obj.rate ) {
-
-					htmlRate = `<div class="rate">
-						<span class="txt-key">частота:</span>
-						${ obj.rate }
-						<span class="txt-unit">MHz</span>
-					</div>`;
-				}
-
-				let htmlRam = '';
-				if ( obj.ram ) {
-
-					htmlRam = `<div class="ram">
-						<span class="txt-key">об'єм:</span>
-						${ obj.ram }
-						<span class="txt-unit">GB</span>
-					</div>`;
-				}
-
-				let htmlType = '';
-				if ( obj.type ) {
-
-					htmlType = `<div class="type">
-						<span class="txt-key">тип:</span>
-						${ obj.type }
-					</div>`;
-				}
-
-				let htmlResolution = '';
-				if ( obj.resolution ) {
-
-					htmlResolution = `<div class="resolution">
-						<span class="txt-key">екран:</span>
-						${ obj.resolution }
-					</div>`;
-				}
+		//console.log( 'id: ', id );
+	}
+*/
 
 
 
 
 
-				html = `<div class="inner">
-					<div class="txt-chip">${ obj.chip }</div>
-					<div class="txt-title">${ obj.title }</div>
+	static openSpoyler( cmp, id ) { 
+		const fooName = this.name + '.openSpoyler()'; 
 
-					${ htmlThroughput }
-					${ htmlBit }
-					${ htmlRate }
-					${ htmlRam }
-					${ htmlType }
-					${ htmlResolution }
-					${ htmlSites }
-
-				</div>`;
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'id: ', id );
 
 
-			}
-		}
+		let elem = document.querySelector( `cmp-spoyler[ data-id="${ id }"]` );
+
+		let elemBody 		= elem.querySelector( '.body' );
+
+		if ( !elemBody.innerHTML ) 
+			elemBody.innerHTML = Component( cmpName, id ); 
+
+		else 
+			elemBody.classList.remove( 'unvisible' );
+
+/*
+		elem.querySelector( '.title .pm' ).innerHTML = this.pmClose;
 
 
 
-		return html;
+		let elemBody = elem.querySelector( '.body' );
+
+		elemBody.classList.toggle( 'unvisible' );
+*/
+
 	}
 
 
 
- 
-	static getThroughput( bit, rate ) { 	// bit - в бітах, rate - в мегагерцах
 
-		return ( bit * rate ) / 8000;
+
+
+
+
+
+	static closeSpoyler( id ) { 
+		const fooName = this.name + '.closeSpoyler()'; 
+
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'id: ', id );
+
+
+		let elem = document.querySelector( `cmp-spoyler[ data-id="${ id }"]` );
+
+		elem.querySelector( '.title .pm' ).innerHTML = this.pmClose;
+
+
+
+		let elemBody = elem.querySelector( '.body' );
+
+		//elemBody.classList.toggle( 'unvisible' );
+		elemBody.classList.add( 'unvisible' );
+
+
 	}
+
+
+
+
+
 
 
 

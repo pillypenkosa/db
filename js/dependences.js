@@ -9,7 +9,10 @@ const dependences = [
 
 	// масиви-списки з інших сайтів ( сторонні ) ----------------------------------------------------------------------------------
 	
-	//{ db: 'country' 	, },  // https://pillypenkosa.github.io/database/list/list.country.js
+		// https://pillypenkosa.github.io/   ${ k.site }   /list/list.   ${ k.db }   .js
+	
+	//{ db: 'people' 		, site: 'media' 	, },  
+	{ db: 'films' 		, site: 'movies' 	, },  
 
 
 
@@ -17,60 +20,69 @@ const dependences = [
 
 	// масиви-списки з ЦЬОГО проекту ( свої ) -------------------------------------------------------------------------------------
 
-	{ arr: 'calendar' 			, },
-	{ arr: 'city' 				, },
-	{ arr: 'country' 			, },
-	{ arr: 'currency' 			, },
-	{ arr: 'manufacturer' 		, },
-	{ arr: 'surnames' 			, },
-	{ arr: 'names' 				, },
-	{ arr: 'shop' 				, },
-	{ arr: 'worldparts' 		, },
+
+
+
+	{ arr: 'manufacturer'		, },  
+	{ arr: 'country'			, },  
+	{ arr: 'people'				, },  
 
 
 
 
+	// сервіси ---------------------------------------------------------------------------------------------------------------------
 
+	//{ service: 'prepare' 			, },
+	
 
 
 
 	// компоненти загальні --------------------------------------------------------------------------------------------------------
 
+	{ cmp: 'Filter-People' 			, },
 
-	{ cmp: 'Win-Err404' 				, },
-	{ cmp: 'Footer' 					, },
-	{ cmp: 'Menu' 						, },
-	{ cmp: 'Header' 					, },
+	{ cmp: 'Spoyler' 				, },
+	{ cmp: 'Menu' 					, },
 
-	{ cmp: 'Spoyler-Body-Manufacturer' 	, },
-	{ cmp: 'Spoyler' 					, },
-	{ cmp: 'Table' 						, },
+	{ cmp: 'Spoyler-Body-People' 	, },
+	{ cmp: 'Spoyler-Body-Movie' 	, },
+
+
+
+
+
+
+
+
+
+
+	{ cmp: 'Logo' 				, },
+	{ cmp: 'Footer' 			, },
+	{ cmp: 'Header' 			, },
+	{ cmp: 'Win-Err404' 		, },
+
+
+
+
+
+
+
+	//{ cmp: 'Franchise' 			, },
+
+
+
 
 
 
 
 	// компоненти-контенти // win-сторiнки ----------------------------------------------------------------------------------------
 	
-	{ cmp: 'Win-Index' 					, regexp: /^index$/ 				, }, 	// regexp - url-маршрут (route) в адресному рядку
-	{ cmp: 'Win-Calendar' 				, regexp: /^calendar$/ 				, }, 
-	{ cmp: 'Win-City' 					, regexp: /^city$/ 					, }, 
-	{ cmp: 'Win-Country' 				, regexp: /^country$/ 				, }, 
-	{ cmp: 'Win-Currency' 				, regexp: /^currency$/ 				, }, 
-	{ cmp: 'Win-Manufacturer' 			, regexp: /^manufacturer$/ 			, }, 
-	{ cmp: 'Win-Names' 					, regexp: /^names$/ 				, }, 
-	{ cmp: 'Win-Surnames' 				, regexp: /^surnames$/ 				, }, 
-	{ cmp: 'Win-Shop' 					, regexp: /^shop$/ 					, }, 
-	{ cmp: 'Win-Worldparts' 			, regexp: /^worldparts$/ 			, }, 
+	{ cmp: 'Win-Index' 				, win: /^index$/ 					, }, 	// regexp - url-маршрут (route) в адресному рядку
+	{ cmp: 'Win-Movies' 			, win: /^movies$/ 				, }, 	
+	{ cmp: 'Win-People' 			, win: /^people$/ 				, }, 	
+	
 
-
-
-
-	//{ cmp: 'Win-User' 			, regexp: /^user\/[0-9]+$/ 				, }, 	// user/{ n }
-	//{ cmp: 'Win-User' 			, regexp: /^user\/[0-9A-Za-z]+$/ 		, }, 	// user/{ txt }
-	//{ cmp: 'Win-Users' 			, regexp: /^users$/ 					, },
-
-
-
+	//{ cmp: 'Win-Uid' 					, win: /^user\/[0-9A-Za-z]+$/ 		, }, 	// user/{ txt }
 
 
 
