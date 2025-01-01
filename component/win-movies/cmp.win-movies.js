@@ -85,9 +85,9 @@ class ComponentWinMovies {
  
  
 		setMeta ({ 
-			title 			: 'Movie Films', 
-			description 	: 'Опис...', 
-			image 			: 'img/pic/logoDJS.png', 
+			title 			: 'Фільми', 
+			description 	: 'Опис... Фільми', 
+			//image 			: 'img/pic/logoDJS.png', 
 		}); 
  
 

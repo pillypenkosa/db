@@ -8,7 +8,12 @@ const arrManufacturerHash = [
 { id: 'tools' 					, title: 'Інструмент' 			, }, 
 { id: 'pc' 						, title: 'Комп\'ютери' 			, }, 
 { id: 'hhtech' 					, title: 'Побутова техніка' 	, }, 	// household
+{ id: 'spectech' 				, title: 'Спец.техніка' 		, }, 
 { id: 'food' 					, title: 'Харчі' 				, }, 
+
+
+
+
 
 
 ];
@@ -162,64 +167,158 @@ title 		: '', wiki: { ru: '', },
 {
 	id: '555', title: '555', country: { jpn: 1, }, year: 1960, parent: 'sankei_industry',
 	hash: { carparts: 1, },
-	internet: { 
-		official: 'http://www.sankei-555.com/', 
-		avtopro: '555/',  								//	https://avtopro.ua/makers/febi/
-	},
+	internet: { avtopro: '555/', }, 					//	https://avtopro.ua/makers/febi/
+},
+{
+	id: 'abs', title: 'ABS', country: { nld: 1, }, year: 1978,
+	hash: { carparts: 1, },
+	internet: { avtopro: 'abs/', },
+},
+{
+	id: 'adriauto', title: 'Adriauto', country: { ita: 1, }, year: 1984,
+	hash: { carparts: 1, },
+	internet: { avtopro: 'adriauto/', },
 },
 {
 	id: 'alfa_romeo', title: 'Alfa Romeo', country: { ita: 1, }, year: 1910,
 	hash: { cars: 1, },
-	internet: { 
-		wiki_ua: 'Alfa_Romeo', // https://uk.wikipedia.org/wiki/
-	},
+	internet: { wiki_ua: 'Alfa_Romeo', },     				 // https://uk.wikipedia.org/wiki/
 
+},
+{
+	id: 'arcelik', title: 'Arcelik A.S.', country: { tur: 1, }, year: 1954,
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Ar%C3%A7elik', },
+},
+{
+	id: 'beko', title: 'Beko', country: { tur: 1, }, year: 1954, parent: 'arcelik',
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'BEKO', },
+},
+{
+	id: 'beru', title: 'Beru', country: { deu: 1, }, year: 1912, parent: 'arcelik', parent: 'borg_warrner',
+	hash: { carparts: 1, }, 
+	internet: { avtopro: 'beru/', },
 },
 
 
 
 
+
+{
+	id: 'bilstein', title: 'Bilstein', country: { deu: 1, }, year : 1873,
+	hash: { carparts: 1, },
+	internet: { avtopro: 'bilstein/', },
+},
+
+
+
+
+
+
+
+
+
+
+
+{
+	id: 'blue_print', title: 'Blue Print', country: { gbr: 1, }, year: 1983, parent: 'ferdinand_bilstein',
+	hash: { carparts: 1, },
+	internet 	: { avtopro: 'blue-print/',  },
+},
+{
+	id: 'borg_warrner', title: 'BorgWarner Inc', country: { usa: 1, }, year: 1880, 
+	hash: { carparts: 1, },
+	internet: { wiki_ua: 'BorgWarner', avtopro: 'borg-warner/', },
+},
 {
 	id: 'bosch', title: 'Bosch', country: { deu: 1, }, year: 1886, 
 	hash: { eltech: 1, hhtech: 1, carparts: 1, tools: 1, }, 			// phone: 1, 
-	internet: { 
-		official 	: 'https://www.bosch.com/' 		,
-		avtopro 	: 'bosch/' 						, 
-		wiki_ru 	: 'Robert_Bosch_GmbH' 			, 
-	},
-
-
-
-
-
-
+	internet: { wiki_ua: 'Robert_Bosch_GmbH', avtopro: 'bosch/', },
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+	id: 'candy', title: 'Candy', country: { ita: 1, }, year: 1945,
+	hash: { hhtech: 1, },
+	internet: { wiki_ua: 'Candy', },
+},
+{
+	id: 'electrolux', title: 'Electrolux', country: { swe: 1, }, year: 1919, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Electrolux', },
+},
+{
+	id: 'febi', title: 'Febi', country: { deu: 1, }, year: 1923, parent: 'ferdinand_bilstein',
+	hash: { carparts: 1, },
+	internet: { avtopro: 'febi/', },
+},
+{
+	id: 'ferdinand_bilstein', title: 'Ferdinand Bilstein GmbH', country: { deu: 1, }, year : 1844,
+	hash: { carparts: 1, },
+	internet: { 
+		official: 'https://bilsteingroup.com/ua/pro-kompaniju/istorija/',  						// рік реєстрації Febi 1923
+		wiki_ua: 'Ferdinand_Bilstein_(%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D1%96%D1%8F)', 
+	},
+},
+{
+	id: 'gorenje', title: 'Gorenje', country: { svn: 1, }, year: 1919, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Gorenje', },
+},
+{
+	id: 'hitachi', title: 'Hitachi', country: { jpn: 1, }, year: 1910, 
+	hash: { electronic: 1, eltech: 1, hhtech: 1, tools: 1, spectech: 1, },
+	internet: { wiki_ua: 'Hitachi', },
+},
+{
+	id: 'indesit', title: 'Indesit', country: { ita: 1, }, year: 1975, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Indesit', },
+},
+{
+	id: 'lg', title: 'LG', country: { kor: 1, }, year: 1958, 
+	hash: { electronic: 1, hhtech: 1, },
+	internet: { wiki_ua: 'LG_Electronics', },
+},
+{
+	id: 'liebherr', title: 'Liebherr', country: { deu: 1, }, year: 1949, 
+	hash: { hhtech: 1, spectech: 1, },
+	internet: { wiki_ua: 'Liebherr', },
+},
+{
+	id: 'samsung', title: 'Samsung', country: 'kor', year: 1938,
+	hash: { electronic: 1, hhtech: 1, cars: 1, },
+	internet: { wiki_ru: 'Samsung', avtopro: 'samsung/', },
+},
 {
 	id: 'sankei_industry', title: 'Sankei Industry Co.Ltd', country: { jpn: 1, }, year: 1960,
 	hash: { carparts: 1, },
-	internet: { 
-		official: 'http://www.sankei-555.com/', 
-	},
+	internet: { official: 'http://www.sankei-555.com/', },
 },
-
-
-
-
-
+{
+	id: 'sharp', title: 'Sharp', country: { jpn: 1, }, year: 1912, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Sharp', },
+},
+{
+	id: 'siemens', title: 'Siemens', country: { deu: 1, }, year: 1847, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Siemens', },
+},
+{
+	id: 'swag', title: 'Swag', country: { deu: 1, }, year: 1954, parent: 'ferdinand_bilstein',
+	hash: { carparts: 1, },
+	internet: { avtopro: 'swag/', },
+},
+{
+	id: 'vestfrost', title: 'Vestfrost', country: { dnk: 1, }, year: 1963, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ru: 'Vestfrost', },
+},
+{
+	id: 'whirlpool', title: 'Whirlpool', country: { usa: 1, }, year: 1911, 
+	hash: { hhtech: 1, }, 
+	internet: { wiki_ua: 'Whirlpool_Corporation', },
+},
 
 
 
@@ -238,27 +337,10 @@ title 		: '', wiki: { ru: '', },
 
 
 
-{
-	id 			: 'abs',
-	title 		: 'ABS',
-	year 		: 1978,
-	country 	: 'nld',
-	internet 	: { avtopro: 'abs/', },
-	hash: { transport: 1, parts: 1, },
-},
 
 
 
 
-
-{
-	id 			: 'adriauto',
-	title 		: 'Adriauto',
-	year 		: 1984,
-	country 	: 'ita',
-	internet 	: { avtopro: 'adriauto/', },
-	hash: { transport: 1, parts: 1, },
-},
 {
 	id 			: 'al_ko',
 	title 		: 'Al-Ko',
@@ -355,24 +437,13 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { avtopro: 'bardahl/', },
 	hash: { transport: 1, parts: 1, oil: 1, },
 },
-{
-	id 			: 'beru',
-	title 		: 'Beru',
-	year 		: 1912,
-	country 	: 'deu',
-	parent 		: 'Borg Warrner Ludwigsburg GmbH',
-	internet 	: { avtopro: 'beru/', },
-	ps 			: { transport: { parts: { auto: 1,}, }, },
-},
-{
-	id 			: 'bilstein',
-	title 		: 'Bilstein',
-	year 		: 1873,
-	country 	: 'deu',
-	parent 		: 'Ferdinand Bilstein GmbH + Co. KG',
-	internet 	: { avtopro: 'bilstein/', wiki_ru: 'Ferdinand_Bilstein_(%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F)', official: 'https://bilstein.com/en/', },
-	hash: { transport: 1, parts: 1, },
-},
+
+
+
+
+
+
+
 {
 	id 			: 'blic',
 	title 		: 'Blic',
@@ -382,15 +453,8 @@ title 		: '', wiki: { ru: '', },
 	descr 		: 'Поставщик',
 	hash: { transport: 1, parts: 1, },
 },
-{
-	id 			: 'blue_print',
-	title 		: 'Blue Print',
-	year 		: 1983,
-	country 	: 'gbr',
-	parent 		: 'Bilstein Group',
-	internet 	: { avtopro: 'blue-print/', official: 'http://www.blueprint-adl.co.uk/', },
-	hash: { transport: 1, parts: 1, },
-},
+
+
 
 
 {
@@ -645,15 +709,9 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { avtopro: 'gp/', official: 'http://gp-gparts.com/index.php?sl=EN', },
 	hash: { transport: 1, parts: 1, },
 },
-{
-	id 			: 'febi',
-	title 		: 'Febi',
-	year 		: 1923,
-	parent 		: 'bilstein',
-	country 	: 'deu',
-	internet 	: { avtopro: 'febi/', },
-	hash: { transport: 1, parts: 1, oil: 1, },
-},
+
+
+
 {
 	id 			: 'flennor',
 	title 		: 'Flennor',
@@ -1101,14 +1159,7 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { avtopro: 'sachs/', },
 	hash: { transport: 1, parts: 1, },
 },
-{
-	id 			: 'samsung',
-	title 		: 'Samsung',
-	year 		: 1982,
-	country 	: 'kor',
-	internet 	: { wiki_ru: 'Samsung', avtopro: 'samsung/', },
-	hash: { transport: 1, parts: 1, },
-},
+
 {
 	id 			: 'sasic',
 	title 		: 'Sasic',
@@ -1175,15 +1226,9 @@ title 		: '', wiki: { ru: '', },
 	internet 	: { wiki_ru: 'Sumitomo_Rubber_Industries', avtopro: 'sumitomo/', },
 	hash: { transport: 1, parts: 1, tires: 1, },
 },
-{
-	id 			: 'swag',
-	title 		: 'Swag',
-	year 		: 1954,
-	parent 		: 'bilstein',	
-	country 	: 'deu',
-	internet 	: { avtopro: 'swag/', },
-	hash: { transport: 1, parts: 1, },
-},
+
+
+
 {
 	id 			: 'telefunken',
 	title 		: 'Telefunken',

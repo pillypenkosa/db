@@ -24,6 +24,7 @@ const dependences = [
 
 
 	{ arr: 'manufacturer'		, },  
+	{ arr: 'city'				, },  
 	{ arr: 'country'			, },  
 	{ arr: 'people'				, },  
 
@@ -49,12 +50,10 @@ const dependences = [
 	{ cmp: 'Spoyler' 						, },
 	{ cmp: 'Menu' 							, },
 	
+	{ cmp: 'Spoyler-Body-Country' 		, },
 	{ cmp: 'Spoyler-Body-Manufacturer' 		, },
 	{ cmp: 'Spoyler-Body-People' 			, },
 	{ cmp: 'Spoyler-Body-Movie' 			, },
-
-
-
 
 
 
@@ -84,6 +83,7 @@ const dependences = [
 	// компоненти-контенти // win-сторiнки ----------------------------------------------------------------------------------------
 	
 	{ cmp: 'Win-Index' 				, win: /^index$/ 				, }, 	// regexp - url-маршрут (route) в адресному рядку
+	{ cmp: 'Win-Country' 			, win: /^countries$/ 			, }, 	
 	{ cmp: 'Win-Manufacturers' 		, win: /^manufacturers$/ 		, }, 	
 	{ cmp: 'Win-Movies' 			, win: /^movies$/ 				, }, 	
 	{ cmp: 'Win-People' 			, win: /^people$/ 				, }, 	

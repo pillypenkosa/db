@@ -4,7 +4,7 @@
  
  
  
-class ComponentSpoylerBodyManufacturer { 
+class ComponentSpoylerBodyCountry { 
  
  
  
@@ -31,17 +31,17 @@ class ComponentSpoylerBodyManufacturer {
  
  
  
-		//console.log( 'objData: ', objData ); 
+		console.log( 'objData: ', objData ); 
 
 		let id = objData;
 
 		let html = ''; 
-		if ( objManufacturer && objManufacturer[ id ] ) {
+		if ( objCountry && objCountry[ id ] ) {
 
-			let obj = objManufacturer[ id ];
+			let obj = objCountry[ id ];
 
 
-			//console.log( obj ); 
+			console.log( obj ); 
 
 
 			let arr = [];
@@ -52,41 +52,46 @@ class ComponentSpoylerBodyManufacturer {
 
 
 
-				if ( obj.title )	
-					arr.push( { key: 'title', val: obj.title, } );
+				if ( obj.title ) {
 
+					if ( obj.title.ua ) 
+						arr.push( { key: 'title.ua', val: obj.title.ua, } );
 
-
-				if ( obj.parent ) {
-					let val = ( objManufacturer && objManufacturer[ obj.parent ] ) ? ( objManufacturer[ obj.parent ].title ? objManufacturer[ obj.parent ].title : obj.parent ) : obj.parent;
-					arr.push( { key: 'parent', val, } );
+					if ( obj.title.en ) 
+						arr.push( { key: 'title.en', val: obj.title.en, } )
 				}
 
 
 
-				if ( obj.country ) {
+				if ( obj.geo ){
+					if ( obj.geo.capital ) {
 
-					let htmlCountry = '';
-					for ( let k in obj.country ) 
-						htmlCountry += (( objCountry && objCountry[ k ] && objCountry[ k ].title && objCountry[ k ].title.ua ) ? objCountry[ k ].title.ua : k ) + ', ';
+						let val = obj.geo.capital;
+						if ( objCity ) {
+							if ( objCity[ obj.geo.capital ] ) {
+								if ( objCity[ obj.geo.capital ].title ) {
+									if ( objCity[ obj.geo.capital ].title.ua ) 
+										val = `${ obj.geo.capital } ( ${ objCity[ obj.geo.capital ].title.ua } )`;
+								}
+							}
+						}
 
-					arr.push( { key: 'country', val: htmlCountry.slice( 0, -2 ) , } );
-				}
+						arr.push( { key: 'geo.capital', val } );
+					}
 
+					if ( obj.geo.part ) {
 
+						let val = obj.geo.part;
+						if ( objWorldPart ) {
+							if ( objWorldPart[ obj.geo.part ] ) {
+								if ( objWorldPart[ obj.geo.part ].ua ) 
+									val = `${ obj.geo.part} ( ${ objWorldPart[ obj.geo.part ].ua } )`;
+									//val = objWorldPart[ obj.geo.part ].ua;
+							}
+						}
 
-				if ( obj.year )	
-					arr.push( { key: 'year', val: obj.year, } );
-
-
-
-				if ( obj.hash ) {
-
-					let htmlHash = '';
-					for ( let k in obj.hash ) 
-						htmlHash += (( objManufacturerHash && objManufacturerHash[ k ] && objManufacturerHash[ k ].title ) ? objManufacturerHash[ k ].title : k ) + ', ';
-
-					arr.push( { key: 'hash', val: htmlHash.slice( 0, -2 ) , } );
+						arr.push( { key: 'geo.part', val } );
+					}
 				}
 
 
@@ -99,8 +104,6 @@ class ComponentSpoylerBodyManufacturer {
 						});
 				}
 			}
-
-			//console.log( 'arr: ', arr ); 
 
 
 			html = Component( 'Table-Key-Val', arr );

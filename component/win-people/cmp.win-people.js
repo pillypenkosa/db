@@ -41,7 +41,15 @@ class ComponentWinPeople {
 		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
 
 
-
+		setMeta({
+			title 			: 'Люди',
+			description 	: 'Опис... Люди',
+			//keywords 		: 'Ключові слова...' + name,
+			//image 			: 'img/pic/logoDJS.png',
+			//url 			: 'url/any/there/' + name,
+			//type 			: 'Тіпі-тіп ' + name,
+			//site_name 	: 'Назва сайту, мабуть стале значення... ' + name,
+		});
 
 
 

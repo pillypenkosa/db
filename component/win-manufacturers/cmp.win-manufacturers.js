@@ -30,6 +30,18 @@ class ComponentWinManufacturers {
 		}; 
  
  
+		setMeta({
+			title 			: 'Виробники',
+			description 	: 'Опис... Виробники',
+			//keywords 		: 'Ключові слова...' + name,
+			//image 			: 'img/pic/logoDJS.png',
+			//url 			: 'url/any/there/' + name,
+			//type 			: 'Тіпі-тіп ' + name,
+			//site_name 	: 'Назва сайту, мабуть стале значення... ' + name,
+		});
+
+
+
  
 		let html = ''; 
  
@@ -62,6 +74,18 @@ class ComponentWinManufacturers {
 				});
 			}
 		}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 		arrSelected.forEach( k => {

@@ -81,10 +81,11 @@ class ComponentMenu {
 		const arrMenu = [
 
 			{ href: 'index' 				, title: 'Головна' 		, },
+			{ href: 'countries' 			, title: 'Країни' 		, },
 			{ href: 'people' 				, title: 'Люди' 		, },
 			{ href: 'movies' 				, title: 'Фільми' 		, },
 			{ href: 'manufacturers' 		, title: 'Виробники' 	, },
-
+			
 		];
 
 		
