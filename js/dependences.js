@@ -12,7 +12,7 @@ const dependences = [
 		// https://pillypenkosa.github.io/   ${ k.site }   /list/list.   ${ k.db }   .js
 	
 	//{ db: 'people' 		, site: 'media' 	, },  
-	{ db: 'films' 		, site: 'movies' 	, },  
+	//{ db: 'films' 		, site: 'movies' 	, },  
 
 
 
@@ -27,6 +27,7 @@ const dependences = [
 	{ arr: 'city'				, },  
 	{ arr: 'country'			, },  
 	{ arr: 'people'				, },  
+	{ arr: 'movies'				, },  
 
 
 
@@ -46,6 +47,7 @@ const dependences = [
 
 
 
+	{ cmp: 'Galery-People' 					, },
 	{ cmp: 'Table-Key-Val' 					, },
 	{ cmp: 'Spoyler' 						, },
 	{ cmp: 'Menu' 							, },

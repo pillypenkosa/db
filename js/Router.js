@@ -98,6 +98,7 @@ class Router {
 
 			win 		: 1,
 			country 	: 1,
+			id 			: 1,
 			hash 		: 1,
 
 		};

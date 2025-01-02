@@ -42,7 +42,7 @@ class ComponentWinMovies {
 		let html = '';
 		if ( objData ) {
 
-			arrFilms.forEach( k => {
+			arrMovies.forEach( k => {
 
 				html += `${ 
 					Component( 'Spoyler', { 
@@ -64,21 +64,6 @@ class ComponentWinMovies {
 
 
 		//let html2 = '';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		//html = html2 + html;

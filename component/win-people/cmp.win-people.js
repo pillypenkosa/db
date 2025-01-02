@@ -53,11 +53,16 @@ class ComponentWinPeople {
 
 
 
+
+		//console.log( Router.urlGET );
+
+
+
 		if ( objData ) {
 
 			if ( objData ) {
 
-				arrListPeople.forEach( k => {
+				arrPeople.forEach( k => {
 
 					html += `${ 
 						Component( 'Spoyler', { 

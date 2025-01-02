@@ -39,8 +39,8 @@ class ComponentSpoylerBodyPeople {
 		let obj = {};
 
 
-		if ( objListPeople && objListPeople[ data ] ) {
-			obj = objListPeople[ data ];
+		if ( objPeople && objPeople[ data ] ) {
+			obj = objPeople[ data ];
 
 
 

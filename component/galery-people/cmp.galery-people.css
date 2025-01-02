@@ -1,0 +1,28 @@
+cmp-galery-people {
+	
+} 
+
+
+
+	cmp-galery-people .each-gallery {
+		display: inline-block;
+		margin: 1px;
+		height: 100px;
+		width: 100px;
+	} 
+
+
+		cmp-galery-people .each-gallery img {
+			height: 100%;
+			width: 100%;
+			border-radius: 5px;
+		} 
+
+
+
+
+
+
+
+
+
