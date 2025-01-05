@@ -2,7 +2,7 @@
 
 
 
-const arrMoviesGenres = [
+const arrGenres = [
 
 
 
@@ -36,9 +36,9 @@ const arrMoviesGenres = [
 
 
 
-let objMoviesGenres = {};
-arrMoviesGenres.forEach( k => {
-	objMoviesGenres[ k.id ] = k;
+let objGenres = {};
+arrGenres.forEach( k => {
+	objGenres[ k.id ] = k;
 });
 
 
@@ -50,7 +50,7 @@ arrMoviesGenres.forEach( k => {
 
 
 
-const arrMovies = [
+const arrFilms = [
 
 
 
@@ -1068,7 +1068,7 @@ const arrMovies = [
 	id: 'enemy_of_the_state_1998', title: { ua: 'Ворог держави', en: 'Enemy of the State', }, year: 1998, country: { usa: 1, },
 	genre: { action: 1, }, 
 	internet: { imdb: '0120660', wiki_ua: '%D0%92%D0%BE%D1%80%D0%BE%D0%B3_%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { will_smith_25091968: 1, jon_voight_29121938: 1, jason_lee_25041970: 1, jack_black_28081969: 1, barry_pepper_04041970: 1, tom_sizemore_29111961: 1, seth_green_08021974: 1, },
+	cast: { will_smith_25091968: 1, jon_voight_29121938: 1, jason_lee_25041970: 1, jack_black_28081969: 1, barry_pepper_04041970: 1, tom_sizemore_29111961: 1, },
 },
 {
 	id: 'enemy_at_the_gates_2001', title: { ua: 'Ворог біля воріт', en: 'Enemy at the Gates', }, year: 2001, country: { usa: 1, },
@@ -1599,7 +1599,7 @@ const arrMovies = [
 	id: 'd_tox_2002', title: { ua: 'Детоксикація', en: 'D-Tox', }, year: 2002, country: { usa: 1, deu: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0160184', wiki_ua: '%D0%94%D0%B5%D1%82%D0%BE%D0%BA%D1%81%D0%B8%D0%BA%D0%B0%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { sylvester_stallone_06071946: 1, tom_berenger_31051949: 1, robert_patrick_05111958: 1, kris_kristofferson_22061936: 1, robert_prosky_13121930: 1, },
+	cast: { sylvester_stallone_06071946: 1, tom_berenger_31051949: 1, robert_patrick_05111958: 1, kris_kristofferson_22061936: 1, },
 },
 {
 	id: 'the_thing_2011', title: { ua: 'Дещо', en: 'The Thing', }, year: 2011, country: { usa: 1, can: 1, }, rating: 5,
@@ -3282,7 +3282,6 @@ const arrMovies = [
 	id: 'christine_1983', title: { ua: 'Крістіна', en: 'Christine', }, year: 1983, country: { usa: 1, }, rating: 5,
 	genre: { horror: 1, thriller: 1, }, hash: { cars: 1, },
 	internet: { imdb: '0085333', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D1%96%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1983)', },
-	cast: { robert_prosky_13121930 : 1, },
 },
 {
 	id: 'snowpiercer_2013', title: { ua: 'Крізь сніг', en: 'Snowpiercer', }, year: 2013, country: { kor: 1, cze: 1, },
@@ -3824,7 +3823,7 @@ const arrMovies = [
 	id: 'mrs_doubtfire_1993', title: { ua: 'Місіс Даутфайр', en: 'Mrs. Doubtfire', }, year: 1993, country: { usa: 1, },
 	genre: { comedy: 1, },
 	internet: { imdb: '0107614', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%81_%D0%94%D0%B0%D1%83%D1%82%D1%84%D0%B0%D0%B9%D1%80', },
-	cast: { robin_williams_21071951: 1, pierce_brosnan_16051953: 1, robert_prosky_13121930: 1, },
+	cast: { robin_williams_21071951: 1, pierce_brosnan_16051953: 1, },
 },
 {
 	id: 'hidden_strike_2023', title: { ua: 'Місія на двох', en: 'Hidden Strike', }, year: 2023, country: { usa: 1, },
@@ -4003,7 +4002,7 @@ const arrMovies = [
 	id: 'my_stepmother_is_an_alien_1988', title: { ua: 'Моя мачуха іншопланетянка', en: 'My Stepmother Is an Alien', }, year: 1988, country: { usa: 1, },
 	genre: { comedy: 1, sci_fi: 1, }, hash: { aliens: 1, },
 	internet: { imdb: '0095687', wiki_ua: '%D0%9C%D0%BE%D1%8F_%D0%BC%D0%B0%D1%87%D1%83%D1%85%D0%B0_%E2%80%94_%D1%96%D0%BD%D1%88%D0%BE%D0%BF%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D1%8F%D0%BD%D0%BA%D0%B0', },
-	cast: { kim_basinger_08121953: 1, seth_green_08021974: 1, }, composer: { alan_silvestri_26031950: 1, },
+	cast: { kim_basinger_08121953: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'the_bricklayer_2023', title: { ua: 'Муляр', en: 'The Bricklayer', }, year: 2023, country: { usa: 1, },
@@ -4671,7 +4670,7 @@ const arrMovies = [
 	id: 'last_action_hero_1993', title: { ua: 'Останній кіногерой', en: 'Last Action Hero', }, year: 1993, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, fantasy: 1, }, hash: { world: 1, children: 1, },
 	internet: { imdb: '0107362', wiki_ua: '%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9_%D0%BA%D1%96%D0%BD%D0%BE%D0%B3%D0%B5%D1%80%D0%BE%D0%B9', ashdivip: '792', },
-	cast: { arnold_schwarzenegger_30071947: 1, danny_devito_17111944: 1, james_belushi_15061954: 1, mc_hammer_30031962: 1, robert_patrick_05111958: 1, sharon_stone_10031958: 1, jean_claude_van_damme_18101960: 1, tina_turner_26111939: 1, robert_prosky_13121930: 1, },
+	cast: { arnold_schwarzenegger_30071947: 1, danny_devito_17111944: 1, james_belushi_15061954: 1, mc_hammer_30031962: 1, robert_patrick_05111958: 1, sharon_stone_10031958: 1, jean_claude_van_damme_18101960: 1, tina_turner_26111939: 1, },
 },
 {
 	id: 'the_last_witch_hunter_2015', title: { ua: 'Останній мисливець на відьом', en: 'The Last Witch Hunter', }, year: 2015, country: { usa: 1, },
@@ -4958,12 +4957,6 @@ const arrMovies = [
 	cast: { matt_damon_08101970: 1, casey_affleck_12081975: 1, ving_rhames_12051959: 1, ron_perlman_13041950: 1, },
 },
 {
-	id: 'shark_tale_2004', title: { ua: 'Підводна братва', en: 'Shark Tale', }, year: 2004, country: { usa: 1, fra: 1, },
-	genre: { cartoon: 1, },
-	internet: { imdb: '0307453', wiki_ua: '%D0%9F%D1%96%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0_%D0%B1%D1%80%D0%B0%D1%82%D0%B2%D0%B0', },
-	composer: { hans_zimmer_12091957: 1, }, 
-},
-{
 	id: 'subway_1985', title: { ua: 'Підземка', en: 'Subway', }, year: 1985, country: { fra: 1, },
 	genre: { drama: 1, crime: 1, }, hash: { subway: 1, },
 	internet: { imdb: '0090095', wiki_ua: '%D0%9F%D1%96%D0%B4%D0%B7%D0%B5%D0%BC%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -5151,12 +5144,6 @@ const arrMovies = [
 	genre: { action: 1, comedy: 1, }, hash: { road: 1, },
 	internet: { imdb: '0109402', wiki_ru: '%D0%9F%D0%BE%D0%B3%D0%BE%D0%BD%D1%8F_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1994)', },
 	cast: { charlie_sheen_03091965: 1, },
-},
-{
-	id: 'the_italian_job_2003', title: { ua: 'Пограбування по-італійськи', en: 'The Italian Job', }, year: 2003, country: { usa: 1, fra: 1, gbr: 1, deu: 1, ita: 1, },
-	genre: { action: 1, crime: 1, }, hash: { robbery: 1, bank: 1, },
-	internet: { imdb: '0317740', wiki_ua: '%D0%9F%D0%BE%D0%B3%D1%80%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BF%D0%BE-%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2003)', },
-	cast: { mark_wahlberg_05061971: 1, jason_statham_26071967: 1, charlize_theron_07081975: 1, donald_sutherland_17071935: 1, seth_green_08021974: 1, },
 },
 {
 	id: 'jingle_all_the_way_1996', title: { ua: 'Подарунок на Різдво', en: 'Jingle All the Way', }, year: 1996, country: { usa: 1, }, rating: 5,
@@ -7958,30 +7945,30 @@ const arrMovies = [
 
 
 
-let objMoviesYear = {};
-let objMoviesCountry = {};
+let objFilmsYear = {};
+let objFilmsCountry = {};
 
 //let arrFilmsActorIDs = [];
 //let arrFilmsDirectorIDs = [];
 //let arrFilmsComposerIDs = [];
 
-let objMoviesActorIDs = {};
-let objMoviesDirectorIDs = {};
-let objMoviesComposerIDs = {};
+let objFilmsActorIDs = {};
+let objFilmsDirectorIDs = {};
+let objFilmsComposerIDs = {};
 
 
 
 
-let objMovies = {};
-arrMovies.forEach( k => {
-	objMovies[ k.id ] = k;
+let objFilms = {};
+arrFilms.forEach( k => {
+	objFilms[ k.id ] = k;
 
 	if ( k.year ) 
-		objMoviesYear[ k.year ] = 1;
+		objFilmsYear[ k.year ] = 1;
 	
 	if ( k.country ) {
 		for ( let k1 in k.country ) 
-			objMoviesCountry[ k1 ] = 1;
+			objFilmsCountry[ k1 ] = 1;
 	}
 
 
@@ -7990,18 +7977,18 @@ arrMovies.forEach( k => {
 
 	if ( k.cast ) {
 		for ( let k2 in k.cast ) 
-			objMoviesActorIDs[ k2 ] = true;
+			objFilmsActorIDs[ k2 ] = true;
 	}
 
 	if ( k.director ) {
 		for ( let k2 in k.director ) 
-			objMoviesDirectorIDs[ k2 ] = true;
+			objFilmsDirectorIDs[ k2 ] = true;
 	}
 
 
 	if ( k.composer ) {
 		for ( let k2 in k.composer ) 
-			objMoviesComposerIDs[ k2 ] = true;
+			objFilmsComposerIDs[ k2 ] = true;
 	}
 
 

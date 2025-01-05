@@ -1,10 +1,10 @@
-cmp-galery-people {
+cmp-gallery-people {
 	
 } 
 
 
 
-	cmp-galery-people .each-gallery {
+	cmp-gallery-people .each-gallery {
 		display: inline-block;
 		margin: 1px;
 		height: 100px;
@@ -12,7 +12,7 @@ cmp-galery-people {
 	} 
 
 
-		cmp-galery-people .each-gallery img {
+		cmp-gallery-people .each-gallery img {
 			height: 100%;
 			width: 100%;
 			border-radius: 5px;

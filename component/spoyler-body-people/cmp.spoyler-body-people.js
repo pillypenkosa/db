@@ -131,7 +131,175 @@ class ComponentSpoylerBodyPeople {
 
 
 
-			html = `<div class="body-wrap">
+			let htmlMovies = '';
+			let arrMoviesGallery = [];
+
+			arrMovies.forEach( k => {
+
+				if ( k.cast && k.cast[ obj.id ] ) {
+
+					arrMoviesGallery.push( k.id );
+
+/*
+					let titleMovie = '';
+					if ( k.title && k.title.ua ) 
+						titleMovie += k.title.ua;
+
+					if ( k.year )
+						titleMovie += ` (${ k.year })`;
+					
+					htmlMovies += `<div class="each-movie" data-id="${ k.id }" title="${ titleMovie }">
+						<img src="img/movies/${ k.id }.jpg" alt="${ titleMovie }">
+					</div>`;
+*/
+					//console.log( k.id );
+				}
+			});
+
+
+
+			function sortUp( a, b ) {
+				return ( a.year < b.year ) ? 1 : -1; 
+			}
+
+
+
+			arrMoviesGallery.sort( sortUp );
+
+
+
+
+
+
+
+			//console.log( 'arrMoviesGallery: ', arrMoviesGallery );
+
+			if ( arrMoviesGallery.length )
+				htmlMovies = `${ Component( 'Gallery-Movies', arrMoviesGallery ) }`;
+
+
+
+
+
+
+
+			let arrTKV = []; // arr-Table-Key-Val
+
+
+			if ( obj.id )	
+				arrTKV.push( { key: 'id', val: obj.id, } );
+
+
+
+			if ( obj.name )	{
+
+				if ( obj.name.n ) 
+					arrTKV.push( { key: 'name.n', val: obj.name.n, } );
+
+				if ( obj.name.p ) 
+					arrTKV.push( { key: 'name.p', val: obj.name.p, } );
+
+				if ( obj.name.s ) 
+					arrTKV.push( { key: 'name.s', val: obj.name.s, } );
+			}
+
+
+
+			if ( obj.sex ) 
+				arrTKV.push( { key: 'sex', val: obj.sex, } );
+
+
+
+			if ( obj.life ) {
+
+				//let htmlLife = '';
+
+				if ( obj.life.bd ) 
+					arrTKV.push( { key: 'life.bd', val: obj.life.bd, } );
+
+				if ( obj.life.bm ) 
+					arrTKV.push( { key: 'life.bm', val: obj.life.bm, } );
+
+				if ( obj.life.by ) 
+					arrTKV.push( { key: 'life.by', val: obj.life.by, } );
+
+				if ( obj.life.dd ) 
+					arrTKV.push( { key: 'life.dd', val: obj.life.dd, } );
+
+				if ( obj.life.dm ) 
+					arrTKV.push( { key: 'life.dm', val: obj.life.dm, } );
+
+				if ( obj.life.dy ) 
+					arrTKV.push( { key: 'life.dy', val: obj.life.dy, } );
+			}
+
+
+
+			if ( obj.country ) {
+
+				let htmlCountry = '';
+
+				for ( let k in obj.country ) {
+					htmlCountry += `${ k } `;
+
+					//htmlCountry += objCountry[ k ] ? ( objCountry[ k ].title ? ( objCountry[ k ].title.ua ? objCountry[ k ].title.ua : k ) : k ) : k;
+					//htmlCountry += ' ';
+				}
+
+				arrTKV.push( { key: 'country', val: htmlCountry, } );
+			}
+
+
+
+			if ( obj.hash ) {
+				let htmlHash = '';
+
+				for ( let k in obj.hash )
+					htmlHash += `#${ k } `;
+
+				arrTKV.push( { key: 'hash', val: htmlHash, } );
+			}
+
+
+
+			if ( obj.internet ) {
+
+				if ( obj.internet.imdb ) 
+					arrTKV.push( { key: 'internet.imdb', val: obj.internet.imdb, id: 'people', } );
+
+				if ( obj.internet.wiki_ua ) 
+					arrTKV.push( { key: 'internet.wiki_ua', val: obj.internet.wiki_ua, } );
+
+				if ( obj.internet.wiki_ru ) 
+					arrTKV.push( { key: 'internet.wiki_ru', val: obj.internet.wiki_ru, } );
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			//console.log( 'arr: ', arr ); 
+
+
+			let htmlTKV = '';
+			if ( arrTKV.length )
+				htmlTKV = Component( 'Table-Key-Val', arrTKV );
+
+
+
+
+
+			html = `<div class="wrap">
 
 				<div class="main-info">
 					${ htmlName }
@@ -140,8 +308,16 @@ class ComponentSpoylerBodyPeople {
 					${ htmlGalery }
 				</div>
 
-				<button data-id="${ obj.id }" onclick="${ this.name }.showKeyValObject( this )">Object</button>
-				<div class="key-val-object"></div>
+				${ htmlMovies }
+
+
+
+
+
+			<div class="tkv-object">
+				<button onclick="${ this.name }.showTKV( this )">Object</button>
+				<div class="body-tkv unvisible">${ htmlTKV }</div>
+			</div>
 
 			</div>`;
 		}
@@ -157,11 +333,27 @@ class ComponentSpoylerBodyPeople {
 
 
 
+	static showTKV( elem ) { 
+		const fooName = this.name + '.showKeyValObject()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
+
+		elem.closest( '.tkv-object' ).querySelector( '.body-tkv' ).classList.toggle( 'unvisible' );;
+	}
 
 
 
 
-	static showKeyValObject( elem ) { 
+
+
+
+
+
+
+
+
+	static showKeyValObject222( elem ) { 
 		const fooName = this.name + '.showKeyValObject()'; 
  
 		console.log( 'fooName: ', fooName ); 
@@ -191,7 +383,7 @@ class ComponentSpoylerBodyPeople {
 
 
 
-	static getHtmlKeyValObject( id ) {
+	static getHtmlKeyValObject222( id ) {
 
 		const fooName = this.name + '.getHtmlKeyValObject()'; 
  
@@ -200,106 +392,16 @@ class ComponentSpoylerBodyPeople {
 
 
 		let html = '';
-		if ( objListPeople ) {
+		if ( objPeople ) {
 
-			if ( objListPeople[ id ] ) {
+			if ( objPeople[ id ] ) {
 
-				let obj = objListPeople[ id ];
+				let obj = objPeople[ id ];
 
 				let htmlTBody = '';
 
 
 
-
-
-
-				if ( obj.id )
-					htmlTBody += `<tr><td class="key">id</td><td class="val">${ obj.id }</td></tr>`;
-
-
-
-				if ( obj.name ) {
-					if ( obj.name.n )
-						htmlTBody += `<tr><td class="key">name.n</td><td class="val">${ obj.name.n }</td></tr>`;
-
-					if ( obj.name.p )
-						htmlTBody += `<tr><td class="key">name.p</td><td class="val">${ obj.name.p }</td></tr>`;
-
-					if ( obj.name.s )
-						htmlTBody += `<tr><td class="key">name.s</td><td class="val">${ obj.name.s }</td></tr>`;
-				}
-
-
-
-				if ( obj.sex ) 
-					htmlTBody += `<tr><td class="key">sex</td><td class="val">${ obj.sex }</td></tr>`;
-
-
-
-				if ( obj.life ) {
-
-					let htmlLife = '';
-
-					if ( obj.life.bd ) 
-						htmlTBody += `<tr><td class="key">life.bd</td><td class="val">${ obj.life.bd }</td></tr>`;
-
-					if ( obj.life.bm ) 
-						htmlTBody += `<tr><td class="key">life.bm</td><td class="val">${ obj.life.bm }</td></tr>`;
-
-					if ( obj.life.by ) 
-						htmlTBody += `<tr><td class="key">life.by</td><td class="val">${ obj.life.by }</td></tr>`;
-
-					if ( obj.life.dd ) 
-						htmlTBody += `<tr><td class="key">life.dd</td><td class="val">${ obj.life.dd }</td></tr>`;
-
-					if ( obj.life.dm ) 
-						htmlTBody += `<tr><td class="key">life.dm</td><td class="val">${ obj.life.dm }</td></tr>`;
-
-					if ( obj.life.dy ) 
-						htmlTBody += `<tr><td class="key">life.dy</td><td class="val">${ obj.life.dy }</td></tr>`;
-				}
-
-
-
-				if ( obj.country ) {
-
-					let htmlCountry = '';
-
-					for ( let k in obj.country ) {
-						htmlCountry += `${ k } `;
-
-						//htmlCountry += objCountry[ k ] ? ( objCountry[ k ].title ? ( objCountry[ k ].title.ua ? objCountry[ k ].title.ua : k ) : k ) : k;
-						//htmlCountry += ' ';
-					}
-
-					htmlTBody += `<tr><td class="key">country</td><td class="val">${ htmlCountry }</td></tr>`;
-				}
-
-
-
-				if ( obj.hash ) {
-					let htmlHash = '';
-
-					for ( let k in obj.hash )
-						htmlHash += `#${ k } `;
-
-					htmlTBody += `<tr><td class="key">hash</td><td class="val">${ htmlHash }</td></tr>`;
-				}
-
-
-
-				if ( obj.internet ) {
-
-					if ( obj.internet.imdb ) 
-						htmlTBody += `<tr><td class="key">internet.wiki_ua</td><td class="val">
-							<a href="https://www.imdb.com/name/nm${ obj.internet.imdb }/" target="_blank">IMDb${ htmlHrefSign }</a>
-						</td></tr>`;
-
-					if ( obj.internet.wiki_ua ) 
-						htmlTBody += `<tr><td class="key">internet.wiki_ua</td><td class="val">
-							<a href="https://uk.wikipedia.org/wiki/${ obj.internet.wiki_ua }" target="_blank">WikiUa${ htmlHrefSign }</a>
-						</td></tr>`;
-				}
 
 
 

@@ -33,14 +33,32 @@ class ComponentTableKeyVal {
  
 		let html = ''; 
  
-		console.log( 'objData: ', objData ); 
+		//console.log( 'objData: ', objData ); 
  
-		let htmlTBoty = ''; 
+		let htmlTBody = ''; 
 		objData.forEach( k => {
 
 
 			//let htmlKey = '';
 			let htmlVal = k.val;
+
+
+			if ( k.key == 'internet.imdb' ) {
+				if ( k.id == 'people' )
+					htmlVal = `<a href="https://www.imdb.com/name/nm${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
+
+/*
+				if ( k.id == 'movies' )
+					htmlVal = `<a href="https://www.imdb.com/name/nm${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
+*/
+
+
+
+
+			}
+
+
+
 			if ( k.key == 'internet.official' ) 
 				htmlVal = `<a href="${ k.val }" target="_blank">Official${ htmlHrefSign }</a>`;
 			
@@ -58,11 +76,11 @@ class ComponentTableKeyVal {
 
 
 
-			htmlTBoty += `<tr><td class="key">${ k.key }</td><td class="val">${ htmlVal }</td></tr>`;
+			htmlTBody += `<tr><td class="key">${ k.key }</td><td class="val">${ htmlVal }</td></tr>`;
 		});
 
- 		if ( htmlTBoty )
- 			html = `<table>${ htmlTBoty }</table>`;
+ 		if ( htmlTBody )
+ 			html = `<table>${ htmlTBody }</table>`;
  
 		return { tagParam, html };  
 	} 

@@ -18159,6 +18159,16 @@ let arrPeople = [
 	internet: { imdb: '0001598', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%9F%D0%B0%D1%82%D1%80%D1%96%D0%BA', },
 },
 {
+	id: 'robert_prosky_13121930', 
+	name: { n: 'Robert', s: 'Prosky', },
+	sex: 1,
+	life: { bd: 13, bm: 12, by: 1930, dd: 8, dm: 12, dy: 2008, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, actor: 1, },
+	internet: { imdb: '0698764', wiki_ru: '%D0%9F%D1%80%D0%BE%D1%81%D0%BA%D0%B8,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82', },
+},
+{
 	id: 'robert_b_weide_20061959', 
 	name: { n: 'Robert B.', s: 'Weide', },
 	sex: 1,
@@ -18594,6 +18604,16 @@ let arrPeople = [
 	country: { usa: 1, },
 	hash: { music: 1, singer: 1, },
 	internet: { imdb: '1411125', wiki_ua: '%D0%A1%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0_%D0%93%D0%BE%D0%BC%D0%B5%D1%81', },
+},
+{
+	id: 'seth_green_08021974',
+	name: { n: 'Seth', s: 'Green', },
+	sex: 1,
+	life: { bd: 8, bm: 2, by: 1974, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, actor: 1, },
+	internet: { imdb: '0001293', wiki_ua: '%D0%A1%D0%B5%D1%82_%D0%93%D1%80%D1%96%D0%BD', },
 },
 {
 	id: 'sharon_stone_10031958', 

@@ -110,19 +110,9 @@ class ComponentSpoylerBodyMovie {
 					arrCast.push( k );
 				//console.log( arrCast );
 
-				htmlCast = `<div class="movie-cast center">${ Component( 'Galery-People', arrCast ) }</div>`;
+				htmlCast = `<div class="movie-cast center">${ Component( 'Gallery-People', arrCast ) }</div>`;
 			}
 			
-
-
-
-
-
-
-
-
-
-
 
 
 

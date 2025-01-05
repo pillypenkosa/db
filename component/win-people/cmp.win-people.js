@@ -55,24 +55,33 @@ class ComponentWinPeople {
 
 
 		//console.log( Router.urlGET );
+		//console.log( objData );
+
+
 
 
 
 		if ( objData ) {
 
-			if ( objData ) {
 
-				arrPeople.forEach( k => {
+			let arrSelected = arrPeople;
 
-					html += `${ 
-						Component( 'Spoyler', { 
-							id 		: k.id, 
-							title 	: `${ k.name.n ? k.name.n : '' } ${ k.name.s ? k.name.s : '' }`, 
-							cmp 	: 'Spoyler-Body-People', // для вставки в body спойлера
-						})}`;
-				});
 
-			}
+			if ( objData.id ) 
+				arrSelected = arrSelected.filter( k => k.id == objData.id );
+
+
+
+
+			arrSelected.forEach( k => {
+
+				html += `${ 
+					Component( 'Spoyler', { 
+						id 		: k.id, 
+						title 	: `${ k.name.n ? k.name.n : '' } ${ k.name.s ? k.name.s : '' }`, 
+						cmp 	: 'Spoyler-Body-People', // для вставки в body спойлера
+					})}`;
+			});
 		}
 
 		return { tagParam, html };  

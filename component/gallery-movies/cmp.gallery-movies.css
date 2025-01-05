@@ -1,0 +1,32 @@
+cmp-gallery-movies {
+	display: block;
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+
+
+
+
+	cmp-gallery-movies .each-movie {
+		display: inline-block;
+		height: 150px;
+		width: 100px;
+		margin: 1px;
+	}
+		cmp-gallery-movies .each-movie img {
+			height: 100%;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+

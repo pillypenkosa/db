@@ -42,7 +42,18 @@ class ComponentWinMovies {
 		let html = '';
 		if ( objData ) {
 
-			arrMovies.forEach( k => {
+
+
+
+			let arrSelected = arrMovies;
+
+
+			if ( objData.id ) 
+				arrSelected = arrSelected.filter( k => k.id == objData.id );
+
+
+
+			arrSelected.forEach( k => {
 
 				html += `${ 
 					Component( 'Spoyler', { 
@@ -51,7 +62,6 @@ class ComponentWinMovies {
 						cmp 	: 'Spoyler-Body-Movie', // для вставки в body спойлера
 					})}`;
 			});
-
 		}
 
 

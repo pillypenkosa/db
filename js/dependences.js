@@ -44,15 +44,13 @@ const dependences = [
 	//{ cmp: 'Filter-People' 					, },
 
 
-
-
-
-	{ cmp: 'Galery-People' 					, },
+	{ cmp: 'Gallery-Movies' 				, },
+	{ cmp: 'Gallery-People' 				, },
 	{ cmp: 'Table-Key-Val' 					, },
 	{ cmp: 'Spoyler' 						, },
 	{ cmp: 'Menu' 							, },
 	
-	{ cmp: 'Spoyler-Body-Country' 		, },
+	{ cmp: 'Spoyler-Body-Country' 			, },
 	{ cmp: 'Spoyler-Body-Manufacturer' 		, },
 	{ cmp: 'Spoyler-Body-People' 			, },
 	{ cmp: 'Spoyler-Body-Movie' 			, },

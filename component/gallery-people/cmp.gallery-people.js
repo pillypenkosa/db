@@ -4,7 +4,7 @@
  
  
  
-class ComponentGaleryPeople { 
+class ComponentGalleryPeople { 
  
  
  
