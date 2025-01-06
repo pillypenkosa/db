@@ -59,7 +59,7 @@ class ComponentHeader {
 					</div>
 				</div>
 			</div>
-			<div class="filter unvisible"></div>
+			<div class="filter"></div>
 			<div class="nav-menu unvisible">${ Component( 'Menu' ) }</div>
 		`;
 			//<div class="nav-menu ${ clsUnvisible }">${ Component( 'Menu' ) }</div>
@@ -79,7 +79,8 @@ class ComponentHeader {
 		//document.querySelector( '.nav-menu' ).classList.toggle( 'unvisible' );
 
 
-		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+		//document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+		document.querySelector( 'cmp-header .filter' ).innerHTML = '';
 
 		document.querySelector( 'cmp-header .nav-menu' ).classList.toggle( 'unvisible' );
 
@@ -106,36 +107,30 @@ class ComponentHeader {
 		//console.log( 'fooName', fooName );
 		//console.log( 'data', data );
 
+
 		//console.log( Router.urlGET );
 
 
 		let elemFilter = document.querySelector( 'cmp-header .filter' );
-		//elemFilter.innerHTML = '';
-
 
 		document.querySelector( 'cmp-header .nav-menu' ).classList.add( 'unvisible' );
 
 
+		if ( elemFilter.innerHTML ) 
+			elemFilter.innerHTML = '';
 
-
-
-
-
-
-		if ( !elemFilter.innerHTML ) {
-
-			elemFilter.innerHTML = this.insertHtmlFilter();
-			elemFilter.classList.remove( 'unvisible' );
-
-		} else 
-			elemFilter.classList.toggle( 'unvisible' );		
+		else 
+			elemFilter.innerHTML = this.getHtmlFilter();
 	}
 
 
 
 
-	static insertHtmlFilter() {
-		const fooName = this.name + '.insertHtmlFilter()';
+
+
+
+	static getHtmlFilter() {
+		const fooName = this.name + '.getHtmlFilter()';
 		//console.log( 'fooName', fooName );
 		//console.log( 'data', data );
 	
@@ -145,8 +140,31 @@ class ComponentHeader {
 
 		if ( Router.urlGET && Router.urlGET.win ) {
 
+			if ( Router.urlGET.win == 'movies' ) 
+				html = ComponentWinMovies.getHtmlFilter();
+			
+
+			if ( Router.urlGET.win == 'people' ) 
+				html = ComponentWinPeople.getHtmlFilter();
+			
+
+			if ( Router.urlGET.win == 'countries' ) 
+				html = ComponentWinCountry.getHtmlFilter();
+			
+
+
+
+
+
+
+/*
 			if ( Router.urlGET.win == 'manufacturers' ) 
 				html = ComponentWinManufacturers.getHtmlFilter();
+
+
+
+*/
+
 
 
 			
@@ -154,16 +172,11 @@ class ComponentHeader {
 
 
 
-
-
-
-
-
-
-
-
 		return html;
 	}
+
+
+
 
 
 
@@ -182,9 +195,8 @@ class ComponentHeader {
 
 
 
-		console.log( 'elem: ', elem );
-
-		console.log( 'value: ', elem.value );
+		//console.log( 'elem: ', elem );
+		//console.log( 'value: ', elem.value );
 
 
 		if ( elem.value == 'all' ) 

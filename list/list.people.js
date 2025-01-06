@@ -352,7 +352,6 @@ let arrPeople = [
 {
 	id: 'zhanna_aguzarova_07071962', 
 	name: { n: 'Жанна', s: 'Агузарова', },
-	sex: 1,
 	life: { bd: 7, bm: 7, by: 1962, },
 	country: { rus: 1, },
 	music: { singer: 1, },
@@ -12706,7 +12705,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 31, bm: 8, by: 12, dd: 24, dm: 1, dy: 41, },
 	img: [ 1, 1 ],
-	country: { rome: 1, },
+	country: { rom: 1, },
 	hash: { war: 1, state_head: 1, emperor: 1, }, 
 	internet: { wiki_ua: '%D0%9A%D0%B0%D0%BB%D1%96%D0%B3%D1%83%D0%BB%D0%B0', },
 },
@@ -15860,7 +15859,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 12, bm: 7, by: -100, dd: 15, dm: 3, dy: -44, },
 	img: [ 1, 1 ],
-	country: { rome: 1, },
+	country: { rom: 1, },
 	politics: { president: { country: { ita: { date: 'с 49 - 15.3.44 до н.э.', n: 0, status: 'Диктатор', }, }, }, },
 	hash: { state_head: 1, emperor: 1, war: 1, },
 	internet: { imdb: '2471712', wiki_ua: '%D0%93%D0%B0%D0%B9_%D0%AE%D0%BB%D1%96%D0%B9_%D0%A6%D0%B5%D0%B7%D0%B0%D1%80', },
@@ -17381,7 +17380,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 23, bm: 9, by: -63, dd: 19, dm: 8, dy: 14, },
 	img: [ 1, 1 ],
-	country: { rome: 1, },
+	country: { rom: 1, },
 	hash: { war: 1, state_head: 1, emperor: 1, },
 	internet: { wiki_ua: '%D0%9E%D0%BA%D1%82%D0%B0%D0%B2%D1%96%D0%B0%D0%BD_%D0%90%D0%B2%D0%B3%D1%83%D1%81%D1%82', },
 },
@@ -17813,7 +17812,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 0, bm: 12, by: -12, dd: 0, dm: 0, dy: 38, },
 	img: [ 1, 1 ],
-	country: { rome: 1, },
+	country: { rom: 1, },
 	hash: { politics: 1, state_head: 1, emperor: 1, },
 	internet: { wiki_ua: '%D0%9F%D0%BE%D0%BD%D1%82%D1%96%D0%B9_%D0%9F%D0%B8%D0%BB%D0%B0%D1%82', },
 },
@@ -18748,7 +18747,7 @@ let arrPeople = [
 	id: 'srila_prabhupada_01091986', 
 	name: { n: 'Srila', s: 'Prabhupada', },
 	sex: 1,
-	life: { bd: 1, bm: 9, by: 1986, dd: 14, dm: 11, dy: 1977, },
+	life: { bd: 1, bm: 9, by: 1896, dd: 14, dm: 11, dy: 1977, },
 	country: { ind: 1, },
 	hash: { philosophy: 1, religion: 1, },
 	internet: { wiki_ua: '%D0%91%D0%B3%D0%B0%D0%BA%D1%82%D1%96%D0%B2%D0%B5%D0%B4%D0%B0%D0%BD%D1%82%D0%B0_%D0%A1%D0%B2%D0%B0%D0%BC%D1%96_%D0%9F%D1%80%D0%B0%D0%B1%D0%B3%D1%83%D0%BF%D0%B0%D0%B4%D0%B0', },
@@ -19617,7 +19616,6 @@ let arrPeople = [
 
 
 
-
 let objPeopleHash = {};
 arrPeopleHash.forEach( k => {
 	objPeopleHash[ k.id ] = k;
@@ -19625,14 +19623,21 @@ arrPeopleHash.forEach( k => {
 
 
 
+let arrPeopleYears = {};
 
 let objPeople = {};
 arrPeople.forEach( k => {
 	objPeople[ k.id ] = k;
+
+
+	if ( k.life && k.life.by )
+		arrPeopleYears[ k.life.by ] = 1;
+
+
 });
 
 
-
+//console.log( arrPeopleYears );
 
 
 

@@ -35,7 +35,7 @@ class ComponentSpoyler {
 			//'title' 		: '', 
 			//'data-key' 	: '', 
 			'data-id' 		: objData.id,
-			//'onclick' 	: '',
+			'onclick' 		: `${ this.name }.hideMenu()`,
 			//'selected' 	: '', 
 			//'defer' 		: '', 
 		}; 
@@ -49,13 +49,20 @@ class ComponentSpoyler {
 				htmlTitle = objData.title;
 		}
 
+
+
+		let htmlBody = '';
+		if ( objData.tf ) 		// відкритий спойлер
+			htmlBody = Component( objData.cmp, objData.id );
+
+
  
 		let html = `
 			<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
 				<div class="txt">${ htmlTitle }</div>
 				<div class="pm" title="Розгорнути / згорнути">${ this.pmClose }</div>
 			</div>
-			<div class="body"></div>
+			<div class="body">${ htmlBody }</div>
 		`; 
 
 		return { tagParam, html };  
@@ -67,6 +74,21 @@ class ComponentSpoyler {
 
 
 
+
+
+
+	static hideMenu() { 
+		const fooName = this.name + '.hideMenu()'; 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem );
+
+		//document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+
+		document.querySelector( 'cmp-header .filter' ).innerHTML = '';
+
+
+		document.querySelector( 'cmp-header .nav-menu' ).classList.add( 'unvisible' );
+	}
 
 
 
@@ -149,7 +171,7 @@ class ComponentSpoyler {
 
 
 
-	static openSpoyler( cmp, id ) { 
+	static openSpoyler222( cmp, id ) { 
 		const fooName = this.name + '.openSpoyler()'; 
 
 		//console.log( 'fooName: ', fooName ); 
@@ -186,7 +208,7 @@ class ComponentSpoyler {
 
 
 
-	static closeSpoyler( id ) { 
+	static closeSpoyler222( id ) { 
 		const fooName = this.name + '.closeSpoyler()'; 
 
 		//console.log( 'fooName: ', fooName ); 

@@ -58,11 +58,6 @@ class ComponentWinIndex {
 
 
 
-		//document.querySelector( 'cmp-header .filter' ).innerHTML = this.getHtmlFilter();
-		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
-
-
-
 
 		return { tagParam, html };
 	}

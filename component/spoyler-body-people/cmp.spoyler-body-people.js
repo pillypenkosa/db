@@ -136,46 +136,35 @@ class ComponentSpoylerBodyPeople {
 
 			arrMovies.forEach( k => {
 
-				if ( k.cast && k.cast[ obj.id ] ) {
-
-					arrMoviesGallery.push( k.id );
-
-/*
-					let titleMovie = '';
-					if ( k.title && k.title.ua ) 
-						titleMovie += k.title.ua;
-
-					if ( k.year )
-						titleMovie += ` (${ k.year })`;
-					
-					htmlMovies += `<div class="each-movie" data-id="${ k.id }" title="${ titleMovie }">
-						<img src="img/movies/${ k.id }.jpg" alt="${ titleMovie }">
-					</div>`;
-*/
-					//console.log( k.id );
-				}
+				if ( k.cast && k.cast[ obj.id ] ) 
+					arrMoviesGallery.push( k );
 			});
 
 
 
-			function sortUp( a, b ) {
-				return ( a.year < b.year ) ? 1 : -1; 
-			}
+			//console.log( arrMoviesGallery );
 
+
+
+
+
+			// функція сортування об'єктів по року
+			//function sortUp( a, b ) { return ( a.year > b.year ) ? 1 : -1; }
+			function sortUp( a, b ) { return a.year - b.year; }
 
 
 			arrMoviesGallery.sort( sortUp );
 
-
-
-
+			arrMoviesGallery = arrMoviesGallery.map( k => {
+				return k.id;
+			});
 
 
 
 			//console.log( 'arrMoviesGallery: ', arrMoviesGallery );
 
 			if ( arrMoviesGallery.length )
-				htmlMovies = `${ Component( 'Gallery-Movies', arrMoviesGallery ) }`;
+				htmlMovies = Component( 'Gallery-Movies', arrMoviesGallery );
 
 
 
@@ -262,19 +251,40 @@ class ComponentSpoylerBodyPeople {
 
 
 
+
+			let htmlInternet = '';
 			if ( obj.internet ) {
 
-				if ( obj.internet.imdb ) 
+				if ( obj.internet.imdb ) {
+
+					htmlInternet += `<a href="https://www.imdb.com/name/nm${ obj.internet.imdb }/" target="_blank">
+						<img src="img/pic/logo_IMDb.png" alt="IMDb">
+					</a>`;
+
 					arrTKV.push( { key: 'internet.imdb', val: obj.internet.imdb, id: 'people', } );
+				}
 
-				if ( obj.internet.wiki_ua ) 
+				if ( obj.internet.wiki_ua ) {
+
+					htmlInternet += `<a href="https://uk.wikipedia.org/wiki/${ obj.internet.wiki_ua }" target="_blank" title="WikiUa">
+						<img src="img/pic/logo_wiki_ua.png" alt="WikiUa">
+					</a>`;
+
 					arrTKV.push( { key: 'internet.wiki_ua', val: obj.internet.wiki_ua, } );
+				}
 
-				if ( obj.internet.wiki_ru ) 
+				if ( obj.internet.wiki_ru ) {
+
+					htmlInternet += `<a href="https://ru.wikipedia.org/wiki/${ obj.internet.wiki_ru }" target="_blank" title="WikiRu">
+						<img src="img/pic/logo_wiki_ru.png" alt="WikiRu">
+					</a>`;
+
 					arrTKV.push( { key: 'internet.wiki_ru', val: obj.internet.wiki_ru, } );
+				}
 			}
 
-
+			if ( htmlInternet )
+				htmlInternet = `<div class="img-internet">${ htmlInternet }</div>`;
 
 
 
@@ -306,19 +316,15 @@ class ComponentSpoylerBodyPeople {
 					${ htmlDate }
 					${ htmlAva }
 					${ htmlGalery }
+					${ htmlInternet }
 				</div>
 
 				${ htmlMovies }
 
-
-
-
-
-			<div class="tkv-object">
-				<button onclick="${ this.name }.showTKV( this )">Object</button>
-				<div class="body-tkv unvisible">${ htmlTKV }</div>
-			</div>
-
+				<div class="tkv-object">
+					<button onclick="${ this.name }.showTKV( this )">Object</button>
+					<div class="body-tkv unvisible">${ htmlTKV }</div>
+				</div>
 			</div>`;
 		}
 
@@ -334,7 +340,7 @@ class ComponentSpoylerBodyPeople {
 
 
 	static showTKV( elem ) { 
-		const fooName = this.name + '.showKeyValObject()'; 
+		const fooName = this.name + '.showTKV()'; 
  
 		//console.log( 'fooName: ', fooName ); 
 		//console.log( 'elem: ', elem ); 
@@ -345,84 +351,6 @@ class ComponentSpoylerBodyPeople {
 
 
 
-
-
-
-
-
-
-
-
-	static showKeyValObject222( elem ) { 
-		const fooName = this.name + '.showKeyValObject()'; 
- 
-		console.log( 'fooName: ', fooName ); 
-		console.log( 'elem', elem ); 
-
-
-		let elemParent = elem.closest( 'cmp-spoyler-body-people' );
-		console.log( 'elemParent', elemParent ); 
-
-
-
-		let id = elem.dataset.id;
-
-
-
-		//elemParent.querySelector( '.key-val-object' ).innerHTML = this.getHtmlKeyValObject( id );
-
-		if ( elemParent.querySelector( '.key-val-object' ).innerHTML )
-			elemParent.querySelector( '.key-val-object' ).innerHTML = '';
-
-		else
-			elemParent.querySelector( '.key-val-object' ).innerHTML = this.getHtmlKeyValObject( id );
-
-	} 
- 
-
-
-
-
-	static getHtmlKeyValObject222( id ) {
-
-		const fooName = this.name + '.getHtmlKeyValObject()'; 
- 
-		console.log( 'fooName: ', fooName ); 
-		console.log( 'id', id ); 
-
-
-		let html = '';
-		if ( objPeople ) {
-
-			if ( objPeople[ id ] ) {
-
-				let obj = objPeople[ id ];
-
-				let htmlTBody = '';
-
-
-
-
-
-
-				if ( obj.img ) {
-
-					htmlTBody += `<tr>
-						<td class="key">img</td>
-						<td class="val">${ obj.img[ 0 ] }, ${ obj.img[ 1 ] }</td>
-					</tr>`;
-				}
-
-
-
-
-
-				html = `<table class="table-key-val">${ htmlTBody }</table>`;	
-			}
-		}
-
-		return html;
-	}
 
 
 
@@ -448,28 +376,6 @@ class ComponentSpoylerBodyPeople {
 		//elemParent.querySelector( '.poster' ).innerHTML = `<img src="img/people/${ elem.dataset.img }.jpg" alt="">`;
 		
 		elemParent.querySelector( 'img.avatar' ).src = `img/people/${ elem.dataset.img }.jpg`;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

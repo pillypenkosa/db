@@ -38,7 +38,7 @@ class ComponentWinPeople {
 
 
 		//document.querySelector( 'cmp-header .filter' ).innerHTML = this.getHtmlFilter();
-		document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
+		//document.querySelector( 'cmp-header .filter' ).classList.add( 'unvisible' );
 
 
 		setMeta({
@@ -63,23 +63,63 @@ class ComponentWinPeople {
 
 		if ( objData ) {
 
+			let tfOpenCloseSpoyler = false; 	 	// true - відкритий 	// false або відсутній як такий - закритий
+
 
 			let arrSelected = arrPeople;
 
 
-			if ( objData.id ) 
+			if ( objData.id ) {
 				arrSelected = arrSelected.filter( k => k.id == objData.id );
+				tfOpenCloseSpoyler = true;
+			}
+
+
+
+
+			if ( objData.sex ) {
+				arrSelected = arrSelected.filter( k => {
+
+					if ( objData.sex == 'man' && k.sex )
+						return true;
+
+					if ( objData.sex == 'woman' && !k.sex )
+						return true;
+				});
+			}
+
+
+
+
+
+			if ( objData.year ) {
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.life && k.life.by && k.life.by == objData.year )
+						return true;
+				});
+			}
+
+
+
+
+			if ( objData.country ) {
+				arrSelected = arrSelected.filter( k => {
+					if ( k.country && k.country[ objData.country ] )
+						return true;
+				});
+			}
 
 
 
 
 			arrSelected.forEach( k => {
-
 				html += `${ 
 					Component( 'Spoyler', { 
 						id 		: k.id, 
 						title 	: `${ k.name.n ? k.name.n : '' } ${ k.name.s ? k.name.s : '' }`, 
 						cmp 	: 'Spoyler-Body-People', // для вставки в body спойлера
+						tf 		: tfOpenCloseSpoyler,
 					})}`;
 			});
 		}
@@ -121,22 +161,83 @@ class ComponentWinPeople {
 
 
 
- 	static getHtmlFilter( elem ) { 
-		const fooName = this.name + '.clcSpoyler()'; 
+	static getHtmlFilter() { 
+		const fooName = this.name + '.getHtmlFilter()'; 
  
 		//console.log( 'fooName: ', fooName ); 
-		//console.log( 'elem:', elem ); 
-
-		let html = ''; 
-
-
-
-
-
-
-		return html; 
-	}
+		//console.log( 'elem: ', elem ); 
  
+/*
+		let objYears = {};
+		let arrYears = [];
+
+		arrMovies.forEach( k => {
+
+			if ( k.year )
+				objYears[ '_' + k.year ] = 1;
+		});
+
+		for ( let k in objYears ) 
+			arrYears.push( +k.slice( 1 ) );
+		
+		arrYears.sort().reverse();
+
+
+		//console.log( 'arrYears: ', arrYears ); 
+		//console.log( 'objYears: ', objYears ); 
+
+*/
+
+
+
+		const arrFilter = [
+
+			{ win: 'people' 	, cat: 'select' 	, key: 'sex' 		, clc: '' 	, arr: [] 			, },
+			{ win: 'people' 	, cat: 'select' 	, key: 'year' 		, clc: '' 	, arr: [] 			, },
+			{ win: 'people' 	, cat: 'select' 	, key: 'country' 	, clc: '' 	, arr: [] 			, },
+
+		];
+
+
+
+
+
+
+		let html = Component( 'Filter', arrFilter );
+
+
+
+		return html;
+
+
+
+
+
+
+		//document.querySelector( 'cmp-header .filter' ).innerHTML = Component( 'Filter-Movies', arrFilter );
+	} 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 } 
  

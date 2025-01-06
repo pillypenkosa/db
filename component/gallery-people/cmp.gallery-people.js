@@ -31,13 +31,28 @@ class ComponentGalleryPeople {
  
  
 		let html = ''; 
- 		let arr = objData;
+ 		let arr = objData.arr;
+ 		//let year = objData.year;
+
+
 
  		arr.forEach( k => {
  			if ( objPeople && objPeople[ k ] ) {
 
  				let obj 	= objPeople[ k ];
  				let name 	= '';
+
+
+ 				console.log( objData );
+ 				console.log( obj.life.by );
+
+
+
+ 				let age = 0;
+ 				if ( obj.life && obj.life.bd ) 
+ 					age = objData.year - obj.life.by;
+ 				
+
 
  				if ( obj.name ) {
  					if ( obj.name.n ) 
@@ -48,9 +63,12 @@ class ComponentGalleryPeople {
 
  					if ( obj.name.s ) 
  						name += ' ' + obj.name.s;
+
+ 					age
+
  				}
 
- 				html += `<div class="each-gallery pointer" title="${ name }" data-id="${ obj.id }" onclick="${ this.name }.clc( this )">
+ 				html += `<div class="each-gallery pointer" title="${ name } (~${ age })" data-id="${ obj.id }" onclick="${ this.name }.clc( this )">
  					<img src="img/people/${ obj.id }/1.jpg" alt="${ name }">
  				</div>`;
  			}
@@ -69,8 +87,8 @@ class ComponentGalleryPeople {
 	static clc( elem ) { 
 		const fooName = this.name + '.clc()'; 
  
-		console.log( 'fooName: ', fooName ); 
-		console.log( 'elem: ', elem ); 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
  
 
 		let id = elem.dataset.id;

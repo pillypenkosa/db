@@ -31,17 +31,19 @@ class ComponentSpoylerBodyCountry {
  
  
  
-		console.log( 'objData: ', objData ); 
+		//console.log( 'objData: ', objData ); 
 
 		let id = objData;
 
 		let html = ''; 
+		let htmlSymbol = '';
+
 		if ( objCountry && objCountry[ id ] ) {
 
 			let obj = objCountry[ id ];
 
 
-			console.log( obj ); 
+			//console.log( obj ); 
 
 
 			let arr = [];
@@ -103,16 +105,40 @@ class ComponentSpoylerBodyCountry {
 							val: obj.internet[ k ], 
 						});
 				}
-			}
 
 
-			html = Component( 'Table-Key-Val', arr );
+
+				if ( obj.not_exist )	
+					arr.push( { key: 'not_exist', val: obj.not_exist, } );
+
+
+
+
+
+
+				
+				if ( obj.symbol ) {
+
+					if ( obj.symbol.flag ) 
+						htmlSymbol += `<img class="flag" src="img/pic/country/${ obj.id }_flag.png" alt="Флаг" title="Флаг">`;
+					
+					if ( obj.symbol.coa ) 
+						htmlSymbol += `<img class="coa" src="img/pic/country/${ obj.id }_coatarms.png" alt="Герб" title="Герб">`;
+				}
+
+				if ( htmlSymbol )
+					htmlSymbol = `<div class="symbol center">${ htmlSymbol }</div>`;
+			}	
+
+
+
+			html = `
+				${ htmlSymbol }
+				<div class="tvk">
+					${ Component( 'Table-Key-Val', arr ) }
+				</div>
+			`;
 		}
-
-
-
-
-
 
 
 

@@ -28,6 +28,7 @@ const dependences = [
 	{ arr: 'country'			, },  
 	{ arr: 'people'				, },  
 	{ arr: 'movies'				, },  
+	{ arr: 'movies.hash'		, },  
 
 
 
@@ -43,6 +44,10 @@ const dependences = [
 
 	//{ cmp: 'Filter-People' 					, },
 
+
+
+
+	{ cmp: 'Filter' 						, },
 
 	{ cmp: 'Gallery-Movies' 				, },
 	{ cmp: 'Gallery-People' 				, },

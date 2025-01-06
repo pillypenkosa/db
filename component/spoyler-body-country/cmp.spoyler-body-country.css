@@ -1,6 +1,20 @@
 cmp-spoyler-body-country {
 
 } 
+	cmp-spoyler-body-country .symbol {
+		margin: 10px 0 50px 0;
+	}
+		cmp-spoyler-body-country .symbol img {
+			margin: 5px;
+		}
+			cmp-spoyler-body-country .symbol img.flag {
+				width: 200px;
+			}
+			cmp-spoyler-body-country .symbol img.coa {
+				height: 200px;
+			}
+
+
 
 
 

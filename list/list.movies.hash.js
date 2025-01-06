@@ -2,11 +2,11 @@
 
 
 
-const arrHashTags = [
+const arrMoviesHash = [
 
 
 
-	{ id: '-' 				, title: '--- --- ЛЮДИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ЛЮДИ ---' 		, app: { movies: 1, }, },
 	{ id: 'fight' 			, title: 'бійці' 						, app: { movies: 1, }, }, // бойові мистецтва
 	{ id: 'genius' 			, title: 'генії' 						, app: { movies: 1, }, },
 	{ id: 'truckers' 		, title: 'далекобійники' 				, app: { movies: 1, }, },
@@ -32,7 +32,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ТВАРИНИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ТВАРИНИ ---' 		, app: { movies: 1, }, },
 	{ id: 'animal' 			, title: 'тварини' 						, app: { movies: 1, }, },
 	{ id: 'shark' 			, title: 'акули' 						, app: { movies: 1, }, },
 	{ id: 'groundhog' 		, title: 'бабак' 						, app: { movies: 1, }, }, // в стилі Дня Бабака
@@ -46,7 +46,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ІСТОТИ --- ---' 				, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ІСТОТИ ---' 				, app: { movies: 1, }, },
 	{ id: 'creature' 		, title: 'істоти' 								, app: { movies: 1, }, },
 	{ id: 'vampire' 		, title: 'вампіри' 								, app: { movies: 1, }, }, 
 	{ id: 'dragon' 			, title: 'дракони' 								, app: { movies: 1, }, },
@@ -56,7 +56,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ПАРАЛЕЛЬНИЙ СВІТ --- ---' 	, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ПАРАЛЕЛЬНИЙ СВІТ ---' 	, app: { movies: 1, }, },
 	{ id: 'witch' 			, title: 'відьми' 								, app: { movies: 1, }, },
 	{ id: 'bodyChange' 		, title: 'обмінТілами' 							, app: { movies: 1, }, }, // театр одного актора
 	{ id: 'souls' 			, title: 'переселенняДуш' 						, app: { movies: 1, }, }, 
@@ -64,7 +64,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ВІЙНА --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ВІЙНА ---' 		, app: { movies: 1, }, },
 	{ id: 'army' 			, title: 'армія' 						, app: { movies: 1, }, },
 	{ id: 'battle' 			, title: 'битва' 						, app: { movies: 1, }, },
 	{ id: 'war' 			, title: 'війна' 						, app: { movies: 1, }, }, 
@@ -74,7 +74,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ГЕОГРАФІЯ --- ---' 	, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ГЕОГРАФІЯ ---' 	, app: { movies: 1, }, },
 	{ id: 'mountains' 		, title: 'гори' 						, app: { movies: 1, }, },
 	{ id: 'jungle' 			, title: 'джунглі' 						, app: { movies: 1, }, }, 
 	{ id: 'road' 			, title: 'дорога' 						, app: { movies: 1, }, },
@@ -92,19 +92,19 @@ const arrHashTags = [
 	
 
 
-	{ id: '-' 				, title: '--- --- ДАТИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ДАТИ ---' 		, app: { movies: 1, }, },
 	{ id: 'new_year' 		, title: 'новийРік' 					, app: { movies: 1, }, },
 
 
 
-	{ id: '-' 				, title: '--- --- КОСМОС --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- КОСМОС ---' 		, app: { movies: 1, }, },
 	{ id: 'space' 			, title: 'космос' 						, app: { movies: 1, }, },
 	{ id: 'aliens' 			, title: 'інопланетяни' 				, app: { movies: 1, }, },
 	{ id: 'planet' 			, title: 'планети' 						, app: { movies: 1, }, }, // події на інших планетах
 	
 
 
-	{ id: '-' 				, title: '--- --- КРИМІНАЛ --- ---' 	, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- КРИМІНАЛ ---' 	, app: { movies: 1, }, },
 	{ id: 'bomb' 			, title: 'бомба' 						, app: { movies: 1, }, },
 	{ id: 'escape' 			, title: 'втеча' 						, app: { movies: 1, }, }, 
 	{ id: 'prison' 			, title: 'в\'язниця' 					, app: { movies: 1, }, },
@@ -123,8 +123,7 @@ const arrHashTags = [
 
 
 
-
-	{ id: '-' 				, title: '--- --- ЗАГРОЗА --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ЗАГРОЗА ---' 		, app: { movies: 1, }, },
 	{ id: 'surviving' 		, title: 'виживання' 					, app: { movies: 1, }, }, // подорожі у часі
 	{ id: 'virus' 			, title: 'вірус' 						, app: { movies: 1, }, },
 	{ id: 'quest' 			, title: 'квест' 						, app: { movies: 1, }, },
@@ -133,7 +132,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- СВІТИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- СВІТИ ---' 		, app: { movies: 1, }, },
 	{ id: 'apocalypse' 		, title: 'апокаліпсис' 					, app: { movies: 1, }, },
 	{ id: 'future' 			, title: 'майбутнє' 					, app: { movies: 1, }, },
 	{ id: 'real' 			, title: 'наРеальнихПодіях' 			, app: { movies: 1, }, }, // засновано на реальних подіях
@@ -145,7 +144,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- СПОРТ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- СПОРТ ---' 		, app: { movies: 1, }, },
 	{ id: 'sport' 			, title: 'спорт' 						, app: { movies: 1, }, },
 	{ id: 'armwrestling' 	, title: 'армрестлінг' 					, app: { movies: 1, }, },
 	{ id: 'fight' 			, title: 'бійці' 						, app: { movies: 1, }, }, // бойові мистецтва
@@ -157,7 +156,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- СПОРУДИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- СПОРУДИ ---' 		, app: { movies: 1, }, },
 	{ id: 'airport' 		, title: 'aеропорт' 					, app: { movies: 1, }, }, // досліди в лабораторіях
 	{ id: 'bank' 			, title: 'банк' 						, app: { movies: 1, }, },
 	{ id: 'biomedlab' 		, title: 'біомедлаб' 					, app: { movies: 1, }, }, // досліди в лабораторіях
@@ -166,8 +165,7 @@ const arrHashTags = [
 	
 	
 
-
-	{ id: '-' 				, title: '--- --- СФЕРИ --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- СФЕРИ ---' 		, app: { movies: 1, }, },
 	{ id: 'air' 			, title: 'авіація' 						, app: { movies: 1, }, },
 	{ id: 'medicine' 		, title: 'медицина' 					, app: { movies: 1, }, },
 	{ id: 'fashion' 		, title: 'мода' 						, app: { movies: 1, }, },
@@ -177,9 +175,7 @@ const arrHashTags = [
 
 
 
-
-
-	{ id: '-' 				, title: '--- --- ТЕХНО --- ---' 		, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ТЕХНО ---' 		, app: { movies: 1, }, },
 	{ id: 'techno' 			, title: 'техно' 						, app: { movies: 1, }, }, // технології
 	{ id: 'cyber' 			, title: 'кібер' 						, app: { movies: 1, }, },
 	{ id: 'robot' 			, title: 'роботи' 						, app: { movies: 1, }, },
@@ -188,7 +184,7 @@ const arrHashTags = [
 
 
 
-	{ id: '-' 				, title: '--- --- ТРАНСПОРТ --- ---' 	, app: { movies: 1, }, },
+	{ id: '-' 				, title: '--- ТРАНСПОРТ ---' 	, app: { movies: 1, }, },
 	{ id: 'bus' 			, title: 'автобус' 						, app: { movies: 1, }, },
 	{ id: 'helicopter' 		, title: 'гелікоптер' 					, app: { movies: 1, }, },
 	{ id: 'ship' 			, title: 'кораблі' 						, app: { movies: 1, }, },
@@ -220,9 +216,9 @@ const arrHashTags = [
 
 
 
-let objHashTags = {};
-arrHashTags.forEach( k => {
-	objHashTags[ k.id ] = k;
+let objMoviesHash = {};
+arrMoviesHash.forEach( k => {
+	objMoviesHash [ k.id ] = k;
 });
 
 

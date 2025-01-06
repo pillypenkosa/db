@@ -42,37 +42,44 @@ class ComponentTableKeyVal {
 			//let htmlKey = '';
 			let htmlVal = k.val;
 
+			if ( k.key == 'internet.official' ) 
+				htmlVal = `<a href="${ k.val }" target="_blank">Official${ htmlHrefSign }</a>`;
+			
+
 
 			if ( k.key == 'internet.imdb' ) {
 				if ( k.id == 'people' )
 					htmlVal = `<a href="https://www.imdb.com/name/nm${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
 
-/*
 				if ( k.id == 'movies' )
-					htmlVal = `<a href="https://www.imdb.com/name/nm${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
-*/
-
-
-
-
+					htmlVal = `<a href="https://www.imdb.com/title/tt${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
 			}
 
 
 
-			if ( k.key == 'internet.official' ) 
-				htmlVal = `<a href="${ k.val }" target="_blank">Official${ htmlHrefSign }</a>`;
-			
-			if ( k.key == 'internet.avtopro' ) 
-				htmlVal = `<a href="https://avtopro.ua/makers/${ k.val }" target="_blank">AvtoPro${ htmlHrefSign }</a>`;
-			
 			if ( k.key == 'internet.wiki_ua' ) 
 				htmlVal = `<a href="https://uk.wikipedia.org/wiki/${ k.val }" target="_blank">WikiUa${ htmlHrefSign }</a>`;
 			
+
+
 			if ( k.key == 'internet.wiki_ru' ) 
 				htmlVal = `<a href="https://ru.wikipedia.org/wiki/${ k.val }" target="_blank">WikiRu${ htmlHrefSign }</a>`;
 			
 
 
+			if ( k.key == 'internet.avtopro' ) 
+				htmlVal = `<a href="https://avtopro.ua/makers/${ k.val }" target="_blank">AvtoPro${ htmlHrefSign }</a>`;
+			
+
+
+			if ( k.key == 'internet.hd_vip' ) 
+				htmlVal = `<a href="https://ashdi.vip/vod/${ k.val }" target="_blank">HDvip${ htmlHrefSign }</a>`;
+			
+
+
+			if ( k.key == 'internet.auliki7' ) 
+				htmlVal = `<a href="http://auliki7.xyz/stream.php?name=films/${ k.val }.mp4" target="_blank">Auliki7${ htmlHrefSign }</a>`;
+			
 
 
 

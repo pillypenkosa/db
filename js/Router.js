@@ -98,8 +98,13 @@ class Router {
 
 			win 		: 1,
 			country 	: 1,
+			genre 		: 1,
 			id 			: 1,
 			hash 		: 1,
+			letter 		: 1,
+			part 		: 1,
+			sex 		: 1,
+			year 		: 1,
 
 		};
 

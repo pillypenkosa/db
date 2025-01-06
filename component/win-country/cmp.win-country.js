@@ -43,12 +43,26 @@ class ComponentWinCountry {
  
  
 
+		let arrSelected = arrCountry;
+
+
+		if ( objData.part ) {
+
+			//console.log( objData.genre );
+			arrSelected = arrSelected.filter( k => {
+
+				if ( k.geo && k.geo.part && k.geo.part == objData.part )
+					return true;
+			});
+		}
 
 
 
 
 
-		arrCountry.forEach( k => {
+
+
+		arrSelected.forEach( k => {
 			html += `${ 
 				Component( 'Spoyler', { 
 					id 		: k.id, 
@@ -61,15 +75,43 @@ class ComponentWinCountry {
 
 
 
-
-
- 
- 
 		return { tagParam, html };  
 	} 
  
  
  
+
+
+
+
+ 
+	static getHtmlFilter( data ) { 
+		const fooName = this.name + '.getHtmlFilter()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'data: ', data ); 
+ 
+
+
+
+		const arrFilter = [
+
+			{ win: 'countries' 	, cat: 'select' 	, key: 'part' 		, clc: '' 	, arr: [] 			, },
+
+		];
+
+
+		return Component( 'Filter', arrFilter );
+	} 
+ 
+ 
+
+
+
+
+
+
+
  
  
 	static clc( data ) { 
