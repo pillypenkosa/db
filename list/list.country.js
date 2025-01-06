@@ -93,6 +93,9 @@ not_exist - не существует
 */
 
 
+// пропорції флагів
+// https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%86%D0%B8%D0%B8_%D1%84%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2
+
 
 
 
@@ -106,9 +109,13 @@ not_exist - не существует
 	independence_day: { dm: '2601', descr: 'state', wiki_ua: '', },
 	population: { count: 25250000, year: 2019, },
 	area: 7688287,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'aut', symbol: { flag: 1, coa: 1, },
+	id: 'aut', 
 	title: { ua: 'Австрія', en: 'Austria', },
 	geo: { capital: 'wien', part: 'europe', },
 	code: { iso: '040', iso2: 'at', iso3: 'AUT', ean: '90-91', phone: '+43', },
@@ -116,6 +123,10 @@ not_exist - не существует
 	independence_day: { dm: '2610', descr: 'decl', note: 'Декларация о нейтралитете', },
 	population: { count: 8857960, year: 2018, },
 	area: 83871,
+	symbol: { 
+		coa: { bird: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'aze',
@@ -126,14 +137,22 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 9981457, year: 2019, },
 	area: 86600,
+	symbol: { 
+		coa: { circle: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'alb', symbol: { flag: 1, coa: 1, },
+	id: 'alb', 
 	title: { ua: 'Албанія', en: 'Albania', },
 	geo: { capital: 'tirana', part: 'europe', },
 	code: { iso: '008', iso2: 'al', iso3: 'ALB', ean: '530', phone: '+355', },
 	internet: { wiki_ua: '%D0%90%D0%BB%D0%B1%D0%B0%D0%BD%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { bird: 1, shield: 1, },
+		flag: { _5x7: 1, }, 
+	},
 },
 {
 	id: 'dza',
@@ -142,6 +161,10 @@ not_exist - не существует
 	code: { iso: '012', iso2: 'dz', iso3: 'DZA', ean: '613', phone: '+213', },
 	internet: { wiki_ua: '%D0%90%D0%BB%D0%B6%D0%B8%D1%80', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { circle: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'ago',
@@ -150,6 +173,10 @@ not_exist - не существует
 	code: { iso: '024', iso2: 'ao', iso3: 'AGO', ean: '', phone: '+244', },
 	internet: { wiki_ua: '%D0%90%D0%BD%D0%B3%D0%BE%D0%BB%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { wreath: 1, star: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'and', symbol: { flag: 1, coa: 1, },
@@ -212,7 +239,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'bel', symbol: { flag: 1, coa: 1, },
+	id: 'bel', 
 	title: { ua: 'Бельгія', en: 'Belgium', },
 	geo: { capital: 'brussels', part: 'europe', },
 	code: { iso: '056', iso2: 'be', iso3: 'BEL', ean: '54', phone: '+32', },
@@ -220,6 +247,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 11481000, year: 2019, },
 	area: 32547,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _13x15: 1, }, 
+	},
 },
 {
 	id: 'ben',
@@ -230,7 +261,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'blr', symbol: { flag: 1, coa: 1, },
+	id: 'blr', 
 	title: { ua: 'Білорусь', en: 'Belarus', },
 	geo: { capital: 'minsk', part: 'europe', },
 	code: { iso: '112', iso2: 'by', iso3: 'BLR', ean: '481', phone: '+375', },
@@ -238,14 +269,22 @@ not_exist - не существует
 	independence_day: { dm: '0307', descr: '', note: '', wiki_ua: '', },
 	population: { count: 9475600, year: 2019, },
 	area: 207600,
+	symbol: { 
+		coa: { wreath: 1, star: 1, }, // wreath - венок 
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'bgr', symbol: { flag: 1, coa: 1, },
+	id: 'bgr', 
 	title: { ua: 'Болгарія', en: 'Bulgaria', },
 	geo: { capital: 'sofia', part: 'europe', },
 	code: { iso: '100', iso2: 'bg', iso3: 'BGR', ean: '380', phone: '+359', },
 	internet: { wiki_ua: '%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _3x5: 1, }, 
+	},
 },
 {
 	id: 'bol',
@@ -256,12 +295,16 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'bih', symbol: { flag: 1, coa: 1, },
+	id: 'bih', yug: 1,
 	title: { ua: 'Боснія і Герцеговина', en: 'Bosnia and Herzegovina', },
 	geo: { capital: 'sarajevo', part: 'europe', },
 	code: { iso: '070', iso2: 'ba', iso3: 'BIH', ean: '387', phone: '+387', },
 	internet: { wiki_ua: '%D0%91%D0%BE%D1%81%D0%BD%D1%96%D1%8F_%D1%96_%D0%93%D0%B5%D1%80%D1%86%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'bwa',
@@ -298,7 +341,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'vat', symbol: { flag: 1, coa: 1, },
+	id: 'vat', 
 	title: { ua: 'Ватикан', en: 'Vatican', },
 	geo: { part: 'europe', },
 	code: { iso: '336', iso2: 'va', iso3: 'VAT', ean: '', phone: '+39,+379', },
@@ -306,9 +349,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 800, year: 2007, },
 	area: 0.521,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x1: 1, }, 
+	},
 },
 {
-	id: 'gbr', symbol: { flag: 1, coa: 1, },
+	id: 'gbr', 
 	title: { ua: 'Велика Британія', en: 'United Kingdom', },
 	geo: { capital: 'london', part: 'europe', },
 	code: { iso: '826', iso2: 'gb', iso3: 'GBR', ean: '50', phone: '+44', },
@@ -316,6 +363,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 67791400, year: 2022, },
 	area: 242495,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'ven',
@@ -410,12 +461,16 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'gib', symbol: { flag: 1, coa: 1, },
+	id: 'gib', 
 	title: { ua: 'Гібралтар', en: 'Gibraltar', },
 	geo: { capital: '', part: 'europe', },
 	code: { iso: '', iso2: 'gi', iso3: 'GIB', ean: '', phone: '+350', },
 	internet: { wiki_ua: '%D0%93%D1%96%D0%B1%D1%80%D0%B0%D0%BB%D1%82%D0%B0%D1%80', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'hnd',
@@ -444,7 +499,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'grc', symbol: { flag: 1, coa: 1, },
+	id: 'grc', 
 	title: { ua: 'Греція', en: 'Greece', },
 	geo: { capital: 'athens', part: 'europe', },
 	code: { iso: '300', iso2: 'gr', iso3: 'GRC', ean: '520', phone: '+30', },
@@ -452,9 +507,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 10768477, year: 2017, },
 	area: 131957,
+	symbol: { 
+		coa: { wreath: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'geo', symbol: { flag: 1, coa: 1, },
+	id: 'geo', 
 	title: { ua: 'Грузія', en: 'Georgia', },
 	geo: { capital: 'tbilisi', part: 'europe', },
 	code: { iso: '268', iso2: 'ge', iso3: 'GEO', ean: '486', phone: '+995', },
@@ -462,9 +521,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 3729500, year: 2015, },
 	area: 69700,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'dnk', symbol: { flag: 1, coa: 1, },
+	id: 'dnk', 
 	title: { ua: 'Данія', en: 'Denmark', },
 	geo: { capital: 'copenhagen', part: 'europe', },
 	code: { iso: '208', iso2: 'dk', iso3: 'DNK', ean: '57', phone: '+45', },
@@ -472,6 +535,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 5792202, year: 2020, },
 	area: 43094,
+	symbol: { 
+		coa: { crown_shield: 1, },
+		flag: { _28x37: 1, },
+	},
 },
 {
 	id: 'dji',
@@ -520,7 +587,7 @@ not_exist - не существует
 	area: 117600,
 },
 {
-	id: 'est', symbol: { flag: 1, coa: 1, },
+	id: 'est', 
 	title: { ua: 'Естонія', en: 'Estonia', },
 	geo: { capital: 'tallinn', part: 'europe', },
 	code: { iso: '233', iso2: 'ee', iso3: 'EST', ean: '474', phone: '+372', },
@@ -528,6 +595,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 1340194, year: 2010, },
 	area: 45226,
+	symbol: { 
+		coa: 1, 
+		flag: { _7x11: 1, }, 
+	},
 },
 {
 	id: 'eth',
@@ -620,23 +691,31 @@ not_exist - не существует
 	area: 1648195,
 },
 {
-	id: 'irl', symbol: { flag: 1, coa: 1, },
+	id: 'irl', 
 	title: { ua: 'Ірландія', en: 'Ireland', },
 	geo: { capital: 'dublin', part: 'europe', },
 	code: { iso: '372', iso2: 'ie', iso3: 'IRL', ean: '539', phone: '+353', },
 	internet: { wiki_ua: '%D0%86%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'isl', symbol: { flag: 1, coa: 1, },
+	id: 'isl', 
 	title: { ua: 'Ісландія', en: 'Iceland', },
 	geo: { capital: 'reykjavik', part: 'europe', },
 	code: { iso: '', iso2: 'is', iso3: 'ISL', ean: '569', phone: '+354', },
 	internet: { wiki_ua: '%D0%86%D1%81%D0%BB%D0%B0%D0%BD%D0%B4%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _18x25: 1, }, 
+	},
 },
 {
-	id: 'esp', symbol: { flag: 1, coa: 1, },
+	id: 'esp', 
 	title: { ua: 'Іспанія', en: 'Spain', },
 	geo: { capital: 'madrid', part: 'europe', },
 	code: { iso: '724', iso2: 'es', iso3: 'ESP', ean: '84', phone: '+34', },
@@ -644,9 +723,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 47500000, year: 2021, },
 	area: 504645,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'ita', symbol: { flag: 1, coa: 1, },
+	id: 'ita', 
 	title: { ua: 'Італія', en: 'Italy', },
 	geo: { capital: 'rome', part: 'europe', },
 	code: { iso: '380', iso2: 'it', iso3: 'ITA', ean: '80-83', phone: '+39', },
@@ -654,6 +737,10 @@ not_exist - не существует
 	independence_day: { dm: '0206', descr: '', note: 'День проголошення', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%8C_%D0%BF%D1%80%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D1%88%D0%B5%D0%BD%D0%BD%D1%8F_%D0%86%D1%82%D0%B0%D0%BB%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA%D0%B8', },
 	population: { count: 60588306, year: 2019, },
 	area: 301338,
+	symbol: { 
+		coa: { wreath: 1, star: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'jor',
@@ -699,6 +786,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 37067011, year: 2018, },
 	area: 9984670,	
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'qat',
@@ -803,6 +894,11 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 11239004, year: 2015, },
 	area: 110861,
+	symbol: { 
+		//coa: { shield: 1, },
+		coa: {},
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'kwt',
@@ -821,7 +917,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'lva', symbol: { flag: 1, coa: 1, },
+	id: 'lva', 
 	title: { ua: 'Латвія', en: 'Latvia', },
 	geo: { capital: 'riga', part: 'europe', },
 	code: { iso: '428', iso2: 'lv', iso3: 'LVA', ean: '475', phone: '+371', },
@@ -829,6 +925,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 1907675, year: 2020, },
 	area: 64589,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'lso',
@@ -839,7 +939,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'ltu', symbol: { flag: 1, coa: 1, },
+	id: 'ltu', 
 	title: { ua: 'Литва', en: 'Lithuania', },
 	geo: { capital: 'vilnius', part: 'europe', },
 	code: { iso: '440', iso2: 'lt', iso3: 'LTU', ean: '477', phone: '+370', },
@@ -847,6 +947,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 2784279, year: 2021, },
 	area: 65300,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _3x5: 1, }, 
+	},
 },
 {
 	id: 'lbr',
@@ -875,7 +979,7 @@ not_exist - не существует
 	area: 1759540,
 },
 {
-	id: 'lie', symbol: { flag: 1, coa: 1, },
+	id: 'lie', 
 	title: { ua: 'Ліхтенштейн', en: 'Liechtenstein', },
 	geo: { capital: 'vaduz', part: 'europe', },
 	code: { iso: '438', iso2: 'li', iso3: 'LIE', ean: '', phone: '+423', },
@@ -883,9 +987,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 38896, year: 2020, },
 	area: 160,
+	symbol: { 
+		coa: 1, 
+		flag: { _3x5: 1, }, 
+	},
 },
 {
-	id: 'lux', symbol: { flag: 1, coa: 1, },
+	id: 'lux', 
 	title: { ua: 'Люксембург', en: 'Luxembourg', },
 	geo: { capital: 'luxembourg', part: 'europe', },
 	code: { iso: '442', iso2: 'lu', iso3: 'LUX', ean: '54', phone: '+352', },
@@ -893,6 +1001,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 613900, year: 2019, },
 	area: 2586,
+	symbol: { 
+		coa: 1, 
+		flag: { _3x5: 1, }, 
+	},
 },
 {
 	id: 'mrt',
@@ -915,16 +1027,6 @@ not_exist - не существует
 	area: 587041,
 },
 {
-	id: 'mkd', symbol: { flag: 1, coa: 1, },
-	title: { ua: 'Македонія', en: 'Macedonia', },
-	geo: { capital: 'skopje', part: 'europe', },
-	code: { iso: '807', iso2: 'mk', iso3: 'MKD', ean: '531', phone: '+389', },
-	internet: { wiki_ua: '%D0%9F%D1%96%D0%B2%D0%BD%D1%96%D1%87%D0%BD%D0%B0_%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%96%D1%8F', },
-	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
-	population: { count: 2103721, year: 2017, },
-	area: 25713,
-},
-{
 	id: 'mys',
 	title: { ua: 'Малайзія', en: 'Malaysia', },
 	geo: { capital: 'kuala_lumpur', part: 'asia', },
@@ -945,12 +1047,16 @@ not_exist - не существует
 	area: 1240192,
 },
 {
-	id: 'mlt', symbol: { flag: 1, coa: 1, },
+	id: 'mlt', 
 	title: { ua: 'Мальта', en: 'Malta', },
 	geo: { capital: 'valletta', part: 'europe', },
 	code: { iso: '470', iso2: 'mt', iso3: 'MLT', ean: '535', phone: '+356', },
 	internet: { wiki_ua: '%D0%9C%D0%B0%D0%BB%D1%8C%D1%82%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { crown_shield: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'mar',
@@ -969,6 +1075,10 @@ not_exist - не существует
 	independence_day: { dm: '1609', descr: 'ind', note: '', wiki_ua: '', },
 	population: { count: 126577691, year: 2019, },
 	area: 1972550,
+	symbol: { 
+		coa: { bird: 1, },
+		flag: { _4x7: 1, }, 
+	},
 },
 {
 	id: 'moz',
@@ -977,9 +1087,13 @@ not_exist - не существует
 	code: { iso: '508', iso2: 'mz', iso3: 'MOZ', ean: '', phone: '+258', },
 	internet: { wiki_ua: '%D0%9C%D0%BE%D0%B7%D0%B0%D0%BC%D0%B1%D1%96%D0%BA', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { wreath: 1, star: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'mda', symbol: { flag: 1, coa: 1, },
+	id: 'mda', 
 	title: { ua: 'Молдова', en: 'Moldova', },
 	geo: { capital: 'сhisinau', part: 'europe', },
 	code: { iso: '498', iso2: 'md', iso3: 'MDA', ean: '484', phone: '+373', },
@@ -987,9 +1101,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 4035000, year: 2020, },
 	area: 33843,
+	symbol: { 
+		coa: { bird: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'mco', symbol: { flag: 1, coa: 1, },
+	id: 'mco', 
 	title: { ua: 'Монако', en: 'Monaco', },
 	geo: { capital: '', part: 'europe', },
 	code: { iso: '492', iso2: 'mc', iso3: 'MCO', ean: '', phone: '+377', },
@@ -997,6 +1115,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 38400, year: 2014, },
 	area: 2,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _4x5: 1, }, 
+	},
 },
 {
 	id: 'mng',
@@ -1031,6 +1153,11 @@ not_exist - не существует
 	code: { iso: '524', iso2: 'np', iso3: 'NPL', ean: '', phone: '+977', },
 	internet: { wiki_ua: '%D0%9D%D0%B5%D0%BF%D0%B0%D0%BB', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	area: 147516,
+	symbol: { 
+		coa: { wreath: 1, },
+		flag: { _5x4: 1, }, 
+	},
 },
 {
 	id: 'ner',
@@ -1049,7 +1176,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'nld', symbol: { flag: 1, coa: 1, },
+	id: 'nld', 
 	title: { ua: 'Нідерланди', en: 'Netherlands', },
 	geo: { capital: 'amsterdam', part: 'europe', },
 	code: { iso: '528', iso2: 'nl', iso3: 'NLD', ean: '87', phone: '+31', },
@@ -1057,6 +1184,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 17333790, year: 2019, },
 	area: 41526,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'nic',
@@ -1067,7 +1198,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'deu', symbol: { flag: 1, coa: 1, },
+	id: 'deu', 
 	title: { ua: 'Німеччина', en: 'Germany', },
 	geo: { capital: 'berlin', part: 'europe', },
 	code: { iso: '276', iso2: 'de', iso3: 'DEU', ean: '400-440', phone: '+49', },
@@ -1075,6 +1206,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 83019200, year: 2019, },
 	area: 357578,
+	symbol: { 
+		coa: { bird: 1, shield: 1, },
+		flag: { _3x5: 1, }, 
+	},
 },
 {
 	id: 'nzl',
@@ -1087,7 +1222,7 @@ not_exist - не существует
 	area: 268680,
 },
 {
-	id: 'nor', symbol: { flag: 1, coa: 1, },
+	id: 'nor', 
 	title: { ua: 'Норвегія', en: 'Norway', },
 	geo: { capital: 'oslo', part: 'europe', },
 	code: { iso: '578', iso2: 'no', iso3: 'NOR', ean: '70', phone: '+47', },
@@ -1095,6 +1230,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 5488984, year: 2023, },
 	area: 385207,
+	symbol: { 
+		coa: { crown_shield: 1, },
+		flag: { _8x11: 1, }, 
+	},
 },
 {
 	id: 'are',
@@ -1211,7 +1350,21 @@ not_exist - не существует
 	area: 120540,
 },
 {
-	id: 'pol', symbol: { flag: 1, coa: 1, },
+	id: 'mkd', yug: 1,
+	title: { ua: 'Північна Македонія', en: 'Macedonia', },
+	geo: { capital: 'skopje', part: 'europe', },
+	code: { iso: '807', iso2: 'mk', iso3: 'MKD', ean: '531', phone: '+389', },
+	internet: { wiki_ua: '%D0%9F%D1%96%D0%B2%D0%BD%D1%96%D1%87%D0%BD%D0%B0_%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%96%D1%8F', },
+	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	population: { count: 2103721, year: 2017, },
+	area: 25713,
+	symbol: { 
+		coa: { wreath: 1, },
+		flag: { _1x2: 1, }, 
+	},
+},
+{
+	id: 'pol', 
 	title: { ua: 'Польща', en: 'Poland', },
 	geo: { capital: 'warszawa', part: 'europe', },
 	code: { iso: '616', iso2: 'pl', iso3: 'POL', ean: '590', phone: '+48', },
@@ -1219,14 +1372,22 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 38265000, year: 2020, },
 	area: 312685,
+	symbol: { 
+		coa: { bird: 1, shield: 1, },
+		flag: { _5x8: 1, }, 
+	},
 },
 {
-	id: 'prt', symbol: { flag: 1, coa: 1, },
+	id: 'prt', 
 	title: { ua: 'Португалія', en: 'Portugal', },
 	geo: { capital: 'lisbon', part: 'europe', },
 	code: { iso: '620', iso2: 'pt', iso3: 'PRT', ean: '560', phone: '+351', },
 	internet: { wiki_ua: '%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: 1, 
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'pri',
@@ -1257,7 +1418,7 @@ not_exist - не существует
 	area: 26798,
 },
 {
-	id: 'rou', symbol: { flag: 1, coa: 1, },
+	id: 'rou', 
 	title: { ua: 'Румунія', en: 'Romania', },
 	geo: { capital: 'bucharest', part: 'europe', },
 	code: { iso: '642', iso2: 'ro', iso3: 'ROU', ean: '594', phone: '+40', },
@@ -1265,6 +1426,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 19053815, year: 2022, },
 	area: 238397,
+	symbol: { 
+		coa: { shield: 1, bird: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'slv',
@@ -1281,7 +1446,7 @@ not_exist - не существует
 	title: { ua: 'Самоа', en: 'Samoa', },
 	geo: { capital: 'apia', part: 'oceania', },
 	code: { iso: '882', iso2: 'ws', iso3: 'WSM', ean: '', phone: '+685', },
-	internet: { wiki_ua: '%D0%90%D0%BF%D1%96%D0%B0', },
+	internet: { wiki_ua: '%D0%A1%D0%B0%D0%BC%D0%BE%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 179000, year: 2009, },
 	area: 2831,
@@ -1315,13 +1480,16 @@ not_exist - не существует
 	area: 196723,
 },
 {
-	id: 'srb', symbol: { flag: 1, coa: 1, },
-	yug: 1,
+	id: 'srb', yug: 1,
 	title: { ua: 'Сербія', en: 'Serbia', },
 	geo: { capital: 'belgrade', part: 'europe', },
 	code: { iso: '688', iso2: 'rs', iso3: 'SRB', ean: '', phone: '+381', },
 	internet: { wiki_ua: '%D0%A1%D0%B5%D1%80%D0%B1%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: 1, 
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'syr',
@@ -1342,7 +1510,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'svk', symbol: { flag: 1, coa: 1, },
+	id: 'svk', 
 	title: { ua: 'Словаччина', en: 'Slovakia', },
 	geo: { capital: 'bratislava', part: 'europe', },
 	code: { iso: '703', iso2: 'sk', iso3: 'SVK', ean: '858', phone: '+421', },
@@ -1350,10 +1518,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 5456000, year: 2019, },
 	area: 49036,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'svn', symbol: { flag: 1, coa: 1, },
-	yug: 1,
+	id: 'svn', yug: 1,
 	title: { ua: 'Словенія', en: 'Slovenia', },
 	geo: { capital: 'lublyana', part: 'europe', },
 	code: { iso: '705', iso2: 'si', iso3: 'SVN', ean: '383', phone: '', },
@@ -1361,6 +1532,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 2061085, year: 2017, },
 	area: 20273,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'som',
@@ -1381,6 +1556,10 @@ not_exist - не существует
 	independence_day: { dm: '0407', descr: 'ind', wiki_ua: '', },
 	population: { count: 328915700, year: 2019, },
 	area: 9826675,
+	symbol: { 
+		coa: { bird: 1, },
+		flag: { _10x19: 1, }, 
+	},
 },
 {
 	id: 'sdn',
@@ -1519,12 +1698,16 @@ not_exist - не существует
 	area: 236040,
 },
 {
-	id: 'hun', symbol: { flag: 1, coa: 1, },
+	id: 'hun', 
 	title: { ua: 'Угорщина', en: 'Hungary', },
 	geo: { capital: 'budapest', part: 'europe', },
 	code: { iso: '348', iso2: 'hu', iso3: 'HUN', ean: '599', phone: '+36', },
 	internet: { wiki_ua: '%D0%A3%D0%B3%D0%BE%D1%80%D1%89%D0%B8%D0%BD%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { crown_shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'uzb',
@@ -1535,7 +1718,7 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'ukr', symbol: { flag: 1, coa: 1, },
+	id: 'ukr', 
 	title: { ua: 'Україна', en: 'Ukraine', },
 	geo: { capital: 'kyiv', part: 'europe', }, 
 	code: { iso: '804', iso2: 'ua', iso3: 'UKR', ean: '482', phone: '+380', },
@@ -1543,6 +1726,10 @@ not_exist - не существует
 	independence_day: '2408',
 	population: { count: 48457000, year: 2001, },
 	area: 603700,
+	symbol: { 
+		coa: { side2: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'ury',
@@ -1571,15 +1758,19 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 },
 {
-	id: 'fin', symbol: { flag: 1, coa: 1, },
+	id: 'fin', 
 	title: { ua: 'Фінляндія', en: 'Finland', },
 	geo: { capital: 'helsinki', part: 'europe', },
 	code: { iso: '246', iso2: 'fi', iso3: 'FIN', ean: '64', phone: '+358', },
 	internet: { wiki_ua: '%D0%A4%D1%96%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _11x18: 1, }, 
+	},
 },
 {
-	id: 'fra', symbol: { flag: 1, coa: 1, },
+	id: 'fra', 
 	title: { ua: 'Франція', en: 'France', },
 	geo: { capital: 'paris', part: 'europe', },
 	code: { iso: '250', iso2: 'fr', iso3: 'FRA', ean: '30-37', phone: '+33', },
@@ -1587,15 +1778,22 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 66842134, year: 2016, },
 	area: 551595,
+	symbol: { 
+		coa: 1, 
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'hrv', symbol: { flag: 1, coa: 1, },
-	yug: 1, 
+	id: 'hrv', yug: 1, 
 	title: { ua: 'Хорватія', en: 'Croatia', },
 	geo: { capital: 'zagreb', part: 'europe', },
 	code: { iso: '191', iso2: 'hr', iso3: 'HRV', ean: '385', phone: '+385', },
 	internet: { wiki_ua: '%D0%A5%D0%BE%D1%80%D0%B2%D0%B0%D1%82%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { crown_shield: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'caf',
@@ -1616,7 +1814,7 @@ not_exist - не существует
 	area: 1284000,
 },
 {
-	id: 'cze', symbol: { flag: 1, coa: 1, },
+	id: 'cze', 
 	title: { ua: 'Чехія', en: 'Czech Republic', },
 	geo: { capital: 'prague', part: 'europe', },
 	code: { iso: '203', iso2: 'cz', iso3: 'CZE', ean: '859', phone: '+420', },
@@ -1624,6 +1822,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 10637540, year: 2019, },
 	area: 78866,
+	symbol: { 
+		coa: 1, 
+		flag: { _2x3: 1, }, 
+	},
 },
 {
 	id: 'chl',
@@ -1638,13 +1840,17 @@ not_exist - не существует
 {
 	id: 'mne', yug: 1,
 	title: { ua: 'Чорногорія', en: 'Montenegro', },
-	geo: { capital: 'podgorica', part: '', },
+	geo: { capital: 'podgorica', part: 'europe', },
 	code: { iso: '499', iso2: 'me', iso3: 'MNE', ean: '', phone: '+382', },
 	internet: { wiki_ua: '%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
+	symbol: { 
+		coa: { bird: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
-	id: 'che', symbol: { flag: 1, coa: 1, },
+	id: 'che', 
 	title: { ua: 'Швейцарія', en: 'Switzerland', },
 	geo: { capital: 'bern', part: 'europe', },
 	code: { iso: '756', iso2: 'ch', iso3: 'CHE', ean: '76', phone: '+41', },
@@ -1652,9 +1858,13 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 8401120, year: 2016, },
 	area: 41285,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _1x1: 1, }, 
+	},
 },
 {
-	id: 'swe', symbol: { flag: 1, coa: 1, },
+	id: 'swe', 
 	title: { ua: 'Швеція', en: 'Sweden', },
 	geo: { capital: 'stockholm', part: 'europe', },
 	code: { iso: '752', iso2: 'se', iso3: 'SWE', ean: '73', phone: '+46', },
@@ -1662,6 +1872,10 @@ not_exist - не существует
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	population: { count: 9354462, year: 2009, },
 	area: 449964,
+	symbol: { 
+		coa: 1, 
+		flag: { _5x8: 1, }, 
+	},
 },
 {
 	id: 'lka',
@@ -1719,7 +1933,7 @@ not_exist - не существует
 {
 	id: 'zar',
 	title: { ua: 'Заїр', en: 'Zaire', },
-	geo: { capital: 'kinshasa', part: 'asia', },
+	geo: { capital: 'kinshasa', part: 'africa', },
 	code: { iso: '180', iso2: 'zr', iso3: 'ZAR', ean: '', phone: '', },
 	internet: { wiki_ua: '%D0%97%D0%B0%D1%97%D1%80', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
@@ -1735,6 +1949,10 @@ not_exist - не существует
 	internet: { wiki_ua: '%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%B8%D1%85_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA_%D0%A1%D0%A0%D0%A1%D0%A0', },
 	independence_day: { dm: '3012', note: 'Подписание договора об образовании СССР', },
 	not_exist: 1,
+	symbol: { 
+		coa: { wreath: 1, star: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'csk', symbol: { flag: 1, coa: 1, },
@@ -1744,15 +1962,23 @@ not_exist - не существует
 	internet: { wiki_ua: '%D0%A7%D0%B5%D1%85%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%87%D1%87%D0%B8%D0%BD%D0%B0', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	not_exist: 1,
+	symbol: { 
+		coa: { shield: 1, },
+		flag: { _2x3: 1, }, 
+	},
 },
 {
-	id: 'yug', symbol: { flag: 1, coa: 1, },
+	id: 'yug', 
 	title: { ua: 'Югославія', en: 'Yugoslavia', },
 	geo: { capital: 'belgrade', part: 'europe', },
 	code: { iso: '891', iso2: 'yu', iso3: 'YUG', ean: '860', phone: '+38', },
 	internet: { wiki_ua: '%D0%AE%D0%B3%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%96%D1%8F', },
 	independence_day: { dm: '', descr: '', note: '', wiki_ua: '', },
 	not_exist: 1,
+	symbol: { 
+		coa: { wreath: 1, star: 1, },
+		flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'rem', 	// вигаданий неіснуючий код
@@ -1763,6 +1989,10 @@ not_exist - не существует
 	internet: { wiki_ua: '%D0%A0%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B0_%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%8F', },
 	independence_day: { dm: '', note: '', },
 	not_exist: 1,
+	symbol: { 
+		coa: { bird: 1, },
+		//flag: { _1x2: 1, }, 
+	},
 },
 {
 	id: 'rom', 	// вигаданий неіснуючий код

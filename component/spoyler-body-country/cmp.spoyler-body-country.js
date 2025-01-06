@@ -69,14 +69,17 @@ class ComponentSpoylerBodyCountry {
 					if ( obj.geo.capital ) {
 
 						let val = obj.geo.capital;
+						/*
 						if ( objCity ) {
 							if ( objCity[ obj.geo.capital ] ) {
+
 								if ( objCity[ obj.geo.capital ].title ) {
 									if ( objCity[ obj.geo.capital ].title.ua ) 
-										val = `${ obj.geo.capital } ( ${ objCity[ obj.geo.capital ].title.ua } )`;
+										val = obj.geo.capital ;
 								}
 							}
 						}
+						*/
 
 						arr.push( { key: 'geo.capital', val } );
 					}
@@ -84,13 +87,15 @@ class ComponentSpoylerBodyCountry {
 					if ( obj.geo.part ) {
 
 						let val = obj.geo.part;
+						/*
 						if ( objWorldPart ) {
 							if ( objWorldPart[ obj.geo.part ] ) {
 								if ( objWorldPart[ obj.geo.part ].ua ) 
-									val = `${ obj.geo.part} ( ${ objWorldPart[ obj.geo.part ].ua } )`;
+									val = obj.geo.part;
 									//val = objWorldPart[ obj.geo.part ].ua;
 							}
 						}
+						*/
 
 						arr.push( { key: 'geo.part', val } );
 					}
@@ -129,6 +134,15 @@ class ComponentSpoylerBodyCountry {
 				if ( htmlSymbol )
 					htmlSymbol = `<div class="symbol center">${ htmlSymbol }</div>`;
 			}	
+
+
+
+
+
+
+
+
+
 
 
 

@@ -285,15 +285,6 @@ class ComponentFilter {
 					}
 
 
-
-
-
-
-
-
-
-
-
 					if ( k.key == 'country' ) {
 
 						let htmlOption = '';
@@ -367,6 +358,63 @@ class ComponentFilter {
 						</select>`;
 
 					}
+
+
+
+
+					if ( k.key == 'symbol' ) {
+
+
+						let arrSymbol = [
+
+							{ id: 'coa' 				, title: 'Герби'					, },
+							{ id: 'flag' 				, title: 'Флаги'					, },
+
+							{ id: 'coa_side2' 			, title: 'Герби (пари)'				, },
+							{ id: 'coa_bird' 			, title: 'Герби (птахи)'			, },
+							{ id: 'coa_wreath' 			, title: 'Герби (вінки)'			, },
+							{ id: 'coa_shield' 			, title: 'Герби (щити)'				, },
+
+							{ id: 'coa_crown_shield' 	, title: 'Герби (корона на щиті)'	, },
+
+
+
+							{ id: 'coa_star' 			, title: 'Герби (зірки)'			, },
+							{ id: 'coa_circle' 			, title: 'Герби (кола)'				, },
+
+							{ id: 'flag_1x1' 			, title: 'Флаги 1:1'				, },
+							{ id: 'flag_1x2' 			, title: 'Флаги 1:2'				, },
+							{ id: 'flag_2x3' 			, title: 'Флаги 2:3'				, },
+							{ id: 'flag_3x5' 			, title: 'Флаги 3:5'				, },
+							{ id: 'flag_5x8' 			, title: 'Флаги 5:8'				, },
+	
+
+
+						];
+
+
+						let htmlOption = '';
+				 		let color = '';
+
+
+						arrSymbol.forEach( k_symbol => {
+
+							let attrSelected = '';
+
+							if ( k_symbol.id == Router.urlGET.symbol ) {
+								attrSelected 	= `selected`;
+				 				color 			= `class="color"`;
+							}
+
+							htmlOption += `<option value="${ k_symbol.id }" ${ attrSelected }>${ k_symbol.title }</option>`;
+						});
+
+						html += `<select ${ color } onchange="${ this.name }.changeCountrySymbol( this )">
+							<option value="all">- Символіка ---</option>
+							${ htmlOption }
+						</select>`;
+					}
+
 				}
 			}
 
@@ -667,6 +715,32 @@ class ComponentFilter {
 
 
 
+	static changeCountrySymbol( elem ) { 
+		const fooName = this.name + '.changeCountrySymbol()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
+
+		let val = elem.value;
+
+
+
+		if ( val == 'all' )
+			elem.style.color = '#000';
+
+		else
+			elem.style.color = '#f00';
+
+
+	
+		//Router.urlGET = {}; 
+		delete( Router.urlGET.id ); 
+		Router.link([
+			//{ k: 'win' 		, v: 'countries' 	, },
+			{ k: 'symbol' 	, v: val 			, },
+		]);
+	}
+
 
 
 
@@ -683,7 +757,7 @@ class ComponentFilter {
 
 
  
-	static change( elem ) { 
+	static change222( elem ) { 
 		const fooName = this.name + '.clc()'; 
  
 		//console.log( 'fooName: ', fooName ); 

@@ -104,6 +104,7 @@ class Router {
 			letter 		: 1,
 			part 		: 1,
 			sex 		: 1,
+			symbol 		: 1,
 			year 		: 1,
 
 		};

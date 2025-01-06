@@ -1,1 +1,35 @@
-/* © 2024 DJS */ cmp-win-country {} 
+cmp-win-country {
+	display: block;
+}
+
+
+
+	cmp-win-country .gallery-coa {
+		display: block;
+	}
+		cmp-win-country .gallery-coa img {
+			height: 200px;
+			margin: 5px;
+			border: 1px solid #999;
+		}
+
+	cmp-win-country .gallery-flag {
+		display: block;
+	}
+		cmp-win-country .gallery-flag img {
+			height: 100px;
+			margin: 5px;
+			border: 1px solid #999;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
