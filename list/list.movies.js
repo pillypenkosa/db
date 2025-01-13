@@ -3183,6 +3183,11 @@ const arrMovies = [
 	internet: { imdb: '16606592', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%96%D0%B2%D1%81%D1%82%D0%B2%D0%BE_%D1%82%D0%B2%D0%B0%D1%80%D0%B8%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 },
 {
+	id: 'king_of_killers_2023', title: { ua: 'Король убивць', en: 'King of Killers', }, year: 2023, country: { usa: 1, can: 1, }, 
+	genre: { action: 1, crime: 1, }, hash: { fight: 1, }, 
+	internet: { imdb: '14057604', },
+},
+{
 	id: 'the_lion_king_1994', title: { ua: 'Король-лев', en: 'The Lion King', }, year: 1994, country: { usa: 1, }, rating: '5+',
 	genre: { cartoon: 1, }, 
 	internet: { imdb: '0110357', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%9B%D0%B5%D0%B2', hd_vip: '3310', },
@@ -3315,7 +3320,7 @@ const arrMovies = [
 },
 {
 	id: 'jungle_cruise_2021', title: { ua: 'Круїз у джунглях', en: 'Jungle Cruise', }, year: 2021, country: { usa: 1, can: 1, hun: 1, },
-	genre: { action: 1, adventure: 1, comedy: 1, }, hash: { justice: 1, travel: 1, },
+	genre: { action: 1, adventure: 1, comedy: 1, }, hash: { travel: 1, },
 	internet: { imdb: '0870154', wiki_ua: '%D0%9A%D1%80%D1%83%D1%97%D0%B7_%D0%BF%D0%BE_%D0%B4%D0%B6%D1%83%D0%BD%D0%B3%D0%BB%D1%8F%D1%85', },
 	cast: { dwayne_johnson_02051972: 1, emily_blunt_23021983: 1, }, composer: { james_newton_howard_09061951: 1, },
 },
@@ -3883,7 +3888,7 @@ const arrMovies = [
 	id: 'mission_of_justice_1992', title: { ua: 'Місія правосуддя', en: 'Mission of Justice', }, year: 1992, country: { usa: 1, },
 	genre: { action: 1, }, hash: { fight: 1, },
 	internet: { imdb: '0104888', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%81%D1%83%D0%B4%D0%B4%D1%8F', },
-	cast: { jeff_wincott_08051956: 1, },
+	cast: { jeff_wincott_08051956: 1, matthias_hues_14021959: 1, },
 },
 {
 	id: 'heart_of_stone_2023', title: { ua: 'Місія Стоун', en: 'Heart of Stone', }, year: 2023, country: { usa: 1, },
@@ -4661,6 +4666,12 @@ const arrMovies = [
 	cast: { ashley_judd_19041968: 1, morgan_freeman_01061937: 1, },
 },
 {
+	id: 'the_last_kumite_2024', title: { ua: 'Останнє куміте', en: 'The Last Kumite', }, year: 2024, country: { usa: 1, },
+	genre: { action: 1, }, hash: { fight: 1, },
+	internet: { imdb: '17351056', },
+	cast: { matthias_hues_14021959: 1, cynthia_rothrock_08031957: 1, },
+},
+{
 	id: 'the_last_boy_scout_1991', title: { ua: 'Останній бойскаут', en: 'The Last Boy Scout', }, year: 1991, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, adventure: 1, comedy: 1, }, hash: { sea: 1, },
 	internet: { imdb: '0102266', wiki_ua: '%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9_%D0%B1%D0%BE%D0%B9%D1%81%D0%BA%D0%B0%D1%83%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)',	},
@@ -5296,7 +5307,7 @@ const arrMovies = [
 	id: 'tc_2000_1993', title: { ua: 'Поліцейський 2000', en: 'TC 2000', }, year: 1993, country: { usa: 1, can: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { police: 1, },
 	internet: { imdb: '0108277', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_2000', },
-	cast: { bolo_yeung_03071946: 1, },
+	cast: { bolo_yeung_03071946: 1, matthias_hues_14021959: 1, },
 },
 {
 	id: 'cop_car_2015', title: { ua: 'Поліцейський автомобіль', en: 'Cop Car', }, year: 2015, country: { usa: 1, }, rating: 5,
@@ -5526,6 +5537,12 @@ const arrMovies = [
 	genre: { sci_fi: 1, }, hash: { space: 1, },
 	internet: { imdb: '12616480', },
 	cast: { laurence_fishburne_30071961: 1, casey_affleck_12081975: 1, },
+},
+{
+	id: 'juror_2_2024', title: { ua: 'Присяжний #2', en: ' Juror #2', }, year: 2024, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, hash: { justice: 1, },
+	internet: { imdb: '27403986', wiki_ua: '%D0%9F%D1%80%D0%B8%D1%81%D1%8F%D0%B6%D0%BD%D0%B8%D0%B9_%E2%84%962', },
+	cast: { kiefer_sutherland_21121966: 1, }, director: { clint_eastwood_31051930: 1, }, composer: { mark_mancina_09031957: 1, },
 },
 {
 	id: 'the_hidden_1987', title: { ua: 'Прихований ворог', en: 'The Hidden', }, year: 1987, country: { usa: 1, }, rating: 5,

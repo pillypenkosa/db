@@ -417,11 +417,6 @@ class ComponentFilter {
 
 				}
 			}
-
-
-
-
-
 		});
 
 
@@ -454,7 +449,7 @@ class ComponentFilter {
 			elem.style.color = '#f00';
 
 
-		delete( Router.urlGET.letter ); 
+		delete( Router.urlGET.id ); 
 
 		Router.link([
 			{ k: 'letter' 	, v: val 	, },

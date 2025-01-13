@@ -16755,11 +16755,21 @@ let arrPeople = [
 	id: 'matthew_perry_19081969', 
 	name: { n: 'Matthew', s: 'Perry', },
 	sex: 1,
-	life: { bd: 19, bm: 8, by: 1969,  dd: 28, dm: 10, dy: 2023, },
+	life: { bd: 19, bm: 8, by: 1969, dd: 28, dm: 10, dy: 2023, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
 	hash: { movie: 1, actor: 1, },
 	internet: { imdb: '0001612', wiki_ua: '%D0%9C%D0%B5%D1%82%D1%82%D1%8C%D1%8E_%D0%9F%D0%B5%D1%80%D1%80%D1%96_(%D0%B0%D0%BA%D1%82%D0%BE%D1%80)', },
+},
+{
+	id: 'matthias_hues_14021959', 
+	name: { n: 'Matthias', s: 'Hues', },
+	sex: 1,
+	life: { bd: 14, bm: 2, by: 1959, },
+	img: [ 1, 1 ],
+	country: { deu: 1, },
+	hash: { movie: 1, actor: 1, fighter: 1, },
+	internet: { imdb: '0400117', wiki_ua: '%D0%9C%D0%B0%D1%82%D1%82%D1%96%D0%B0%D1%81_%D0%93%27%D1%8E%D0%B7', },
 },
 {
 	id: 'max_born_11121882', 
@@ -18870,6 +18880,34 @@ let arrPeople = [
 	hash: { movie: 1, actor: 1, },
 	internet: { imdb: '0000230', wiki_ua: '%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D1%80_%D0%A1%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BD%D0%B5', },
 },
+{
+	id: 'cynthia_rothrock_08031957', 
+	name: { n: 'Cynthia', s: 'Rothrock', },
+	sex: 1,
+	life: { bd: 8, bm: 3, by: 1957, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, actor: 1, fighter: 1, },
+	internet: { imdb: '0001686', wiki_ua: '%D0%A1%D0%B8%D0%BD%D1%82%D1%96%D1%8F_%D0%A0%D0%BE%D1%82%D1%80%D0%BE%D0%BA', },
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: 'tarkan_17101972', 
 	name: { n: 'Tarkan', },
