@@ -86,6 +86,11 @@ const arrMovies = [
 	cast: { charlie_sheen_03091965: 1, whoopi_goldberg_13111955: 1, gina_gershon_10061962: 1, },
 },
 {
+	id: '10_lives_2024', title: { ua: '10 життів', en: '10 Lives', }, year: 2024, country: { usa: 1, can: 1, gbr: 1, fra: 1, chn: 1, },
+	genre: { cartoon: 1, },
+	internet: { imdb: '7959138', wiki_ru: '10_%D0%B6%D0%B8%D0%B7%D0%BD%D0%B5%D0%B9', },
+},
+{
 	id: '13_sins_2014', title: { ua: '13 гріхів', en: '13 Sins', }, year: 2014, country: { usa: 1, },
 	studio: { dimension: 1, },
 	genre: { horror: 1, thriller: 1, },
