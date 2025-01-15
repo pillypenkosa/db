@@ -53,42 +53,6 @@ class ComponentSpoylerBodyMovie {
 
 
 
-
-			let htmlGenres = '';
-			if ( obj.genre ) {
-				for ( let k in obj.genre ) {
-
-					let txtHash = '';
-					if ( objMoviesGenres && objMoviesGenres[ k ] && objMoviesGenres[ k ].title ) 
-							txtHash = objMoviesGenres[ k ].title
-					
-					htmlGenres += `<span class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcGenre( this )">#${ txtHash }</span> `;
-				}
-
-				if ( htmlGenres )
-					htmlGenres = `<div class="movie-genres center"><span class="key">Жанр:</span> ${ htmlGenres }</div>`;
-			}
-
-
-
-			let htmlCountry = '';
-			if ( obj.country ) {
-				for ( let k in obj.country ) {
-
-					let txtCountry = '';
-					if ( objCountry && objCountry[ k ] && objCountry[ k ].title && objCountry[ k ].title.ua ) 
-							txtCountry = objCountry[ k ].title.ua
-					
-					htmlCountry += `<span class="country pointer" data-id="${ k }" onclick="${ this.name }.clcCountry( this )">${ txtCountry }</span> `;
-				}
-
-				if ( htmlCountry )
-					htmlCountry = `<div class="movie-country center"><span class="key">Країна:</span> ${ htmlCountry }</div>`;
-			}
-
-
-
-
 			let htmlCast = '';
 			if ( obj.cast ) {
 				let arrCast = [];
@@ -103,10 +67,6 @@ class ComponentSpoylerBodyMovie {
 				</div>`;
 			}
 			
-
-
-
-
 
 
 			if ( obj.id )	
@@ -130,49 +90,77 @@ class ComponentSpoylerBodyMovie {
 
 
 
+			let htmlCountry = '';
 			if ( obj.country ) {
 
-				let htmlCountry = '';
+				let txtCountryTKV = '';
 
 				for ( let k in obj.country ) {
-					htmlCountry += `${ k }<br/>`;
+					txtCountryTKV += `${ k }<br/>`;
 
 					//htmlCountry += objCountry[ k ] ? ( objCountry[ k ].title ? ( objCountry[ k ].title.ua ? objCountry[ k ].title.ua : k ) : k ) : k;
 					//htmlCountry += ' ';
+
+					let txtCountry = '';
+					if ( objCountry && objCountry[ k ] && objCountry[ k ].title && objCountry[ k ].title.ua ) 
+							txtCountry = objCountry[ k ].title.ua
+					
+					htmlCountry += `<span class="country pointer" data-id="${ k }" onclick="${ this.name }.clcCountry( this )">${ txtCountry }</span> `;
+
+
 				}
 
-				arrTKV.push( { key: 'country', val: htmlCountry, } );
+				arrTKV.push( { key: 'country', val: txtCountryTKV, } );
+
+
+				if ( htmlCountry )
+					htmlCountry = `<div class="movie-country center"><span class="key">Країна:</span> ${ htmlCountry }</div>`;
 			}
 
 
 
-
-
+			let htmlGenres = '';
 			if ( obj.genre ) {
 
-				let htmlGenre = '';
+				let txtGenreTKV = '';
+				for ( let k in obj.genre ) {
 
-				for ( let k in obj.genre ) 
-					htmlGenre += `${ k }<br/>`;
+					txtGenreTKV += `${ k }<br/>`;
 
-				arrTKV.push( { key: 'genre', val: htmlGenre, } );
+					let txtGenre = '';
+					if ( objMoviesGenres && objMoviesGenres[ k ] && objMoviesGenres[ k ].title ) 
+							txtGenre = objMoviesGenres[ k ].title
+					
+					htmlGenres += `<span class="genre pointer" data-id="${ k }" onclick="${ this.name }.clcGenre( this )">#${ txtGenre }</span> `;
+				}
+
+				arrTKV.push( { key: 'genre', val: txtGenreTKV, } );
+
+				if ( htmlGenres )
+					htmlGenres = `<div class="movie-genres center"><span class="key">Жанр:</span> ${ htmlGenres }</div>`;
 			}
 
 
 
-
-
+			let htmlHash = '';
 			if ( obj.hash ) {
 
-				let htmlHash = '';
+				let txtHashTKV = '';
+				for ( let k in obj.hash ) {
+					txtHashTKV += `${ k }<br/>`;
 
-				for ( let k in obj.hash ) 
-					htmlHash += `${ k }<br/>`;
+					let txtHash = '';
+					if ( objMoviesHash && objMoviesHash[ k ] && objMoviesHash[ k ].title ) 
+							txtHash = objMoviesHash[ k ].title
+					
+					htmlHash += `<span class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcHash( this )">#${ txtHash }</span> `;
+				}
 
-				arrTKV.push( { key: 'hash', val: htmlHash, } );
+				arrTKV.push( { key: 'hash', val: txtHashTKV, } );
+
+				if ( htmlHash )
+					htmlHash = `<div class="movie-hashes center"><span class="key">Хеш:</span> ${ htmlHash }</div>`;
 			}
-
-
 
 
 
@@ -184,8 +172,6 @@ class ComponentSpoylerBodyMovie {
 
 				arrTKV.push( { key: 'cast', val: htmlCast, } );
 			}
-
-
 
 
 
@@ -231,8 +217,6 @@ class ComponentSpoylerBodyMovie {
 			
 
 
-
-
 				if ( obj.internet.auliki7 ) {
 
 					htmlAuliki7 = `<a href="http://auliki7.xyz/stream.php?name=films/${ obj.internet.auliki7 }.mp4" target="_blank" title="Auliki7">
@@ -245,40 +229,9 @@ class ComponentSpoylerBodyMovie {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 			let htmlTKV = '';
 			if ( arrTKV.length )
 				htmlTKV = Component( 'Table-Key-Val', arrTKV );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -304,13 +257,8 @@ class ComponentSpoylerBodyMovie {
 
 				${ htmlCountry }
 				${ htmlGenres }
+				${ htmlHash }
 				${ htmlCast }
-
-
-
-
-
-
 
 				<div class="tkv-object">
 					<button onclick="${ this.name }.showTKV( this )">Object</button>
@@ -320,18 +268,10 @@ class ComponentSpoylerBodyMovie {
 			</div>`;
 		}
 
-
-
 		return { tagParam, html };  
 	} 
  
  
- 
- 
-
-
-
-
 
 	static showTKV( elem ) { 
 		const fooName = this.name + '.showTKV()'; 
@@ -344,8 +284,6 @@ class ComponentSpoylerBodyMovie {
 
 
 
-
-
 	static clcCountry( elem ) { 
 		const fooName = this.name + '.clcCountry()'; 
  
@@ -355,7 +293,6 @@ class ComponentSpoylerBodyMovie {
 
  		let id = elem.dataset.id;
  
-
 		Router.urlGET = {}; 
 		Router.link([
 			{ k: 'win' 		, v: 'movies' 	, },
@@ -364,12 +301,6 @@ class ComponentSpoylerBodyMovie {
 	} 
  
  
-
-
-
-
-
-
 
 	static clcGenre( elem ) { 
 		const fooName = this.name + '.clcGenre()'; 
@@ -380,7 +311,6 @@ class ComponentSpoylerBodyMovie {
 
  		let id = elem.dataset.id;
  
-
 		Router.urlGET = {}; 
 		Router.link([
 			{ k: 'win' 		, v: 'movies' 	, },
@@ -390,21 +320,6 @@ class ComponentSpoylerBodyMovie {
  
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	static clcHash( elem ) { 
 		const fooName = this.name + '.clcHash()'; 
  
@@ -413,7 +328,6 @@ class ComponentSpoylerBodyMovie {
 
 		let id = elem.dataset.id;
  
-
 		Router.urlGET = {}; 
 		Router.link([
 			{ k: 'win' 		, v: 'movies' 	, },
@@ -430,10 +344,6 @@ class ComponentSpoylerBodyMovie {
 
 
 
-
-
-
- 
 	static clc( data ) { 
 		const fooName = this.name + '.clc()'; 
  

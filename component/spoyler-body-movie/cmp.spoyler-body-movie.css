@@ -56,26 +56,7 @@ cmp-spoyler-body-movie {
 			border-radius: 5px;
 		}
 
-
-
-	cmp-spoyler-body-movie .movie-genres {
-		margin: 0 0 20px 0;
-	}
-		cmp-spoyler-body-movie .movie-genres .hash {
-			padding: 1px 15px 2px 15px;
-			border-radius: 5px;
-			font-style: oblique;
-			background: var( --bg-t );
-		}
-			cmp-spoyler-body-movie .movie-genres .hash:hover {
-				background: var( --bg-b );
-			}
-
-
-
-
-
- 	cmp-spoyler-body-movie .movie-country{
+ 	cmp-spoyler-body-movie .movie-country {
 		margin: 0 0 10px 0;
 	}
 		cmp-spoyler-body-movie .movie-country .country {
@@ -86,6 +67,41 @@ cmp-spoyler-body-movie {
 			cmp-spoyler-body-movie .movie-country .country:hover {
 				border-color: #fff;
 			}
+
+	cmp-spoyler-body-movie .movie-genres {
+		margin: 0 0 20px 0;
+	}
+		cmp-spoyler-body-movie .movie-genres .genre {
+			padding: 1px 15px 2px 15px;
+			border-radius: 5px;
+			font-style: oblique;
+			background: var( --bg-t );
+		}
+			cmp-spoyler-body-movie .movie-genres .genre:hover {
+				background: var( --bg-b );
+			}
+
+	cmp-spoyler-body-movie .movie-hashes {
+		margin: 0 0 20px 0;
+	}
+		cmp-spoyler-body-movie .movie-hashes .hash {
+			padding: 1px 15px 2px 15px;
+			border: 1px solid #777;
+			border-radius: 5px;
+			font-style: oblique;
+			color: #999;
+		}
+			cmp-spoyler-body-movie .movie-hashes .hash:hover {
+				border-color: #fff;
+				color: #fff;
+			}
+
+
+
+
+
+
+
 
 
 

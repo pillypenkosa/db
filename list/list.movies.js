@@ -3265,6 +3265,11 @@ const arrMovies = [
 	cast: { kate_beckinsale_26071973: 1, },
 },
 {
+	id: 'kraven_the_hunter_2024', title: { ua: 'Крейвен-мисливець', en: 'Kraven: The Hunter', }, year: 2024, country: { usa: 1, can: 1, gbr: 1, isl: 1, }, 
+	genre: { action: 1, }, hash: { superhero: 1, },
+	internet: { imdb: '8790086', wiki_ua: '%D0%9A%D1%80%D0%B5%D0%B9%D0%B2%D0%B5%D0%BD-%D0%BC%D0%B8%D1%81%D0%BB%D0%B8%D0%B2%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+{
 	id: 'red_right_hand_2024', title: { ua: 'Кривава права рука', en: 'Red Right Hand', }, year: 2024, country: { usa: 1, }, 
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '19244260', wiki_ua: '%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D0%B2%D0%B0_%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D1%80%D1%83%D0%BA%D0%B0', },
@@ -4183,7 +4188,7 @@ const arrMovies = [
 	internet: { imdb: '32245158', },
 },
 {
-	id: 'lockout_2012', title: { ua: 'Напролом', en: 'Lockout', }, year: 2012, country: { fra: 1, },
+	id: 'lockout_2012', title: { ua: 'Напролом', en: 'Lockout', }, year: 2012, country: { usa: 1, fra: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, },
 	internet: { imdb: '1592525', wiki_ua: '%D0%9D%D0%B0%D0%BF%D1%80%D0%BE%D0%BB%D0%BE%D0%BC', },
 },

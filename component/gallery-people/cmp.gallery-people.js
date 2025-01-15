@@ -43,8 +43,8 @@ class ComponentGalleryPeople {
  				let name 	= '';
 
 
- 				console.log( objData );
- 				console.log( obj.life.by );
+ 				//console.log( objData );
+ 				//console.log( obj.life.by );
 
 
 
