@@ -221,11 +221,6 @@ class ComponentFilter {
 
 
 
-
-
-
-
-
 					if ( k.key == 'year' ) {
 
 						let htmlOption = '';
@@ -236,19 +231,12 @@ class ComponentFilter {
 				 		for ( let k_year in arrPeopleYears ) 
 				 			arrYears.push( +k_year );
 				 		
-				 		
-
-
-
-
-
-
 
 /*
 				 		arrYears.sort();
 				 		arrYears.reverse();
 */
-						console.log( arrYears );
+						//console.log( arrYears );
 
 
 
@@ -285,6 +273,7 @@ class ComponentFilter {
 					}
 
 
+
 					if ( k.key == 'country' ) {
 
 						let htmlOption = '';
@@ -316,12 +305,36 @@ class ComponentFilter {
 
 
 
+					if ( k.key == 'hash' ) {
 
+						let htmlOption = '';
+				 		let color = '';
 
+						arrPeopleHash.forEach( k_hash => {
 
+							//console.log( k_hash );
 
+							if ( k_hash.id ) {
 
+								let attrSelected = '';
+								if ( k_hash.id == Router.urlGET.hash ) {
+									attrSelected 	= `selected`;
+					 				color 			= `class="color"`;
+								}
 
+								let titleHash = '';
+								if ( objPeopleHash && objPeopleHash[ k_hash.id ] && objPeopleHash[ k_hash.id ].title ) 
+									titleHash = objPeopleHash[ k_hash.id ].title;
+								
+								htmlOption += `<option value="${ k_hash.id }" ${ attrSelected }>${ titleHash }</option>`;
+							}
+						});
+
+						html += `<select ${ color } onchange="${ this.name }.changePeopleHash( this )">
+							<option value="all">- Хеш ---</option>
+							${ htmlOption }
+						</select>`;
+					}
 				}
 			}
 
@@ -735,6 +748,50 @@ class ComponentFilter {
 			{ k: 'symbol' 	, v: val 			, },
 		]);
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	static changePeopleHash( elem ) { 
+		const fooName = this.name + '.changePeopleHash()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
+
+		let val = elem.value;
+
+
+
+		if ( val == 'all' )
+			elem.style.color = '#000';
+
+		else
+			elem.style.color = '#f00';
+
+
+		//Router.urlGET = {}; 
+		delete( Router.urlGET.id ); 
+		
+		Router.link([
+			{ k: 'hash', v: val, },
+		]);
+	}
+
+
+
+
+
 
 
 

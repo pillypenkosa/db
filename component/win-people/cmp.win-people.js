@@ -76,7 +76,6 @@ class ComponentWinPeople {
 
 
 
-
 			if ( objData.sex ) {
 				arrSelected = arrSelected.filter( k => {
 
@@ -90,8 +89,6 @@ class ComponentWinPeople {
 
 
 
-
-
 			if ( objData.year ) {
 				arrSelected = arrSelected.filter( k => {
 
@@ -102,13 +99,29 @@ class ComponentWinPeople {
 
 
 
-
 			if ( objData.country ) {
 				arrSelected = arrSelected.filter( k => {
 					if ( k.country && k.country[ objData.country ] )
 						return true;
 				});
 			}
+
+
+			if ( objData.hash ) {
+				arrSelected = arrSelected.filter( k => {
+					if ( k.hash && k.hash[ objData.hash ] )
+						return true;
+				});
+			}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -195,6 +208,8 @@ class ComponentWinPeople {
 			{ win: 'people' 	, cat: 'select' 	, key: 'sex' 		, clc: '' 	, arr: [] 			, },
 			{ win: 'people' 	, cat: 'select' 	, key: 'year' 		, clc: '' 	, arr: [] 			, },
 			{ win: 'people' 	, cat: 'select' 	, key: 'country' 	, clc: '' 	, arr: [] 			, },
+			{ win: 'people' 	, cat: 'select' 	, key: 'hash' 		, clc: '' 	, arr: [] 			, },
+
 
 		];
 

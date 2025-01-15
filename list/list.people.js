@@ -2,20 +2,24 @@ const arrPeopleHash = [
 
 
 
-
-
 { id: 'movie' 				, title: 'Кіно' 						, },
+{ id: 'movie_actor' 		, title: 'КіноАктори' 					, },
+{ id: 'movie_director' 		, title: 'КіноРежисери' 				, },
+{ id: 'movie_composer' 		, title: 'КіноКомпозитори' 					, },
+
 { id: 'music' 				, title: 'Музика' 						, },
+{ id: 'composer' 			, title: 'Композитори' 					, },
+
+
 { id: 'politics' 			, title: 'Політики' 					, },
 
 { id: 'comedy' 				, title: 'Comedy' 						, },
 { id: 'dj' 					, title: 'DJ' 							, },
 { id: 'it' 					, title: 'IT' 							, },
 { id: 'mma' 				, title: 'MMA' 							, },
-{ id: 'wwar2' 				, title: '2WWar' 						, },
+{ id: 'wwar2' 				, title: 'Друга світова война' 			, },
 { id: 'aviation' 			, title: 'Авіація' 						, },
 { id: 'car' 				, title: 'Авто' 						, },
-{ id: 'actor' 				, title: 'Актори' 						, },
 { id: 'architect' 			, title: 'Архітектори' 					, },
 { id: 'astrology' 			, title: 'Астрологія' 					, },
 { id: 'astronomy' 			, title: 'Астрономія' 					, },
@@ -59,7 +63,6 @@ const arrPeopleHash = [
 { id: 'kvartal95' 			, title: 'Квартал95' 					, },
 { id: 'kvk' 				, title: 'КВК' 							, },
 { id: 'kickboxing' 			, title: 'Кікбоксінг' 					, },
-{ id: 'composer' 			, title: 'Композитори' 					, },
 { id: 'konstruktor' 		, title: 'Конструктори' 				, },
 { id: 'queen' 				, title: 'Королева' 					, },
 { id: 'space' 				, title: 'Космос' 						, },
@@ -91,7 +94,6 @@ const arrPeopleHash = [
 { id: 'producer' 			, title: 'Продюсери' 					, },
 { id: 'psychology' 			, title: 'Психологія' 					, },
 { id: 'revolutionist' 		, title: 'Революціонери' 				, },
-{ id: 'director' 			, title: 'Режисери' 					, },
 { id: 'religion' 			, title: 'Релігія' 						, },
 { id: 'wrestling' 			, title: 'Реслінг' 						, },
 { id: 'relative' 			, title: 'Родичі' 						, },
@@ -152,9 +154,20 @@ https://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BB%D1%96%D0%BA_%D0%BE%
 //{ id: '' 		, title: '' 	, },
 
 
-
-
 ];
+
+
+
+let objPeopleHash = {};
+arrPeopleHash.forEach( k => {
+	objPeopleHash[ k.id ] = k;
+});
+
+
+
+
+
+
 
 
 
@@ -827,7 +840,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 12, by: 1958, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0051282', wiki_ua: '%D0%91%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0_%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -1144,7 +1157,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 5, by: 1957, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0073101', wiki_ua: '%D0%91%D0%B5%D0%BD%D1%8E%D0%BA_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/post/412/works/', },
 },
 {
@@ -1352,7 +1365,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 1, by: 1960, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0049182', wiki_ua: '%D0%91%D0%BE%D0%BA%D0%BB%D0%B0%D0%BD_%D0%A1%D1%82%D0%B0%D0%BD%D1%96%D1%81%D0%BB%D0%B0%D0%B2_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -1495,7 +1508,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 3, by: 1938, dd: 10, dm: 3, dy: 2004, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0111410', wiki_ua: '%D0%91%D1%80%D0%BE%D0%BD%D0%B4%D1%83%D0%BA%D0%BE%D0%B2_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/post/575/works/', },
 },
 {
@@ -1710,7 +1723,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 12, by: 1928, dd: 11, dm: 4, dy: 1979, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0125904', wiki_ua: '%D0%91%D0%B8%D0%BA%D0%BE%D0%B2_%D0%9B%D0%B5%D0%BE%D0%BD%D1%96%D0%B4_%D0%A4%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/sov/634/works/', },
 },
 {
@@ -2077,7 +2090,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 6, by: 1943, dd: 17, dm: 5, dy: 2017, },
 	img: [ 1, 1 ],
 	country: { sun: 1, rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0896554', wiki_ua: '%D0%92%D1%96%D0%B4%D0%BE%D0%B2_%D0%9E%D0%BB%D0%B5%D0%B3_%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -2751,7 +2764,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 10, by: 1961, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0329812', wiki_ua: '%D0%93%D0%BE%D1%80%D0%B1%D1%83%D0%BD%D0%BE%D0%B2_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9_%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/1050/works/', },
 },
 {
@@ -3165,7 +3178,7 @@ let arrPeople = [
 	name: { n: 'Інґеборґа', s: 'Дапкунайте', },
 	life: { bd: 20, bm: 1, by: 1963, },
 	country: { sun: 1, ltu: 1, },
-	hash: { movie: 1, actor: 1, }, 
+	hash: { movie: 1, movie_actor: 1, }, 
 	internet: { imdb: '0200848', wiki_ua: '%D0%86%D0%BD%D2%91%D0%B5%D0%B1%D0%BE%D1%80%D2%91%D0%B0_%D0%94%D0%B0%D0%BF%D0%BA%D1%83%D0%BD%D0%B0%D0%B9%D1%82%D0%B5', },
 },
 {
@@ -3439,7 +3452,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 9, by: 1894, dd: 25, dm: 11, dy: 1956, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { wiki_ua: '%D0%94%D0%BE%D0%B2%D0%B6%D0%B5%D0%BD%D0%BA%D0%BE_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -3945,7 +3958,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1965, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1216826', wiki_ua: '%D0%96%D0%B8%D0%B6%D0%B8%D0%BA%D1%96%D0%BD_%D0%86%D0%B3%D0%BE%D1%80_%D0%92%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -4009,7 +4022,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1971, dd: 29, dm: 5, dy: 2024, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%97%D0%B0%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D1%8E%D0%BA_%D0%90%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D1%96%D1%8F_%D0%AE%D1%80%D1%96%D1%97%D0%B2%D0%BD%D0%B0', },
 },
 {
@@ -4670,7 +4683,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 7, by: 1938, dd: 15, dm: 1, dy: 2023, },
 	img: [ 1, 1 ],
 	country: { geo: 1, sun: 1, },
-	hash: { music: 1, singer: 1, movie: 1, actor: 1, }, 
+	hash: { music: 1, singer: 1, movie: 1, movie_actor: 1, }, 
 	internet: { imdb: '0452795', wiki_ua: '%D0%9A%D1%96%D0%BA%D0%B0%D0%B1%D1%96%D0%B4%D0%B7%D0%B5_%D0%92%D0%B0%D1%85%D1%82%D0%B0%D0%BD%D0%B3_%D0%9A%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/sov/1949/works/', },
 },
 {
@@ -5203,7 +5216,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 10, by: 1934, dd: 6, dm: 6, dy: 1995, },
 	img: [ 1, 1 ],
 	country: { sun: 1, rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0469434', wiki_ua: '%D0%9A%D1%80%D0%B0%D0%BC%D0%B0%D1%80%D0%BE%D0%B2_%D0%A1%D0%B0%D0%B2%D0%B5%D0%BB%D1%96%D0%B9_%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -5522,7 +5535,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 6, by: 1996, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '10464332', wiki_ua: '%D0%9B%D0%B0%D0%BC%D0%B0%D1%85_%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -6287,7 +6300,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 11, by: 1963, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0556343', wiki_ua: '%D0%9C%D0%B0%D1%88%D0%BA%D0%BE%D0%B2_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -6659,7 +6672,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 7, by: 1930, dd: 29, dm: 12, dy: 1993, },
 	img: [ 1, 1 ],
 	country: { arm: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0594796', wiki_ua: '%D0%9C%D0%BA%D1%80%D1%82%D1%87%D1%8F%D0%BD_%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B8%D0%BA_%D0%9C%D1%83%D1%88%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/sov/2910/works/', },
 },
 {
@@ -7197,7 +7210,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 5, by: 1941, dd: 17, dm: 11, dy: 2009, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0648243', wiki_ua: '%D0%9E%D0%BB%D1%8F%D0%BB%D1%96%D0%BD_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/3169/works/', },
 },
 {
@@ -7412,7 +7425,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 1, by: 1924, dd: 20, dm: 7, dy: 1990, },
 	img: [ 1, 1 ],
 	country: { arm: 1, sun: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0660886', wiki_ua: '%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%B6%D0%B0%D0%BD%D0%BE%D0%B2_%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9_%D0%99%D0%BE%D1%81%D0%B8%D0%BF%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -7477,7 +7490,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 9, by: 1978, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1465348', wiki_ua: '%D0%9F%D0%B0%D1%88%D0%B8%D0%BD%D1%96%D0%BD_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%96%D0%B9_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/3279/works/', },
 },
 {
@@ -8455,7 +8468,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 7, by: 1937, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0737385', wiki_ua: '%D0%A0%D0%BE%D0%B3%D0%BE%D0%B2%D1%86%D0%B5%D0%B2%D0%B0_%D0%90%D0%B4%D0%B0_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D0%BD%D0%B0', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/post/3602/works/', },
 },
 {
@@ -8748,7 +8761,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 12, by: 1977, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	movie: { actor: 1, },
+	movie: { movie_actor: 1, },
 	show: { humor: { kvk: 1, }, },
 	internet: {
 		imdb: '2955024', 
@@ -9636,7 +9649,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 8, by: 1967, },
 	img: [ 1, 1 ],
 	country: { rus: 1, usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0847727', wiki_ua: '%D0%A2%D0%B0%D0%BA%D1%82%D0%B0%D1%80%D0%BE%D0%B2_%D0%9E%D0%BB%D0%B5%D0%B3_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -9646,7 +9659,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 3, by: 1946, },
 	img: [ 2, 2 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0847826', wiki_ua: '%D0%A2%D0%B0%D0%BB%D0%B0%D1%88%D0%BA%D0%BE_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/sov/4215/works/', },
 },
 {
@@ -10039,7 +10052,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 9, by: 1898, dd: 29, dm: 7, dy: 1986, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, sun: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0050754', wiki_ua: '%D0%A3%D0%B6%D0%B2%D1%96%D0%B9_%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%96%D1%8F_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D1%96%D0%B2%D0%BD%D0%B0', },
 },
 {
@@ -10427,7 +10440,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 1, by: 1972, },
 	img: [ 1, 1 ],
 	country: { rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0450975', wiki_ua: '%D0%A5%D0%B0%D0%B1%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%9A%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD_%D0%AE%D1%80%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -11512,7 +11525,7 @@ let arrPeople = [
 	life: { bd: 24, bm: 9, by: 1941, },
 	img: [ 1, 1 ],
 	country: { sun: 1, rus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0946670', wiki_ua: '%D0%AF%D1%81%D1%83%D0%BB%D0%BE%D0%B2%D0%B8%D1%87_%D0%86%D0%B3%D0%BE%D1%80_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -11569,7 +11582,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 3, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001173', wiki_ua: '%D0%90%D0%B0%D1%80%D0%BE%D0%BD_%D0%95%D0%BA%D0%B3%D0%B0%D1%80%D1%82', },
 },
 {
@@ -11600,7 +11613,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 9, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001191', wiki_ua: '%D0%90%D0%B4%D0%B0%D0%BC_%D0%A1%D0%B5%D0%BD%D0%B4%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -11641,7 +11654,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 5, by: 1959, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001600', wiki_ua: '%D0%95%D0%B4%D1%80%D1%96%D0%B0%D0%BD_%D0%9F%D0%BE%D0%BB', },
 },
 {
@@ -11651,7 +11664,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 1, by: 1938, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0147983', wiki_ua: '%D0%90%D0%B4%D1%80%D1%96%D0%B0%D0%BD%D0%BE_%D0%A7%D0%B5%D0%BB%D0%B5%D0%BD%D1%82%D0%B0%D0%BD%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/euro/49498/works/', },
 },
 {
@@ -11661,7 +11674,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 4, by: 1973, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0004778', wiki_ua: '%D0%95%D0%B4%D1%80%D1%96%D1%94%D0%BD_%D0%91%D1%80%D0%BE%D1%83%D0%B4%D1%96', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50096/works/', },
 },
 {
@@ -11690,7 +11703,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 4, by: 1940, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000199', wiki_ua: '%D0%90%D0%BB%D1%8C_%D0%9F%D0%B0%D1%87%D0%B8%D0%BD%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48114/works/', },
 },
 {
@@ -11700,7 +11713,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 11, by: 1935, dd: 18, dm: 8, dy: 2024, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001128', wiki_ua: '%D0%90%D0%BB%D0%B5%D0%BD_%D0%94%D0%B5%D0%BB%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/euro/1226/works/', },
 },
 {
@@ -11730,7 +11743,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 3, by: 1950, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0006293', wiki_ua: '%D0%90%D0%BB%D0%B0%D0%BD_%D0%A1%D1%96%D0%BB%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D1%80%D1%96', },
 },
 {
@@ -11768,7 +11781,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000285', wiki_ua: '%D0%90%D0%BB%D0%B5%D0%BA_%D0%91%D0%BE%D0%BB%D0%B4%D0%B2%D1%96%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48113/works/', },
 	relative: { bs: [ 'daniel_baldwin_07081960', 'stephen_baldwin_12051966', 'william_baldwin_21021963', ], }, 
 },
@@ -11810,7 +11823,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 8, by: 1899, dd: 29, dm: 4, dy: 1980, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { wiki_ua: '%D0%90%D0%BB%D1%8C%D1%84%D1%80%D0%B5%D0%B4_%D0%93%D1%96%D1%87%D0%BA%D0%BE%D0%BA', },
 },
 {
@@ -11819,7 +11832,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 10, by: 1976, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000224', wiki_ua: '%D0%90%D0%BB%D1%96%D1%81%D1%96%D1%8F_%D0%A1%D1%96%D0%BB%D1%8C%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BE%D1%83%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/57351/works/', },
 },
 {
@@ -11847,7 +11860,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 12, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: {imdb: '0000192', wiki_ua: '%D0%90%D0%BB%D1%96%D1%81%D1%81%D0%B0_%D0%9C%D1%96%D0%BB%D0%B0%D0%BD%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/58174/works/', },
 },
 {
@@ -11866,7 +11879,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 3, by: 1976, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005442', wiki_ua: '%D0%95%D0%BC%D1%96_%D0%A1%D0%BC%D0%B0%D1%80%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/65792/works/', },
 },
 {
@@ -11875,7 +11888,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 4, by: 1988, },
 	img: [ 1, 1 ],
 	country: { esp: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1869101', wiki_ua: '%D0%90%D0%BD%D0%B0_%D0%B4%D0%B5_%D0%90%D1%80%D0%BC%D0%B0%D1%81', },
 },
 {
@@ -11934,7 +11947,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 4, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000412', wiki_ua: '%D0%95%D0%BD%D0%B4%D1%96_%D0%93%D0%B0%D1%80%D1%81%D1%96%D1%8F', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/54663/works/', },
 },
 {
@@ -11952,7 +11965,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 6, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001401', wiki_ua: '%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D1%96%D0%BD%D0%B0_%D0%94%D0%B6%D0%BE%D0%BB%D1%96', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/50396/works/', },
 	relative: { father: 'jon_voight_29121938', },
 
@@ -11963,7 +11976,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 11, by: 1967, dd: 8, dm: 2, dy: 2007, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000645', wiki_ua: '%D0%90%D0%BD%D0%BD%D0%B0-%D0%9D%D1%96%D0%BA%D0%BE%D0%BB%D1%8C_%D0%A1%D0%BC%D1%96%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/producer/hollywood/56172/works/', },
 },
 {
@@ -11973,7 +11986,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 3, by: 1989, dd: 19, dm: 6, dy: 2016, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0947338', wiki_ua: '%D0%84%D0%BB%D1%8C%D1%87%D1%96%D0%BD_%D0%90%D0%BD%D1%82%D0%BE%D0%BD_%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -11993,7 +12006,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 12, by: 1937, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000164', wiki_ua: '%D0%95%D0%BD%D1%82%D0%BE%D0%BD%D1%96_%D0%93%D0%BE%D0%BF%D0%BA%D1%96%D0%BD%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/euro/53027/works/', },
 },
 {
@@ -12023,7 +12036,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 8, by: 1960, },
 	img: [ 1, 1 ],
 	country: { esp: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000104', wiki_ua: '%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D1%96%D0%BE_%D0%91%D0%B0%D0%BD%D0%B4%D0%B5%D1%80%D0%B0%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48115/works/', },
 },
 {
@@ -12063,7 +12076,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 7, by: 1947, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, },
 	internet: { imdb: '0000216', wiki_ua: '%D0%90%D1%80%D0%BD%D0%BE%D0%BB%D1%8C%D0%B4_%D0%A8%D0%B2%D0%B0%D1%80%D1%86%D0%B5%D0%BD%D0%B5%D0%B3%D0%B3%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48117/works/', },
 },
 {
@@ -12073,7 +12086,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 6, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0903677', wiki_ua: '%D0%90%D1%80%D0%BD%D0%BE%D0%BB%D1%8C%D0%B4_%D0%92%D0%BE%D1%81%D0%BB%D1%83', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/65163/works/', },
 },
 {
@@ -12102,7 +12115,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 4, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000171', wiki_ua: '%D0%95%D1%88%D0%BB%D1%96_%D0%94%D0%B6%D0%B0%D0%B4', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/50748/works/', },
 },
 {
@@ -12112,7 +12125,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 2, by: 1978, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005110', wiki_ua: '%D0%95%D1%88%D1%82%D0%BE%D0%BD_%D0%9A%D1%83%D1%82%D1%87%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/56967/works/', },
 },
 {
@@ -12130,7 +12143,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 8, by: 1976, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0851582', wiki_ua: '%D0%9E%D0%B4%D1%80%D1%96_%D0%A2%D0%BE%D1%82%D1%83', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/euro/53184/works/', },
 },
 {
@@ -12199,7 +12212,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 6, by: 1941, },
 	img: [ 1, 1 ],
 	country: { pol: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0117390', wiki_ua: '%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D1%80%D0%B0_%D0%91%D1%80%D0%B8%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B0', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/euro/582/works/', },
 },
 {
@@ -12230,7 +12243,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 4, by: 1970, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001608', wiki_ua: '%D0%91%D0%B0%D1%80%D1%80%D1%96_%D0%9F%D0%B5%D0%BF%D0%BF%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/57227/works/', },
 },
 {
@@ -12259,7 +12272,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 8, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000255', wiki_ua: '%D0%91%D0%B5%D0%BD_%D0%90%D1%84%D1%84%D0%BB%D0%B5%D0%BA', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48120/works/', },
 },
 {
@@ -12269,7 +12282,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 11, by: 1965, },
 	img: [ 1, 2 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001774', wiki_ua: '%D0%91%D0%B5%D0%BD_%D0%A1%D1%82%D1%96%D0%BB%D0%BB%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50047/works/', },
 },
 {
@@ -12372,7 +12385,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 4, by: 1942, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0006015', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D0%9A%D0%BE%D0%BD%D1%82%D1%96', },
 },
 {
@@ -12393,7 +12406,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 2, by: 1943, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0004886', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D0%94%D1%8E%D0%BA', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/58161/works/', },
 },
 {
@@ -12403,7 +12416,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 9, by: 1950, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000195', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D0%9C%D1%8E%D1%80%D1%80%D0%B5%D0%B9', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/53224/works/', },
 },
 {
@@ -12413,7 +12426,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 5, by: 1955, dd: 25, dm: 2, dy: 2017,   },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000200', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D0%9F%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/49981/works/', },
 },
 {
@@ -12423,7 +12436,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 12, by: 1953, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },	
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000597', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D0%9F%D1%83%D0%BB%D0%BB%D0%BC%D0%B0%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/53749/works/', },
 },
 {
@@ -12443,7 +12456,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 3, by: 1948, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000345', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB%D1%96_%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%B0%D0%BB', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/62139/works/', },
 },
 {
@@ -12453,7 +12466,7 @@ let arrPeople = [
 	life: { bd: 24, bm: 2, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000708', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB%D1%96_%D0%97%D0%B5%D0%B9%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/18881/works/', },
 },
 {
@@ -12483,7 +12496,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 7, by: 1946, },
 	img: [ 1, 1 ],
 	country: { chn: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, kungfu: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, kungfu: 1, },
 	internet: { imdb: '0001866', wiki_ua: '%D0%91%D0%BE%D0%BB%D0%BE_%D0%84%D0%BD%D0%B3', },
 },
 {
@@ -12492,7 +12505,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 9, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001372', wiki_ua: '%D0%91%D0%BE%D0%BD%D0%BD%D1%96_%D0%93%D0%B0%D0%BD%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/58243/works/', },
 },
 {
@@ -12532,7 +12545,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 12, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000093', wiki_ua: '%D0%91%D1%80%D0%B5%D0%B4_%D0%9F%D1%96%D1%82%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48121/works/', },
 },
 {
@@ -12542,7 +12555,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 2, by: 1965, dd: 31, dm: 3, dy: 1993, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000488', wiki_ua: '%D0%91%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%BD_%D0%9B%D1%96', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/79899/works/', },
 },
 {
@@ -12551,7 +12564,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 5, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000283', wiki_ua: '%D0%91%D1%80%D0%B5%D0%BD%D0%B4%D0%B0_%D0%91%D0%B0%D0%BA%D0%BA%D1%96', },
 },
 {
@@ -12560,7 +12573,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 1, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000403', wiki_ua: '%D0%91%D1%80%D1%96%D0%B4%D0%B6%D0%B8%D1%82_%D0%A4%D0%BE%D0%BD%D0%B4%D0%B0', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/71691/works/', },
 },
 {
@@ -12569,7 +12582,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 4, by: 1971, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005256', wiki_ua: '%D0%91%D1%80%D1%96%D0%B4%D0%B6%D0%B5%D1%82_%D0%9C%D0%BE%D0%B9%D0%BD%D0%B5%D0%B3%D0%B5%D0%BD', },
 },
 {
@@ -12578,7 +12591,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 9, by: 1934, },
 	img: [ 4, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000003', wiki_ua: '%D0%91%D1%80%D1%96%D0%B6%D1%96%D1%82_%D0%91%D0%B0%D1%80%D0%B4%D0%BE', },
 },
 {
@@ -12587,7 +12600,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 10, by: 1989, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0488953', wiki_ua: '%D0%91%D1%80%D1%96_%D0%9B%D0%B0%D1%80%D1%81%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/106031/works/', },
 },
 {
@@ -12597,7 +12610,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 2, by: 1945, dd: 7, dm: 8, dy: 1999, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001397', wiki_ua: '%D0%91%D1%80%D0%B0%D0%B9%D0%BE%D0%BD_%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/59433/works/', },
 },
 {
@@ -12615,7 +12628,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 5, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000222', wiki_ua: '%D0%91%D1%80%D1%83%D0%BA_%D0%A8%D0%B8%D0%BB%D0%B4%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/62103/works/', },
 },
 {
@@ -12625,7 +12638,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 11, by: 1940, dd: 20, dm: 7, dy: 1973, },
 	img: [ 1, 1 ],
 	country: { hkg: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, kungfu: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, kungfu: 1, },
 	internet: { imdb: '0000045', wiki_ua: '%D0%91%D1%80%D1%8E%D1%81_%D0%9B%D1%96', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48122/works/', },
 },
 {
@@ -12635,7 +12648,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 6, by: 1950,},
 	img: [ 1, 1 ],
 	country: { twn: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, },
 	internet: { imdb: '0508362', wiki_ua: '%D0%91%D1%80%D1%8E%D1%81_%D0%9B%D0%B0%D0%B9', },
 	note: 'Дублер Брюса Лі',
 },
@@ -12646,7 +12659,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 9, by: 1945, },
 	img: [ 1, 1 ],
 	country: { nzl: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: {imdb: '0817748', wiki_ua: '%D0%91%D1%80%D1%8E%D1%81_%D0%A1%D0%BF%D0%B5%D0%BD%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/51085/works/', },
 },
 {
@@ -12656,7 +12669,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 3, by: 1955, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000246', wiki_ua: '%D0%91%D1%80%D1%8E%D1%81_%D0%92%D1%96%D0%BB%D0%BB%D1%96%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/48123/works/', },
 },
 {
@@ -12676,7 +12689,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 2, by: 1936, dd: 6, dm: 9, dy: 2018, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000608', wiki_ua: '%D0%91%D0%B5%D1%80%D1%82_%D0%A0%D0%B5%D0%B9%D0%BD%D0%BE%D0%BB%D1%8C%D0%B4%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/52715/works/', },
 },
 {
@@ -12686,7 +12699,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 10, by: 1895, dd: 1, dm: 2, dy: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, humor: 1, },
+	hash: { movie: 1, movie_actor: 1, humor: 1, },
 	internet: { imdb: '0000036', wiki_ua: '%D0%91%D0%B0%D1%81%D1%82%D0%B5%D1%80_%D0%9A%D1%96%D1%82%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/59194/works/', },
 },
 {
@@ -12715,7 +12728,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 8, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000139', wiki_ua: '%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%BD_%D0%94%D1%96%D0%B0%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/50459/works/', },
 },
 {
@@ -12743,7 +12756,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 4, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001182', wiki_ua: '%D0%9A%D0%B0%D1%80%D0%BC%D0%B5%D0%BD_%D0%95%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%B0', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/64838/works/', },
 },
 {
@@ -12753,7 +12766,7 @@ let arrPeople = [
 	img: [ 1, 1 ],
 	country: { can: 1, },
 	movie: { actor: {}, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005251', wiki_ua: '%D0%9A%D0%B5%D1%80%D1%80%D1%96-%D0%95%D0%BD%D0%BD_%D0%9C%D0%BE%D1%81%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/57161/works/', },
 },
 {
@@ -12762,7 +12775,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 8, by: 1957, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000962', wiki_ua: '%D0%9A%D0%B0%D1%80%D0%BE%D0%BB%D1%8C_%D0%91%D1%83%D0%BA%D0%B5', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/euro/49784/works/', },
 },
 {
@@ -12772,7 +12785,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 8, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000729', wiki_ua: '%D0%9A%D0%B5%D0%B9%D1%81%D1%96_%D0%90%D1%84%D1%84%D0%BB%D0%B5%D0%BA', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/54664/works/', },
 },
 {
@@ -12782,7 +12795,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 12, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000680', wiki_ua: '%D0%9A%D0%B0%D1%81%D0%BF%D0%B5%D1%80_%D0%B2%D0%B0%D0%BD_%D0%94%D1%96%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/63183/works/', },
 },
 {
@@ -12791,7 +12804,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 5, by: 1969, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000949', wiki_ua: '%D0%9A%D0%B5%D0%B9%D1%82_%D0%91%D0%BB%D0%B0%D0%BD%D1%88%D0%B5%D1%82%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/49886/works/', },
 },
 {
@@ -12800,7 +12813,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 10, by: 1943, },
 	img: [ 2, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000366', wiki_ua: '%D0%9A%D0%B0%D1%82%D1%80%D1%96%D0%BD_%D0%94%D0%B5%D0%BD%D0%B5%D0%B2', },
 },
 {
@@ -12809,7 +12822,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1972, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001517', wiki_ua: '%D0%9A%D0%B5%D1%82%D1%80%D1%96%D0%BD_%D0%9C%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%BC%D0%B0%D0%BA', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/58441/works/', },
 },
 {
@@ -12818,7 +12831,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 3, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001573', wiki_ua: '%D0%9A%D0%B5%D1%82%D1%80%D1%96%D0%BD_%D0%9E%27%D0%93%D0%B0%D1%80%D0%B0', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/54050/works/', },
 },
 {
@@ -12827,7 +12840,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 9, by: 1969, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001876', wiki_ua: '%D0%9A%D0%B5%D1%82%D1%80%D1%96%D0%BD_%D0%97%D0%B5%D1%82%D0%B0-%D0%94%D0%B6%D0%BE%D0%BD%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/50190/works/', },
 },
 {
@@ -12846,7 +12859,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 4, by: 1889, dd: 25, dm: 12, dy: 1977, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, director: 1, humor: 1, },
+	hash: { movie: 1, movie_actor: 1, movie_director: 1, humor: 1, },
 	internet: { imdb: '0000122', wiki_ua: '%D0%A7%D0%B0%D1%80%D0%BB%D1%96_%D0%A7%D0%B0%D0%BF%D0%BB%D1%96%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/59133/works/', },
 },
 {
@@ -12908,7 +12921,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 9, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000221', wiki_ua: '%D0%A7%D0%B0%D1%80%D0%BB%D1%96_%D0%A8%D0%B8%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/49546/works/', },
 },
 {
@@ -12917,7 +12930,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 8, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000234', wiki_ua: '%D0%A8%D0%B0%D1%80%D0%BB%D1%96%D0%B7_%D0%A2%D0%B5%D1%80%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/49113/works/', },
 },
 {
@@ -12936,7 +12949,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 7, by: 1951, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0177933', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%9A%D1%83%D0%BF%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50530/works/', },
 },
 {
@@ -12956,7 +12969,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 5, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0254402', wiki_ru: '%D0%AD%D0%BB%D0%BB%D0%B8%D0%BE%D1%82%D1%82,_%D0%9A%D1%80%D0%B8%D1%81', },
 },
 {
@@ -12966,7 +12979,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 6, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0262635', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%95%D0%B2%D0%B0%D0%BD%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/52673/works/', },
 },
 {
@@ -12976,7 +12989,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 8, by: 1983, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1165110', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%93%D0%B5%D0%BC%D1%81%D0%B2%D0%BE%D1%80%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/126056/works/', },
 },
 {
@@ -12996,7 +13009,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 8, by: 1980, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1517976', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%9F%D0%B0%D0%B9%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50990/works/', },
 },
 {
@@ -13006,7 +13019,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 6, by: 1979, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0695435', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%9F%D1%80%D0%B0%D1%82%D1%82', },
 },
 {
@@ -13016,7 +13029,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 8, by: 1971, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000676', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%A2%D0%B0%D0%BA%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/58617/works/', },
 },
 {
@@ -13026,7 +13039,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 1, by: 1974, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000288', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D1%96%D0%B0%D0%BD_%D0%91%D0%B5%D0%B9%D0%BB', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50967/works/', },
 },
 {
@@ -13048,7 +13061,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 8, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000225', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D1%96%D0%B0%D0%BD_%D0%A1%D0%BB%D0%B5%D0%B9%D1%82%D0%B5%D1%80', },
 },
 {
@@ -13067,7 +13080,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 3, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000483', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%BE%D1%84%D0%B5%D1%80_%D0%9B%D0%B0%D0%BC%D0%B1%D0%B5%D1%80%D1%82', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/euro/50239/works/', },
 },
 {
@@ -13077,7 +13090,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 10, by: 1938, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000502', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%BE%D1%84%D0%B5%D1%80_%D0%9B%D0%BB%D0%BE%D0%B9%D0%B4', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/57587/works/', },
 },
 {
@@ -13087,7 +13100,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 12, by: 1929, dd: 5, dm: 2, dy: 2021, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001626', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%BE%D1%84%D0%B5%D1%80_%D0%9F%D0%BB%D0%B0%D0%BC%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -13097,7 +13110,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 3, by: 1940, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, karate: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, karate: 1, },
 	internet: { imdb: '0001569', wiki_ua: '%D0%A7%D0%B0%D0%BA_%D0%9D%D0%BE%D1%80%D1%80%D1%96%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/50064/works/', },
 },
 {
@@ -13106,7 +13119,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 2, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, model: 1, },
+	hash: { movie: 1, movie_actor: 1, model: 1, },
 	internet: {imdb: '0000340', wiki_ua: '%D0%A1%D1%96%D0%BD%D0%B4%D1%96_%D0%9A%D1%80%D0%BE%D1%83%D1%84%D0%BE%D1%80%D0%B4', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/117710/works/', },
 },
 {
@@ -13115,7 +13128,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 7, by: 1972, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001231', wiki_ua: '%D0%9A%D0%BB%D0%B5%D1%80_%D0%A4%D0%BE%D1%80%D0%BB%D0%B0%D0%BD%D1%96', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/euro/59587/works/', },
 },
 {
@@ -13124,7 +13137,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 8, by: 1964, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0822694', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/69775/works/', },
 },
 {
@@ -13172,7 +13185,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 5, by: 1930, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000142', wiki_ua: '%D0%9A%D0%BB%D1%96%D0%BD%D1%82_%D0%86%D1%81%D1%82%D0%B2%D1%83%D0%B4', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/51803/works/', },
 },
 {
@@ -13204,7 +13217,7 @@ let arrPeople = [
 	img: [ 1, 1 ],
 	country: { irl: 1, },
 	sport: { },
-	hash: { sport: 1, fighter: 1, mma: 1, movie: 1, actor: 1, },
+	hash: { sport: 1, fighter: 1, mma: 1, movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%9A%D0%BE%D0%BD%D0%BE%D1%80_%D0%9C%D0%B0%D0%BA-%D0%93%D1%80%D0%B5%D0%B3%D0%BE%D1%80', },
 },
 {
@@ -13213,7 +13226,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 7, by: 1965, },
 	img: [ 1, 1 ],
 	country: { dnk: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001567', wiki_ua: '%D0%9A%D0%BE%D0%BD%D0%BD%D1%96_%D0%9D%D1%96%D0%BB%D1%8C%D1%81%D0%B5%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/59171/works/', },
 },
 {
@@ -13222,7 +13235,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 7, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001482', wiki_ua: '%D0%9A%D0%BE%D1%80%D1%82%D0%BD%D1%96_%D0%9B%D0%B0%D0%B2', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/99915/works/', },
 },
 {
@@ -13232,7 +13245,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 4, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000417', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D0%BF%D1%96%D0%BD_%D0%93%D0%BB%D0%BE%D0%B2%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/57652/works/', },
 },
 {
@@ -13262,7 +13275,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 1, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000421', wiki_ua: '%D0%9A%D1%83%D0%B1%D0%B0_%D0%93%D1%83%D0%B4%D1%96%D0%BD%D0%B3_(%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%88%D0%B8%D0%B9)', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/57982/works/', },
 },
 {
@@ -13271,7 +13284,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 2, by: 1950, },
 	img: [ 3, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%A1%D1%96%D0%B1%D1%96%D0%BB%D0%BB_%D0%A8%D0%B5%D0%BF%D0%B5%D1%80%D0%B4', },
 },
 {
@@ -13302,7 +13315,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 8, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000838', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%96%D0%B5%D0%BB_%D0%91%D0%BE%D0%BB%D0%B4%D0%B2%D1%96%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/53115/works/', },
 	relative: { bs: [ 'alec_baldwin_07081960', 'stephen_baldwin_12051966', 'william_baldwin_21021963', ], },
 },
@@ -13312,7 +13325,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 2, by: 1994, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0266824', wiki_ua: '%D0%94%D0%B0%D0%BA%D0%BE%D1%82%D0%B0_%D0%A4%D0%B5%D0%BD%D0%BD%D1%96%D0%BD%D0%B3', },
 },
 {
@@ -13321,7 +13334,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 10, by: 1989, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0424848', wiki_ua: '%D0%94%D0%B0%D0%BA%D0%BE%D1%82%D0%B0_%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%BE%D0%BD', },
 	relative: { father: 'don_johnson_15121949', },
 },
@@ -13331,7 +13344,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 6, by: 1993, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1058095', },
 },
 {
@@ -13341,7 +13354,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 3, by: 1968, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0185819', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%96%D1%94%D0%BB_%D0%9A%D1%80%D0%B5%D0%B9%D2%91', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/euro/50641/works/', },
 },
 {
@@ -13371,7 +13384,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 8, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0827663', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%96%D0%B5%D0%BB_%D0%A1%D1%82%D0%B5%D1%80%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/61229/works/', },
 },
 {
@@ -13381,7 +13394,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 11, by: 1944, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000362', wiki_ua: '%D0%94%D0%B5%D0%BD%D0%BD%D1%96_%D0%94%D0%B5%D0%B2%D1%96%D1%82%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/52103/works/', },
 },
 {
@@ -13391,7 +13404,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 7, by: 1946, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000418', wiki_ua: '%D0%94%D0%B5%D0%BD%D0%BD%D1%96_%D2%90%D0%BB%D0%BE%D0%B2%D0%B5%D1%80', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/52939/works/', },
 },
 {
@@ -13401,7 +13414,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 5, by: 1944, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001803', wiki_ua: '%D0%94%D0%B5%D0%BD%D0%BD%D1%96_%D0%A2%D1%80%D0%B5%D1%85%D0%BE', },
 },
 {
@@ -13431,7 +13444,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 8, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000141', wiki_ua: '%D0%94%D0%B5%D0%B2%D1%96%D0%B4_%D0%94%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%B8', },
 },
 {
@@ -13451,7 +13464,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 10, by: 1953, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001556', wiki_ua: '%D0%94%D0%B5%D0%B2%D1%96%D0%B4_%D0%9C%D0%BE%D1%80%D1%81', },
 },
 {
@@ -13471,7 +13484,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 4, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0606487', wiki_ua: '%D0%94%D1%96%D0%BD_%D0%9D%D0%BE%D1%80%D1%80%D1%96%D1%81', },
 },
 {
@@ -13480,7 +13493,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 11, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000193', wiki_ua: '%D0%94%D0%B5%D0%BC%D1%96_%D0%9C%D1%83%D1%80', },
 },
 {
@@ -13499,7 +13512,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 2, by: 1971, },
 	img: [ 3, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000612', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%96%D0%B7_%D0%A0%D1%96%D1%87%D0%B0%D1%80%D0%B4%D1%81', },
 },
 {
@@ -13509,7 +13522,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 6, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0371660', wiki_ru: '%D0%A5%D1%8D%D0%B9%D1%81%D0%B1%D0%B5%D1%80%D1%82,_%D0%94%D0%B5%D0%BD%D0%BD%D0%B8%D1%81', },
 },
 {
@@ -13519,7 +13532,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 5, by: 1936, dd: 29, dm: 5, dy: 2010, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000454', wiki_ua: '%D0%94%D0%B5%D0%BD%D0%BD%D1%96%D1%81_%D0%93%D0%BE%D0%BF%D0%BF%D0%B5%D1%80', },
 },
 {
@@ -13529,7 +13542,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 12, by: 1954, },
 	img: [ 2, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000243', wiki_ua: '%D0%94%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB_%D0%92%D0%B0%D1%88%D0%B8%D0%BD%D0%B3%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -13592,7 +13605,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 11, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, karate: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, karate: 1, },
 	internet: { imdb: '0000185', wiki_ua: '%D0%94%D0%BE%D0%BB%D1%8C%D1%84_%D0%9B%D1%83%D0%BD%D0%B4%D0%B3%D1%80%D0%B5%D0%BD', },
 },
 {
@@ -13602,7 +13615,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 11, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000332', wiki_ua: '%D0%94%D0%BE%D0%BD_%D0%A7%D1%96%D0%B4%D0%BB', },
 },
 {
@@ -13612,7 +13625,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 12, by: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000467', wiki_ua: '%D0%94%D0%BE%D0%BD_%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%BE%D0%BD', },
 	relative: { children: [ 'dakota_johnson_04101989', ], },
 },
@@ -13633,7 +13646,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 9, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, kickboxing: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, kickboxing: 1, },
 	internet: { imdb: '0933310', wiki_ua: '%D0%94%D0%BE%D0%BD_%D0%92%D1%96%D0%BB%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -13653,7 +13666,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 7, by: 1935, dd: 20, dm: 6, dy: 2024, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000661', wiki_ua: '%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4_%D0%A1%D0%B0%D0%B7%D0%B5%D1%80%D0%BB%D0%B5%D0%BD%D0%B4', },
 },
 {
@@ -13693,7 +13706,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 7, by: 1963, },
 	img: [ 1, 1 ],
 	country: { chn: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, kungfu: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, kungfu: 1, },
 	internet: {
 		imdb: '0947447', 
 		wiki_ua: '%D0%94%D0%BE%D0%BD%D0%BD%D1%96_%D0%84%D0%BD', 
@@ -13715,7 +13728,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 2, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000106', wiki_ua: '%D0%94%D1%80%D1%8E_%D0%91%D0%B5%D1%80%D1%80%D1%96%D0%BC%D0%BE%D1%80', },
 },
 {
@@ -13725,7 +13738,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 8, by: 1937, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000163', wiki_ua: '%D0%94%D0%B0%D1%81%D1%82%D1%96%D0%BD_%D0%93%D0%BE%D1%84%D1%84%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -13735,7 +13748,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 5, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, wrestling: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, wrestling: 1, },
 	internet: { imdb: '0425005', wiki_ua: '%D0%94%D0%B2%D0%B5%D0%B9%D0%BD_%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -13766,7 +13779,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 11, by: 1950, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000438', wiki_ua: '%D0%95%D0%B4_%D0%93%D0%B0%D1%80%D1%80%D1%96%D1%81', },
 },
 {
@@ -13776,7 +13789,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000552', wiki_ua: '%D0%95%D0%B4%D0%B4%D1%96_%D0%9C%D0%B5%D1%80%D1%84%D1%96', },
 },
 {
@@ -13814,7 +13827,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 8, by: 1977, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, child: 1, },
+	hash: { movie: 1, movie_actor: 1, child: 1, },
 	internet: { imdb: '0000411', wiki_ua: '%D0%95%D0%B4%D0%B2%D0%B0%D1%80%D0%B4_%D0%A4%D1%83%D1%80%D0%BB%D0%BE%D0%BD%D0%B3', },
 },
 {
@@ -13842,7 +13855,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 1, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000704', wiki_ua: '%D0%95%D0%BB%D0%B0%D0%B9%D0%B4%D0%B6%D0%B0_%D0%92%D1%83%D0%B4', },
 },
 {
@@ -13861,7 +13874,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 10, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000223', wiki_ua: '%D0%95%D0%BB%D1%96%D0%B7%D0%B0%D0%B1%D0%B5%D1%82_%D0%A8%D1%83', },
 },
 {
@@ -13870,7 +13883,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 7, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000924', wiki_ua: '%D0%95%D0%BB%D1%96%D0%B7%D0%B0%D0%B1%D0%B5%D1%82_%D0%91%D0%B5%D1%80%D0%BA%D0%BB%D1%96', },
 },
 {
@@ -13879,7 +13892,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 2, by: 1932, dd: 23, dm: 3, dy: 2011, },
 	img: [ 3, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%95%D0%BB%D1%96%D0%B7%D0%B0%D0%B1%D0%B5%D1%82_%D0%A2%D0%B5%D0%B9%D0%BB%D0%BE%D1%80', },
 },
 {
@@ -13937,7 +13950,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 10, by: 1986, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '3592338', wiki_ua: '%D0%95%D0%BC%D1%96%D0%BB%D1%96%D1%8F_%D0%9A%D0%BB%D0%B0%D1%80%D0%BA', },
 },
 {
@@ -13947,7 +13960,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 5, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000389', wiki_ua: '%D0%95%D0%BC%D1%96%D0%BB%D1%96%D0%BE_%D0%95%D1%81%D1%82%D0%B5%D0%B2%D0%B5%D1%81', },
 },
 {
@@ -13956,7 +13969,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 2, by: 1983, },
 	img: [ 1, 1 ],
 	country: { usa: 1, gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1289434', wiki_ua: '%D0%95%D0%BC%D1%96%D0%BB%D1%96_%D0%91%D0%BB%D0%B0%D0%BD%D1%82', },
 },
 {
@@ -13965,7 +13978,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 11, by: 1988, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1297015', wiki_ua: '%D0%95%D0%BC%D0%BC%D0%B0_%D0%A1%D1%82%D0%BE%D1%83%D0%BD', },
 },
 {
@@ -13974,7 +13987,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 4, by: 1990, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0914612', wiki_ua: '%D0%95%D0%BC%D0%BC%D0%B0_%D0%92%D0%BE%D1%82%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -13994,7 +14007,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 11, by: 1928, dd: 6, dm: 7, dy: 2020, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { music: 1, composer: 1, },
+	hash: { music: 1, composer: 1, movie: 1, movie_composer: 1, },
 	internet: { imdb: '0001553', wiki_ua: '%D0%95%D0%BD%D0%BD%D1%96%D0%BE_%D0%9C%D0%BE%D1%80%D1%80%D1%96%D0%BA%D0%BE%D0%BD%D0%B5', },
 },
 {
@@ -14070,7 +14083,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 10, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005246', wiki_ru: '%D0%9C%D0%BE%D1%80%D0%B0%D0%BB%D0%B5%D1%81,_%D0%AD%D1%81%D0%B0%D0%B9', },
 },
 {
@@ -14117,7 +14130,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 1, by: 1920, dd: 31, dm: 10, dy: 1993,},
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000019', wiki_ua: '%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D1%96%D0%BA%D0%BE_%D0%A4%D0%B5%D0%BB%D0%BB%D1%96%D0%BD%D1%96', },
 },
 {
@@ -14165,7 +14178,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 7, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001845', wiki_ua: '%D0%A4%D0%BE%D1%80%D0%B5%D1%81%D1%82_%D0%92%D1%96%D1%82%D0%B0%D0%BA%D0%B5%D1%80', },
 },
 {
@@ -14175,7 +14188,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 4, by: 1939, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000338', wiki_ua: '%D0%A4%D1%80%D0%B5%D0%BD%D1%81%D1%96%D1%81_%D0%A4%D0%BE%D1%80%D0%B4_%D0%9A%D0%BE%D0%BF%D0%BF%D0%BE%D0%BB%D0%B0', },
 },
 {
@@ -14289,7 +14302,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 4, by: 1985, },
 	img: [ 1, 1 ],
 	country: { isr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2933757', wiki_ua: '%D0%93%D0%B0%D0%BB%D1%8C_%D0%93%D0%B0%D0%B4%D0%BE%D1%82', },
 },
 {
@@ -14308,7 +14321,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 6, by: 1944, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000997', wiki_ua: '%D0%93%D0%B5%D1%80%D1%96_%D0%91%27%D1%8E%D0%B7%D1%96', },
 },
 {
@@ -14318,7 +14331,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 5, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, gbr: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0199939', wiki_ua: '%D0%93%D0%B5%D1%80%D1%96_%D0%94%D0%B5%D0%BD%D1%96%D0%B5%D0%BB%D1%81', },
 },
 {
@@ -14328,7 +14341,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 3, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0399839', wiki_ua: '%D2%90%D0%B5%D1%80%D1%96_%D0%93%D0%B0%D0%B4%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -14339,7 +14352,7 @@ let arrPeople = [
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
 	movie: { actor: {}, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000198', wiki_ua: '%D2%90%D0%B5%D1%80%D1%96_%D0%9E%D0%BB%D0%B4%D0%BC%D0%B5%D0%BD', },
 },
 {
@@ -14408,7 +14421,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 5, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000123', wiki_ua: '%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6_%D0%9A%D0%BB%D1%83%D0%BD%D1%96', },
 },
 {
@@ -14418,7 +14431,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 5, by: 1944, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000184', wiki_ua: '%D0%94%D0%B6%D0%BE%D1%80%D0%B4%D0%B6_%D0%9B%D1%83%D0%BA%D0%B0%D1%81', },
 },
 {
@@ -14484,7 +14497,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 11, by: 1969, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0124930', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%80%D0%B0%D1%80%D0%B4_%D0%91%D0%B0%D1%82%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -14494,7 +14507,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 12, by: 1948, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000367', wiki_ua: '%D0%96%D0%B5%D1%80%D0%B0%D1%80_%D0%94%D0%B5%D0%BF%D0%B0%D1%80%D0%B4%D1%8C%D1%94', },
 },
 {
@@ -14503,7 +14516,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 8, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000096', wiki_ua: '%D0%94%D0%B6%D0%B8%D0%BB%D0%BB%D1%96%D0%B0%D0%BD_%D0%90%D0%BD%D0%B4%D0%B5%D1%80%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -14512,7 +14525,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 6, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000153', wiki_ua: '%D0%94%D0%B6%D0%B8%D0%BD%D0%B0_%D0%93%D0%B5%D1%80%D1%88%D0%BE%D0%BD', },
 },
 {
@@ -14540,7 +14553,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 10, by: 1988, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1412974', wiki_ua: '%D2%90%D0%BB%D0%B5%D0%BD_%D0%9F%D0%B0%D1%83%D0%B5%D0%BB%D0%BB', },
 },
 {
@@ -14550,7 +14563,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 6, by: 1940, },
 	img: [ 1, 1 ],
 	country: { srb: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0593900', wiki_ua: '%D0%93%D0%BE%D0%B9%D0%BA%D0%BE_%D0%9C%D0%B8%D1%82%D0%B8%D1%87', },
 },
 {
@@ -14568,7 +14581,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 11, by: 1945, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000443', wiki_ua: '%D0%93%D0%BE%D0%BB%D0%B4%D1%96_%D0%93%D0%BE%D1%83%D0%BD', },
 },
 {
@@ -14632,7 +14645,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 9, by: 1968, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0005363', wiki_ua: '%D2%90%D0%B0%D0%B9_%D0%A0%D1%96%D1%87%D1%96', },
 },
 {
@@ -14641,7 +14654,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 9, by: 1972, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000569', wiki_ua: '%D0%93%D0%B2%D1%96%D0%BD%D0%B5%D1%82_%D0%9F%D0%B5%D0%BB%D1%82%D1%80%D0%BE%D1%83', },
 },
 {
@@ -14650,7 +14663,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 8, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000932', wiki_ua: '%D0%93%D0%B5%D0%BB%D0%BB%D1%96_%D0%91%D0%B5%D1%80%D1%80%D1%96', },
 },
 {
@@ -14678,7 +14691,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 9, by: 1957, },
 	img: [ 1, 1 ],
 	country: { deu: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0001877', wiki_ua: '%D0%93%D0%B0%D0%BD%D1%81_%D0%A6%D0%B8%D0%BC%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -14688,7 +14701,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 7, by: 1942, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000148', wiki_ua: '%D0%93%D0%B0%D1%80%D1%80%D1%96%D1%81%D0%BE%D0%BD_%D0%A4%D0%BE%D1%80%D0%B4', },
 },
 {
@@ -14707,7 +14720,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 4, by: 1882, },
 	img: [ 3, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%93%D0%B5%D0%B9%D0%BB%D1%96_%D0%95%D1%82%D0%B2%D0%B5%D0%BB', },
 },
 {
@@ -14716,7 +14729,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 9, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000181', wiki_ua: '%D0%93%D1%96%D0%B7%D0%B5%D1%80_%D0%9B%D0%BE%D0%BA%D0%BB%D1%96%D1%80', },
 },
 {
@@ -14782,7 +14795,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 9, by: 1960, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000424', wiki_ua: '%D0%93%27%D1%8E_%D2%90%D1%80%D0%B0%D0%BD%D1%82', },
 },
 {
@@ -14792,7 +14805,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 10, by: 1968, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0413168', wiki_ua: '%D0%93%27%D1%8E_%D0%94%D0%B6%D0%B5%D0%BA%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -14802,7 +14815,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 4, by: 1960, },
 	img: [ 1, 2 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0915989', wiki_ua: '%D0%93%27%D1%8E%D0%B3%D0%BE_%D0%92%D1%96%D0%B2%D1%96%D0%BD%D0%B3', },
 },
 {
@@ -14812,7 +14825,7 @@ let arrPeople = [
 	img: [ 1, 1 ],
 	sex: 1,
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter:1, wrestling: 1,  },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter:1, wrestling: 1,  },
 	internet: { imdb: '0107612', wiki_ua: '%D0%93%D0%B0%D0%BB%D0%BA_%D0%93%D0%BE%D0%B3%D0%B0%D0%BD', },
 },
 {
@@ -14831,7 +14844,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 2, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { music: 1, singer: 1, movie: 1, actor: 1, },
+	hash: { music: 1, singer: 1, movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001384', wiki_ua: 'Ice-T', },
 },
 {
@@ -14896,7 +14909,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 8, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0085312', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BA_%D0%91%D0%BB%D0%B5%D0%BA', },
 },
 {
@@ -14915,7 +14928,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 4, by: 1937, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000197', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BA_%D0%9D%D1%96%D0%BA%D0%BE%D0%BB%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -14925,7 +14938,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 4, by: 1954, },
 	img: [ 1, 1 ],
 	country: { hkg: 1, chn: 1, usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, },
 	internet: { imdb: '0000329', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BA%D1%96_%D0%A7%D0%B0%D0%BD', },
 },
 {
@@ -14944,7 +14957,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 3, by: 1986, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2541974', wiki_ua: '%D0%94%D0%B6%D0%B0%D0%B9_%D0%9A%D0%BE%D1%80%D1%82%D0%BD%D1%96', },
 },
 {
@@ -14954,7 +14967,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 12, by: 1980, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0350453', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BA_%D0%94%D0%B6%D0%B8%D0%BB%D0%BB%D0%B5%D0%BD%D0%B3%D0%BE%D0%BB', },
 },
 {
@@ -14983,7 +14996,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 6, by: 1975, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0213354', wiki_ua: '%D0%96%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C_%D0%94%D0%B5%D0%B1%D0%B1%D1%83%D0%B7', },
 },
 {
@@ -14993,7 +15006,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 6, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000902', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%91%D0%B5%D0%BB%D1%83%D1%88%D1%96', },
 },
 {
@@ -15003,7 +15016,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 8, by: 1954, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000116', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%BD', },
 },
 {
@@ -15040,7 +15053,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 8, by: 1953, dd: 22, dm: 6, dy: 2015, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0000035', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%93%D0%BE%D1%80%D0%BD%D0%B5%D1%80', },
 },
 {
@@ -15060,7 +15073,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 9, by: 1973, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005188', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%9C%D0%B0%D1%80%D1%81%D0%B4%D0%B5%D0%BD', },
 },
 {
@@ -15079,7 +15092,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 6, by: 1951, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0006133', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD_%D0%93%D0%BE%D0%B2%D0%B0%D1%80%D0%B4', },
 },
 {
@@ -15089,7 +15102,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 2, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000652', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%81_%D0%A1%D0%BF%D0%B5%D0%B9%D0%B4%D0%B5%D1%80', },
 },
 {
@@ -15108,7 +15121,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 11, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000130', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BC%D1%96_%D0%9B%D1%96_%D0%9A%D0%B5%D1%80%D1%82%D1%96%D1%81', },
 },
 {
@@ -15118,7 +15131,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 10, by: 1943, },
 	img: [ 1, 1 ],
 	country: { nld: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000957', wiki_ua: '%D0%AF%D0%BD_%D0%B4%D0%B5_%D0%91%D0%BE%D0%BD%D1%82', },
 },
 {
@@ -15127,7 +15140,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 3, by: 1973, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001506', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D0%BD_%D0%9C%D0%B0%D1%80%D1%87', },
 },
 {
@@ -15146,7 +15159,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 7, by: 1969, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0164809', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD_%D0%9A%D0%BB%D0%B0%D1%80%D0%BA', },
 },
 {
@@ -15156,7 +15169,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 4, by: 1970, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005134', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD_%D0%9B%D1%96', },
 },
 {
@@ -15166,7 +15179,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 8, by: 1979, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0597388', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD_%D0%9C%D0%BE%D0%BC%D0%BE%D0%B0', },
 },
 {
@@ -15176,7 +15189,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 11, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001462', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD_%D0%A1%D0%BA%D0%BE%D1%82%D1%82_%D0%9B%D1%96', },
 },
 {
@@ -15186,7 +15199,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1967, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0005458', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD_%D0%A1%D1%82%D0%B5%D0%B9%D1%82%D0%B5%D0%BC', },
 },
 {
@@ -15205,7 +15218,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 12, by: 1913, dd: 8, dm: 11, dy: 1998, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0544786', wiki_ua: '%D0%96%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B5', },
 },
 {
@@ -15215,7 +15228,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 7, by: 1948, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000606', wiki_ua: '%D0%96%D0%B0%D0%BD_%D0%A0%D0%B5%D0%BD%D0%BE', },
 },
 {
@@ -15235,7 +15248,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 10, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, kickboxing: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, kickboxing: 1, },
 	internet: { imdb: '0000241', wiki_ua: '%D0%96%D0%B0%D0%BD-%D0%9A%D0%BB%D0%BE%D0%B4_%D0%92%D0%B0%D0%BD_%D0%94%D0%B0%D0%BC', },
 },
 {
@@ -15254,7 +15267,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 4, by: 1933, dd: 6, dm: 9, dy: 2021, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000901', wiki_ua: '%D0%96%D0%B0%D0%BD-%D0%9F%D0%BE%D0%BB%D1%8C_%D0%91%D0%B5%D0%BB%D1%8C%D0%BC%D0%BE%D0%BD%D0%B4%D0%BE', },
 },
 {
@@ -15272,7 +15285,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 6, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000675', wiki_ua: '%D0%94%D0%B6%D0%B8%D0%BD%D0%BD_%D0%A2%D1%80%D1%96%D0%BF%D0%BB%D0%B3%D0%BE%D1%80%D0%BD', },
 },
 {
@@ -15282,7 +15295,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 2, by: 1955, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001099', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%84%D1%84_%D0%94%D0%B5%D0%BD%D1%96%D0%B5%D0%BB%D1%81', },
 },
 {
@@ -15292,7 +15305,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 5, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: {
 		imdb: '0934637', 
 		wiki_ru: '%D0%A3%D0%B8%D0%BD%D0%BA%D0%BE%D1%82%D1%82,_%D0%94%D0%B6%D0%B5%D1%84%D1%84', 
@@ -15304,7 +15317,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 9, by: 2002, },
 	img: [ 3, 3 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '4911194', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0_%D0%9E%D1%80%D1%82%D0%B5%D0%B3%D0%B0', },
 },
 {
@@ -15313,7 +15326,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 2, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000098', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80_%D0%95%D0%BD%D1%96%D1%81%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -15322,7 +15335,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 12, by: 1970, },
 	img: [ 2, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000124', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80_%D0%9A%D0%BE%D0%BD%D0%BD%D0%B5%D0%BB%D0%BB%D1%96', },
 },
 {
@@ -15331,7 +15344,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 8, by: 1990, },
 	img: [ 2, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2225369', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80_%D0%9B%D0%BE%D1%80%D0%B5%D0%BD%D1%81', },
 },
 {
@@ -15340,7 +15353,7 @@ let arrPeople = [
 	life: { bd: 24, bm: 7, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { music: 1, singer: 1, movie: 1, actor: 1, },
+	hash: { music: 1, singer: 1, movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000182', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80_%D0%9B%D0%BE%D0%BF%D0%B5%D1%81', },
 },
 {
@@ -15380,7 +15393,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 10, by: 1983, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0251986', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%81%D1%81%D1%96_%D0%90%D0%B9%D0%B7%D0%B5%D0%BD%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
@@ -15389,7 +15402,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 4, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0004695', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%81%D1%81%D1%96%D0%BA%D0%B0_%D0%90%D0%BB%D1%8C%D0%B1%D0%B0', },
 },
 {
@@ -15398,7 +15411,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 4, by: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001448', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%81%D1%81%D1%96%D0%BA%D0%B0_%D0%9B%D0%B5%D0%BD%D2%91', },
 },
 {
@@ -15407,7 +15420,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 5, by: 1987, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1557329', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%81%D1%81%D1%96%D0%BA%D0%B0_%D0%A0%D0%BE%D1%82', },
 },
 {
@@ -15417,7 +15430,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 4, by: 1963, },
 	img: [ 1, 1 ],
 	country: { chn: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, wushu: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, wushu: 1, },
 	internet: { imdb: '0001472', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%82_%D0%9B%D1%96', },
 },
 {
@@ -15427,7 +15440,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 1, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000120', wiki_ua: '%D0%94%D0%B6%D0%B8%D0%BC_%D0%9A%D0%B5%D1%80%D1%80%D1%96', },
 },
 {
@@ -15474,7 +15487,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 3, by: 1993, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '3069650', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%B4%D1%96_%D0%9A%D0%BE%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -15483,7 +15496,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 11, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000149', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%B4%D1%96_%D0%A4%D0%BE%D1%81%D1%82%D0%B5%D1%80', },
 },
 {
@@ -15521,7 +15534,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 10, by: 1947, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0608012', wiki_ua: '%D0%94%D0%B6%D0%BE_%D0%9C%D0%BE%D1%80%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -15531,7 +15544,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 2, by: 1943, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000582', wiki_ua: '%D0%94%D0%B6%D0%BE_%D0%9F%D0%B5%D1%88%D1%96', },
 },
 {
@@ -15580,7 +15593,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 4, by: 1977, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, },
 	internet: { imdb: '1078479', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%A1%D1%96%D0%BD%D0%B0', },
 },
 {
@@ -15590,7 +15603,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 6, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000131', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%9A%27%D1%8E%D1%81%D0%B0%D0%BA', },
 },
 {
@@ -15638,7 +15651,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 12, by: 1953, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000518', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%9C%D0%B0%D0%BB%D0%BA%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -15678,7 +15691,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 2, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000237', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%A2%D1%80%D0%B0%D0%B2%D0%BE%D0%BB%D1%82%D0%B0', },
 },
 {
@@ -15688,7 +15701,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 5, by: 1946, },
 	img: [ 1, 1 ],
 	country: { hkg: 1, },	
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000247', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%92%D1%83', },
 },
 {
@@ -15698,7 +15711,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 6, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000136', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD%D0%BD%D1%96_%D0%94%D0%B5%D0%BF%D0%BF', },
 },
 {
@@ -15718,7 +15731,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 12, by: 1938, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000685', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%BD_%D0%92%D0%BE%D0%B9%D1%82', },
 	relative: { children: [ 'angelina_jolie_04061975', ], },
 },
@@ -15729,7 +15742,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 11, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0609236', wiki_ru: '%D0%9C%D0%BE%D1%81%D1%82%D0%BE%D1%83,_%D0%94%D0%B6%D0%BE%D0%BD%D0%B0%D1%82%D0%B0%D0%BD', },
 },
 {
@@ -15785,7 +15798,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 7, by: 1978, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001326', wiki_ua: '%D0%94%D0%B6%D0%BE%D1%88_%D0%93%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%82%D1%82', },
 },
 {
@@ -15794,7 +15807,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 12, by: 1934, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001132', wiki_ua: '%D0%94%D0%B6%D1%83%D0%B4%D1%96_%D0%94%D0%B5%D0%BD%D1%87', },
 },
 {
@@ -15813,7 +15826,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 10, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000210', wiki_ua: '%D0%94%D0%B6%D1%83%D0%BB%D1%96%D1%8F_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82%D1%81', },
 },
 {
@@ -15822,7 +15835,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 12, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000194', wiki_ua: '%D0%94%D0%B6%D1%83%D0%BB%D1%96%D0%B0%D0%BD%D0%BD_%D0%9C%D1%83%D1%80', },
 },
 {
@@ -15831,7 +15844,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 3, by: 1964, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000300', wiki_ua: '%D0%96%D1%83%D0%BB%D1%8C%D1%94%D1%82_%D0%91%D1%96%D0%BD%D0%BE%D1%88', },
 },
 {
@@ -15840,7 +15853,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 6, by: 1973, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000496', wiki_ua: '%D0%94%D0%B6%D1%83%D0%BB%D1%8C%D1%94%D1%82%D1%82_%D0%9B%D1%8C%D1%8E%D1%97%D1%81', },
 },
 {
@@ -15871,7 +15884,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 1, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, music: 1, singer: 1, },
+	hash: { movie: 1, movie_actor: 1, music: 1, singer: 1, },
 	internet: { imdb: '0005493', wiki_ua: '%D0%94%D0%B6%D0%B0%D1%81%D1%82%D1%96%D0%BD_%D0%A2%D1%96%D0%BC%D0%B1%D0%B5%D1%80%D0%BB%D0%B5%D0%B9%D0%BA', },
 },
 {
@@ -15898,7 +15911,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 3, by: 1970, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0558182', wiki_ua: '%D0%9A%D0%B5%D1%80%D1%96_%D0%9C%D0%B0%D1%82%D1%87%D0%B5%D1%82%D1%82', },
 },
 {
@@ -15927,7 +15940,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 6, by: 1972, },
 	img: [ 1, 1 ],
 	country: { nzl: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0881631', wiki_ua: '%D0%9A%D0%B0%D1%80%D0%BB_%D0%A3%D1%80%D0%B1%D0%B0%D0%BD', },
 },
 {
@@ -15936,7 +15949,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1973, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000295', wiki_ua: '%D0%9A%D0%B5%D0%B9%D1%82_%D0%91%D0%B5%D0%BA%D1%96%D0%BD%D1%81%D0%B5%D0%B9%D0%BB', },
 },
 {
@@ -15945,7 +15958,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 10, by: 1975, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000701', wiki_ua: '%D0%9A%D0%B5%D0%B9%D1%82_%D0%92%D1%96%D0%BD%D1%81%D0%BB%D0%B5%D1%82', },
 },
 {
@@ -15955,7 +15968,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 9, by: 1964, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000206', wiki_ua: '%D0%9A%D1%96%D0%B0%D0%BD%D1%83_%D0%A0%D1%96%D0%B2%D0%B7', },
 },
 {
@@ -15964,7 +15977,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 3, by: 1985, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0461136', wiki_ua: '%D0%9A%D1%96%D1%80%D0%B0_%D0%9D%D0%B0%D0%B9%D1%82%D0%BB%D1%96', },
 },
 {
@@ -15974,7 +15987,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 7, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000102', wiki_ua: '%D0%9A%D0%B5%D0%B2%D1%96%D0%BD_%D0%91%D0%B5%D0%B9%D0%BA%D0%BE%D0%BD', },
 },
 {
@@ -15984,7 +15997,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 1, by: 1955, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000126', wiki_ua: '%D0%9A%D0%B5%D0%B2%D1%96%D0%BD_%D0%9A%D0%BE%D1%81%D1%82%D0%BD%D0%B5%D1%80', },
 },
 {
@@ -15994,7 +16007,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 10, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001629', wiki_ua: '%D0%9A%D0%B5%D0%B2%D1%96%D0%BD_%D0%9F%D0%BE%D0%BB%D0%BB%D0%B0%D0%BA', },
 },
 {
@@ -16004,7 +16017,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000228', wiki_ua: '%D0%9A%D0%B5%D0%B2%D1%96%D0%BD_%D0%A1%D0%BF%D0%B5%D0%B9%D1%81%D1%96', },
 },
 {
@@ -16014,7 +16027,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 12, by: 1966, },
 	img: [ 1, 1 ],
 	country: { can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000662', wiki_ua: '%D0%9A%D1%96%D1%84%D0%B5%D1%80_%D0%A1%D0%B0%D0%B7%D0%B5%D1%80%D0%BB%D0%B5%D0%BD%D0%B4', },
 },
 {
@@ -16032,7 +16045,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 12, by: 1953, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000107', wiki_ua: '%D0%9A%D1%96%D0%BC_%D0%91%D0%B5%D0%B9%D1%81%D1%96%D0%BD%D0%B3%D0%B5%D1%80', },
 },
 {
@@ -16072,7 +16085,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 6, by: 1936, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: {imdb: '0001434', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81_%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%BE%D1%84%D0%B5%D1%80%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -16081,7 +16094,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1979, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0518085', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D0%B0_%D0%9B%D0%BE%D0%BA%D0%B5%D0%BD', },
 },
 {
@@ -16100,7 +16113,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 3, by: 1951, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000621', wiki_ua: '%D0%9A%D1%83%D1%80%D1%82_%D0%A0%D0%B0%D1%81%D1%81%D0%B5%D0%BB%D0%BB', },
 },
 {
@@ -16110,7 +16123,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 9, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0151419', wiki_ua: '%D0%9A%D0%B0%D0%B9%D0%BB_%D0%A7%D0%B5%D0%BD%D0%B4%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -16120,7 +16133,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 2, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001492', wiki_ua: '%D0%9A%D0%B0%D0%B9%D0%BB_%D0%9C%D0%B0%D0%BA%D0%BB%D0%B0%D0%BA%D0%BB%D0%B5%D0%BD', },
 },
 {
@@ -16184,7 +16197,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 1, by: 1982, },
 	img: [ 3, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1659348',wiki_ua: '%D0%9B%D0%BE%D1%80%D0%B5%D0%BD_%D0%9A%D0%BE%D0%B5%D0%BD', },
 },
 {
@@ -16194,7 +16207,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 7, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000401', wiki_ua: '%D0%9B%D0%BE%D1%80%D0%B5%D0%BD%D1%81_%D0%A4%D1%96%D1%88%D0%B1%D0%B5%D1%80%D0%BD', },
 },
 {
@@ -16213,7 +16226,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 10, by: 1973, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0372176', wiki_ua: '%D0%9B%D1%96%D0%BD%D0%B0_%D0%93%D1%96%D0%B4%D1%96', },
 },
 {
@@ -16241,7 +16254,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 11, by: 1974, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000138', wiki_ua: '%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4%D0%BE_%D0%94%D1%96_%D0%9A%D0%B0%D0%BF%D1%80%D1%96%D0%BE', },
 },
 {
@@ -16260,7 +16273,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 2, by: 1926, dd: 28, dm: 11, dy: 2010, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000558', wiki_ua: '%D0%9B%D0%B5%D1%81%D0%BB%D1%96_%D0%9D%D1%96%D0%BB%D1%8C%D1%81%D0%B5%D0%BD', },
 },
 {
@@ -16280,7 +16293,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 6, by: 1952, },
 	img: [ 1, 1 ],
 	country: { irl: 1, usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000553', wiki_ua: '%D0%9B%D1%96%D0%B0%D0%BC_%D0%9D%D1%96%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -16289,7 +16302,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 9, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000157', wiki_ua: '%D0%9B%D1%96%D0%BD%D0%B4%D0%B0_%D0%93%D0%B0%D0%BC%D1%96%D0%BB%D1%8C%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -16308,7 +16321,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 7, by: 1977, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000239', wiki_ua: '%D0%9B%D1%96%D0%B2_%D0%A2%D0%B0%D0%B9%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -16317,7 +16330,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 8, by: 1987, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0515116', wiki_ua: '%D0%91%D0%BB%D0%B5%D0%B9%D0%BA_%D0%9B%D0%B0%D0%B9%D0%B2%D0%BB%D1%96', },
 },
 {
@@ -16336,7 +16349,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 1, by: 1913, dd: 10, dm: 3, dy: 1998, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000978', wiki_ua: '%D0%9B%D0%BB%D0%BE%D0%B9%D0%B4_%D0%91%D1%80%D1%96%D0%B4%D0%B6%D0%B5%D1%81', },
 },
 {
@@ -16374,7 +16387,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 7, by: 1914, dd: 27, dm: 1, dy: 1983, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000086', wiki_ua: '%D0%9B%D1%83%D1%97_%D0%B4%D0%B5_%D0%A4%D1%8E%D0%BD%D0%B5%D1%81', },
 },
 {
@@ -16422,7 +16435,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 3, by: 1959, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000108', wiki_ua: '%D0%9B%D1%8E%D0%BA_%D0%91%D0%B5%D1%81%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -16449,7 +16462,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 5, by: 1957, },
 	img: [ 2, 1 ],
 	country: { bra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0764176', wiki_ua: '%D0%9B%D1%83%D1%81%D0%B5%D0%BB%D1%96%D1%8F_%D0%A1%D0%B0%D0%BD%D1%82%D1%83%D1%88', },
 },
 {
@@ -16488,7 +16501,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 8, by: 1980, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, child: 1, },
+	hash: { movie: 1, movie_actor: 1, child: 1, },
 	internet: { imdb: '0000346', wiki_ua: '%D0%9C%D0%B0%D0%BA%D0%BE%D0%BB%D0%B5%D0%B9_%D0%9A%D0%B0%D0%BB%D0%BA%D1%96%D0%BD', },
 },
 {
@@ -16506,7 +16519,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 5, by: 1979, },
 	img: [ 1, 1 ],
 	country: { vnm: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0702572', wiki_ua: '%D0%9C%D0%B5%D0%B3%D0%B3%D1%96_%D0%9A%27%D1%8E', },
 },
 {
@@ -16525,7 +16538,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 10, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001937', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BA%D0%BE_%D0%91%D0%B5%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D0%BC%D1%96', },
 },
 {
@@ -16553,7 +16566,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 7, by: 1990, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '3053338', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%B3%D0%BE_%D0%A0%D0%BE%D0%B1%D0%B1%D1%96', },
 },
 {
@@ -16592,7 +16605,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 6, by: 1926, dd: 4, dm: 8, dy: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000054', wiki_ua: '%D0%9C%D0%B5%D1%80%D1%96%D0%BB%D1%96%D0%BD_%D0%9C%D0%BE%D0%BD%D1%80%D0%BE', },
 },
 {
@@ -16622,7 +16635,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 2, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001092', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BA_%D0%94%D0%B0%D0%BA%D0%B0%D1%81%D0%BA%D0%BE%D1%81', },
 },
 {
@@ -16632,7 +16645,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 3, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0006183', wiki_ru: '%D0%9C%D0%B0%D0%BD%D1%87%D0%B8%D0%BD%D0%B0,_%D0%9C%D0%B0%D1%80%D0%BA', },
 },
 {
@@ -16651,7 +16664,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 6, by: 1971, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000242', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BA_%D0%92%D0%BE%D0%BB%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
@@ -16661,7 +16674,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1924, dd: 1, dm: 7, dy: 2004, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000008', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BB%D0%BE%D0%BD_%D0%91%D1%80%D0%B0%D0%BD%D0%B4%D0%BE', },
 },
 {
@@ -16671,7 +16684,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 3, by: 1947, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0184392', wiki_ua: '%D0%9C%D0%B0%D1%80%D1%82%D1%96%D0%BD_%D0%9A%D0%BE%D1%83%D0%B2', },
 },
 {
@@ -16681,7 +16694,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 4, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001454', wiki_ua: '%D0%9C%D0%B0%D1%80%D1%82%D1%96%D0%BD_%D0%9B%D0%BE%D0%B2%D1%80%D0%B5%D0%BD%D1%81', },
 },
 {
@@ -16700,7 +16713,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 8, by: 1940, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000640', wiki_ua: '%D0%9C%D0%B0%D1%80%D1%82%D1%96%D0%BD_%D0%A8%D0%B8%D0%BD', },
 },
 {
@@ -16709,7 +16722,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 2, by: 1953, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005460', wiki_ua: '%D0%9C%D0%B5%D1%80%D1%96_%D0%A1%D1%82%D1%96%D0%BD%D0%B1%D0%B5%D1%80%D0%B3%D0%B5%D0%BD', },
 },
 {
@@ -16728,7 +16741,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1970, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000354', wiki_ua: '%D0%9C%D0%B5%D1%82%D1%82_%D0%94%D0%B5%D0%B9%D0%BC%D0%BE%D0%BD', },
 },
 {
@@ -16738,7 +16751,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 2, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000369', wiki_ua: '%D0%9C%D0%B5%D1%82%D1%82_%D0%94%D1%96%D0%BB%D0%BB%D0%BE%D0%BD', },
 },
 {
@@ -16748,7 +16761,7 @@ let arrPeople = [
 	life: { bd: 4, bm: 11, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000190', wiki_ua: '%D0%9C%D0%B5%D1%82%D1%82%D1%8C%D1%8E_%D0%9C%D0%B0%D0%BA-%D0%9A%D0%BE%D0%BD%D0%B0%D0%B3%D0%B5%D0%B9', },
 },
 {
@@ -16758,7 +16771,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 8, by: 1969, dd: 28, dm: 10, dy: 2023, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001612', wiki_ua: '%D0%9C%D0%B5%D1%82%D1%82%D1%8C%D1%8E_%D0%9F%D0%B5%D1%80%D1%80%D1%96_(%D0%B0%D0%BA%D1%82%D0%BE%D1%80)', },
 },
 {
@@ -16768,7 +16781,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 2, by: 1959, },
 	img: [ 1, 1 ],
 	country: { deu: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0400117', wiki_ua: '%D0%9C%D0%B0%D1%82%D1%82%D1%96%D0%B0%D1%81_%D0%93%27%D1%8E%D0%B7', },
 },
 {
@@ -16814,7 +16827,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 11, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000212', wiki_ua: '%D0%9C%D0%B5%D0%B3_%D0%A0%D0%B0%D1%8F%D0%BD', },
 },
 {
@@ -16823,7 +16836,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 5, by: 1986, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1083271', wiki_ua: '%D0%9C%D0%B5%D0%B3%D0%B0%D0%BD_%D0%A4%D0%BE%D0%BA%D1%81', },
 },
 {
@@ -16833,7 +16846,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 1, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, aus: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0000154', wiki_ua: '%D0%9C%D0%B5%D0%BB_%D0%93%D1%96%D0%B1%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -16852,7 +16865,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 2, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000881', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%91%D0%B5%D0%B9', },
 },
 {
@@ -16862,7 +16875,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 7, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000299', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%91%D1%96%D0%BD', },
 },
 {
@@ -16872,7 +16885,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 12, by: 1957, dd: 3, dm: 9, dy: 2012, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0003817', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%9A%D0%BB%D0%B0%D1%80%D0%BA_%D0%94%D1%83%D0%BD%D0%BA%D0%B0%D0%BD', },
 },
 {
@@ -16882,7 +16895,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 9, by: 1944, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000140', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%94%D1%83%D0%B3%D0%BB%D0%B0%D1%81', },
 },
 {
@@ -16892,7 +16905,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001154', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%94%D1%83%D0%B4%D1%96%D0%BA%D0%BE%D1%84%D1%84', },
 },
 {
@@ -16911,7 +16924,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 6, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, can: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000150', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%94%D0%B6%D0%B5%D0%B9_%D0%A4%D0%BE%D0%BA%D1%81', },
 },
 {
@@ -16931,7 +16944,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 11, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0925220', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%94%D0%B6%D0%B5%D0%B9_%D0%92%D0%B0%D0%B9%D1%82', },
 },
 {
@@ -16951,7 +16964,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 10, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001595', wiki_ua: '%D0%9C%D0%B0%D0%B9%D0%BA%D0%BB_%D0%9F%D0%B0%D1%80%D0%B5', },
 },
 {
@@ -16981,7 +16994,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 5, by: 1946, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0686375', wiki_ua: '%D0%9C%D1%96%D0%BA%D0%B5%D0%BB%D0%B5_%D0%9F%D0%BB%D0%B0%D1%87%D0%B8%D0%B4%D0%BE', },
 },
 {
@@ -16990,7 +17003,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 3, by: 1976, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '1157358', wiki_ua: '%D0%9C%D1%96%D1%88%D0%B5%D0%BB%D1%8C_%D0%9C%D0%BE%D0%BD%D0%B0%D0%B3%D0%B0%D0%BD', },
 },
 {
@@ -16999,7 +17012,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 4, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0000201', wiki_ua: '%D0%9C%D1%96%D1%88%D0%B5%D0%BB%D1%8C_%D0%9F%D1%84%D0%B0%D0%B9%D1%84%D1%84%D0%B5%D1%80', },
 },
 {
@@ -17008,7 +17021,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 7, by: 1978, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0735442', wiki_ua: '%D0%9C%D1%96%D1%88%D0%B5%D0%BB%D1%8C_%D0%A0%D0%BE%D0%B4%D1%80%D1%96%D0%B3%D0%B5%D1%81', },
 },
 {
@@ -17017,7 +17030,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 10, by: 1985, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0005502', wiki_ua: '%D0%9C%D1%96%D1%88%D0%B5%D0%BB%D1%8C_%D0%A2%D1%80%D0%B0%D1%85%D1%82%D0%B5%D0%BD%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
@@ -17027,7 +17040,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1943, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { music: 1, singer: 1, movie: 1, actor: 1, },	
+	hash: { music: 1, singer: 1, movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0001396', wiki_ua: '%D0%9C%D1%96%D0%BA_%D0%94%D0%B6%D0%B0%D0%B3%D0%B3%D0%B5%D1%80', },
 },
 {
@@ -17037,7 +17050,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 9, by: 1952, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000620', wiki_ua: '%D0%9C%D1%96%D0%BA%D1%96_%D0%A0%D1%83%D1%80%D0%BA', },
 },
 {
@@ -17066,7 +17079,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 12, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000170', wiki_ua: '%D0%9C%D1%96%D0%BB%D0%BB%D0%B0_%D0%99%D0%BE%D0%B2%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
@@ -17076,7 +17089,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 6, by: 1950, },
 	img: [ 1, 1 ],
 	country: { ind: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0149822', wiki_ua: '%D0%9C%D1%96%D1%82%D1%85%D1%83%D0%BD_%D0%A7%D0%B0%D0%BA%D1%80%D0%B0%D0%B1%D0%BE%D1%80%D1%82%D1%96', },
 },
 {
@@ -17085,7 +17098,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 9, by: 1964, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000899', wiki_ua: '%D0%9C%D0%BE%D0%BD%D1%96%D0%BA%D0%B0_%D0%91%D0%B5%D0%BB%D0%BB%D1%83%D1%87%D1%87%D1%96', },
 },
 {
@@ -17094,7 +17107,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 6, by: 1971, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005321', wiki_ua: '%D0%9C%D0%BE%D0%BD%D1%96%D0%BA%D0%B0_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80', },
 },
 {
@@ -17112,7 +17125,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 9, by: 1975, },
 	img: [ 2, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1291227', wiki_ua: '%D0%9C%D1%83%D0%BD_%D0%91%D0%BB%D0%B0%D0%B4%D2%91%D1%83%D0%B4', },
 },
 {
@@ -17122,7 +17135,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 6, by: 1937, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000151', wiki_ua: '%D0%9C%D0%BE%D1%80%D0%B3%D0%B0%D0%BD_%D0%A4%D1%80%D1%96%D0%BC%D0%B5%D0%BD', },
 },
 {
@@ -17159,7 +17172,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 9, by: 1968, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0915208', wiki_ua: '%D0%9D%D0%B0%D0%BE%D0%BC%D1%96_%D0%92%D0%BE%D1%82%D1%82%D1%81', },
 },
 {
@@ -17168,7 +17181,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 9, by: 1976, },
 	img: [ 2, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0365140', wiki_ua: '%D0%9D%D0%B0%D0%BE%D0%BC%D1%96_%D0%93%D0%B0%D1%80%D1%80%D1%96%D1%81', },
 },
 {
@@ -17187,7 +17200,7 @@ let arrPeople = [
 	life: { bd: 24, bm: 1, by: 1961, },
 	img: [ 1, 1 ],
 	country: { deu: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000176', wiki_ua: '%D0%9D%D0%B0%D1%81%D1%82%D0%B0%D1%81%D1%96%D1%8F_%D0%9A%D1%96%D0%BD%D1%81%D0%BA%D1%96', },
 },
 {
@@ -17196,7 +17209,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 2, by: 1982, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1754059', wiki_ua: '%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%96_%D0%94%D0%BE%D1%80%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -17205,7 +17218,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 6, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, isr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000204', wiki_ua: '%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%96_%D0%9F%D0%BE%D1%80%D1%82%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -17214,7 +17227,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 3, by: 1989, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2812026', wiki_ua: '%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%96_%D0%95%D0%BC%D0%BC%D0%B0%D0%BD%D1%83%D0%B5%D0%BB%D1%8C', },
 },
 {
@@ -17252,7 +17265,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 12, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001604', wiki_ru: '%D0%9F%D0%B8%D0%BF%D0%BB%D0%B7,_%D0%9D%D0%B8%D0%B0', },
 },
 {
@@ -17271,7 +17284,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 12, by: 1979, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001763', wiki_ru: '%D0%A1%D1%82%D0%B0%D0%BB,_%D0%9D%D0%B8%D0%BA', },
 },
 {
@@ -17299,7 +17312,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 1, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000115', wiki_ua: '%D0%9D%D1%96%D0%BA%D0%BE%D0%BB%D0%B0%D1%81_%D0%9A%D0%B5%D0%B9%D0%B4%D0%B6', },
 	films: {
 		actor: {
@@ -17335,7 +17348,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 6, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000173', wiki_ua: '%D0%9D%D1%96%D0%BA%D0%BE%D0%BB%D1%8C_%D0%9A%D1%96%D0%B4%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -17363,7 +17376,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 7, by: 1970, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },	
+	hash: { movie: 1, movie_actor: 1, },	
 	internet: { imdb: '0797151', wiki_ua: '%D0%9D%D1%96%D0%BD%D0%B0_%D0%A1%D0%B5%D0%BC%D0%B0%D1%88%D0%BA%D0%BE', },
 },
 {
@@ -17409,7 +17422,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 11, by: 1979, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1385871', wiki_ua: '%D0%9A%D1%83%D1%80%D0%B8%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE_%D0%9E%D0%BB%D1%8C%D0%B3%D0%B0_%D0%9A%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD%D1%96%D0%B2%D0%BD%D0%B0', },
 },
 {
@@ -17419,7 +17432,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 9, by: 1946, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000231', wiki_ua: '%D0%9E%D0%BB%D1%96%D0%B2%D0%B5%D1%80_%D0%A1%D1%82%D0%BE%D1%83%D0%BD', },
 },
 {
@@ -17457,7 +17470,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 1, by: 1977, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0089217', wiki_ua: '%D0%9E%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%BE_%D0%91%D0%BB%D1%83%D0%BC', },
 },
 {
@@ -17466,7 +17479,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 3, by: 1955, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001560', wiki_ua: '%D0%9E%D1%80%D0%BD%D0%B5%D0%BB%D0%BB%D0%B0_%D0%9C%D1%83%D1%82%D1%96', },
 },
 {
@@ -17522,7 +17535,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 7, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000097', wiki_ua: '%D0%9F%D0%B0%D0%BC%D0%B5%D0%BB%D0%B0_%D0%90%D0%BD%D0%B4%D0%B5%D1%80%D1%81%D0%BE%D0%BD', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/hollywood/66826/works/', },
 },
 {
@@ -17531,7 +17544,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 2, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0385296', wiki_ua: '%D0%9F%D0%B5%D1%80%D1%96%D1%81_%D0%93%D1%96%D0%BB%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -17550,7 +17563,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 8, by: 1952, dd: 14, dm: 9, dy: 2009, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000664', wiki_ua: '%D0%9F%D0%B0%D1%82%D1%80%D1%96%D0%BA_%D0%A1%D0%B2%D0%B5%D0%B9%D0%B7%D1%96', },
 },
 {
@@ -17579,7 +17592,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1939, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001357', wiki_ua: '%D0%9F%D0%BE%D0%BB_%D0%93%D0%BE%D2%91%D0%B0%D0%BD', },
 },
 {
@@ -17607,7 +17620,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 7, by: 1938, },
 	img: [ 1, 1 ],
 	country: { usa: 1, nld: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000682', wiki_ua: '%D0%9F%D0%BE%D0%BB_%D0%92%D0%B5%D1%80%D0%B3%D0%BE%D0%B2%D0%B5%D0%BD', },
 },
 {
@@ -17617,7 +17630,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 9, by: 1973, dd: 13, dm: 11, dy: 2013, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0908094', wiki_ua: '%D0%9F%D0%BE%D0%BB_%D0%92%D0%BE%D0%BA%D0%B5%D1%80', },
 },
 {
@@ -17636,7 +17649,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 12, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1745736', wiki_ua: '%D0%9F%D0%B0%D1%83%D0%BB%D0%B0_%D0%9F%D0%B0%D1%82%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -17655,7 +17668,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 4, by: 1974, },
 	img: [ 1, 1 ],
 	country: { esp: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0004851', wiki_ua: '%D0%9F%D0%B5%D0%BD%D0%B5%D0%BB%D0%BE%D0%BF%D0%B0_%D0%9A%D1%80%D1%83%D1%81', },
 },
 {
@@ -17685,7 +17698,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 6, by: 1969, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0227759', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%94%D1%96%D0%BD%D0%BA%D0%BB%D0%B5%D0%B9%D0%B4%D0%B6', },
 },
 {
@@ -17695,7 +17708,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 9, by: 1927, dd: 23, dm: 6, dy: 2011, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000393', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%A4%D0%B0%D0%BB%D1%8C%D0%BA', },
 },
 {
@@ -17705,7 +17718,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 2, by: 1940, dd: 16, dm: 8, dy: 2019, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001228', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%A4%D0%BE%D0%BD%D0%B4%D0%B0', },
 },
 {
@@ -17715,7 +17728,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0338886', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%93%D1%80%D1%96%D0%BD', },
 },
 {
@@ -17725,7 +17738,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 10, by: 1961, },
 	img: [ 1, 1 ],
 	country: { nzl: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0001392', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -17745,7 +17758,7 @@ let arrPeople = [
 	life: { bd: 24, bm: 6, by: 1947, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000693', wiki_ua: '%D0%9F%D1%96%D1%82%D0%B5%D1%80_%D0%92%D0%B5%D0%BB%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -17764,7 +17777,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 10, by: 1930, dd: 23, dm: 11, dy: 2006, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%A4%D1%96%D0%BB%D1%96%D0%BF%D0%BF_%D0%9D%D1%83%D0%B0%D1%80%D0%B5', },
 },
 {
@@ -17774,7 +17787,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 5, by: 1953, },
 	img: [ 1, 1 ],
 	country: { irl: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000112', wiki_ua: '%D0%9F%D1%96%D1%80%D1%81_%D0%91%D1%80%D0%BE%D1%81%D0%BD%D0%B0%D0%BD', },
 },
 {
@@ -17794,7 +17807,7 @@ let arrPeople = [
 	life: { bd: 16, bm: 8, by: 1934, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0007069', wiki_ua: '%D0%9F%27%D1%94%D1%80_%D0%A0%D1%96%D1%88%D0%B0%D1%80', },
 },
 {
@@ -17852,7 +17865,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 3, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, director: 1, },
+	hash: { movie: 1, movie_actor: 1, movie_director: 1, },
 	internet: { imdb: '0000233', wiki_ua: '%D0%9A%D0%B2%D0%B5%D0%BD%D1%82%D1%96%D0%BD_%D0%A2%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D1%96%D0%BD%D0%BE', },
 	films: {
 		actor: {
@@ -17913,7 +17926,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 5, by: 1981, },
 	img: [ 1, 1 ],
 	country: { usa: 1, egy: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1785339', wiki_ua: '%D0%A0%D0%B0%D0%BC%D1%96_%D0%9C%D0%B0%D0%BB%D0%B5%D0%BA', },
 },
 {
@@ -17923,7 +17936,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 7, by: 1974, },
 	img: [ 1, 1 ],
 	country: { deu: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '1014697', wiki_ua: '%D0%A0%D0%B0%D0%BC%D1%96%D0%BD_%D0%94%D0%B6%D0%B0%D0%B2%D0%B0%D0%B4%D1%96', },
 },
 {
@@ -17944,7 +17957,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 2, by: 1957, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0935653', wiki_ua: '%D0%A0%D0%B5%D0%B9_%D0%92%D1%96%D0%BD%D1%81%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -17953,7 +17966,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 8, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },	
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000360', wiki_ua: '%D0%A0%D0%B5%D0%B1%D0%B5%D0%BA%D0%BA%D0%B0_%D0%B4%D0%B5_%D0%9C%D0%BE%D1%80%D0%BD%D0%B5%D0%B9', },
 },
 {
@@ -17962,7 +17975,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 10, by: 1983, },
 	img: [ 1, 1 ],
 	country: { swe: 1, },	
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0272581', wiki_ua: '%D0%A0%D0%B5%D0%B1%D0%B5%D0%BA%D0%BA%D0%B0_%D0%A4%D0%B5%D1%80%D0%B3%D1%8E%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -17992,7 +18005,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 12, by: 1948, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0320969', wiki_ua: '%D0%A0%D0%B5%D0%BC%D0%BE_%D0%94%D0%B6%D0%B8%D1%80%D0%BE%D0%BD%D0%B5', },
 },
 {
@@ -18010,7 +18023,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 2, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000623', wiki_ua: '%D0%A0%D0%B5%D0%BD%D0%B5_%D0%A0%D1%83%D1%81%D1%81%D0%BE', },
 },
 {
@@ -18019,7 +18032,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 8, by: 1976, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0593961', wiki_ua: '%D0%A0%D0%BE%D0%BD%D0%B0_%D0%9C%D1%96%D1%82%D1%80%D0%B0', },
 },
 {
@@ -18029,7 +18042,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 11, by: 1926, dd: 17, dm: 1, dy: 2003, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001077', wiki_ua: '%D0%A0%D1%96%D1%87%D0%B0%D1%80%D0%B4_%D0%9A%D1%80%D0%B5%D0%BD%D0%BD%D0%B0', },
 },
 {
@@ -18039,7 +18052,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 8, by: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000152', wiki_ua: '%D0%A0%D1%96%D1%87%D0%B0%D1%80%D0%B4_%D0%93%D1%96%D1%80', },
 },
 {
@@ -18069,7 +18082,7 @@ let arrPeople = [
 	life: { bd: 30, bm: 11, by: 1937, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { wiki_ua: '%D0%A0%D1%96%D0%B4%D0%BB%D1%96_%D0%A1%D0%BA%D0%BE%D1%82%D1%82', },
 },
 {
@@ -18124,7 +18137,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 8, by: 1943, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000134', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%94%D0%B5_%D0%9D%D1%96%D1%80%D0%BE', },
 },
 {
@@ -18134,7 +18147,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 4, by: 1965, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000375', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%94%D0%B0%D1%83%D0%BD%D1%96_(%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%88%D0%B8%D0%B9)', },
 },
 {
@@ -18144,7 +18157,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 6, by: 1947, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000387', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%86%D0%BD%D0%B3%D0%BB%D1%83%D0%BD%D0%B4', },
 },
 {
@@ -18164,7 +18177,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 11, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001598', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%9F%D0%B0%D1%82%D1%80%D1%96%D0%BA', },
 },
 {
@@ -18174,7 +18187,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 12, by: 1930, dd: 8, dm: 12, dy: 2008, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0698764', wiki_ru: '%D0%9F%D1%80%D0%BE%D1%81%D0%BA%D0%B8,_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82', },
 },
 {
@@ -18184,7 +18197,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 6, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0004332', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%92%D0%B0%D0%B9%D0%B4', },
 },
 {
@@ -18194,7 +18207,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 5, by: 1952, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, producer: 1,},
+	hash: { movie: 1, movie_director: 1, producer: 1,},
 	internet: { imdb: '0000709', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%97%D0%B5%D0%BC%D0%B5%D0%BA%D1%96%D1%81', },
 },
 {
@@ -18224,7 +18237,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 7, by: 1951, dd: 11, dm: 8, dy: 2014, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000245', wiki_ua: '%D0%A0%D0%BE%D0%B1%D1%96%D0%BD_%D0%92%D1%96%D0%BB%D1%8C%D1%8F%D0%BC%D1%81', },
 },
 {
@@ -18234,7 +18247,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 10, by: 1927, dd: 23, dm: 5, dy: 2017, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000549', wiki_ua: '%D0%A0%D0%BE%D0%B4%D0%B6%D0%B5%D1%80_%D0%9C%D1%83%D1%80', },
 },
 {
@@ -18264,7 +18277,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 3, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, producer: 1, },
+	hash: { movie: 1, movie_director: 1, producer: 1, },
 	internet: { imdb: '0000165', wiki_ua: '%D0%A0%D0%BE%D0%BD_%D0%93%D0%BE%D0%B2%D0%B0%D1%80%D0%B4', },
 },
 {
@@ -18274,7 +18287,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 4, by: 1950, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000579', wiki_ua: '%D0%A0%D0%BE%D0%BD_%D0%9F%D0%B5%D1%80%D0%BB%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -18303,7 +18316,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 1, by: 1979, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0683253', wiki_ua: '%D0%A0%D0%BE%D0%B7%D0%B0%D0%BC%D1%83%D0%BD%D0%B4_%D0%9F%D0%B0%D0%B9%D0%BA', },
 },
 {
@@ -18312,7 +18325,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 2, by: 1987, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '3310211', wiki_ua: '%D0%A0%D0%BE%D1%83%D0%B7_%D0%9B%D0%B5%D1%81%D0%BB%D1%96', },
 },
 {
@@ -18322,7 +18335,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 1, by: 1955, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000100', wiki_ua: '%D0%A0%D0%BE%D0%B2%D0%B5%D0%BD_%D0%90%D1%82%D0%BA%D1%96%D0%BD%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -18370,7 +18383,7 @@ let arrPeople = [
 	life: { bd: 7, bm: 4, by: 1964, },
 	img: [ 1, 1 ],
 	country: { nzl: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000128', wiki_ua: '%D0%A0%D0%B0%D1%81%D1%81%D0%B5%D0%BB_%D0%9A%D1%80%D0%BE%D1%83', },
 },
 {
@@ -18380,7 +18393,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 1, by: 1944, dd: 19, dm: 7, dy: 2019, },
 	img: [ 1, 1 ],
 	country: { nzl: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000442', wiki_ua: '%D0%A0%D1%83%D1%82%D0%B3%D0%B5%D1%80_%D0%93%D0%B0%D1%83%D0%B5%D1%80', },
 },
 {
@@ -18400,7 +18413,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 11, by: 1980, },
 	img: [ 1, 1 ],
 	country: { can: 1, usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0331516', wiki_ua: '%D0%A0%D0%B0%D1%8F%D0%BD_%D2%90%D0%BE%D1%81%D0%BB%D1%96%D0%BD%D2%91', },
 },
 {
@@ -18410,7 +18423,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 10, by: 1976, },
 	img: [ 1, 1 ],
 	country: { can: 1, usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005351', wiki_ua: '%D0%A0%D0%B0%D1%8F%D0%BD_%D0%A0%D0%B5%D0%B9%D0%BD%D0%BE%D0%BB%D1%8C%D0%B4%D1%81', },
 },
 {
@@ -18429,7 +18442,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 9, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, mex: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000161', wiki_ua: '%D0%A1%D0%B0%D0%BB%D1%8C%D0%BC%D0%B0_%D0%A5%D0%B0%D1%94%D0%BA', },
 },
 {
@@ -18448,7 +18461,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 8, by: 1976, },
 	img: [ 1, 1 ],
 	country: { aus: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0941777', wiki_ua: '%D0%A1%D0%B5%D0%BC_%D0%92%D0%BE%D1%80%D1%82%D1%96%D0%BD%D0%B3%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -18467,7 +18480,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 12, by: 1948, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000168', wiki_ua: '%D0%A1%D0%B5%D0%BC%D1%8E%D0%B5%D0%BB_%D0%9B%D1%96%D1%80%D0%BE%D0%B9_%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -18486,7 +18499,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 7, by: 1961, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0618651', wiki_ua: '%D0%A1%D0%B0%D0%BC%D1%96_%D0%9D%D0%B0%D1%81%D0%B5%D1%80%D1%96', },
 },
 {
@@ -18504,7 +18517,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1964, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000113', wiki_ua: '%D0%A1%D0%B0%D0%BD%D0%B4%D1%80%D0%B0_%D0%91%D1%83%D0%BB%D0%BB%D0%BE%D0%BA', },
 },
 {
@@ -18513,7 +18526,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 3, by: 1988, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, model: 1, },
+	hash: { movie: 1, movie_actor: 1, model: 1, },
 	internet: { imdb: '2340248', wiki_ua: '%D0%A1%D0%B0%D1%88%D0%B0_%D0%93%D1%80%D0%B5%D0%B9', },
 },
 {
@@ -18522,7 +18535,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 11, by: 1984, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0424060', wiki_ua: '%D0%A1%D0%BA%D0%B0%D1%80%D0%BB%D0%B5%D1%82%D1%82_%D0%99%D0%BE%D0%B3%D0%B0%D0%BD%D1%81%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -18553,7 +18566,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 6, by: 1976, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, sport: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, },
 	internet: { imdb: '0012078', wiki_ua: '%D0%A1%D0%BA%D0%BE%D1%82%D1%82_%D0%95%D0%B4%D0%BA%D1%96%D0%BD%D1%81', },
 },
 {
@@ -18563,7 +18576,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 4, by: 1959, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000293', wiki_ua: '%D0%A8%D0%BE%D0%BD_%D0%91%D1%96%D0%BD', },
 },
 {
@@ -18573,7 +18586,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 8, by: 1930, dd: 31, dm: 10, dy: 2020, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000125', wiki_ua: '%D0%A8%D0%BE%D0%BD_%D0%9A%D0%BE%D0%BD%D0%BD%D0%B5%D1%80%D1%96', },
 },
 {
@@ -18583,7 +18596,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 8, by: 1960, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000576', wiki_ua: '%D0%A8%D0%BE%D0%BD_%D0%9F%D0%B5%D0%BD%D0%BD', },
 },
 {
@@ -18592,7 +18605,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 11, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000707', wiki_ua: '%D0%A8%D0%BE%D0%BD_%D0%AF%D0%BD%D2%91', },
 },
 {
@@ -18602,7 +18615,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 10, by: 1976, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0005405', wiki_ua: '%D0%A8%D0%BE%D0%BD_%D0%92%D1%96%D0%BB%D1%8C%D1%8F%D0%BC_%D0%A1%D0%BA%D0%BE%D1%82%D1%82', },
 },
 {
@@ -18621,7 +18634,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 2, by: 1974, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001293', wiki_ua: '%D0%A1%D0%B5%D1%82_%D0%93%D1%80%D1%96%D0%BD', },
 },
 {
@@ -18630,7 +18643,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 3, by: 1958, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000232', wiki_ua: '%D0%A8%D0%B5%D1%80%D0%BE%D0%BD_%D0%A1%D1%82%D0%BE%D1%83%D0%BD', },
 },
 {
@@ -18640,7 +18653,7 @@ let arrPeople = [
 	life: { bd: 11, bm: 6, by: 1986, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0479471', wiki_ua: '%D0%A8%D0%B0%D1%8F_%D0%9B%D0%B0%D0%B1%D0%B0%D1%84', },
 },
 {
@@ -18676,7 +18689,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 10, by: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000244', wiki_ua: '%D0%A1%D1%96%D0%B3%D1%83%D1%80%D0%BD%D1%96_%D0%92%D1%96%D0%B2%D0%B5%D1%80', },
 },
 {
@@ -18723,7 +18736,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 4, by: 1982, },
 	img: [ 1, 1 ],
 	country: { dza: 1, fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '1154749', wiki_ua: '%D0%A1%D0%BE%D1%84%D1%96%D1%8F_%D0%91%D1%83%D1%82%D0%B5%D0%BB%D0%BB%D0%B0', },
 },
 {
@@ -18732,7 +18745,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 9, by: 1934, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000047', wiki_ua: '%D0%A1%D0%BE%D1%84%D1%96_%D0%9B%D0%BE%D1%80%D0%B5%D0%BD', },
 },
 {
@@ -18741,7 +18754,7 @@ let arrPeople = [
 	life: { bd: 17, bm: 11, by: 1966, },
 	img: [ 3, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000521', wiki_ua: '%D0%A1%D0%BE%D1%84%D1%96_%D0%9C%D0%B0%D1%80%D1%81%D0%BE', },
 },
 {
@@ -18750,7 +18763,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 2, by: 1996, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '3849842', wiki_ua: '%D0%A1%D0%BE%D1%84%D1%96_%D0%A2%D0%B5%D1%80%D0%BD%D0%B5%D1%80', },
 },
 {
@@ -18779,7 +18792,7 @@ let arrPeople = [
 	life: { bd: 26, bm: 7, by: 1928, dd: 7, dm: 3, dy: 1999, },
 	img: [ 1, 1 ],
 	country: { usa: 1, gbr: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000040', wiki_ua: '%D0%A1%D1%82%D0%B5%D0%BD%D0%BB%D1%96_%D0%9A%D1%83%D0%B1%D1%80%D0%B8%D0%BA', },
 },
 {
@@ -18799,7 +18812,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 5, by: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000286', wiki_ua: '%D0%A1%D1%82%D1%96%D0%B2%D0%B5%D0%BD_%D0%91%D0%BE%D0%BB%D0%B4%D0%B2%D1%96%D0%BD', },
 	relative: { bs: [ 'alec_baldwin_07081960', 'daniel_baldwin_07081960', 'william_baldwin_21021963', ], }, 
 },
@@ -18820,7 +18833,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 12, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000114', wiki_ua: '%D0%A1%D1%82%D1%96%D0%B2_%D0%91%D1%83%D1%88%D0%B5%D0%BC%D1%96', },
 },
 {
@@ -18839,7 +18852,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 4, by: 1952, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000219', wiki_ua: '%D0%A1%D1%82%D1%96%D0%B2%D0%B5%D0%BD_%D0%A1%D1%96%D0%B3%D0%B0%D0%BB', },
 },
 {
@@ -18849,7 +18862,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 12, by: 1946, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { imdb: '0000229', wiki_ua: '%D0%A1%D1%82%D1%96%D0%B2%D0%B5%D0%BD_%D0%A1%D0%BF%D1%96%D0%BB%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
@@ -18877,7 +18890,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 7, by: 1946, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000230', wiki_ua: '%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D1%80_%D0%A1%D1%82%D0%B0%D0%BB%D0%BB%D0%BE%D0%BD%D0%B5', },
 },
 {
@@ -18887,7 +18900,7 @@ let arrPeople = [
 	life: { bd: 8, bm: 3, by: 1957, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0001686', wiki_ua: '%D0%A1%D0%B8%D0%BD%D1%82%D1%96%D1%8F_%D0%A0%D0%BE%D1%82%D1%80%D0%BE%D0%BA', },
 },
 
@@ -18942,7 +18955,7 @@ let arrPeople = [
 	sex: 1,
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, cartoon: 1, },
+	hash: { movie: 1, movie_director: 1, cartoon: 1, },
 	internet: { imdb: '0000813', wiki_ua: '%D0%A2%D0%B5%D0%BA%D1%81_%D0%95%D0%B9%D0%B2%D0%B5%D1%80%D1%96', },
 	note: 'Avery Frederick Bean',
 },
@@ -18962,7 +18975,7 @@ let arrPeople = [
 	life: { bd: 6, bm: 11, by: 1972, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0628601', wiki_ua: '%D0%A2%D0%B5%D0%BD%D0%B4%D1%96_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -18980,7 +18993,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 1, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000119', wiki_ua: '%D0%A2%D1%96%D0%B0_%D0%9A%D0%B0%D1%80%D1%80%D0%B5%D1%80%D0%B5', },
 },
 {
@@ -18989,7 +19002,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 11, by: 1960, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0842770', wiki_ua: '%D0%A2%D1%96%D0%BB%D1%8C%D0%B4%D0%B0_%D0%A1%D0%B2%D1%96%D0%BD%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -18999,7 +19012,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 4, by: 1946, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000347', wiki_ua: '%D0%A2%D1%96%D0%BC_%D0%9A%D0%B0%D1%80%D1%80%D1%96', },
 },
 {
@@ -19009,7 +19022,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 3, by: 1946, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001096', wiki_ua: '%D0%A2%D1%96%D0%BC%D0%BE%D1%82%D1%96_%D0%94%D0%B0%D0%BB%D1%82%D0%BE%D0%BD', },
 },
 {
@@ -19019,7 +19032,7 @@ let arrPeople = [
 	life: { bd: 20, bm: 5, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0648249', wiki_ua: '%D0%A2%D1%96%D0%BC%D0%BE%D1%82%D1%96_%D0%9E%D0%BB%D1%96%D1%84%D0%B0%D0%BD%D1%82', },
 },
 {
@@ -19038,7 +19051,7 @@ let arrPeople = [
 	life: { bd: 27, bm: 6, by: 1975, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001497', wiki_ua: '%D0%A2%D0%BE%D0%B1%D1%96_%D0%9C%D0%B0%D0%B3%D0%B2%D0%B0%D0%B9%D1%80', },
 },
 {
@@ -19048,7 +19061,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 5, by: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000297', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%91%D0%B5%D1%80%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80', },
 },
 {
@@ -19058,7 +19071,7 @@ let arrPeople = [
 	life: { bd: 3, bm: 7, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000129', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%9A%D1%80%D1%83%D0%B7', },
 },
 {
@@ -19068,7 +19081,7 @@ let arrPeople = [
 	life: { bd: 9, bm: 7, by: 1956, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000158', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%93%D0%B5%D0%BD%D0%BA%D1%81', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/49093/works/', },
 },
 {
@@ -19078,7 +19091,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 9, by: 1977, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0362766', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%93%D0%B0%D1%80%D0%B4%D1%96', },
 },
 {
@@ -19088,7 +19101,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 1, by: 1945, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000633', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%A1%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA', },
 },
 {
@@ -19098,7 +19111,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 11, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001744', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%A1%D0%B0%D0%B9%D0%B7%D0%BC%D0%BE%D1%80', },
 },
 {
@@ -19138,7 +19151,7 @@ let arrPeople = [
 	life: { bd: 15, bm: 9, by: 1946, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000169', wiki_ua: '%D0%A2%D0%BE%D0%BC%D0%BC%D1%96_%D0%9B%D1%96_%D0%94%D0%B6%D0%BE%D0%BD%D1%81', },
 },
 {
@@ -19174,7 +19187,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 4, by: 1970, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000235', wiki_ua: '%D0%A3%D0%BC%D0%B0_%D0%A2%D1%83%D1%80%D0%BC%D0%B0%D0%BD', },
 },
 {
@@ -19193,7 +19206,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 12, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000174', wiki_ua: '%D0%92%D0%B5%D0%BB_%D0%9A%D1%96%D0%BB%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -19202,7 +19215,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 10, by: 1965, },
 	img: [ 1, 1 ],
 	country: { ita: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000420', wiki_ua: '%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%96%D1%8F_%D0%93%D0%BE%D0%BB%D1%96%D0%BD%D0%BE', },
 },
 {
@@ -19220,7 +19233,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 12, by: 1972, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0660854', wiki_ua: '%D0%92%D0%B0%D0%BD%D0%B5%D1%81%D1%81%D0%B0_%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D1%96', },
 },
 {
@@ -19258,7 +19271,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 10, by: 1952, },
 	img: [ 1, 1 ],
 	country: { mex: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0145708', wiki_ua: '%D0%92%D0%B5%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B0_%D0%9A%D0%B0%D1%81%D1%82%D1%80%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/latin/234223/works/', },
 },
 {
@@ -19268,7 +19281,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 2, by: 1889, dd: 6, dm: 1, dy: 1949, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, },
+	hash: { movie: 1, movie_director: 1, },
 	internet: { wiki_ua: '%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80_%D0%A4%D0%BB%D0%B5%D0%BC%D1%96%D0%BD%D0%B3', },
 },
 {
@@ -19295,7 +19308,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 5, by: 1962, },
 	img: [ 1, 1 ],
 	country: { mex: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0749336', wiki_ua: '%D0%92%D1%96%D0%BA%D1%82%D0%BE%D1%80%D1%96%D1%8F_%D0%A0%D1%83%D1%84%D1%84%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/latin/182219/works/', },
 },
 {
@@ -19314,7 +19327,7 @@ let arrPeople = [
 	life: { bd: 28, bm: 2, by: 1972, },
 	img: [ 1, 1 ],
 	country: {},
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0351868', wiki_ua: '%D0%92%D1%96%D0%BB%D0%BB%D0%B5_%D0%A5%D0%B0%D0%B0%D0%BF%D0%B0%D1%81%D0%B0%D0%BB%D0%BE', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/4567/works/', },
 },
 {
@@ -19324,7 +19337,7 @@ let arrPeople = [
 	life: { bd: 18, bm: 7, by: 1967, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0004874', wiki_ua: '%D0%92%D1%96%D0%BD_%D0%94%D1%96%D0%B7%D0%B5%D0%BB%D1%8C', },
 },
 {
@@ -19343,7 +19356,7 @@ let arrPeople = [
 	life: { bd: 12, bm: 5, by: 1959, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000609', wiki_ua: '%D0%92%D1%96%D0%BD%D0%B3_%D0%A0%D0%B5%D0%B9%D0%BC%D1%81', },
 },
 {
@@ -19352,7 +19365,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 11, by: 1913, dd: 8, dm: 7, dy: 1967, },
 	img: [ 1, 1 ],
 	country: { gbr: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { wiki_ua: '%D0%92%D1%96%D0%B2%27%D1%94%D0%BD_%D0%9B%D1%96', },
 },
 {
@@ -19362,7 +19375,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 12, by: 1901, dd: 15, dm: 12, dy: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, director: 1, producer: 1, cartoon: 1, },
+	hash: { movie: 1, movie_director: 1, producer: 1, cartoon: 1, },
 	internet: { wiki_ua: '%D0%92%D0%BE%D0%BB%D1%82_%D0%94%D1%96%D1%81%D0%BD%D0%B5%D0%B9', },
 	note: 'Художник-мультипликатор',
 },
@@ -19400,7 +19413,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 7, by: 1962, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, fighter: 1, },
+	hash: { movie: 1, movie_actor: 1, fighter: 1, },
 	internet: { imdb: '0000648', wiki_ua: '%D0%92%D0%B5%D1%81%D0%BB%D1%96_%D0%A1%D0%BD%D0%B0%D0%B9%D0%BF%D1%81', },
 },
 {
@@ -19418,7 +19431,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 11, by: 1955, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000155', wiki_ua: '%D0%92%D1%83%D0%BF%D1%96_%D0%93%D0%BE%D0%BB%D0%B4%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
@@ -19446,7 +19459,7 @@ let arrPeople = [
 	life: { bd: 25, bm: 9, by: 1968, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000226', wiki_ua: '%D0%92%D1%96%D0%BB%D0%BB_%D0%A1%D0%BC%D1%96%D1%82', },
 },
 {
@@ -19456,7 +19469,7 @@ let arrPeople = [
 	life: { bd: 22, bm: 7, by: 1955, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000353', wiki_ua: '%D0%92%D1%96%D0%BB%D0%BB%D0%B5%D0%BC_%D0%94%D0%B5%D1%84%D0%BE', },
 },
 {
@@ -19466,7 +19479,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 2, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000287', wiki_ua: '%D0%92%D1%96%D0%BB%D1%8C%D1%8F%D0%BC_%D0%91%D0%BE%D0%BB%D0%B4%D0%B2%D1%96%D0%BD', },
 	relative: { bs: [ 'alec_baldwin_07081960', 'daniel_baldwin_07081960', 'stephen_baldwin_12051966', ], },
 },
@@ -19486,7 +19499,7 @@ let arrPeople = [
 	life: { bd: 13, bm: 4, by: 1950, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0006669', wiki_ua: '%D0%92%D1%96%D0%BB%D1%8C%D1%8F%D0%BC_%D0%A1%D0%B5%D0%B4%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -19514,7 +19527,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 10, by: 1971, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000213', wiki_ua: '%D0%92%D0%B0%D0%B9%D0%BD%D0%BE%D0%BD%D0%B0_%D0%A0%D0%B0%D0%B9%D0%B4%D0%B5%D1%80', },
 },
 {
@@ -19554,7 +19567,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 12, by: 1935, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, director: 1, },
+	hash: { movie: 1, movie_actor: 1, movie_director: 1, },
 	internet: { imdb: '0000095', wiki_ua: '%D0%92%D1%83%D0%B4%D1%96_%D0%90%D0%BB%D0%BB%D0%B5%D0%BD', },
 },
 {
@@ -19564,7 +19577,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 7, by: 1961, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000437', wiki_ua: '%D0%92%D1%83%D0%B4%D1%96_%D0%93%D0%B0%D1%80%D1%80%D0%B5%D0%BB%D1%8C%D1%81%D0%BE%D0%BD', },
 },
 {
@@ -19573,7 +19586,7 @@ let arrPeople = [
 	life: { bd: 2, bm: 7, by: 1970, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000319', wiki_ua: '%D0%AF%D0%BD%D1%81%D1%96_%D0%91%D0%B0%D1%82%D0%BB%D0%B5%D1%80', },
 },
 {
@@ -19583,7 +19596,7 @@ let arrPeople = [
 	life: { bd: 23, bm: 7, by: 1970, },
 	img: [ 1, 1 ],
 	country: { fra: 1, },
-	hash: { movie: 1, music: 1, composer: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '0862961', wiki_ua: '%D0%AF%D0%BD_%D0%A2%D1%96%D1%80%D1%81%D0%B5%D0%BD', },
 },
 {
@@ -19619,7 +19632,7 @@ let arrPeople = [
 	life: { bd: 1, bm: 12, by: 1988, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2368789', wiki_ua: '%D0%97%D0%BE%D1%97_%D0%9A%D1%80%D0%B0%D0%B2%D1%96%D1%82%D1%86', },
 },
 {
@@ -19628,7 +19641,7 @@ let arrPeople = [
 	life: { bd: 19, bm: 6, by: 1978, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, actor: 1, },
+	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0757855', wiki_ua: '%D0%97%D0%BE%D1%97_%D0%A1%D0%B0%D0%BB%D0%B4%D0%B0%D0%BD%D0%B0', },
 },
 
@@ -19652,12 +19665,6 @@ let arrPeople = [
 
 
 
-
-
-let objPeopleHash = {};
-arrPeopleHash.forEach( k => {
-	objPeopleHash[ k.id ] = k;
-});
 
 
 
