@@ -1,169 +1,3 @@
-const arrPeopleHash = [
-
-
-
-{ id: 'movie' 				, title: 'Кіно' 						, },
-{ id: 'movie_actor' 		, title: 'КіноАктори' 					, },
-{ id: 'movie_director' 		, title: 'КіноРежисери' 				, },
-{ id: 'movie_composer' 		, title: 'КіноКомпозитори' 					, },
-
-{ id: 'music' 				, title: 'Музика' 						, },
-{ id: 'composer' 			, title: 'Композитори' 					, },
-
-
-{ id: 'politics' 			, title: 'Політики' 					, },
-
-{ id: 'comedy' 				, title: 'Comedy' 						, },
-{ id: 'dj' 					, title: 'DJ' 							, },
-{ id: 'it' 					, title: 'IT' 							, },
-{ id: 'mma' 				, title: 'MMA' 							, },
-{ id: 'wwar2' 				, title: 'Друга світова война' 			, },
-{ id: 'aviation' 			, title: 'Авіація' 						, },
-{ id: 'car' 				, title: 'Авто' 						, },
-{ id: 'architect' 			, title: 'Архітектори' 					, },
-{ id: 'astrology' 			, title: 'Астрологія' 					, },
-{ id: 'astronomy' 			, title: 'Астрономія' 					, },
-{ id: 'ballet' 				, title: 'Балет' 						, },
-{ id: 'drummer' 			, title: 'Барабанщики' 					, },
-{ id: 'basketball' 			, title: 'Баскетбол' 					, },
-{ id: 'business' 			, title: 'Бізнесмени' 					, },
-{ id: 'fighter' 			, title: 'Бійці' 						, },
-{ id: 'biology' 			, title: 'Біологія' 					, },
-{ id: 'blogger' 			, title: 'Блогери' 						, },
-{ id: 'box' 				, title: 'Бокс' 						, },
-{ id: 'volleyball' 			, title: 'Волейбол' 					, },
-{ id: 'leading' 			, title: 'Ведучі' 						, },
-{ id: 'inventor' 			, title: 'Винахідники' 					, },
-{ id: 'war' 				, title: 'Військові' 					, },
-{ id: 'gensec' 				, title: 'Генсек' 						, },
-{ id: 'getman' 				, title: 'Гетьмани' 					, },
-{ id: 'gymnastics' 			, title: 'Гімнастика' 					, },
-{ id: 'humor' 				, title: 'Гумор' 						, },
-{ id: 'diesel' 				, title: 'ДизельШоу' 					, },
-{ id: 'dictator' 			, title: 'Диктатори' 					, },
-{ id: 'conductor' 			, title: 'Диригенти' 					, },
-{ id: 'dianetics' 			, title: 'Діанетика' 					, },
-{ id: 'child' 				, title: 'Діти' 						, },
-{ id: 'discoverer' 			, title: 'Дослідники' 					, },
-{ id: 'dramaturge' 			, title: 'Драматургія' 					, },
-{ id: 'economy' 			, title: 'Економіка' 					, },
-{ id: 'expert' 				, title: 'Експерти' 					, },
-{ id: 'psychic' 			, title: 'Екстрасенси' 					, },
-{ id: 'journalist' 			, title: 'Журналісти' 					, },
-{ id: 'railway' 			, title: 'Залізниця' 					, },
-{ id: 'founder' 			, title: 'Засновники' 					, },
-{ id: 'weapon' 				, title: 'Зброя' 						, },
-{ id: 'criminal' 			, title: 'Злочинці' 					, },
-{ id: 'traitor' 			, title: 'Зрадники' 					, },
-{ id: 'illusion' 			, title: 'Ілюзіоністи' 					, },
-{ id: 'emperor' 			, title: 'Імператори' 					, },
-{ id: 'internet' 			, title: 'Інтернет' 					, },
-{ id: 'story' 				, title: 'Історики' 					, },
-{ id: 'karate' 				, title: 'Карате' 						, },
-{ id: 'kvartal95' 			, title: 'Квартал95' 					, },
-{ id: 'kvk' 				, title: 'КВК' 							, },
-{ id: 'kickboxing' 			, title: 'Кікбоксінг' 					, },
-{ id: 'konstruktor' 		, title: 'Конструктори' 				, },
-{ id: 'queen' 				, title: 'Королева' 					, },
-{ id: 'space' 				, title: 'Космос' 						, },
-{ id: 'kungfu' 				, title: 'Кунгфу' 						, },
-{ id: 'cook' 				, title: 'Кухарі' 						, },
-{ id: 'athletics' 			, title: 'Легкоатлети' 					, },
-{ id: 'doctor' 				, title: 'Лікарі' 						, },
-{ id: 'literature' 			, title: 'Література' 					, },
-{ id: 'traveler' 			, title: 'Мандрівники' 					, },
-{ id: 'maski' 				, title: 'МаскиШоу' 					, },
-{ id: 'math' 				, title: 'Математика' 					, },
-{ id: 'medicine' 			, title: 'Медицина' 					, },
-{ id: 'mayor' 				, title: 'Мери' 						, },
-{ id: 'billionaire' 		, title: 'Мільярдери' 					, },
-{ id: 'fashion' 			, title: 'Мода' 						, },
-{ id: 'model' 				, title: 'Моделі' 						, },
-{ id: 'seafarer' 			, title: 'Мореплавці' 					, },
-{ id: 'cartoon' 			, title: 'Мультфільми' 					, },
-{ id: 'science' 			, title: 'Наука' 						, },
-{ id: 'opera' 				, title: 'Опера' 						, },
-{ id: 'writer' 				, title: 'Письменники' 					, },
-{ id: 'piano' 				, title: 'Піаністи' 					, },
-{ id: 'swim' 				, title: 'Плавання' 					, },
-{ id: 'state_head' 			, title: 'Правителі' 					, },
-{ id: 'president' 			, title: 'Президенти' 					, },
-{ id: 'princess' 			, title: 'Принцеса' 					, },
-{ id: 'predictor' 			, title: 'Провісники' 					, },
-{ id: 'programmer' 			, title: 'Программісти' 				, },
-{ id: 'producer' 			, title: 'Продюсери' 					, },
-{ id: 'psychology' 			, title: 'Психологія' 					, },
-{ id: 'revolutionist' 		, title: 'Революціонери' 				, },
-{ id: 'religion' 			, title: 'Релігія' 						, },
-{ id: 'wrestling' 			, title: 'Реслінг' 						, },
-{ id: 'relative' 			, title: 'Родичі' 						, },
-{ id: 'develope' 			, title: 'Розробники' 					, },
-{ id: 'screenwriter' 		, title: 'Сценаристи' 					, },
-{ id: 'violin' 				, title: 'Скрипалі' 					, },
-{ id: 'sculptor' 			, title: 'Скульптори' 					, },
-{ id: 'singer' 				, title: 'Співаки' 						, },
-{ id: 'sport' 				, title: 'Спорт' 						, },
-{ id: 'dance' 				, title: 'Танцюристи' 					, },
-{ id: 'tennis' 				, title: 'Теніс' 						, },
-{ id: 'wushu' 				, title: 'Ушу' 							, },
-{ id: 'figure_skating' 		, title: 'ФігурнеКатання' 				, },
-{ id: 'physics' 			, title: 'Фізика' 						, },
-{ id: 'philosophy' 			, title: 'Філософія' 					, },
-{ id: 'football' 			, title: 'Футбол' 						, },
-{ id: 'fuhrer' 				, title: 'Фюрер' 						, },
-{ id: 'chemistry' 			, title: 'Хімія' 						, },
-{ id: 'painter' 			, title: 'Художники' 					, },
-{ id: 'show' 				, title: 'Шоу' 							, },
-{ id: 'showman' 			, title: 'Шоу-мени' 					, },
-{ id: 'died' 				, title: 'Померли' 						, },
-
-
-
-/*
-Миротворець
-https://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BB%D1%96%D0%BA_%D0%BE%D1%81%D1%96%D0%B1,_%D1%8F%D0%BA%D1%96_%D1%81%D1%82%D0%B2%D0%BE%D1%80%D1%8E%D1%8E%D1%82%D1%8C_%D0%B7%D0%B0%D0%B3%D1%80%D0%BE%D0%B7%D1%83_%D0%BD%D0%B0%D1%86%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%86%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8
-*/
-
-
-
-
-/*
-{ id: 'standup' 			, title: 'StandUp' 						, },
-{ id: 'writer_music' 		, title: 'АвториПісень' 				, },
-{ id: 'arranger' 			, title: 'Аранжувальники' 				, },
-{ id: 'weightlifting' 		, title: 'Важкоатлети' 					, },
-{ id: 'cycle' 				, title: 'Вело' 						, },
-{ id: 'geography' 			, title: 'Географія' 					, },
-{ id: 'guitar' 				, title: 'Гітаристи' 					, },
-{ id: 'deputy' 				, title: 'Депутати' 					, },
-{ id: 'operator_movie' 		, title: 'Кінооператори' 				, },
-{ id: 'keyboard' 			, title: 'Клавішники' 					, },
-{ id: 'king' 				, title: 'Король' 						, },
-{ id: 'moto' 				, title: 'Мото' 						, },
-{ id: 'dubbing_movie' 		, title: 'Озвучування' 					, },
-{ id: 'translator' 			, title: 'Перекладачі' 					, },
-{ id: 'prince' 				, title: 'Принц' 						, },
-{ id: 'propaganda' 			, title: 'Пропагандисти' 				, },
-{ id: 'sociology' 			, title: 'Соціологія' 					, },
-{ id: 'theatre' 			, title: 'Театр' 						, },
-{ id: 'chemistry' 			, title: 'Хімія' 						, },
-{ id: 'circus' 				, title: 'Цирк' 						, },
-*/
-
-
-//{ id: '' 		, title: '' 	, },
-
-
-];
-
-
-
-let objPeopleHash = {};
-arrPeopleHash.forEach( k => {
-	objPeopleHash[ k.id ] = k;
-});
-
-
 
 
 
@@ -13636,7 +13470,7 @@ let arrPeople = [
 	life: { bd: 29, bm: 10, by: 1943, dd: 19, dm: 1, dy: 1996, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, producer: 1, },
+	hash: { movie: 1, movie_producer: 1, },
 	internet: { imdb: '0800971', wiki_ru: '%D0%A1%D0%B8%D0%BC%D0%BF%D1%81%D0%BE%D0%BD,_%D0%94%D0%BE%D0%BD', },
 },
 {
@@ -15383,7 +15217,7 @@ let arrPeople = [
 	life: { bd: 21, bm: 9, by: 1943, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, producer: 1, },
+	hash: { movie: 1, movie_producer: 1, },
 	internet: { imdb: '0000988', wiki_ua: '%D0%94%D0%B6%D0%B5%D1%80%D1%80%D1%96_%D0%91%D1%80%D1%83%D0%BA%D0%B3%D0%B0%D0%B9%D0%BC%D0%B5%D1%80', },
 },
 {
@@ -16615,7 +16449,7 @@ let arrPeople = [
 	life: { bd: 10, bm: 10, by: 1951, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, producer: 1, },
+	hash: { movie: 1, movie_producer: 1, },
 	internet: { imdb: '0440830', wiki_ua: '%D0%9C%D0%B0%D1%80%D1%96%D0%BE_%D0%9A%D0%B0%D1%81%D1%81%D0%B0%D1%80', },
 },
 {
@@ -17865,30 +17699,8 @@ let arrPeople = [
 	life: { bd: 27, bm: 3, by: 1963, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, movie_actor: 1, movie_director: 1, },
+	hash: { movie: 1, movie_actor: 1, movie_director: 1, movie_producer: 1, },
 	internet: { imdb: '0000233', wiki_ua: '%D0%9A%D0%B2%D0%B5%D0%BD%D1%82%D1%96%D0%BD_%D0%A2%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D1%96%D0%BD%D0%BE', },
-	films: {
-		actor: {
-			kriminalnoe_chtivo_1994: 1,
-			Destiny_vklyuchaet_radio_1995: 1,
-			chetyre_komnaty_1995: 1,
-			ot_zakata_do_rassveta_1996: 1,
-		},
-		director: {
-			kriminalnoe_chtivo_1994: 1,
-			chetyre_komnaty_1995: 1,
-		},
-		producer: {
-			chetyre_komnaty_1995: 1,
-			ot_zakata_do_rassveta_1996: 1,
-		},
-		screenwriter: {
-			kriminalnoe_chtivo_1994: 1,
-			chetyre_komnaty_1995: 1,
-			skala_1996: 1,
-			ot_zakata_do_rassveta_1996: 1,
-		},
-	},
 },
 {
 	id: 'raffaello_00001483', 
@@ -18207,7 +18019,7 @@ let arrPeople = [
 	life: { bd: 14, bm: 5, by: 1952, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, movie_director: 1, producer: 1,},
+	hash: { movie: 1, movie_director: 1, movie_producer: 1,},
 	internet: { imdb: '0000709', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%97%D0%B5%D0%BC%D0%B5%D0%BA%D1%96%D1%81', },
 },
 {
@@ -18277,7 +18089,7 @@ let arrPeople = [
 	life: { bd: 31, bm: 3, by: 1954, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, movie_director: 1, producer: 1, },
+	hash: { movie: 1, movie_director: 1, movie_producer: 1, },
 	internet: { imdb: '0000165', wiki_ua: '%D0%A0%D0%BE%D0%BD_%D0%93%D0%BE%D0%B2%D0%B0%D1%80%D0%B4', },
 },
 {
@@ -19375,7 +19187,7 @@ let arrPeople = [
 	life: { bd: 5, bm: 12, by: 1901, dd: 15, dm: 12, dy: 1966, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
-	hash: { movie: 1, movie_director: 1, producer: 1, cartoon: 1, },
+	hash: { movie: 1, movie_director: 1, movie_producer: 1, cartoon: 1, },
 	internet: { wiki_ua: '%D0%92%D0%BE%D0%BB%D1%82_%D0%94%D1%96%D1%81%D0%BD%D0%B5%D0%B9', },
 	note: 'Художник-мультипликатор',
 },

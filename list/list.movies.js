@@ -2295,6 +2295,11 @@ const arrMovies = [
 	cast: { sandra_bullock_26071964: 1, brad_pitt_18121963: 1, },
 },
 {
+	id: 'lost_on_a_mountain_in_maine_2024', title: { ua: 'Загублений в горах у штаті Мен', en: 'Lost on a Mountain in Maine', }, year: 2024, country: { usa: 1, },
+	genre: { adventure: 1, drama: 1, }, hash: { children: 1, mountains: 1, surviving: 1, },
+	internet: { imdb: '2965408', },
+},
+{
 	id: 'klatwa_doliny_wezy_1987', title: { ua: 'Закляття долини змій', en: 'Klatwa doliny wezy', }, year: 1987, country: { usa: 1, }, rating: '5+',
 	genre: { adventure: 1, horror: 1, }, hash: { snake: 1, aliens: 1, creature: 1, travel: 1, },
 	internet: { imdb: '0095456', wiki_ua: '%D0%97%D0%B0%D0%BA%D0%BB%D1%8F%D1%82%D1%82%D1%8F_%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D0%B8_%D0%B7%D0%BC%D1%96%D0%B9', hd_vip: '113416', },
@@ -2888,7 +2893,7 @@ const arrMovies = [
 {
 	id: 'kickboxer_1989', title: { ua: 'Кікбоксер', en: 'Kickboxer', }, year: 1989, country: { usa: 1, },
 	genre: { action: 1, }, hash: { fight: 1, sport: 1, },
-	internet: { imdb: '0097659', wiki_ua: '%D0%9A%D1%96%D0%BA%D0%B1%D0%BE%D0%BA%D1%81%D0%B5%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1989)', },
+	internet: { imdb: '0097659', wiki_ua: '%D0%9A%D1%96%D0%BA%D0%B1%D0%BE%D0%BA%D1%81%D0%B5%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1989)', hd_vip: '17984', },
 	cast: { jean_claude_van_damme_18101960: 1, },
 },
 {
@@ -3282,9 +3287,15 @@ const arrMovies = [
 	cast: { leonardo_dicaprio_11111974: 1, jennifer_connelly_12121970: 1, arnold_vosloo_16061962: 1, },
 },
 {
+	id: 'bloodfist_1989', title: { ua: 'Кривавий кулак', en: 'Bloodfist', }, year: 1989, country: { usa: 1, phl: 1, },
+	genre: { action: 1, }, hash: { fight: 1, },
+	internet: { imdb: '0096952', wiki_ua: '%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D0%B2%D0%B8%D0%B9_%D0%BA%D1%83%D0%BB%D0%B0%D0%BA', hd_vip: '150866', },
+	cast: { don_wilson_10091954: 1, },
+},
+{
 	id: 'bloodsport_1988', title: { ua: 'Кривавий спорт', en: 'Bloodsport', }, year: 1988, country: { usa: 1, },
 	genre: { action: 1, }, hash: { fight: 1, sport: 1, },
-	internet: { imdb: '0092675', wiki_ua: '%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D0%B2%D0%B8%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82', },
+	internet: { imdb: '0092675', wiki_ua: '%D0%9A%D1%80%D0%B8%D0%B2%D0%B0%D0%B2%D0%B8%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82', hd_vip: '14313', },
 	cast: { jean_claude_van_damme_18101960: 1, forest_whitaker_15071961: 1, bolo_yeung_03071946: 1, },
 },
 {
@@ -3450,6 +3461,12 @@ const arrMovies = [
 	genre: { action: 1, sci_fi: 1, }, 
 	internet: { imdb: '1013743', wiki_ua: '%D0%9B%D0%B8%D1%86%D0%B0%D1%80_%D0%B4%D0%BD%D1%8F', },
 	cast: { tom_cruise_03071962: 1, cameron_diaz_30081972: 1, gal_gadot_30041985: 1, },
+},
+{
+	id: 'only_the_strong_1993', title: { ua: 'Лише найсильніші', en: 'Only the Strong', }, year: 1993, country: { usa: 1, fra: 1, },
+	genre: { action: 1, }, hash: { fight: 1, },
+	internet: { imdb: '0107750', wiki_ru: '%D0%A2%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE_%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D0%B5', hd_vip: '79581', },
+	cast: { mark_dacascos_26021964: 1, },
 },
 {
 	id: 'bad_genius_2024', title: { ua: 'Ліга мільйонерів', en: 'Bad Genius', }, year: 2024, country: { can: 1, },
@@ -4007,6 +4024,12 @@ const arrMovies = [
 	genre: { action: 1, sci_fi: 1,  }, hash: { sea: 1, battle: 1, },
 	internet: { imdb: '1440129', wiki_ua: '%D0%9C%D0%BE%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%B1%D1%96%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { liam_neeson_07061952: 1, rihanna_20021988: 1, },	
+},
+{
+	id: 'mortal_kombat_1995', title: { ua: 'Мортал Комбат', en: 'Mortal Kombat', }, year: 1995, country: { usa: 1, },
+	genre: { action: 1, }, hash: { fight: 1, },
+	internet: { imdb: '0113855', wiki_ua: '%D0%A1%D0%BC%D0%B5%D1%80%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0', hd_vip: '7520', },
+	cast: { christopher_lambert_29031957: 1, },	
 },
 {
 	id: 'extremely_loud_incredibly_close_2011', title: { ua: 'Моторошно голосно і несамовито близько', en: 'Extremely Loud & Incredibly Close', }, year: 2011, country: { usa: 1, },
@@ -5401,6 +5424,23 @@ const arrMovies = [
 	internet: { imdb: '0091209', wiki_ua: '%D0%9F%D0%BE%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1986)', hd_vip: '19977', moviestape: 'The.Hitcher.1986', },
 	cast: { rutger_hauer_23011944: 1, },
 },
+{
+	id: 'the_order_2024', title: { ua: 'Порядок', en: 'The Order', }, year: 2024, country: { usa: 1, can: 1, gbr: 1, },
+	genre: { drama: 1, crime: 1, }, hash: { bank: 1, robbery: 1, },
+	internet: { imdb: '26625693', wiki_ua: '%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2024)', },
+},
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: 'poseidon_2006', title: { ua: 'Посейдон', en: 'Poseidon', }, year: 2006, country: { usa: 1, },
 	genre: { disaster: 1, }, hash: { sea: 1, ship: 1, },

@@ -333,10 +333,6 @@ class ComponentSpoylerBodyMovie {
 			{ k: 'win' 		, v: 'movies' 	, },
 			{ k: 'hash' 	, v: id 		, },
 		]);
-
-
-
-
 	} 
  
  

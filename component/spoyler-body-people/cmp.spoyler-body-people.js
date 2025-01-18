@@ -240,13 +240,24 @@ class ComponentSpoylerBodyPeople {
 
 
 
+			let htmlHash = '';
 			if ( obj.hash ) {
-				let htmlHash = '';
+				let txtHashTKV = '';
 
-				for ( let k in obj.hash )
-					htmlHash += `#${ k } `;
+				for ( let k in obj.hash ) {
+					txtHashTKV += `#${ k } `;
 
-				arrTKV.push( { key: 'hash', val: htmlHash, } );
+
+					htmlHash += `<span class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcHash( this )">#${ k }</span> `;
+
+				}
+
+				arrTKV.push( { key: 'hash', val: txtHashTKV, } );
+
+				if ( htmlHash )
+					htmlHash = `<div class="people-hashes center"><span class="key">Хеш:</span> ${ htmlHash }</div>`;
+
+
 			}
 
 
@@ -310,13 +321,14 @@ class ComponentSpoylerBodyPeople {
 
 
 			html = `<div class="wrap">
-
 				<div class="main-info">
 					${ htmlName }
 					${ htmlDate }
 					${ htmlAva }
 					${ htmlGalery }
+
 					${ htmlInternet }
+					${ htmlHash }
 				</div>
 
 				${ htmlMovies }
@@ -347,6 +359,28 @@ class ComponentSpoylerBodyPeople {
 
 		elem.closest( '.tkv-object' ).querySelector( '.body-tkv' ).classList.toggle( 'unvisible' );;
 	}
+
+
+
+
+
+
+	static clcHash( elem ) { 
+		const fooName = this.name + '.clcHash()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem', elem ); 
+
+		let id = elem.dataset.id;
+ 
+		Router.urlGET = {}; 
+		Router.link([
+			{ k: 'win' 		, v: 'people' 	, },
+			{ k: 'hash' 	, v: id 		, },
+		]);
+	} 
+ 
+ 
 
 
 

@@ -26,9 +26,10 @@ const dependences = [
 	{ arr: 'manufacturer'		, },  
 	{ arr: 'city'				, },  
 	{ arr: 'country'			, },  
+	{ arr: 'people.hash'		, },  
 	{ arr: 'people'				, },  
-	{ arr: 'movies'				, },  
 	{ arr: 'movies.hash'		, },  
+	{ arr: 'movies'				, },  
 
 
 
