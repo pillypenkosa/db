@@ -8706,6 +8706,8 @@ let arrPeople = [
 	hash: { show: 1, leading: 1, },
 	internet: { wiki_ua: '%D0%A1%D1%94%D1%80%D0%B3%D0%B0_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0_%D0%95%D0%B4%D1%83%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D1%87', },
 },
+
+
 {
 	id: 'alexey_serebryakov_03071964', 
 	name: { n: 'Алексей', s: 'Серебряков', },
@@ -8720,6 +8722,18 @@ let arrPeople = [
 		kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/3887/works/', 
 	},
 },
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: 'alexandr_serov_24031951', 
 	name: { n: 'Александр', s: 'Серов', },

@@ -350,6 +350,11 @@ const arrMovies = [
 	internet: { imdb: '5397194', wiki_ua: '%D0%90%D0%BD%D0%BE%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 },
 {
+	id: 'anora_2024', title: { ua: 'Анора', en: 'Anora', }, year: 2024, country: { usa: 1, },
+	genre: { drama: 1, }, 
+	internet: { imdb: '28607951', wiki_ua: '%D0%90%D0%BD%D0%BE%D1%80%D0%B0', },
+},
+{
 	id: 'apex_2021', title: { ua: 'Апекс: Смертельний квест', en: 'Apex', }, year: 2021, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1,  }, hash: { hunting: 1, },
 	internet: { imdb: '13265876', wiki_ua: '%D0%90%D0%BF%D0%B5%D0%BA%D1%81:_%D0%A1%D0%BC%D0%B5%D1%80%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B5%D1%81%D1%82', },
@@ -826,7 +831,7 @@ const arrMovies = [
 },
 {
 	id: 'wednesday_2022', title: { ua: 'Венздей', en: 'Wednesday', }, year: 2022, country: { usa: 1, },
-	genre: { serial: 1, horror: 1, comedy: 1, },
+	genre: { serial: 1, horror: 1, comedy: 1, }, hash: { spirits: 1, },
 	internet: { imdb: '13443470', wiki_ua: '%D0%92%D0%B5%D0%BD%D0%B7%D0%B4%D0%B5%D0%B9', },
 	cast: { jenna_ortega_27092002: 1, catherine_zeta_jones_25091969: 1, },
 },
@@ -1731,7 +1736,7 @@ const arrMovies = [
 },
 {
 	id: 'the_ring_2002', title: { ua: 'Дзвінок', en: 'The Ring', }, year: 2002, country: { usa: 1, }, rating: 5,
-	genre: { horror: 1, mystic: 1, },
+	genre: { horror: 1, mystic: 1, }, hash: { spirits: 1, },
 	internet: { imdb: '0298130', wiki_ua: '%D0%94%D0%B7%D0%B2%D1%96%D0%BD%D0%BE%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2002)', },
 	cast: { naomi_watts_28091968: 1, },
 },
@@ -2117,7 +2122,7 @@ const arrMovies = [
 },
 {
 	id: 'the_amityville_horror_2005', title: { ua: 'Жах Амітивілля', en: 'The Amityville Horror', }, year: 2005, country: { usa: 1, },
-	genre: { horror: 1, }, 
+	genre: { horror: 1, }, hash: { spirits: 1, },
 	internet: { imdb: '0384806', wiki_ua: '%D0%96%D0%B0%D1%85_%D0%90%D0%BC%D1%96%D1%82%D0%B8%D0%B2%D1%96%D0%BB%D0%BB%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2005)', },
 	cast: { ryan_reynolds_23101976: 1, },
 },
@@ -2490,7 +2495,7 @@ const arrMovies = [
 },
 {
 	id: 'the_evil_dead_1981', title: { ua: 'Зловісні мерці', en: 'The Evil Dead', }, year: 1981, country: { usa: 1, },
-	genre: { horror: 1, trash: 1, },
+	genre: { horror: 1, trash: 1, }, hash: { spirits: 1, },
 	internet: { imdb: '0083907', wiki_ua: '%D0%97%D0%BB%D0%BE%D0%B2%D1%96%D1%81%D0%BD%D1%96_%D0%BC%D0%B5%D1%80%D1%86%D1%96', },
 },
 {
@@ -3220,7 +3225,7 @@ const arrMovies = [
 },
 {
 	id: 'monsters_inc_2001', title: { ua: 'Корпорація монстрів', en: 'Monsters Inc', }, year: 2001, country: { usa: 1, }, rating: '5+',
-	genre: { cartoon: 1, },
+	genre: { cartoon: 1, }, hash: { monster: 1, },
 	internet: { imdb: '0198781', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D1%96%D1%8F_%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%96%D0%B2', hd_vip: '3194', },
 },
 {
@@ -4015,6 +4020,12 @@ const arrMovies = [
 	cast: { charlize_theron_07081975: 1, bill_paxton_17051955: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
+	id: 'monster_summer_2024', title: { ua: 'Монстри літа', en: 'Monster Summer', }, year: 2024, country: { usa: 1, },
+	genre: { fantasy: 1, mystic: 1,  }, hash: { children: 1, spirits: 1, monster: 1, },
+	internet: { imdb: '3954936', },
+	cast: { mel_gibson_03011956: 1, },
+},
+{
 	id: 'morbius_2022', title: { ua: 'Морбіус', en: 'Morbius', }, year: 2022, country: { usa: 1, },
 	genre: { sci_fi: 1, action: 1,  },
 	internet: { imdb: '5108870', },
@@ -4126,7 +4137,7 @@ const arrMovies = [
 },
 {
 	id: 'the_watchers_2024', title: { ua: 'Наглядачі', en: 'The Watchers', }, year: 2024, country: { usa: 1, },
-	genre: { fantasy: 1, horror: 1, }, hash: { forest: 1, unreal_danger: 1, }, 
+	genre: { fantasy: 1, horror: 1, }, hash: { spirits: 1, forest: 1, unreal_danger: 1, }, 
 	internet: { imdb: '26736843', wiki_ua: '%D0%9D%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%B0%D1%87%D1%96', },
 	cast: { dakota_fanning_23021994: 1, },
 },
@@ -4604,7 +4615,7 @@ const arrMovies = [
 },
 {
 	id: 'the_midnight_man_2016', title: { ua: 'Опівнічна людина', en: 'The Midnight Man', }, year: 2016, country: { usa: 1, can: 1, },
-	genre: { horror: 1, },
+	genre: { horror: 1, }, hash: { monster: 1, },
 	internet: { imdb: '5629964', wiki_ru: '%D0%9F%D0%BE%D0%BB%D1%83%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA', },
 	cast: { robert_englund_06061947: 1, },
 },
@@ -5387,7 +5398,7 @@ const arrMovies = [
 },
 {
 	id: 'poltergeist_1982', title: { ua: 'Полтергейст', en: 'Poltergeist', }, year: 1982, country: { usa: 1, },
-	genre: { horror: 1, thriller: 1, },
+	genre: { horror: 1, thriller: 1, }, hash: { ghost: 1, },
 	internet: { imdb: '0084516', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%82%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%D1%81%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1982)', },
 },
 {
@@ -5429,18 +5440,6 @@ const arrMovies = [
 	genre: { drama: 1, crime: 1, }, hash: { bank: 1, robbery: 1, },
 	internet: { imdb: '26625693', wiki_ua: '%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2024)', },
 },
-
-
-
-
-
-
-
-
-
-
-
-
 {
 	id: 'poseidon_2006', title: { ua: 'Посейдон', en: 'Poseidon', }, year: 2006, country: { usa: 1, },
 	genre: { disaster: 1, }, hash: { sea: 1, ship: 1, },
@@ -7252,6 +7251,11 @@ const arrMovies = [
 	genre: { action: 1, crime: 1, }, hash: { cars: 1, race: 1, },
 	internet: { imdb: '0232500', wiki_ua: '%D0%A4%D0%BE%D1%80%D1%81%D0%B0%D0%B6_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC_%D0%A0%D0%BE%D0%B1%D0%B0_%D0%9A%D0%BE%D0%B5%D0%BD%D0%B0,_2001)', },
 	cast: { vin_diesel_18071967: 1, paul_walker_12091973: 1, michelle_rodriguez_12071978: 1, },
+},
+{
+	id: 'get_fast_2024', title: { ua: 'Форсаж. Повний вперед', en: 'Get Fast', }, year: 2024, country: { can: 1, },
+	genre: { action: 1, comedy: 1, crime: 1, },
+	internet: { imdb: '27357183', },
 },
 {
 	id: 'fast_furious_2_2003', title: { ua: 'Форсаж - 2', en: '2 Fast 2 Furious', }, year: 2003, country: { usa: 1, }, rating: 5, franchise: 'fast_furious',
