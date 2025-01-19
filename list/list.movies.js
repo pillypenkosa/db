@@ -190,7 +190,7 @@ const arrMovies = [
 	id: 'avatar_2009', title: { ua: 'Аватар', en: 'Avatar', }, year: 2009, country: { usa: 1, }, rating: 5, franchise: 'avatar',
 	studio: { _20_century: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
-	internet: { imdb: '0499549', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '331', },
+	internet: { imdb: '0499549', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '331', gid_online: '647', },
 	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, michelle_rodriguez_12071978: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
@@ -1226,7 +1226,7 @@ const arrMovies = [
 {
 	id: 'harley_davidson_and_the_marlboro_man_1991', title: { ua: 'Гарлі Девідсон та ковбой Мальборо', en: 'Harley Davidson and the Marlboro Man', }, year: 1991, country: { usa: 1, }, rating: '5+',
 	genre: { action: 1, crime: 1, adventure: 1, }, hash: { drugs: 1, robbery: 1, bank: 1, motorbike: 1, cowboy: 1, },
-	internet: { imdb: '0102005', wiki_ua: '%D0%93%D0%B0%D1%80%D0%BB%D1%96-%D0%94%D0%B5%D0%B2%D1%96%D0%B4%D1%81%D0%BE%D0%BD_%D1%96_%D0%BA%D0%BE%D0%B2%D0%B1%D0%BE%D0%B9_%D0%9C%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D1%80%D0%BE', hd_vip: '63609', auliki7: 'Harley.Davidson.and.the.Marlboro.Man', },
+	internet: { imdb: '0102005', wiki_ua: '%D0%93%D0%B0%D1%80%D0%BB%D1%96-%D0%94%D0%B5%D0%B2%D1%96%D0%B4%D1%81%D0%BE%D0%BD_%D1%96_%D0%BA%D0%BE%D0%B2%D0%B1%D0%BE%D0%B9_%D0%9C%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D1%80%D0%BE', hd_vip: '63609', gid_online: '22331', auliki7: 'Harley.Davidson.and.the.Marlboro.Man', },
 	cast: { mickey_rourke_16091952: 1, don_johnson_15121949: 1, tom_sizemore_29111961: 1, daniel_baldwin_07081960: 1, tia_carrere_02011967: 1, },
 },
 {
@@ -3207,7 +3207,7 @@ const arrMovies = [
 {
 	id: 'the_lion_king_1994', title: { ua: 'Король-лев', en: 'The Lion King', }, year: 1994, country: { usa: 1, }, rating: '5+', franchise: 'lion_king',
 	genre: { cartoon: 1, }, 
-	internet: { imdb: '0110357', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%9B%D0%B5%D0%B2', hd_vip: '3310', },
+	internet: { imdb: '0110357', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8C_%D0%9B%D0%B5%D0%B2', hd_vip: '3310', gid_online: '410', },
 	composer: { hans_zimmer_12091957: 1, },
 },
 {
@@ -3917,7 +3917,7 @@ const arrMovies = [
 {
 	id: 'mission_impossible_7_2023', title: { ua: 'Місія неможлива - 7', en: 'Mission: Impossible - Dead Reckoning Part One', }, year: 2023, country: { usa: 1, }, rating: '5+', franchise: 'mission_impossible',
 	genre: { action: 1, thriller: 1, },
-	internet: { imdb: '9603212', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BD%D0%B5%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%B0:_%D0%A0%D0%BE%D0%B7%D0%BF%D0%BB%D0%B0%D1%82%D0%B0._%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_%D0%BF%D0%B5%D1%80%D1%88%D0%B0', hd_vip: '105107', },
+	internet: { imdb: '9603212', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BD%D0%B5%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%B0:_%D0%A0%D0%BE%D0%B7%D0%BF%D0%BB%D0%B0%D1%82%D0%B0._%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_%D0%BF%D0%B5%D1%80%D1%88%D0%B0', hd_vip: '105107', gid_online: '56802', },
 	cast: { tom_cruise_03071962: 1, ving_rhames_12051959: 1, hayley_atwell_05041982: 1, rebecca_ferguson_19101983: 1, esai_morales_01101962: 1, vanessa_kirby_18041988: 1, },
 },
 {
@@ -4117,13 +4117,13 @@ const arrMovies = [
 {
 	id: 'man_on_a_ledge_2012', title: { ua: 'На межі', en: 'Man on a Ledge', }, year: 2012, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
-	internet: { imdb: '1568338', wiki_ua: '%D0%9D%D0%B0_%D0%BC%D0%B5%D0%B6%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2012)', },
+	internet: { imdb: '1568338', wiki_ua: '%D0%9D%D0%B0_%D0%BC%D0%B5%D0%B6%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2012)', gid_online: '6906', },
 	cast: { sam_worthington_02081976: 1, ed_harris_28111950: 1, william_sadler_13041950: 1, },
 },
 {
 	id: 'live_die_repeat_edge_of_tomorrow_2014', title: { ua: 'На межі майбутнього', en: 'Live Die Repeat: Edge of Tomorrow', }, year: 2014, country: { usa: 1, }, rating: '5+',
 	genre: { action: 1, sci_fi: 1, }, hash: { groundhog: 1, future: 1, battle: 1, aliens: 1, army: 1, },
-	internet: { imdb: '1631867', wiki_ua: '%D0%9D%D0%B0_%D0%BC%D0%B5%D0%B6%D1%96_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '6562', },
+	internet: { imdb: '1631867', wiki_ua: '%D0%9D%D0%B0_%D0%BC%D0%B5%D0%B6%D1%96_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '6562', gid_online: '238', },
 	cast: { tom_cruise_03071962: 1, emily_blunt_23021983: 1, bill_paxton_17051955: 1, },
 },
 {
@@ -4159,19 +4159,19 @@ const arrMovies = [
 {
 	id: 'back_to_the_future_1985', title: { ua: 'Назад у майбутнє', en: 'Back to the Future', }, year: 1985, country: { usa: 1, }, rating: 5, franchise: 'back_to_the_future',
 	genre: { adventure: 1, sci_fi: 1, }, hash: { time: 1, young: 1, },
-	internet: { imdb: '0088763', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94', hd_vip: '289', moviestape: 'Nazad.u.majbutnje', },
+	internet: { imdb: '0088763', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94', hd_vip: '289', gid_online: '342', moviestape: 'Nazad.u.majbutnje', },
 	cast: { michael_j_fox_09061961: 1, christopher_lloyd_22101938: 1, crispin_glover_20041964: 1, }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'back_to_the_future_2_1989', title: { ua: 'Назад у майбутнє - 2', en: 'Back to the Future Part II', }, year: 1989, country: { usa: 1, }, rating: '5+', franchise: 'back_to_the_future',
 	genre: { adventure: 1, sci_fi: 1, }, hash: { time: 1, young: 1, },
-	internet: { imdb: '0096874', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94_2', hd_vip: '290', moviestape: 'Nazad.u.majbutnje.2', },
+	internet: { imdb: '0096874', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94_2', hd_vip: '290', gid_online: '343', moviestape: 'Nazad.u.majbutnje.2', },
 	cast: { michael_j_fox_09061961: 1, christopher_lloyd_22101938: 1, crispin_glover_20041964: 1, elisabeth_shue_06101963: 1, billy_zane_24021966: 1, jason_scott_lee_19111966: 1, }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'back_to_the_future_3_1990', title: { ua: 'Назад у майбутнє - 3', en: 'Back to the Future Part III', }, year: 1990, country: { usa: 1, }, rating: '5+', franchise: 'back_to_the_future',
 	genre: { adventure: 1, sci_fi: 1, western: 1, }, hash: { time: 1, young: 1, cowboy: 1, },
-	internet: { imdb: '0099088', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94_3', hd_vip: '291', moviestape: 'Nazad.u.majbutnje.3', }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
+	internet: { imdb: '0099088', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94_3', hd_vip: '291', gid_online: '344', moviestape: 'Nazad.u.majbutnje.3', }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
 	cast: { michael_j_fox_09061961: 1, christopher_lloyd_22101938: 1, crispin_glover_20041964: 1, elisabeth_shue_06101963: 1, mary_steenburgen_08021953: 1, },
 },
 {
@@ -4859,7 +4859,7 @@ const arrMovies = [
 {
 	id: 'entrapment_1999', title: { ua: 'Пастка', en: 'Entrapment', }, year: 1999, country: { usa: 1, deu: 1, gbr: 1, }, rating: '5+',
 	genre: { action: 1, thriller: 1, }, hash: { robbery: 1, bank: 1, },
-	internet: { imdb: '0137494', wiki_ua: '%D0%9F%D0%B0%D1%81%D1%82%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1999)', hd_vip: '17007', auliki7: 'Entrapment', },
+	internet: { imdb: '0137494', wiki_ua: '%D0%9F%D0%B0%D1%81%D1%82%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1999)', hd_vip: '17007', gid_online: '1234',   auliki7: 'Entrapment', },
 	cast: { sean_connery_25081930: 1, catherine_zeta_jones_25091969: 1, ving_rhames_12051959: 1, },
 },
 {
@@ -6766,37 +6766,37 @@ const arrMovies = [
 {
 	id: 'terminator_1_1984', title: { ua: 'Термінатор', en: 'The Terminator', }, year: 1984, country: { usa: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, robot: 1, police: 1, },
-	internet: { imdb: '0088247', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '3499', moviestape: 'Terminator', },
+	internet: { imdb: '0088247', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '3499', gid_online: '505',  moviestape: 'Terminator', },
 	cast: { arnold_schwarzenegger_30071947: 1, linda_hamilton_26091956: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, }, director: { james_cameron_16081954: 1, }, composer: { brad_fiedel_10031951: 1, }, 
 },
 {
 	id: 'terminator_2_1991', title: { ua: 'Термінатор - 2', en: 'Terminator 2: Judgment Day', }, year: 1991, country: { usa: 1, }, rating: '5+', franchise: 'terminator',
-	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, robot: 1, children: 1, motorbike: 1, police: 1, madhouse: 1, elevator: 1, },
-	internet: { imdb: '0103064', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_2:_%D0%A1%D1%83%D0%B4%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C', hd_vip: '3314', moviestape: 'Terminator.2.Judgment.Day', },
+	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, robot: 1, children: 1, },
+	internet: { imdb: '0103064', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_2:_%D0%A1%D1%83%D0%B4%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C', hd_vip: '3314', gid_online: '506', moviestape: 'Terminator.2.Judgment.Day', },
 	cast: { arnold_schwarzenegger_30071947: 1, linda_hamilton_26091956: 1, edward_furlong_02081977: 1, robert_patrick_05111958: 1, joe_morton_18101947: 1, michael_biehn_31071956: 1, }, director: { james_cameron_16081954: 1, }, composer: { brad_fiedel_10031951: 1, },
 },
 {
 	id: 'terminator_3_2003', title: { ua: 'Термінатор - 3', en: 'Terminator 3: Rise of the Machines', }, year: 2003, country: { usa: 1, }, rating: '5+', franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, techno: 1, robot: 1, young: 1, police: 1, },
-	internet: { imdb: '0181852', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_3:_%D0%9F%D0%BE%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD', hd_vip: '3572', moviestape: 'Terminator.3', },
+	internet: { imdb: '0181852', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_3:_%D0%9F%D0%BE%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD', hd_vip: '3572', gid_online: '1458', moviestape: 'Terminator.3', },
 	cast: { arnold_schwarzenegger_30071947: 1, kristanna_loken_08101979: 1, nick_stahl_05121979: 1, }, director: { jonathan_mostow_28111961: 1, }, composer: { marco_beltrami_07101966: 1, },
 },
 {
 	id: 'terminator_4_2009', title: { ua: 'Термінатор - 4', en: 'Terminator Salvation', }, year: 2009, country: { usa: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, apocalypse: 1, techno: 1, robot: 1, battle: 1, },
-	internet: { imdb: '6450804', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%A1%D0%BF%D0%B0%D1%81%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%B8%D0%B9%D0%B4%D0%B5', hd_vip: '3576', moviestape: 'Terminator.Salvation', },
+	internet: { imdb: '6450804', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%A1%D0%BF%D0%B0%D1%81%D1%96%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%B8%D0%B9%D0%B4%D0%B5', hd_vip: '3576', gid_online: '1459', moviestape: 'Terminator.Salvation', },
 	cast: { christian_bale_30011974: 1, sam_worthington_02081976: 1, anthon_yelchin_11031989: 1, moon_bloodgood_20081975: 1, },
 },
 {
 	id: 'terminator_5_2015', title: { ua: 'Термінатор - 5', en: 'Terminator Genisys', }, year: 2015, country: { usa: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, techno: 1, robot: 1, },
-	internet: { imdb: '1340138', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%93%D0%B5%D0%BD%D0%B5%D0%B7%D0%B8%D1%81', moviestape: 'Terminator.Genisys', hd_vip: '3575', },
+	internet: { imdb: '1340138', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%93%D0%B5%D0%BD%D0%B5%D0%B7%D0%B8%D1%81', hd_vip: '3575', gid_online: '1457', moviestape: 'Terminator.Genisys', },
 	cast: { arnold_schwarzenegger_30071947: 1, emilia_clarke_23101986: 1, jai_courtney_15031986: 1, jason_clarke_17071969: 1, },
 },
 {
-	id: 'terminator_6_2019', title: { ua: 'Термінатор - 6', en: 'Terminator: Dark Fate', }, year: 2019, country: { usa: 1, }, rating: 5, franchise: 'terminator',
+	id: 'terminator_6_2019', title: { ua: 'Термінатор - 6', en: 'Terminator: Dark Fate', }, year: 2019, country: { usa: 1, esp: 1, hun: 1, chn: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, techno: 1, robot: 1, },
-	internet: { imdb: '6450804', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%A4%D0%B0%D1%82%D1%83%D0%BC', hd_vip: '5907', },
+	internet: { imdb: '6450804', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%A4%D0%B0%D1%82%D1%83%D0%BC', hd_vip: '5907', gid_online: '9302', },
 	cast: { arnold_schwarzenegger_30071947: 1, linda_hamilton_26091956: 1, },
 },
 {
@@ -7802,7 +7802,7 @@ const arrMovies = [
 	id: 'speed_1994', title: { ua: 'Швидкість', en: 'Speed', }, year: 1994, country: { usa: 1, }, rating: '5+', franchise: 'speed',
 	studio: { _20_century: 1, netflix: 1, },
 	genre: { action: 1, thriller: 1, }, hash: { terrorist: 1, hostage: 1, police: 1, elevator: 1, bus: 1, airport: 1, subway: 1, },
-	internet: { imdb: '0111257', wiki_ua: '%D0%A8%D0%B2%D0%B8%D0%B4%D0%BA%D1%96%D1%81%D1%82%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '13774', moviestape: 'Speed', },
+	internet: { imdb: '0111257', wiki_ua: '%D0%A8%D0%B2%D0%B8%D0%B4%D0%BA%D1%96%D1%81%D1%82%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '13774', gid_online: '14896',  moviestape: 'Speed', },
 	cast: { keanu_reeves_02091964: 1, sandra_bullock_26071964: 1, dennis_hopper_17051936: 1, jeff_daniels_19021955: 1, joe_morton_18101947: 1, }, director: { jan_de_bont_22101943: 1, }, composer: { mark_mancina_09031957: 1, },
 },
 {

@@ -2,7 +2,7 @@ const arrMovieSet = [
 
 	{ id: '_5+' 		, title: '&#10030; 5+' 		, },
 	{ id: '_5' 			, title: '&#10003; 5' 		, },
-	{ id: 'kinoman' 	, title: 'Кіноман' 			, },
+	// { id: 'kinoman' 	, title: 'Кіноман' 			, },
 	//{ id: '_007' 	, title: 'Агент 007' 	, },
 
 ];
@@ -12,7 +12,7 @@ const arrMovieSet = [
 
 
 
-const arrMovieSort = [
+const arrMovieSort222 = [
 
 	//{ id: 'abc' 	, title: 'Алфавіт' 		, },
 	{ id: 'year_up' 	, title: 'Рік +' 			, },
@@ -67,7 +67,7 @@ const arrMovieSort = [
 
 
 
-const arrSetKinoman  = [
+const arrSetKinoman222  = [
 
 
 	'13_sins_2014' 								, // 13 гріхів
@@ -248,7 +248,7 @@ const arrSetKinoman  = [
 
 
 
-const arrSetNation  = [
+const arrSetNation222  = [
 
 	'the_mexican_2001', // нема в базі // https://www.imdb.com/title/tt0236493/
 	'',

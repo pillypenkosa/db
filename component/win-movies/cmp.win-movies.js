@@ -119,9 +119,6 @@ class ComponentWinMovies {
 
 
 
-
-
-
 			if ( objData.hash ) {
 
 				//console.log( objData.genre );
@@ -134,25 +131,46 @@ class ComponentWinMovies {
 
 
 
+			if ( objData.set ) {
 
+				//console.log( objData.genre );
+				arrSelected = arrSelected.filter( k => {
 
+					if ( objData.set == '_5' ) {
 
+						if ( k.rating && ( k.rating == 5 || k.rating == '5+' )) 
+							return true;
+					}
 
+					if ( objData.set == '_5+' ) {
 
+						if ( k.rating && k.rating == '5+' )
+							return true;
+					}
 
-
-
-
-
+				});
+			}
 
 
 
 			arrSelected.forEach( k => {
 
+				let htmlRating = '';
+				if ( k.rating  ) {
+
+					if ( k.rating == 5 )
+						htmlRating += ' <span class="txt-rating5">&#10003;</span>';
+
+					if ( k.rating == '5+' )
+						htmlRating += ' <span class="txt-rating5p">&#10030;</span>';
+				}
+
+
+
 				html += `${ 
 					Component( 'Spoyler', { 
 						id 		: k.id, 
-						title 	: `${ k.title.ua } (${ k.year })`, 
+						title 	: `${ k.title.ua } (${ k.year })${ htmlRating }`, 
 						cmp 	: 'Spoyler-Body-Movie', // для вставки в body спойлера
 						tf 		: tfOpenCloseSpoyler,
 					})}`;
@@ -229,6 +247,7 @@ class ComponentWinMovies {
 			{ win: 'movies' 	, cat: 'select' 	, key: 'genre' 		, clc: '' 	, arr: [] 			, },
 			{ win: 'movies' 	, cat: 'select' 	, key: 'country' 	, clc: '' 	, arr: [] 			, },
 			{ win: 'movies' 	, cat: 'select' 	, key: 'hash' 		, clc: '' 	, arr: [] 			, },
+			{ win: 'movies' 	, cat: 'select' 	, key: 'set' 		, clc: '' 	, arr: [] 			, },
 
 		];
 

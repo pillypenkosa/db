@@ -180,6 +180,38 @@ class ComponentFilter {
 						</select>`;
 					}
 
+
+
+
+
+
+
+
+					// підбірка
+					if ( k.key == 'set' ) {
+
+						let htmlOption = '';
+				 		let color = '';
+
+						arrMovieSet.forEach( k_set => {
+
+							let attrSelected = '';
+
+							if ( k_set.id == Router.urlGET.set ) {
+								attrSelected 	= `selected`;
+				 				color 			= `class="color"`;
+							}
+
+							//alert();
+
+							htmlOption += `<option value="${ k_set.id }" ${ attrSelected }>${ k_set.title }</option>`;
+						});
+
+						html += `<select ${ color } onchange="${ this.name }.changeMovieSet( this )">
+							<option value="all">- Підбірки ---</option>
+							${ htmlOption }
+						</select>`;
+					}
 				}
 			}
 
@@ -583,6 +615,48 @@ class ComponentFilter {
 			{ k: 'hash', v: val, },
 		]);
 	}
+
+
+
+
+
+
+	static changeMovieSet( elem ) { 
+		const fooName = this.name + '.changeMovieSet()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
+
+		let val = elem.value;
+
+
+
+		if ( val == 'all' )
+			elem.style.color = '#000';
+
+		else
+			elem.style.color = '#f00';
+
+
+		//Router.urlGET = {}; 
+		delete( Router.urlGET.id ); 
+		
+		Router.link([
+			{ k: 'set', v: val, },
+		]);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

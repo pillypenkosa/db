@@ -103,6 +103,7 @@ class Router {
 			hash 		: 1,
 			letter 		: 1,
 			part 		: 1,
+			set 		: 1,
 			sex 		: 1,
 			symbol 		: 1,
 			year 		: 1,

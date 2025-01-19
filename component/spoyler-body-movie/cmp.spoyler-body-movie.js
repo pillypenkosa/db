@@ -48,13 +48,10 @@ class ComponentSpoylerBodyMovie {
 			let htmlWikiUa 		= '';
 			let htmlWikiRu 		= '';
 			let htmlHDvip 		= '';
+			let htmlGidOnline 	= '';
 			let htmlAuliki7 	= '';
 
 
-
-
-
-			
 
 
 			if ( obj.id )	
@@ -246,6 +243,11 @@ class ComponentSpoylerBodyMovie {
 
 
 
+			if ( obj.rating ) 
+				arrTKV.push( { key: 'rating', val: obj.rating , } );
+			
+
+
 
 			if ( obj.internet ) {
 				if ( obj.internet.imdb ) {
@@ -286,7 +288,17 @@ class ComponentSpoylerBodyMovie {
 
 					arrTKV.push( { key: 'internet.hd_vip', val: obj.internet.hd_vip, } );
 				}
-			
+
+
+
+				if ( obj.internet.gid_online ) {
+					htmlGidOnline = `<a href="https://api.embess.ws/embed/movie/${ obj.internet.gid_online  }" target="_blank" title="GidOnline">
+						<img src="img/pic/logo_gid_online.png" alt="GidOnline">
+					</a>`;
+
+					arrTKV.push( { key: 'internet.hd_vip', val: obj.internet.gid_online, } );
+				}
+
 
 
 				if ( obj.internet.auliki7 ) {
@@ -326,6 +338,7 @@ class ComponentSpoylerBodyMovie {
 					${ htmlWikiUa }
 					${ htmlWikiRu }
 					${ htmlHDvip }
+					${ htmlGidOnline }
 					${ htmlAuliki7 }
 				</div>
 
@@ -413,6 +426,23 @@ class ComponentSpoylerBodyMovie {
 	} 
  
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

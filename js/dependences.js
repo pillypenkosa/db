@@ -29,7 +29,9 @@ const dependences = [
 	{ arr: 'people.hash'		, },  
 	{ arr: 'people'				, },  
 	{ arr: 'movies.hash'		, },  
-	{ arr: 'movies'				, },  
+	{ arr: 'movies.set'			, },  
+	{ arr: 'movies'				, }, 
+
 
 
 
