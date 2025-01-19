@@ -66,8 +66,6 @@ const arrMoviesHash = [
 
 
 
-
-
 	{ id: '-' 				, title: '--- ВІЙНА ---' 			, app: { movies: 1, }, },
 	{ id: 'army' 			, title: 'армія' 					, app: { movies: 1, }, },
 	{ id: 'battle' 			, title: 'битва' 					, app: { movies: 1, }, },

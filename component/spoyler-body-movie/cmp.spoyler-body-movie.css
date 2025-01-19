@@ -47,7 +47,7 @@ cmp-spoyler-body-movie {
 		}
 
 	cmp-spoyler-body-movie .internet {
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 
 	}
 		cmp-spoyler-body-movie .internet a img {
@@ -56,8 +56,15 @@ cmp-spoyler-body-movie {
 			border-radius: 5px;
 		}
 
+
+
+
+	cmp-spoyler-body-movie .section-10 {
+		margin: 0 0 20px 0;
+	}
+
  	cmp-spoyler-body-movie .movie-country {
-		margin: 0 0 10px 0;
+
 	}
 		cmp-spoyler-body-movie .movie-country .country {
 			padding: 0px 15px 1px 15px;
@@ -69,7 +76,7 @@ cmp-spoyler-body-movie {
 			}
 
 	cmp-spoyler-body-movie .movie-genres {
-		margin: 0 0 20px 0;
+
 	}
 		cmp-spoyler-body-movie .movie-genres .genre {
 			padding: 1px 15px 2px 15px;
@@ -82,7 +89,7 @@ cmp-spoyler-body-movie {
 			}
 
 	cmp-spoyler-body-movie .movie-hashes {
-		margin: 0 0 20px 0;
+
 	}
 		cmp-spoyler-body-movie .movie-hashes .hash {
 			padding: 1px 15px 2px 15px;
@@ -99,14 +106,9 @@ cmp-spoyler-body-movie {
 
 
 
-
-
-
-
-
-
-
-
+	cmp-spoyler-body-movie .movie-makers {
+		margin: 0 0 10px 0;
+	}
 
 
  	cmp-spoyler-body-movie .tkv-object .body-tkv {

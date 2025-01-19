@@ -53,19 +53,7 @@ class ComponentSpoylerBodyMovie {
 
 
 
-			let htmlCast = '';
-			if ( obj.cast ) {
-				let arrCast = [];
 
-				for ( let k in obj.cast )
-					arrCast.push( k );
-				//console.log( arrCast );
-
-				htmlCast = `<div class="movie-cast center">
-					<div>Cast:</div>
-					${ Component( 'Gallery-People', { arr: arrCast, year: obj.year, } ) }
-				</div>`;
-			}
 			
 
 
@@ -114,7 +102,7 @@ class ComponentSpoylerBodyMovie {
 
 
 				if ( htmlCountry )
-					htmlCountry = `<div class="movie-country center"><span class="key">Країна:</span> ${ htmlCountry }</div>`;
+					htmlCountry = `<div class="section-10 movie-country center">${ htmlCountry }</div>`;
 			}
 
 
@@ -131,13 +119,13 @@ class ComponentSpoylerBodyMovie {
 					if ( objMoviesGenres && objMoviesGenres[ k ] && objMoviesGenres[ k ].title ) 
 							txtGenre = objMoviesGenres[ k ].title
 					
-					htmlGenres += `<span class="genre pointer" data-id="${ k }" onclick="${ this.name }.clcGenre( this )">#${ txtGenre }</span> `;
+					htmlGenres += `<span class="genre pointer" data-id="${ k }" onclick="${ this.name }.clcGenre( this )">${ txtGenre }</span> `;
 				}
 
 				arrTKV.push( { key: 'genre', val: txtGenreTKV, } );
 
 				if ( htmlGenres )
-					htmlGenres = `<div class="movie-genres center"><span class="key">Жанр:</span> ${ htmlGenres }</div>`;
+					htmlGenres = `<div class="section-10 movie-genres center">${ htmlGenres }</div>`;
 			}
 
 
@@ -159,19 +147,103 @@ class ComponentSpoylerBodyMovie {
 				arrTKV.push( { key: 'hash', val: txtHashTKV, } );
 
 				if ( htmlHash )
-					htmlHash = `<div class="movie-hashes center"><span class="key">Хеш:</span> ${ htmlHash }</div>`;
+					htmlHash = `<div class="section-10 movie-hashes center">${ htmlHash }</div>`;
 			}
 
 
 
+			let htmlCast = '';
 			if ( obj.cast ) {
-				let htmlCast = '';
 
-				for ( let k in obj.cast )
-					htmlCast += `${ k }<br/>`;
+				let txtCastTKV = '';
+				let arrCast = [];
 
-				arrTKV.push( { key: 'cast', val: htmlCast, } );
+				for ( let k in obj.cast ) {
+
+					txtCastTKV += `${ k }<br/>`;
+					arrCast.push( k );
+				}
+
+				arrTKV.push( { key: 'cast', val: txtCastTKV, } );
+
+				htmlCast = `<div class="movie-makers center">
+					<div>Актори:</div>
+					${ Component( 'Gallery-People', { arr: arrCast, year: obj.year, } ) }
+				</div>`;
 			}
+
+
+
+			let htmlDirector = '';
+			if ( obj.director ) {
+
+				let txtDirectorTKV = '';
+				let arrDirector = [];
+
+				for ( let k in obj.director ) {
+
+					txtDirectorTKV += `${ k }<br/>`;
+					arrDirector.push( k );
+				}
+
+				arrTKV.push( { key: 'composer', val: txtDirectorTKV, } );
+
+				htmlDirector = `<div class="movie-makers center">
+					<div>Режисери:</div>
+					${ Component( 'Gallery-People', { arr: arrDirector, year: obj.year, } ) }
+				</div>`;
+			}
+
+
+
+			let htmlComposer = '';
+			if ( obj.composer ) {
+
+				let txtComposerTKV = '';
+				let arrComposer = [];
+
+				for ( let k in obj.composer ) {
+
+					txtComposerTKV += `${ k }<br/>`;
+					arrComposer.push( k );
+				}
+
+				arrTKV.push( { key: 'composer', val: txtComposerTKV, } );
+
+				htmlComposer = `<div class="movie-makers center">
+					<div>Композитори:</div>
+					${ Component( 'Gallery-People', { arr: arrComposer, year: obj.year, } ) }
+				</div>`;
+			}
+
+
+
+			let htmlFranchise = '';
+			if ( obj.franchise ) {
+
+				let txtFranchiseTKV = '';
+				let arrFranchise = [];
+
+				arrTKV.push( { key: 'franchise', val: obj.franchise , } );
+
+				let arr = arrMovies.filter( k => {
+
+					if ( k.franchise && k.franchise == obj.franchise )
+						return true;
+				});
+
+
+				//console.log( arr );
+
+				arr.sort( sortObjByYear );     
+
+				//console.log( arr );
+
+				arr = arr.map( k => k.id );
+
+				htmlFranchise = `<div class="center">Франшиза:</div>${ Component( 'Gallery-Movies', arr ) }`;
+			}
+
 
 
 
@@ -229,6 +301,8 @@ class ComponentSpoylerBodyMovie {
 
 
 
+
+
 			let htmlTKV = '';
 			if ( arrTKV.length )
 				htmlTKV = Component( 'Table-Key-Val', arrTKV );
@@ -259,6 +333,9 @@ class ComponentSpoylerBodyMovie {
 				${ htmlGenres }
 				${ htmlHash }
 				${ htmlCast }
+				${ htmlDirector }
+				${ htmlComposer }
+				${ htmlFranchise }
 
 				<div class="tkv-object">
 					<button onclick="${ this.name }.showTKV( this )">Object</button>

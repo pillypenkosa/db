@@ -31,7 +31,7 @@ class ComponentGalleryMovies {
  
  
  
-		let html = '<div>Фільмографія:</div>'; 
+		let html = ''; 
 
 
 

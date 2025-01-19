@@ -131,43 +131,49 @@ class ComponentSpoylerBodyPeople {
 
 
 
-			let htmlMovies = '';
-			let arrMoviesGallery = [];
+			let htmlMoviesActor = '';
+			let htmlMoviesDirector = '';
+			let htmlMoviesComposer = '';
+
+			let arrMoviesGalleryActor = [];
+			let arrMoviesGalleryDirector = [];
+			let arrMoviesGalleryComposer = [];
 
 			arrMovies.forEach( k => {
 
 				if ( k.cast && k.cast[ obj.id ] ) 
-					arrMoviesGallery.push( k );
+					arrMoviesGalleryActor.push( k );
+
+				if ( k.director && k.director[ obj.id ] ) 
+					arrMoviesGalleryDirector.push( k );
+
+				if ( k.composer && k.composer[ obj.id ] ) 
+					arrMoviesGalleryComposer.push( k );
 			});
 
 
 
-			//console.log( arrMoviesGallery );
+			arrMoviesGalleryActor.sort( sortObjByYear );
+			arrMoviesGalleryDirector.sort( sortObjByYear );
+			arrMoviesGalleryComposer.sort( sortObjByYear );
+
+			arrMoviesGalleryActor = arrMoviesGalleryActor.map( k => k.id );
+			arrMoviesGalleryDirector = arrMoviesGalleryDirector.map( k => k.id );
+			arrMoviesGalleryComposer = arrMoviesGalleryComposer.map( k => k.id );
 
 
 
 
+			//console.log( 'arrMoviesGalleryActor: ', arrMoviesGalleryActor );
 
-			// функція сортування об'єктів по року
-			//function sortUp( a, b ) { return ( a.year > b.year ) ? 1 : -1; }
-			function sortUp( a, b ) { return a.year - b.year; }
+			if ( arrMoviesGalleryActor.length )
+				htmlMoviesActor = `<div class="center">Фільмографія як актора:</div>${ Component( 'Gallery-Movies', arrMoviesGalleryActor ) }`;
 
+			if ( arrMoviesGalleryDirector.length )
+				htmlMoviesDirector = `<div class="center">Фільмографія як режисера:</div>${ Component( 'Gallery-Movies', arrMoviesGalleryDirector ) }`;
 
-			arrMoviesGallery.sort( sortUp );
-
-			arrMoviesGallery = arrMoviesGallery.map( k => {
-				return k.id;
-			});
-
-
-
-			//console.log( 'arrMoviesGallery: ', arrMoviesGallery );
-
-			if ( arrMoviesGallery.length )
-				htmlMovies = Component( 'Gallery-Movies', arrMoviesGallery );
-
-
-
+			if ( arrMoviesGalleryComposer.length )
+				htmlMoviesComposer = `<div class="center">Фільмографія як композитора:</div>${ Component( 'Gallery-Movies', arrMoviesGalleryComposer ) }`;
 
 
 
@@ -245,8 +251,7 @@ class ComponentSpoylerBodyPeople {
 				let txtHashTKV = '';
 
 				for ( let k in obj.hash ) {
-					txtHashTKV += `#${ k } `;
-
+					txtHashTKV += `${ k }<br/>`;
 
 					htmlHash += `<span class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcHash( this )">#${ k }</span> `;
 
@@ -256,8 +261,6 @@ class ComponentSpoylerBodyPeople {
 
 				if ( htmlHash )
 					htmlHash = `<div class="people-hashes center"><span class="key">Хеш:</span> ${ htmlHash }</div>`;
-
-
 			}
 
 
@@ -299,16 +302,6 @@ class ComponentSpoylerBodyPeople {
 
 
 
-
-
-
-
-
-
-
-
-		
-
 			//console.log( 'arr: ', arr ); 
 
 
@@ -331,7 +324,9 @@ class ComponentSpoylerBodyPeople {
 					${ htmlHash }
 				</div>
 
-				${ htmlMovies }
+				${ htmlMoviesActor }
+				${ htmlMoviesDirector }
+				${ htmlMoviesComposer }
 
 				<div class="tkv-object">
 					<button onclick="${ this.name }.showTKV( this )">Object</button>

@@ -8706,34 +8706,16 @@ let arrPeople = [
 	hash: { show: 1, leading: 1, },
 	internet: { wiki_ua: '%D0%A1%D1%94%D1%80%D0%B3%D0%B0_%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0_%D0%95%D0%B4%D1%83%D0%B0%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D1%87', },
 },
-
-
 {
-	id: 'alexey_serebryakov_03071964', 
-	name: { n: 'Алексей', s: 'Серебряков', },
+	id: 'olexy_valery_serebryakov_03071964', 
+	name: { n: 'Олексій', s: 'Серебряков', p: 'Валерійович', },
 	sex: 1,
 	life: { bd: 3, bm: 7, by: 1964, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
-	movie: { actor: {}, },
-	internet: {
-		imdb: '0148516', 
-		wiki_ru: '%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D1%8F%D0%BA%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87', 
-		kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/ros/3887/works/', 
-	},
+	country: { sun: 1, rus: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0148516', wiki_ua: '%D0%A1%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D1%8F%D0%BA%D0%BE%D0%B2_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
-
-
-
-
-
-
-
-
-
-
-
-
 {
 	id: 'alexandr_serov_24031951', 
 	name: { n: 'Александр', s: 'Серов', },
@@ -16516,6 +16498,16 @@ let arrPeople = [
 	internet: { imdb: '0000242', wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BA_%D0%92%D0%BE%D0%BB%D0%B1%D0%B5%D1%80%D0%B3', },
 },
 {
+	id: 'mark_zuckerberg_14051984', 
+	name: { n: 'Mark', s: 'Zuckerberg', },
+	sex: 1,
+	life: { bd: 14, bm: 5, by: 1984, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { founder: 1, it: 1, billionaire: 1, },
+	internet: { wiki_ua: '%D0%9C%D0%B0%D1%80%D0%BA_%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%B1%D0%B5%D1%80%D0%B3', },
+},
+{
 	id: 'marlon_brando_03041924', 
 	name: { n: 'Marlon', s: 'Brando', },
 	sex: 1,
@@ -17293,6 +17285,16 @@ let arrPeople = [
 	internet: { wiki_ua: '%D0%9E%D0%BB%D1%96%D0%B2%D0%B5%D1%80_%D0%92%D1%96%D0%BD%D1%87%D0%B5%D1%81%D1%82%D0%B5%D1%80', },
 },
 {
+	id: 'olivier_gruner_02081960', 
+	name: { n: 'Olivier', s: 'Gruner', },
+	sex: 1,
+	life: { bd: 2, bm: 8, by: 1960, },
+	img: [ 1, 1 ],
+	country: { fra: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0344603', wiki_ua: '%D0%9E%D0%BB%D1%96%D0%B2%27%D1%94_%D0%93%D1%80%D1%8E%D0%BD%D0%B5%D1%80', },
+},
+{
 	id: 'omar_khayyam_1805', 
 	name: { n: 'Omar', s: 'Khayyam', },
 	sex: 1,
@@ -17764,6 +17766,16 @@ let arrPeople = [
 	country: { deu: 1, },
 	hash: { movie: 1, music: 1, movie_composer: 1, },
 	internet: { imdb: '1014697', wiki_ua: '%D0%A0%D0%B0%D0%BC%D1%96%D0%BD_%D0%94%D0%B6%D0%B0%D0%B2%D0%B0%D0%B4%D1%96', },
+},
+{
+	id: 'randy_newman_28111943', 
+	name: { n: 'Randy', s: 'Newman', },
+	sex: 1,
+	life: { bd: 28, bm: 11, by: 1943, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, music: 1, movie_composer: 1, },
+	internet: { imdb: '0005271', wiki_ua: '%D0%A0%D0%B5%D0%BD%D0%B4%D1%96_%D0%9D%D1%8C%D1%8E%D0%BC%D0%B0%D0%BD', },
 },
 {
 	id: 'ray_bradbury_22081920', 
@@ -19043,6 +19055,15 @@ let arrPeople = [
 	country: { ita: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000420', wiki_ua: '%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%96%D1%8F_%D0%93%D0%BE%D0%BB%D1%96%D0%BD%D0%BE', },
+},
+{
+	id: 'vanessa_kirby_18041988', 
+	name: { n: 'Vanessa', s: 'Kirby', },
+	life: { bd: 18, bm: 4, by: 1988, },
+	img: [ 1, 1 ],
+	country: { gbr: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '3948952', wiki_ua: '%D0%92%D0%B0%D0%BD%D0%B5%D1%81%D1%81%D0%B0_%D0%9A%D1%96%D1%80%D0%B1%D1%96', },
 },
 {
 	id: 'vanessa_mae_27101978', 

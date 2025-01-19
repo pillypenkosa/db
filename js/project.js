@@ -13,6 +13,27 @@ let warningConsole 	= [];
 
 
 
+function sortObjByYear( a, b ) { 
+	return a.year - b.year; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function addErr( txt = '' ) {
 	if ( txt )
 		errConsole.push( txt );
