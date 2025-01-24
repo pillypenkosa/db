@@ -4,7 +4,7 @@
 
 class TotalApp {
 
-	static year = 2024;
+	static year = 2025;
 
 
 
