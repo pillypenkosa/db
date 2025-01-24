@@ -2523,6 +2523,12 @@ const arrMovies = [
 	cast: { chuck_norris_10031940: 1, },
 },
 {
+	id: 'back_in_action_2025', title: { ua: 'Знову в дії', en: 'Back in Action', }, year: 2025, country: { usa: 1, },
+	genre: { action: 1, comedy: 1, }, 
+	internet: { imdb: '21191806', },
+	cast: { cameron_diaz_30081972: 1, kyle_chandler_17091965: 1, },
+},
+{
 	id: 'cuckoo_2024', title: { ua: 'Зозуля', en: 'Cuckoo', }, year: 2024, country: { usa: 1, deu: 1, },
 	genre: { horror: 1, mystic: 1, },
 	internet: { imdb: '12349832', wiki_ua: '%D0%97%D0%BE%D0%B7%D1%83%D0%BB%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2024)', },
