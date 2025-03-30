@@ -10161,7 +10161,7 @@ let arrPeople = [
 	id: 'vitold_pavlo_fokin_25101932', 
 	name: { n: 'Вітольд', s: 'Фокін', p: 'Павлович', },
 	sex: 1,
-	life: { bd: 25, bm: 10, by: 1932, },
+	life: { bd: 25, bm: 10, by: 1932, dd: 20, dm: 3, dy: 2025, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, },
 	hash: { politics: 1, },
