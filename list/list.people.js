@@ -19041,7 +19041,7 @@ let arrPeople = [
 	id: 'val_kilmer_31121959', 
 	name: { n: 'Val', s: 'Kilmer', },
 	sex: 1,
-	life: { bd: 31, bm: 12, by: 1959, },
+	life: { bd: 31, bm: 12, by: 1959, dd: 1, dm: 4, dy: 2025, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
