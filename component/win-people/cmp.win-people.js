@@ -108,19 +108,26 @@ class ComponentWinPeople {
 
 
 			if ( objData.hash ) {
-				arrSelected = arrSelected.filter( k => {
-					if ( k.hash && k.hash[ objData.hash ] )
-						return true;
-				});
+
+
+				if ( objData.hash == 'died' /*   || objData.hash == 'any1' || objData.hash == 'any2' */ ) {
+
+					if ( objData.hash == 'died' ) {
+						arrSelected = arrSelected.filter( k => {
+							if ( k.life && k.life.dy ) 
+								return true;
+						});
+					}
+
+				} else {
+
+					arrSelected = arrSelected.filter( k => {
+
+						if ( k.hash && k.hash[ objData.hash ] )
+							return true;
+					});
+				}
 			}
-
-
-
-
-
-
-
-
 
 
 
