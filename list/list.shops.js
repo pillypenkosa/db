@@ -20,16 +20,17 @@ const arrListShopCat = [
 	{ id: 'rost' 			, title: 'Рост'				, },
 	{ id: 'market' 			, title: 'Ц.Ринок'			, },
 	{ id: 'pc' 				, title: 'PC' 				, },
+
 	{ id: 'car' 			, title: 'Авто' 			, },
 	{ id: 'household' 		, title: 'Господарство' 	, },
 	{ id: 'home' 			, title: 'Дім' 				, },
 	{ id: 'electro' 		, title: 'Електро' 			, },
 	{ id: 'tool' 			, title: 'Інструмент' 		, },
 	{ id: 'furniture' 		, title: 'Меблі' 			, },
+	{ id: 'clothing' 		, title: 'Одяг' 			, },
 	{ id: 'dishes' 			, title: 'Посуд' 			, },
 	{ id: 'food' 			, title: 'Продукти' 		, },
 	{ id: 'chemical' 		, title: 'Хімія' 			, },
-
 
 
 ];
@@ -43,25 +44,6 @@ let objListShopCat = {};
 arrListShopCat.forEach( k => {
 	objListShopCat[ k.id ] = k;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -134,6 +116,16 @@ let arrListShop = [
 	orientir    : '',
 	phone 		: '',
 	gps 		: 'https://www.google.com/maps/place/COMFY/@50.0267467,36.329068,461m/data=!3m1!1e3!4m6!3m5!1s0x4127a768a84fd345:0x1978c190a897765a!8m2!3d50.0271243!4d36.330099!16s%2Fg%2F1vxz84lq?entry=ttu',
+},
+{
+	id 			: 'kharkiv_militarist_1',
+	title 		: 'Мілітаріст',
+	cat 		: {},
+	locality 	: 'kharkiv',
+	adress 		: 'пр. Аерокосмічний, 20а',
+	orientir    : '',
+	phone 		: '',
+	gps 		: '49.981430012755986,36.24543592405256',
 },
 {
 	id 			: 'kharkiv_pc_shop_1',
