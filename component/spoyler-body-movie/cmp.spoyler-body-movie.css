@@ -92,6 +92,8 @@ cmp-spoyler-body-movie {
 
 	}
 		cmp-spoyler-body-movie .movie-hashes .hash {
+			display: inline-block;
+			margin: 3px 0px;
 			padding: 1px 15px 2px 15px;
 			border: 1px solid #777;
 			border-radius: 5px;

@@ -138,7 +138,7 @@ class ComponentSpoylerBodyMovie {
 					if ( objMoviesHash && objMoviesHash[ k ] && objMoviesHash[ k ].title ) 
 							txtHash = objMoviesHash[ k ].title
 					
-					htmlHash += `<span class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcHash( this )">#${ txtHash }</span> `;
+					htmlHash += `<div class="hash pointer" data-id="${ k }" onclick="${ this.name }.clcHash( this )">#${ txtHash }</div> `;
 				}
 
 				arrTKV.push( { key: 'hash', val: txtHashTKV, } );

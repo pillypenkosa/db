@@ -302,8 +302,8 @@ const arrMovies = [
 	id: 'alan_quatermain_1986', title: { ua: 'Аллан Квотермейн і загублене Золоте місто', en: 'Allan Quatermain and the Lost City of Gold', }, year: 1986, country: { usa: 1, },
 	studio: { mgm: 1, },
 	genre: { action: 1, adventure: 1, }, hash: { travel: 1, },
-	internet: { imdb: '0092534', wiki_ru: '%D0%90%D0%BB%D0%BB%D0%B0%D0%BD_%D0%9A%D1%83%D0%BE%D1%82%D0%B5%D1%80%D0%BC%D0%B5%D0%B9%D0%BD_%D0%B8_%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%B0', },
-	cast: { sharon_stone_10031958: 1, },
+	internet: { imdb: '0092534', wiki_ua: '%D0%90%D0%BB%D0%BB%D0%B0%D0%BD_%D0%9A%D0%B2%D0%BE%D1%82%D0%B5%D1%80%D0%BC%D0%B5%D0%B9%D0%BD_%D1%82%D0%B0_%D0%B2%D1%82%D1%80%D0%B0%D1%87%D0%B5%D0%BD%D0%B5_%D0%BC%D1%96%D1%81%D1%82%D0%BE_%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%B0', },
+	cast: { sharon_stone_10031958: 1, richard_chamberlain_31031934: 1, },
 },
 {
 	id: 'alpha_dog_2006', title: { ua: 'Альфа Дог', en: 'Alpha Dog', }, year: 2006, country: { usa: 1, },
@@ -3193,7 +3193,7 @@ const arrMovies = [
 	id: 'king_solomon_s_mines_1985', title: { ua: 'Копальні царя Соломона', en: 'King Solomon\'s Mines', }, year: 1985, country: { usa: 1, }, rating: '5+',
 	genre: { adventure: 1, }, hash: { travel: 1, treasure: 1, },
 	internet: { imdb: '0089421', wiki_ru: '%D0%9A%D0%BE%D0%BF%D0%B8_%D1%86%D0%B0%D1%80%D1%8F_%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D0%BD%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1985)', hd_vip: '18724', },
-	cast: { sharon_stone_10031958: 1, },
+	cast: { sharon_stone_10031958: 1, richard_chamberlain_31031934: 1, },
 },
 {
 	id: 'kingdom_of_the_planet_of_the_apes_2024', title: { ua: 'Королівство планети мавп', en: 'Kingdom of the Planet of the Apes', }, year: 2024, country: { fra: 1, bel: 1, },
@@ -3433,7 +3433,7 @@ const arrMovies = [
 	studio: { paramount: 1, },
 	genre: { action: 1, adventure: 1, }, hash: { treasure: 1, travel: 1, },
 	internet: { imdb: '0325703', wiki_ua: '%D0%9B%D0%B0%D1%80%D0%B0_%D0%9A%D1%80%D0%BE%D1%84%D1%82_%D1%80%D0%BE%D0%B7%D0%BA%D1%80%D0%B0%D0%B4%D0%B0%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D1%86%D1%8C:_%D0%BA%D0%BE%D0%BB%D0%B8%D1%81%D0%BA%D0%B0_%D0%B6%D0%B8%D1%82%D1%82%D1%8F', },
-	cast: { angelina_jolie_04061975: 1, gerard_butler_13111969: 1, }, director: { jan_de_bont_22101943: 1, }, composer: { alan_silvestri_26031950: 1, },
+	cast: { angelina_jolie_04061975: 1, gerard_butler_13111969: 1, graham_mc_tavish_04011961: 1, }, director: { jan_de_bont_22101943: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'laroy_texas_2023', title: { ua: 'ЛаРой Техас', en: 'LaRoy, Texas', }, year: 2023, country: { usa: 1, fra: 1, },
@@ -3731,6 +3731,12 @@ const arrMovies = [
 	cast: { brie_larson_01101989: 1, johnny_depp_09061963: 1, dakota_johnson_04101989: 1, },
 },
 {
+	id: 'stepmom_1998', title: { ua: 'Мачуха', en: 'Stepmom', }, year: 1998, country: { usa: 1, },
+	genre: { drama: 1, comedy: 1, },
+	internet: { imdb: '0120686', wiki_ru: '%D0%9C%D0%B0%D1%87%D0%B5%D1%85%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1998)', },
+	cast: { julia_roberts_28101967: 1, ed_harris_28111950: 1, },
+},
+{
 	id: 'maverick_1994', title: { ua: 'Меверік', en: 'Maverick', }, year: 1994, country: { usa: 1, },
 	genre: { action: 1, comedy: 1, adventure: 1, },
 	internet: { imdb: '0110478', wiki_ua: '%D0%9C%D0%B5%D0%B2%D0%B5%D1%80%D1%96%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -3834,7 +3840,7 @@ const arrMovies = [
 	cast: { bill_murray_21091950: 1,  },
 },
 {
-	id: 'mindhunters_2004', title: { ua: 'Мисливці за розумом', en: 'Mindhunters', }, year: 2004, country: { usa: 1, fin: 1, gbr: 1, ndl: 1, },
+	id: 'mindhunters_2004', title: { ua: 'Мисливці за розумом', en: 'Mindhunters', }, year: 2004, country: { usa: 1, fin: 1, gbr: 1, nld: 1, },
 	genre: { thriller: 1, horror: 1, }, hash: { quest: 1, },
 	internet: { imdb: '0297284', wiki_ua: '%D0%9C%D0%B8%D1%81%D0%BB%D0%B8%D0%B2%D1%86%D1%96_%D0%B7%D0%B0_%D1%80%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%BC', },
 },
@@ -5128,7 +5134,7 @@ const arrMovies = [
 	internet: { imdb: '27729779', wiki_ua: '%D0%9F%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0_2', },
 },
 {
-	id: 'flesh_blood_1985', title: { ua: 'Плоть + Кров', en: 'Flesh+Blood', }, year: 1985, country: { esp: 1, ndl: 1, usa: 1, },
+	id: 'flesh_blood_1985', title: { ua: 'Плоть + Кров', en: 'Flesh+Blood', }, year: 1985, country: { esp: 1, nld: 1, usa: 1, },
 	genre: { adventure: 1, }, hash: { middleAges: 1, },
 	internet: { imdb: '0089153', wiki_ua: '%D0%9F%D0%BB%D0%BE%D1%82%D1%8C_%D1%96_%D0%BA%D1%80%D0%BE%D0%B2', },
 	cast: { rutger_hauer_23011944: 1, }, director: { paul_verhoeven_18071938: 1, },
@@ -5852,7 +5858,7 @@ const arrMovies = [
 	id: 'rambo_4_2008', title: { ua: 'Рембо - 4', en: 'Rambo', }, year: 2008, country: { usa: 1, }, rating: '5+', franchise: 'rambo',
 	genre: { action: 1, thriller: 1, }, hash: { army: 1, team: 1, },
 	internet: { imdb: '0462499', wiki_ua: '%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE_IV', 	hd_vip: '14184', },
-	cast: { sylvester_stallone_06071946: 1, },
+	cast: { sylvester_stallone_06071946: 1, graham_mc_tavish_04011961: 1, },
 },
 {
 	id: 'rambo_5_2019', title: { ua: 'Рембо - 5', en: 'Rambo: Last Blood', }, year: 2019, country: { usa: 1, }, franchise: 'rambo',
@@ -6547,7 +6553,7 @@ const arrMovies = [
 	cast: { demi_moore_11111962: 1, },
 },
 {
-	id: 'judge_dredd_1995', title: { ua: 'Суддя Дредд', en: ' Judge Dredd', }, year: 1995, country: { usa: 1, gbr: 1, ndl: 1, }, franchise: 'dredd',
+	id: 'judge_dredd_1995', title: { ua: 'Суддя Дредд', en: ' Judge Dredd', }, year: 1995, country: { usa: 1, gbr: 1, nld: 1, }, franchise: 'dredd',
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, utopia: 1, police: 1, justice: 1, drugs: 1, },
 	internet: { imdb: '0113492', wiki_ua: '%D0%A1%D1%83%D0%B4%D0%B4%D1%8F_%D0%94%D1%80%D0%B5%D0%B4%D0%B4', },
 	cast: { sylvester_stallone_06071946: 1, }, composer: { alan_silvestri_26031950: 1, },
