@@ -591,6 +591,12 @@ const arrMovies = [
 	cast: { bonnie_hunt_22091961: 1, },
 },
 {
+	id: 'fight_or_flight_2024', title: { ua: 'Бийся або тікай', en: 'Fight or Flight', }, year: 2024, country: { usa: 1, gbr: 1, },
+	genre: { action: 1, comedy: 1, }, hash: { plane: 1, },
+	internet: { imdb: '13652286', wiki_ru: '%D0%A0%D0%B5%D0%B9%D1%81_%D0%BD%D0%B0%D0%B2%D1%8B%D0%BB%D0%B5%D1%82', },
+	cast: { josh_hartnett_21071978: 1, },
+},
+{
 	id: 'poor_things_2023', title: { ua: 'Бідолашні створіння', en: 'Poor Things', }, year: 2023, country: { usa: 1, gbr: 1, irl: 1, },
 	genre: { drama: 1, sci_fi: 1, }, hash: { biomedlab: 1, },
 	internet: { imdb: '14230458', wiki_ua: '%D0%91%D1%96%D0%B4%D0%BE%D0%BB%D0%B0%D1%88%D0%BD%D1%96_%D1%81%D1%82%D0%B2%D0%BE%D1%80%D1%96%D0%BD%D0%BD%D1%8F', },
@@ -5474,6 +5480,12 @@ const arrMovies = [
 	genre: { action: 1, thriller: 1, adventure: 1, }, hash: { bond: 1, },
 	internet: { imdb: '0246460', wiki_ua: '%D0%9F%D0%BE%D0%BC%D1%80%D0%B8,_%D0%B0%D0%BB%D0%B5_%D0%BD%D0%B5_%D0%B7%D0%B0%D1%80%D0%B0%D0%B7_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { pierce_brosnan_16051953: 1, halle_berry_14081966: 1, judi_dench_09121934: 1, madonna_16081958: 1,  rosamund_pike_27011979: 1, },
+},
+{
+	id: 'avengement_2019', title: { ua: 'Помста', en: 'Avengement', }, year: 2019, country: { gbr: 1, }, 
+	genre: { action: 1, crime: 1, }, 
+	internet: { imdb: '8836988', wiki_ru: '%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BF%D0%B0%D1%82', },
+	cast: { scott_adkins_17061976: 1, }, hash: { fight: 1, },
 },
 {
 	id: 'the_hitcher_1986', title: { ua: 'Попутник', en: 'The Hitcher', }, year: 1986, country: { usa: 1, }, rating: '5+',
