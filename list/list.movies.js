@@ -419,9 +419,15 @@ const arrMovies = [
 	cast: { charlize_theron_07081975: 1, sofia_boutella_03041982: 1, },
 },
 {
-	id: 'the_accountant_2016', title: { ua: 'Аудитор', en: 'The Accountant', }, year: 2016, country: { usa: 1, },
+	id: 'the_accountant_2016', title: { ua: 'Аудитор', en: 'The Accountant', }, year: 2016, country: { usa: 1, }, franchise: 'accountant',
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '2140479', wiki_ua: '%D0%90%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2016)', },
+	cast: { ben_affleck_15081972: 1, },
+},
+{
+	id: 'the_accountant_2_2025', title: { ua: 'Аудитор - 2', en: 'The Accountant 2', }, year: 2025, country: { usa: 1, }, franchise: 'accountant',
+	genre: { action: 1, crime: 1, }, 
+	internet: { imdb: '7068946', wiki_ua: '%D0%90%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80_2', },
 	cast: { ben_affleck_15081972: 1, },
 },
 {
@@ -3930,6 +3936,12 @@ const arrMovies = [
 	id: 'mission_impossible_7_2023', title: { ua: 'Місія неможлива - 7', en: 'Mission: Impossible - Dead Reckoning Part One', }, year: 2023, country: { usa: 1, }, rating: '5+', franchise: 'mission_impossible',
 	genre: { action: 1, thriller: 1, },
 	internet: { imdb: '9603212', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BD%D0%B5%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%B0:_%D0%A0%D0%BE%D0%B7%D0%BF%D0%BB%D0%B0%D1%82%D0%B0._%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_%D0%BF%D0%B5%D1%80%D1%88%D0%B0', hd_vip: '105107', gid_online: '56802', },
+	cast: { tom_cruise_03071962: 1, ving_rhames_12051959: 1, hayley_atwell_05041982: 1, rebecca_ferguson_19101983: 1, esai_morales_01101962: 1, vanessa_kirby_18041988: 1, },
+},
+{
+	id: 'mission_impossible_8_2025', title: { ua: 'Місія неможлива - 8', en: 'Mission: Impossible - The Final Reckoning', }, year: 2025, country: { usa: 1, gbr: 1, }, franchise: 'mission_impossible',
+	genre: { action: 1, thriller: 1, },
+	internet: { imdb: '9603208', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BD%D0%B5%D0%BC%D0%BE%D0%B6%D0%BB%D0%B8%D0%B2%D0%B0:_%D0%A4%D1%96%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%80%D0%BE%D0%B7%D0%BF%D0%BB%D0%B0%D1%82%D0%B0', },
 	cast: { tom_cruise_03071962: 1, ving_rhames_12051959: 1, hayley_atwell_05041982: 1, rebecca_ferguson_19101983: 1, esai_morales_01101962: 1, vanessa_kirby_18041988: 1, },
 },
 {
