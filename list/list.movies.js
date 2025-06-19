@@ -5727,6 +5727,12 @@ const arrMovies = [
 	cast: { robert_de_niro_17081943: 1, jason_statham_26071967: 1, },
 },
 {
+	id: 'a_working_man_2025', title: { ua: 'Профі', en: 'A Working Man', }, year: 2025, country: { usa: 1, gbr: 1, },
+	genre: { action: 1, crime: 1, }, 
+	internet: { imdb: '9150192', wiki_ua: '%D0%9F%D1%80%D0%BE%D1%84%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { jason_statham_26071967: 1, },
+},
+{
 	id: 'absolution_2024', title: { ua: 'Прощення', en: 'Absolution', }, year: 2024, country: { usa: 1, },
 	genre: { drama: 1, crime: 1, }, 
 	internet: { imdb: '8337290', wiki_ru: '%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2024)', },
