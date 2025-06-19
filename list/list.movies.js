@@ -825,7 +825,7 @@ const arrMovies = [
 	cast: { bruce_lee_27111940: 1, },
 },
 {
-	id: 'the_big_Lebowski_1998', title: { ua: 'Великий Лебовські', en: 'The Big Lebowski', }, year: 1998, country: { usa: 1, },
+	id: 'the_big_lebowski_1998', title: { ua: 'Великий Лебовські', en: 'The Big Lebowski', }, year: 1998, country: { usa: 1, },
 	genre: { comedy: 1, crime: 1, },
 	internet: { imdb: '0118715', wiki_ua: '%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9_%D0%9B%D0%B5%D0%B1%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D1%96', },
 	cast: { julianne_moore_03121960: 1, steve_buscemi_13121957: 1, },
