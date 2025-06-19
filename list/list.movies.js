@@ -5059,6 +5059,12 @@ const arrMovies = [
 	cast: { megan_fox_16051986: 1, whoopi_goldberg_13111955: 1, },
 },
 {
+	id: 'dante_s_peak_1997', title: { ua: 'Пік Данте', en: 'Dante\'s Peak', }, year: 1997, country: { usa: 1, }, 
+	genre: { disaster: 1, }, 
+	internet: { imdb: '0118928', wiki_ua: '%D0%9F%D1%96%D0%BA_%D0%94%D0%B0%D0%BD%D1%82%D0%B5_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { pierce_brosnan_16051953: 1, linda_hamilton_26091956: 1, }, composer: { james_newton_howard_09061951: 1, },
+},
+{
 	id: 'pirates_of_the_caribbean_2003', title: { ua: 'Пірати Карибського моря', en: 'Pirates of the Caribbean: The Curse of the Black Pearl', }, year: 2003, country: { usa: 1, }, rating: 5, franchise: 'caribbean',
 	genre: { adventure: 1, fantasy: 1, }, hash: { sea: 1, ship: 1, pirates: 1, middleAges: 1, },
 	internet: { imdb: '0325980', wiki_ua: '%D0%9F%D1%96%D1%80%D0%B0%D1%82%D0%B8_%D0%9A%D0%B0%D1%80%D0%B8%D0%B1%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BC%D0%BE%D1%80%D1%8F:_%D0%9F%D1%80%D0%BE%D0%BA%D0%BB%D1%8F%D1%82%D1%82%D1%8F_%C2%AB%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D1%97_%D0%BF%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B8%C2%BB', },
