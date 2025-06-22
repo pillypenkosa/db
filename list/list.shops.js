@@ -426,6 +426,26 @@ let arrListShop = [
 
 
 
+{
+	id 			: 'slovyansk_vodafon_1',
+	title 		: 'Vodafon',
+	locality 	: 'slovyansk',
+	adress 		: 'Слов\'янськ, Донецька обл., вул. Свободи, 7-Б, ',
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ];
