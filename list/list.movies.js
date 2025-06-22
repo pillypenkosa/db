@@ -7206,12 +7206,12 @@ const arrMovies = [
 	internet: { imdb: '20420538', },
 },
 {
-	id: 'smile_2022', title: { ua: 'Усміхайся', en: 'Smile', }, year: 2022, country: { usa: 1, },
+	id: 'smile_2022', title: { ua: 'Усміхайся', en: 'Smile', }, year: 2022, country: { usa: 1, }, franchise: 'smile',
 	genre: { horror: 1, }, 
 	internet: { imdb: '15474916', wiki_ua: '%D0%A3%D1%81%D0%BC%D1%96%D1%85%D0%B0%D0%B9%D1%81%D1%8F', hd_vip: '81049', },
 },
 {
-	id: 'smile_2_2024', title: { ua: 'Усміхайся - 2', en: 'Smile 2', }, year: 2024, country: { usa: 1, can: 1, },
+	id: 'smile_2_2024', title: { ua: 'Усміхайся - 2', en: 'Smile 2', }, year: 2024, country: { usa: 1, can: 1, }, franchise: 'smile',
 	genre: { horror: 1, },
 	internet: { imdb: '29268110', wiki_ua: '%D0%A3%D1%81%D0%BC%D1%96%D1%85%D0%B0%D0%B9%D1%81%D1%8F_2', },
 },
