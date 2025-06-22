@@ -5775,9 +5775,14 @@ const arrMovies = [
 	cast: { mel_gibson_03011956: 1, goldie_hawn_21111945: 1, bill_duke_26021943: 1, },
 },
 {
-	id: 'final_destination_2_2003', title: { ua: 'Пункт призначення - 2', en: 'Final Destination 2', }, year: 2003, country: { usa: 1, }, rating: 5,
+	id: 'final_destination_2_2003', title: { ua: 'Пункт призначення - 2', en: 'Final Destination 2', }, year: 2003, country: { usa: 1, }, rating: 5, franchise: 'final_destination',
 	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
 	internet: { imdb: '0309593', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_2', hd_vip: '98914', },
+},
+{
+	id: 'final_destination_6_2025', title: { ua: 'Пункт призначення - 6', en: 'Final Destination: Bloodlines', }, year: 2025, country: { usa: 1, can: 1, }, franchise: 'final_destination',
+	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
+	internet: { imdb: '9619824', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F:_%D0%A0%D0%BE%D0%B4%D0%BE%D0%B2%D0%B5_%D0%BF%D1%80%D0%BE%D0%BA%D0%BB%D1%8F%D1%82%D1%82%D1%8F', },
 },
 {
 	id: 'fifty_shades_of_grey_2015', title: { ua: 'П\'ятдесят відтінків сірого', en: 'Fifty Shades of Grey', }, year: 2015, country: { usa: 1, },
