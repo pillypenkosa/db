@@ -312,6 +312,12 @@ const arrMovies = [
 	cast: { justin_timberlake_31011981: 1, sharon_stone_10031958: 1, bruce_willis_19031955: 1, anthon_yelchin_11031989: 1, },
 },
 {
+	id: 'the_amateur_2025', title: { ua: 'Аматор', en: 'The Amateur', }, year: 2025, country: { usa: 1, },
+	genre: { thriller: 1, crime: 1, },
+	internet: { imdb: '0899043', wiki_ua: '%D0%90%D0%BC%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },	
+	cast: { rami_malek_12051981: 1, laurence_fishburne_30071961: 1, },
+},
+{
 	id: 'amelie_2001', title: { ua: 'Амелі', en: 'Le fabuleux destin d`Amélie Poulain', }, year: 2001, country: { usa: 1, }, rating: 5,
 	studio: { miramax: 1, },
 	genre: { drama: 1, comedy: 1, }, hash: { psycho: 1, young: 1, },
@@ -1275,6 +1281,12 @@ const arrMovies = [
 	genre: { disaster: 1, sci_fi: 1, }, hash: { space: 1, },
 	internet: { imdb: '1981128', wiki_ua: '%D0%93%D0%B5%D0%BE%D1%88%D1%82%D0%BE%D1%80%D0%BC', },
 	cast: { gerard_butler_13111969: 1, andy_garcia_12041956: 1, ed_harris_28111950: 1, },
+},
+{
+	id: 'hypnotic_2023', title: { ua: 'Гіпнотик ', en: 'Hypnotic', }, year: 2023, country: { usa: 1, },
+	genre: { action: 1, sci_fi: 1, },
+	internet: { imdb: '8080204', wiki_ua: '%D0%9F%D1%96%D0%B4_%D0%B3%D1%96%D0%BF%D0%BD%D0%BE%D0%B7%D0%BE%D0%BC', hd_vip: '125510', },
+	cast: { ben_affleck_15081972: 1, },
 },
 {
 	id: 'bitter_moon_1992', title: { ua: 'Гіркий місяць', en: 'Bitter Moon', }, year: 1992, country: { usa: 1, },
@@ -5045,12 +5057,6 @@ const arrMovies = [
 	id: 'saw_x_2023', title: { ua: 'Пила - 10', en: 'Saw X', }, year: 2023, country: { usa: 1, },
 	genre: { horror: 1, trash: 1, },
 	internet: { imdb: '21807222', wiki_ua: '%D0%9F%D0%B8%D0%BB%D0%B0_X', },
-},
-{
-	id: 'hypnotic_2023', title: { ua: 'Під гіпнозом', en: 'Hypnotic', }, year: 2023, country: { usa: 1, },
-	genre: { action: 1, mystic: 1, },
-	internet: { imdb: '8080204', wiki_ua: '%D0%9F%D1%96%D0%B4_%D0%B3%D1%96%D0%BF%D0%BD%D0%BE%D0%B7%D0%BE%D0%BC', hd_vip: '125510', },
-	cast: { ben_affleck_15081972: 1, },
 },
 {
 	id: 'the_instigators_2024', title: { ua: 'Підбурювачі', en: 'The Instigators', }, year: 2024, country: { usa: 1, },
