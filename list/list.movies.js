@@ -7263,6 +7263,12 @@ const arrMovies = [
 	cast: { cameron_diaz_30081972: 1, justin_timberlake_31011981: 1, },
 },
 {
+	id: 'the_gorge_2025', title: { ua: 'Ущелина', en: 'The Gorge', }, year: 2025, country: { usa: 1, gbr: 1, },
+	genre: { action: 1, sci_fi: 1, horror: 1, drama: 1, },
+	internet: { imdb: '13654226', wiki_ua: '%D0%A3%D1%89%D0%B5%D0%BB%D1%8C%D0%B5_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)', },
+	cast: { sigourney_weaver_08101949: 1, },
+},
+{
 	id: 'miller_s_girl_2024', title: { ua: 'Фаворитка Міллера', en: 'Miller\'s Girl', }, year: 2024, country: { usa: 1, },
 	genre: { drama: 1, }, 
 	internet: { imdb: '8310486', wiki_ua: '%D0%A4%D0%B0%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%BA%D0%B0_%D0%9C%D1%96%D0%BB%D0%BB%D0%B5%D1%80%D0%B0', },
