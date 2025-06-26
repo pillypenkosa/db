@@ -1257,7 +1257,7 @@ const arrMovies = [
 	id: 'hot_shots_2_1993', title: { ua: 'Гарячі голови - 2', en: 'Hot Shots! Part Deux', }, year: 1993, country: { usa: 1, }, rating: 5,
 	genre: { parody: 1, comedy: 1, action: 1, }, hash: { army: 1, team: 1, },
 	internet: { imdb: '0107144', wiki_ua: '%D0%93%D0%B0%D1%80%D1%8F%D1%87%D1%96_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8!_%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_2', },
-	cast: { charlie_sheen_03091965: 1, valeria_golino_22101965: 1, brenda_bakke_15051963: 1, lloyd_bridges_15011913: 1, rowan_atkinson_06011955: 1, richard_crenna_30111926: 1, martin_sheen_03081940: 1, },
+	cast: { charlie_sheen_03091965: 1, valeria_golino_22101965: 1, brenda_bakke_15051963: 1, lloyd_bridges_15011913: 1, rowan_atkinson_06011955: 1, richard_crenna_30111926: 1, martin_sheen_03081940: 1,  miguel_ferrer_07021955: 1, },
 },
 {
 	id: 'hellboy_2024', title: { ua: 'Геллбой: Горбань', en: 'Hellboy: The Crooked Man', }, year: 2024, country: { usa: 1, },
@@ -5488,6 +5488,12 @@ const arrMovies = [
 	cast: { pierce_brosnan_16051953: 1, halle_berry_14081966: 1, judi_dench_09121934: 1, madonna_16081958: 1,  rosamund_pike_27011979: 1, },
 },
 {
+	id: 'revenge_1990', title: { ua: 'Помста', en: 'Revenge', }, year: 1990, country: { usa: 1, mex: 1, }, 
+	genre: { drama: 1, crime: 1, }, 
+	internet: { imdb: '0100485', wiki_ua: '%D0%9F%D0%BE%D0%BC%D1%81%D1%82%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1990)', },
+	cast: { kevin_costner_18011955: 1, miguel_ferrer_07021955: 1, },
+},
+{
 	id: 'avengement_2019', title: { ua: 'Помста', en: 'Avengement', }, year: 2019, country: { gbr: 1, }, 
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '8836988', wiki_ru: '%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BF%D0%B0%D1%82', },
@@ -5781,9 +5787,29 @@ const arrMovies = [
 	cast: { mel_gibson_03011956: 1, goldie_hawn_21111945: 1, bill_duke_26021943: 1, },
 },
 {
-	id: 'final_destination_2_2003', title: { ua: 'Пункт призначення - 2', en: 'Final Destination 2', }, year: 2003, country: { usa: 1, }, rating: 5, franchise: 'final_destination',
+	id: 'final_destination_2000', title: { ua: 'Пункт призначення', en: 'Final Destination', }, year: 2000, country: { usa: 1, can: 1, }, franchise: 'final_destination',
+	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
+	internet: { imdb: '0195714', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+{
+	id: 'final_destination_2_2003', title: { ua: 'Пункт призначення - 2', en: 'Final Destination 2', }, year: 2003, country: { usa: 1, can: 1, }, rating: 5, franchise: 'final_destination',
 	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
 	internet: { imdb: '0309593', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_2', hd_vip: '98914', },
+},
+{
+	id: 'final_destination_3_2006', title: { ua: 'Пункт призначення - 3', en: 'Final Destination 3', }, year: 2006, country: { usa: 1, can: 1, }, franchise: 'final_destination',
+	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
+	internet: { imdb: '0414982', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_3', },
+},
+{
+	id: 'final_destination_4_2009', title: { ua: 'Пункт призначення - 4', en: 'The Final Destination', }, year: 2009, country: { usa: 1, }, franchise: 'final_destination',
+	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
+	internet: { imdb: '1144884', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_4', },
+},
+{
+	id: 'final_destination_5_2011', title: { ua: 'Пункт призначення - 5', en: 'Final Destination 5', }, year: 2011, country: { usa: 1, can: 1, }, franchise: 'final_destination',
+	genre: { horror: 1, thriller: 1, trash: 1, }, hash: { young: 1, },
+	internet: { imdb: '1622979', wiki_ua: '%D0%9F%D1%83%D0%BD%D0%BA%D1%82_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_5', },
 },
 {
 	id: 'final_destination_6_2025', title: { ua: 'Пункт призначення - 6', en: 'Final Destination: Bloodlines', }, year: 2025, country: { usa: 1, can: 1, }, franchise: 'final_destination',
@@ -5952,7 +5978,7 @@ const arrMovies = [
 	id: 'robocop_1987', title: { ua: 'Робокоп', en: 'RoboCop', }, year: 1987, country: { usa: 1, }, rating: 5, franchise: 'robocop',
 	genre: { action: 1, sci_fi: 1, crime: 1, }, hash: { robot: 1, police: 1, },
 	internet: { imdb: '0093870', wiki_ua: '%D0%A0%D0%BE%D0%B1%D0%BE%D1%82-%D0%BF%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { peter_weller_24061947: 1, }, director: { paul_verhoeven_18071938: 1, },
+	cast: { peter_weller_24061947: 1, miguel_ferrer_07021955: 1, }, director: { paul_verhoeven_18071938: 1, },
 },
 {
 	id: 'robocop_2_1990', title: { ua: 'Робокоп - 2', en: 'RoboCop 2', }, year: 1990, country: { usa: 1, }, rating: 5, franchise: 'robocop',

@@ -83,6 +83,8 @@ class ComponentMenu {
 			{ href: 'index' 				, title: 'Головна' 		, },
 			{ href: 'countries' 			, title: 'Країни' 		, },
 			{ href: 'people' 				, title: 'Люди' 		, },
+			//{ href: 'surnames' 				, title: 'Прізвища' 	, },
+			//{ href: 'names' 				, title: 'Імена' 		, },
 			{ href: 'movies' 				, title: 'Фільми' 		, },
 			{ href: 'manufacturers' 		, title: 'Виробники' 	, },
 			

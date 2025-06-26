@@ -16920,6 +16920,16 @@ let arrPeople = [
 	internet: { wiki_ua: '%D0%9C%D1%96%D0%B3%D0%B5%D0%BB%D1%8C_%D0%B4%D0%B5_%D0%A1%D0%B5%D1%80%D0%B2%D0%B0%D0%BD%D1%82%D0%B5%D1%81', },
 },
 {
+	id: 'miguel_ferrer_07021955', 
+	name: { n: 'Miguel', s: 'Ferrer', },
+	sex: 1,
+	life: { bd: 7, bm: 2, by: 1955, dd: 19, dm: 1, dy: 2017, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0001208', wiki_ua: '%D0%9C%D1%96%D0%B3%D0%B5%D0%BB%D1%8C_%D0%A4%D0%B5%D1%80%D1%80%D0%B5%D1%80', },
+},
+{
 	id: 'mike_tyson_30061966', 
 	name: { n: 'Mike', s: 'Tyson', },
 	sex: 1,

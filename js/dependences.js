@@ -23,6 +23,8 @@ const dependences = [
 
 
 
+	{ arr: 'names'				, }, 
+	{ arr: 'surnames'			, }, 
 	{ arr: 'manufacturer'		, },  
 	{ arr: 'city'				, },  
 	{ arr: 'country'			, },  
@@ -58,13 +60,14 @@ const dependences = [
 	{ cmp: 'Spoyler' 						, },
 	{ cmp: 'Menu' 							, },
 	
+
+
+
 	{ cmp: 'Spoyler-Body-Country' 			, },
 	{ cmp: 'Spoyler-Body-Manufacturer' 		, },
 	{ cmp: 'Spoyler-Body-People' 			, },
 	{ cmp: 'Spoyler-Body-Movie' 			, },
-
-
-
+	{ cmp: 'Spoyler-Body-Surnames' 			, },
 
 
 
@@ -90,11 +93,13 @@ const dependences = [
 
 	// компоненти-контенти // win-сторiнки ----------------------------------------------------------------------------------------
 	
-	{ cmp: 'Win-Index' 				, win: /^index$/ 				, }, 	// regexp - url-маршрут (route) в адресному рядку
-	{ cmp: 'Win-Country' 			, win: /^countries$/ 			, }, 	
-	{ cmp: 'Win-Manufacturers' 		, win: /^manufacturers$/ 		, }, 	
-	{ cmp: 'Win-Movies' 			, win: /^movies$/ 				, }, 	
-	{ cmp: 'Win-People' 			, win: /^people$/ 				, }, 	
+	{ cmp: 'Win-Index' 			, win: /^index$/ 			, }, 	// regexp - url-маршрут (route) в адресному рядку
+	{ cmp: 'Win-Country' 		, win: /^countries$/ 		, }, 	
+	{ cmp: 'Win-Manufacturers' 	, win: /^manufacturers$/ 	, }, 	
+	{ cmp: 'Win-Movies' 		, win: /^movies$/ 			, }, 	
+	{ cmp: 'Win-People' 		, win: /^people$/ 			, }, 	
+	{ cmp: 'Win-Names' 			, win: /^names$/ 			, }, 	
+	{ cmp: 'Win-Surnames' 		, win: /^surnames$/ 		, }, 	
 	
 
 	//{ cmp: 'Win-Uid' 					, win: /^user\/[0-9A-Za-z]+$/ 		, }, 	// user/{ txt }
