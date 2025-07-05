@@ -259,14 +259,14 @@ const arrMovies = [
 	cast: { keanu_reeves_02091964: 1, al_pacino_25041940: 1, charlize_theron_07081975: 1, connie_nielsen_03071965: 1, }, composer: { james_newton_howard_09061951: 1, },
 },
 {
-	id: 'crank_2006', title: { ua: 'Адреналін', en: 'Crank', }, year: 2006, country: { usa: 1, }, 
+	id: 'crank_2006', title: { ua: 'Адреналін', en: 'Crank', }, year: 2006, country: { usa: 1, }, franchise: 'crank',
 	studio: { lionsgate: 1, netflix: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0479884', wiki_ua: '%D0%90%D0%B4%D1%80%D0%B5%D0%BD%D0%B0%D0%BB%D1%96%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2006)', },
 	cast: { jason_statham_26071967: 1, amy_smart_26031976: 1, },
 },
 {
-	id: 'crank_2_2009', title: { ua: 'Адреналін - 2', en: 'Crank: High Voltage', }, year: 2009, country: { usa: 1, },
+	id: 'crank_2_2009', title: { ua: 'Адреналін - 2', en: 'Crank: High Voltage', }, year: 2009, country: { usa: 1, }, franchise: 'crank',
 	studio: { lionsgate: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '1121931', wiki_ua: '%D0%90%D0%B4%D1%80%D0%B5%D0%BD%D0%B0%D0%BB%D1%96%D0%BD_2:_%D0%92%D0%B8%D1%81%D0%BE%D0%BA%D0%B0_%D0%BD%D0%B0%D0%BF%D1%80%D1%83%D0%B3%D0%B0', },
@@ -1248,13 +1248,13 @@ const arrMovies = [
 	cast: { mickey_rourke_16091952: 1, don_johnson_15121949: 1, tom_sizemore_29111961: 1, daniel_baldwin_07081960: 1, tia_carrere_02011967: 1, },
 },
 {
-	id: 'hot_shots_1991', title: { ua: 'Гарячі голови', en: 'Hot Shots', }, year: 1991, country: { usa: 1, },
+	id: 'hot_shots_1991', title: { ua: 'Гарячі голови', en: 'Hot Shots', }, year: 1991, country: { usa: 1, }, franchise: 'hot_shots',
 	genre: { comedy: 1, }, hash: { army: 1, plane: 1, },
 	internet: { imdb: '0102059', wiki_ua: '%D0%93%D0%B0%D1%80%D1%8F%D1%87%D1%96_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8', },
 	cast: { charlie_sheen_03091965: 1, valeria_golino_22101965: 1, lloyd_bridges_15011913: 1, },
 },
 {
-	id: 'hot_shots_2_1993', title: { ua: 'Гарячі голови - 2', en: 'Hot Shots! Part Deux', }, year: 1993, country: { usa: 1, }, rating: 5,
+	id: 'hot_shots_2_1993', title: { ua: 'Гарячі голови - 2', en: 'Hot Shots! Part Deux', }, year: 1993, country: { usa: 1, }, rating: 5, franchise: 'hot_shots',
 	genre: { parody: 1, comedy: 1, action: 1, }, hash: { army: 1, team: 1, },
 	internet: { imdb: '0107144', wiki_ua: '%D0%93%D0%B0%D1%80%D1%8F%D1%87%D1%96_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8!_%D0%A7%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_2', },
 	cast: { charlie_sheen_03091965: 1, valeria_golino_22101965: 1, brenda_bakke_15051963: 1, lloyd_bridges_15011913: 1, rowan_atkinson_06011955: 1, richard_crenna_30111926: 1, martin_sheen_03081940: 1,  miguel_ferrer_07021955: 1, },
@@ -2438,6 +2438,11 @@ const arrMovies = [
 	genre: { comedy: 1, },
 	internet: { imdb: '0102411', wiki_ua: '%D0%97%D0%B2%D0%B8%D1%87%D0%BA%D0%B0_%D0%BE%D0%B4%D1%80%D1%83%D0%B6%D1%83%D0%B2%D0%B0%D1%82%D0%B8%D1%81%D1%8F', },
 	cast: { alec_baldwin_03041958: 1, kim_basinger_08121953: 1, elisabeth_shue_06101963: 1, },
+},
+{
+	id: 'free_willy_1993', title: { ua: 'Звільніть Віллі', en: 'Free Willy', }, year: 1993, country: { fra: 1, usa: 1, },
+	genre: { drama: 1, adventure: 1, },
+	internet: { imdb: '0106965', wiki_ua: '%D0%97%D0%B2%D1%96%D0%BB%D1%8C%D0%BD%D1%96%D1%82%D1%8C_%D0%92%D1%96%D0%BB%D0%BB%D1%96', },
 },
 {
 	id: 'backdraft_1991', title: { ua: 'Зворотна тяга', en: 'Backdraft', }, year: 1991, country: { usa: 1, }, rating: 5, franchise: 'backdraft',
@@ -4642,6 +4647,12 @@ const arrMovies = [
 	id: 'army_of_one_2020', title: { ua: 'Одна в полі воїн', en: 'Army of One', }, year: 2020, country: { usa: 1, },
 	genre: { action: 1, },
 	internet: { imdb: '7153488', },
+},
+{
+	id: 'once_upon_a_time_in_hollywood_2019', title: { ua: 'Одного разу... в Голлівуді', en: 'Once Upon a Time in... Hollywood', }, year: 2019, country: { usa: 1, gbr: 1, chn: 1, },
+	genre: { drama: 1, comedy: 1, crime: 1, },
+	internet: { imdb: '7131622', wiki_ua: '%D0%9E%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D1%80%D0%B0%D0%B7%D1%83_%D0%B2_%D0%93%D0%BE%D0%BB%D0%BB%D1%96%D0%B2%D1%83%D0%B4%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2019)', },
+	cast: { leonardo_dicaprio_11111974: 1, brad_pitt_18121963: 1, margot_robbie_02071990: 1, timothy_olyphant_20051968: 1, dakota_fanning_23021994: 1, al_pacino_25041940: 1, kurt_russell_17031951: 1, },
 },
 {
 	id: 'the_heat_2013', title: { ua: 'Озброєні і небезпечні', en: 'The Heat', }, year: 2013, country: { usa: 1, },
