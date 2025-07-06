@@ -281,7 +281,7 @@ function setMeta ( obj = {} ) {
 
 	document.querySelector( 'head meta[ property="og:site_name" ]' ).content = appProjectName;
 
-	document.querySelector( 'head meta[ property="og:url" ]' ).content = 'https://pillypenkosa.github.io/movies';
+	document.querySelector( 'head meta[ property="og:url" ]' ).content = 'img/pic/logo_djs.png';
 
 
 

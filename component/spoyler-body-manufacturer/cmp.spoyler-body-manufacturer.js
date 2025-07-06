@@ -78,6 +78,11 @@ class ComponentSpoylerBodyManufacturer {
 				if ( obj.year )	
 					arr.push( { key: 'year', val: obj.year, } );
 
+				if ( obj.year_d )	
+					arr.push( { key: 'year_d', val: obj.year_d, } );
+
+
+
 
 
 				if ( obj.hash ) {

@@ -246,6 +246,45 @@ class ComponentSpoylerBodyPeople {
 
 
 
+			let htmlCountry = '';
+			if ( obj.country ) {
+
+				let txtCountryTKV = '';
+
+				for ( let k in obj.country ) {
+					txtCountryTKV += `${ k }<br/>`;
+
+					//htmlCountry += objCountry[ k ] ? ( objCountry[ k ].title ? ( objCountry[ k ].title.ua ? objCountry[ k ].title.ua : k ) : k ) : k;
+					//htmlCountry += ' ';
+
+					let txtCountry = '';
+					if ( objCountry && objCountry[ k ] && objCountry[ k ].title && objCountry[ k ].title.ua ) 
+							txtCountry = objCountry[ k ].title.ua
+					
+					htmlCountry += `<span class="country pointer" data-id="${ k }" onclick="${ this.name }.clcCountry( this )">${ txtCountry }</span> `;
+
+
+				}
+
+				arrTKV.push( { key: 'country', val: txtCountryTKV, } );
+
+
+				if ( htmlCountry )
+					htmlCountry = `<div class="section-10 people-country center">${ htmlCountry }</div>`;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
 			let htmlHash = '';
 			if ( obj.hash ) {
 				let txtHashTKV = '';
@@ -321,6 +360,8 @@ class ComponentSpoylerBodyPeople {
 					${ htmlGalery }
 
 					${ htmlInternet }
+
+					${ htmlCountry }
 					${ htmlHash }
 				</div>
 
@@ -354,6 +395,25 @@ class ComponentSpoylerBodyPeople {
 
 		elem.closest( '.tkv-object' ).querySelector( '.body-tkv' ).classList.toggle( 'unvisible' );;
 	}
+
+
+
+	static clcCountry( elem ) { 
+		const fooName = this.name + '.clcCountry()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem', elem ); 
+
+
+ 		let id = elem.dataset.id;
+ 
+		Router.urlGET = {}; 
+		Router.link([
+			{ k: 'win' 		, v: 'people' 	, },
+			{ k: 'country' 	, v: id 		, },
+		]);
+	} 
+
 
 
 

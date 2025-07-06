@@ -70,15 +70,15 @@ cmp-spoyler-body-people {
 		}
 
 
-
-
 		cmp-spoyler-body-people .main-info .poster {
 			position: relative;
 			display: inline-block;
+			max-width: 512px;
+			max-height: 512px;
 		}
 			cmp-spoyler-body-people .main-info .poster img.avatar {
-				height: 512px;
-				width: 512px;
+				height: 100%;
+				width: 100%;
 				border-radius: 20px;
 			}
 
@@ -118,6 +118,35 @@ cmp-spoyler-body-people {
 	}
 
  
+
+
+
+
+	cmp-spoyler-body-people .section-10 {
+		margin: 0 0 20px 0;
+	}
+
+ 	cmp-spoyler-body-people .people-country {
+
+	}
+		cmp-spoyler-body-people .people-country .country {
+			padding: 0px 15px 1px 15px;
+			border: 1px solid #777;
+			border-radius: 5px;
+		}
+			cmp-spoyler-body-people .people-country .country:hover {
+				border-color: #fff;
+			}
+
+
+
+
+
+
+
+
+
+
 
 
 

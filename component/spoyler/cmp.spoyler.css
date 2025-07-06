@@ -1,7 +1,7 @@
 cmp-spoyler {
 	display: block;
 } 
-	cmp-spoyler .title {
+	cmp-spoyler .spoiler-title {
 		display: flex;
 		justify-content: space-between;
 		padding: 3px 10px 6px 10px;
@@ -11,21 +11,21 @@ cmp-spoyler {
 		color: #fff;
 		cursor: pointer;
 	} 
-		cmp-spoyler .title:hover {
+		cmp-spoyler .spoiler-title:hover {
 			color: #ff0;
 		} 
 
 
 
-		cmp-spoyler .title .txt-rating5 {
+		cmp-spoyler .spoiler-title .txt-rating5 {
 			color: #0f0;
 		}
-		cmp-spoyler .title .txt-rating5p {
+		cmp-spoyler .spoiler-title .txt-rating5p {
 			/*font-weight: bold;*/
 			color: #ff0;
 		}
 
-		cmp-spoyler .title .key {
+		cmp-spoyler .spoiler-title .key {
 			/*font-weight: bold;*/
 			font-style: oblique;
 			color: #aaa;

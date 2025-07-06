@@ -35,7 +35,7 @@ class ComponentSpoyler {
 			//'title' 		: '', 
 			//'data-key' 	: '', 
 			'data-id' 		: objData.id,
-			'onclick' 		: `${ this.name }.hideMenu()`,
+			//'onclick' 		: `${ this.name }.hideMenu()`,
 			//'selected' 	: '', 
 			//'defer' 		: '', 
 		}; 
@@ -57,8 +57,9 @@ class ComponentSpoyler {
 
 
  
+			//<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
 		let html = `
-			<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
+			<div class="spoiler-title" data-id="${ objData.id }" data-cmp="${ objData.cmp }">
 				<div class="txt">${ htmlTitle }</div>
 				<div class="pm" title="Розгорнути / згорнути">${ this.pmClose }</div>
 			</div>
@@ -99,61 +100,23 @@ class ComponentSpoyler {
 	static clc( elem ) { 
 		const fooName = this.name + '.clc()'; 
 		//console.log( 'fooName: ', fooName ); 
+
+
+
 		//console.log( 'elem: ', elem );
 
 
+		let elemParent 	= elem.closest( 'cmp-spoyler' );
+		let id 			= elem.dataset.id;
+		let cmpName 	= elem.dataset.cmp;
+		let elemBody 	= elemParent.querySelector( '.body' );
 
-
-
-
-		let elemParent 		= elem.closest( 'cmp-spoyler' );
-		let id 				= elem.dataset.id;
-
-		//console.log( 'elemParent: ', elemParent );
-
-
-		let cmpName 		= elem.dataset.cmp;
-
-		//console.log( 'insert: ', insert );
-		//console.log( 'id: ', id );
-
-		//let elemBody 		= document.querySelector( `cmp-spoyler[ data-id="${ id }" ] .body` );
-
-
-
-		let elemBody 		= elemParent.querySelector( '.body' );
-
-
-		//console.log( 'elemBody: ', elemBody );
-		//console.log( 'cmpName: ', cmpName );
-
-		//console.log( 'elemBody: ', elemBody );
 
 		if ( !elemBody.innerHTML ) 
 			elemBody.innerHTML = Component( cmpName, id ); 
-			//this.insertSpoyler( id );
-			//elemBody.innerHTML = eval( `${ cmpName }.insertHtmlBody( '${ id }' )`  ); // insertHtmlBody() - має бути прописаним у компоненті, назва якого залітає сюди
-		
-			//elemBody.innerHTML = this.getHtml( id );
+
 		else 
 			elemBody.classList.toggle( 'unvisible' );
-			//this.closeSpoyler( id );
-
-
-
-
-
-/*
-		let htmlPM = '';
-		if ( elemBody.classList.contains( 'unvisible' ) ) 
-			htmlPM = this.pmClose;
-		else 
-			htmlPM = this.pmOpen;
-
-		elem.querySelector( '.title .pm' ).innerHTML = htmlPM;
-
-
-*/
 
 	} 
  

@@ -318,7 +318,7 @@ const arrMovies = [
 	cast: { rami_malek_12051981: 1, laurence_fishburne_30071961: 1, },
 },
 {
-	id: 'amelie_2001', title: { ua: 'Амелі', en: 'Le fabuleux destin d`Amélie Poulain', }, year: 2001, country: { usa: 1, }, rating: 5,
+	id: 'amelie_2001', title: { ua: 'Амелі', en: 'Le fabuleux destin d`Amélie Poulain', }, year: 2001, country: { fra: 1, deu: 1, }, rating: 5,
 	studio: { miramax: 1, },
 	genre: { drama: 1, comedy: 1, }, hash: { psycho: 1, young: 1, },
 	internet: { imdb: '0211915', wiki_ua: '%D0%90%D0%BC%D0%B5%D0%BB%D1%96', hd_vip: '11602', },
@@ -7887,6 +7887,12 @@ const arrMovies = [
 	genre: { action: 1, },
 	internet: { imdb: '13400336', },
 	cast: { dolph_lundgren_03111957: 1, },
+},
+{
+	id: 'ambulance_2022', title: { ua: 'Швидка', en: 'Ambulance', }, year: 2022, country: { usa: 1, jpn: 1, },
+	genre: { action: 1, crime: 1, },
+	internet: { imdb: '4998632', wiki_ua: '%D0%A8%D0%B2%D0%B8%D0%B4%D0%BA%D0%B0_%D0%B4%D0%BE%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
+	cast: { jake_gyllenhaal_19121980: 1, },
 },
 {
 	id: 'fast_charlie_2023', title: { ua: 'Швидкий Чарлі', en: 'Fast Charlie', }, year: 2023, country: { usa: 1, },

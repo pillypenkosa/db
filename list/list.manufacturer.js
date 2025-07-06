@@ -2,7 +2,7 @@
 const arrManufacturerHash = [
 
 { id: 'carparts' 				, title: 'Автозапчастини' 		, },
-{ id: 'cars' 					, title: 'Автомобілі' 			, },
+{ id: 'car' 					, title: 'Автомобілі' 			, },
 { id: 'electronic' 				, title: 'Електроніка' 			, }, 
 { id: 'eltech' 					, title: 'Електротехніка' 		, }, 
 { id: 'tools' 					, title: 'Інструмент' 			, }, 
@@ -100,6 +100,7 @@ title 		: '', wiki: { ru: '', },
 	id 			: '',
 	title 		: '',
 	year 		: 19, 	// рік заснування
+	year_d 		: 19, 	// рік розформування
 	country 	: '', 	// країна
 	descr 		: '', 	// опис
 	parent 		: '', 	// батьківська організація
@@ -111,7 +112,7 @@ title 		: '', wiki: { ru: '', },
 
 	models: [], // якщо є декілька моделей ( наприклад для авто )
 
-	hashtags: {
+	hash: {
 
 		agricultural: 1, 	// сільгосп
 		air: 1, 			// повітряний
@@ -181,14 +182,24 @@ title 		: '', wiki: { ru: '', },
 },
 {
 	id: 'alfa_romeo', title: 'Alfa Romeo', country: { ita: 1, }, year: 1910,
-	hash: { cars: 1, },
+	hash: { car: 1, },
 	internet: { wiki_ua: 'Alfa_Romeo', },     				 // https://uk.wikipedia.org/wiki/
-
 },
 {
 	id: 'arcelik', title: 'Arcelik A.S.', country: { tur: 1, }, year: 1954,
 	hash: { hhtech: 1, }, 
 	internet: { wiki_ua: 'Ar%C3%A7elik', },
+},
+{
+	id: 'aston_martin', title: 'Aston Martin', country: { gbr: 1, }, year: 1913,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Aston_Martinatti', },
+},
+{
+	id: 'audi', title: 'Audi', country: { deu: 1, }, year: 1909,
+	parent: 'vag',	
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Audi', },
 },
 {
 	id: 'beko', title: 'Beko', country: { tur: 1, }, year: 1954, parent: 'arcelik',
@@ -200,31 +211,20 @@ title 		: '', wiki: { ru: '', },
 	hash: { carparts: 1, }, 
 	internet: { avtopro: 'beru/', },
 },
-
-
-
-
-
 {
 	id: 'bilstein', title: 'Bilstein', country: { deu: 1, }, year : 1873,
 	hash: { carparts: 1, },
 	internet: { avtopro: 'bilstein/', },
 },
-
-
-
-
-
-
-
-
-
-
-
 {
 	id: 'blue_print', title: 'Blue Print', country: { gbr: 1, }, year: 1983, parent: 'ferdinand_bilstein',
 	hash: { carparts: 1, },
 	internet 	: { avtopro: 'blue-print/',  },
+},
+{
+	id: 'bmw', title: 'BMW', country: { deu: 1, }, year: 1916,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'BMW', },
 },
 {
 	id: 'borg_warrner', title: 'BorgWarner Inc', country: { usa: 1, }, year: 1880, 
@@ -237,9 +237,77 @@ title 		: '', wiki: { ru: '', },
 	internet: { wiki_ua: 'Robert_Bosch_GmbH', avtopro: 'bosch/', },
 },
 {
+	id: 'bentley', title: 'Bentley', country: { gbr: 1, }, year: 1919,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Bentley', },
+},
+{
+	id: 'bugatti', title: 'Bugatti', country: { fra: 1, }, year: 1909,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Bugatti', },
+},
+{
+	id: 'buick', title: 'Buick', country: { usa: 1, }, year: 1899,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Buick', },
+},
+{
+	id: 'byd', title: 'BYD', country: { chn: 1, }, year: 2003,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'BYD_Auto', },
+},
+{
+	id: 'cadillac', title: 'Cadillac', country: { usa: 1, }, year: 1902,
+	parent: 'gm',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Cadillac', },
+},
+{
 	id: 'candy', title: 'Candy', country: { ita: 1, }, year: 1945,
 	hash: { hhtech: 1, },
 	internet: { wiki_ua: 'Candy', },
+},
+{
+	id: 'chery', title: 'Chery', country: { chn: 1, }, year: 1997,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Chery_Automobile', },
+},
+{
+	id: 'chevrolet', title: 'Chevrolet', country: { usa: 1, }, year: 1911,
+	parent: 'gm',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Chevrolet', },
+},
+{
+	id: 'citroen', title: 'Citroen', country: { fra: 1, }, year: 1919,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Citro%C3%ABn', },
+},
+{
+	id: 'chrysler', title: 'Chrysler', country: { usa: 1, }, year: 1925,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Chrysler', },
+},
+{
+	id: 'dacia', title: 'Dacia', country: { rou: 1, }, year: 1966,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Dacia', },
+},
+{
+	id: 'daewoo', title: 'Daewoo', country: { kor: 1, }, year: 1967,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Daewoo', },
+},
+{
+	id: 'daihatsu', title: 'Daihatsu', country: { jpn: 1, }, year: 1951,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Daihatsu', },
+},
+{
+	id: 'dodge', title: 'Dodge', country: { usa: 1, }, year: 1900,
+	parent: 'chrysler',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Dodge', },
 },
 {
 	id: 'electrolux', title: 'Electrolux', country: { swe: 1, }, year: 1919, 
@@ -260,6 +328,37 @@ title 		: '', wiki: { ru: '', },
 	},
 },
 {
+	id: 'ferrari', title: 'Ferrari', country: { ita: 1, }, year: 1928,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Ferrari', },
+},
+{
+	id: 'fiat', title: 'Fiat', country: { ita: 1, }, year: 1899,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Fiat', },
+},
+{
+	id: 'ford', title: 'Ford', country: { usa: 1, }, year: 1903,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Ford_Motor_Company', },
+},
+{
+	id: 'geely', title: 'Geely', country: { chn: 1, }, year: 1998,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Geely_Auto', },
+},
+{
+	id: 'gm', title: 'General Motors', country: { usa: 1, }, year: 1908,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'General_Motors', },
+},
+{
+	id: 'gmc', title: 'GMC', country: { usa: 1, }, year: 1911,
+	parent: 'gm',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'GMC', },
+},
+{
 	id: 'gorenje', title: 'Gorenje', country: { svn: 1, }, year: 1919, 
 	hash: { hhtech: 1, }, 
 	internet: { wiki_ua: 'Gorenje', },
@@ -270,9 +369,61 @@ title 		: '', wiki: { ru: '', },
 	internet: { wiki_ua: 'Hitachi', },
 },
 {
+	id: 'honda', title: 'Honda', country: { jpn: 1, }, year: 1948,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Honda', },
+},
+{
+	id: 'hummer', title: 'Hummer', country: { usa: 1, }, year: 1992,
+	parent: 'gm',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Hummer', },
+},
+{
+	id: 'hyundai', title: 'Hyundai', country: { kor: 1, }, year: 1967,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Hyundai_Motor_Company', },
+},
+{
 	id: 'indesit', title: 'Indesit', country: { ita: 1, }, year: 1975, 
 	hash: { hhtech: 1, }, 
 	internet: { wiki_ua: 'Indesit', },
+},
+{
+	id: 'infiniti', title: 'Infiniti', country: { jpn: 1, }, year: 1989,
+	parent: 'nissan',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Infiniti', },
+},
+{
+	id: 'isuzu', title: 'Isuzu', country: { jpn: 1, }, year: 1916,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Isuzu', },
+},
+{
+	id: 'jaguar', title: 'Jaguar', country: { gbr: 1, }, year: 1922,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Jaguar_Cars', },
+},
+{
+	id: 'jeep', title: 'Jeep', country: { usa: 1, }, year: 1941,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Jeep', },
+},
+{
+	id: 'kia', title: 'Kia', country: { kor: 1, }, year: 1944,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Kia', },
+},
+{
+	id: 'lamborghini', title: 'Lamborghini', country: { ita: 1, }, year: 1900,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Lamborghini', },
+},
+{
+	id: 'lancia', title: 'Lancia', country: { ita: 1, }, year: 1906,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Lancia', },
 },
 {
 	id: 'lg', title: 'LG', country: { kor: 1, }, year: 1958, 
@@ -280,19 +431,113 @@ title 		: '', wiki: { ru: '', },
 	internet: { wiki_ua: 'LG_Electronics', },
 },
 {
+	id: 'lexus', title: 'Lexus', country: { jpn: 1, }, year: 1989,
+	parent: 'toyota',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Lexus', },
+},
+{
 	id: 'liebherr', title: 'Liebherr', country: { deu: 1, }, year: 1949, 
 	hash: { hhtech: 1, spectech: 1, },
 	internet: { wiki_ua: 'Liebherr', },
 },
 {
+	id: 'lincoln', title: 'Lincoln', country: { usa: 1, }, year: 1917,
+	parent: 'ford',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Lincoln_Motor_Company', },
+},
+{
+	id: 'maserati', title: 'Maserati', country: { ita: 1, }, year: 1914,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Maserati', },
+},
+{
+	id: 'maybach', title: 'Maybach', country: { deu: 1, }, year: 1909, year_d: 2012,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Maybach', },
+},
+{
+	id: 'mazda', title: 'Mazda', country: { jpn: 1, }, year: 1920,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Mazda', },
+},
+{
+	id: 'mercedes', title: 'Mercedes', country: { deu: 1, }, year: 1926,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Mercedes-Benz', },
+},
+{
+	id: 'mini', title: 'Mini', country: { gbr: 1, }, year: 1959,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Mini', },
+},
+{
+	id: 'mitsubishi', title: 'Mitsubishi', country: { jpn: 1, }, year: 1870,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Mitsubishi', },
+},
+{
+	id: 'nissan', title: 'Nissan', country: { jpn: 1, }, year: 1933,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Nissan', },
+},
+{
+	id: 'opel', title: 'Opel', country: { deu: 1, }, year: 1862,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Opel', },
+},
+{
+	id: 'peugeot', title: 'Peugeot', country: { fra: 1, }, year: 1810,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Peugeot', },
+},
+{
+	id: 'pontiac', title: 'Pontiac', country: { usa: 1, }, year: 1926, year_d: 2010,
+	parent: 'gm',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Pontiac', },
+},
+{
+	id: 'porsche', title: 'Porsche', country: { deu: 1, }, year: 1931,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Porsche', },
+},
+{
+	id: 'renault', title: 'Renault', country: { fra: 1, }, year: 1898,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Renault', },
+},
+{
+	id: 'rolls_royce', title: 'Rolls-Royce', country: { gbr: 1, }, year: 1906,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Rolls-Royce_Limited', },
+},
+{
+	id: 'rover', title: 'Rover', country: { gbr: 1, }, year: 1896, year_d: 2005,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Rolls-Royce_Limited', },
+},
+{
+	id: 'saab', title: 'Saab', country: { swe: 1, }, year: 1937,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Saab_Automobile', },
+},
+{
 	id: 'samsung', title: 'Samsung', country: 'kor', year: 1938,
-	hash: { electronic: 1, hhtech: 1, cars: 1, },
+	hash: { electronic: 1, hhtech: 1, car: 1, },
 	internet: { wiki_ru: 'Samsung', avtopro: 'samsung/', },
 },
 {
 	id: 'sankei_industry', title: 'Sankei Industry Co.Ltd', country: { jpn: 1, }, year: 1960,
 	hash: { carparts: 1, },
 	internet: { official: 'http://www.sankei-555.com/', },
+},
+{
+	id: 'seat', title: 'Seat', country: { esp: 1, }, year: 1950,
+	parent: 'vag',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'SEAT', },
 },
 {
 	id: 'sharp', title: 'Sharp', country: { jpn: 1, }, year: 1912, 
@@ -305,14 +550,50 @@ title 		: '', wiki: { ru: '', },
 	internet: { wiki_ua: 'Siemens', },
 },
 {
+	id: 'skoda', title: 'Skoda', country: { cze: 1, }, year: 1895,
+	hash: { car: 1, },
+	internet: { wiki_ua: '%C5%A0koda_Auto', },
+},
+{
+	id: 'subaru', title: 'Subaru', country: { jpn: 1, }, year: 1954,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Subaru', },
+},
+{
+	id: 'suzuki', title: 'Suzuki', country: { jpn: 1, }, year: 1909,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Suzuki_Motor_Corporation', },
+},
+{
 	id: 'swag', title: 'Swag', country: { deu: 1, }, year: 1954, parent: 'ferdinand_bilstein',
 	hash: { carparts: 1, },
 	internet: { avtopro: 'swag/', },
 },
 {
+	id: 'toyota', title: 'Toyota', country: { jpn: 1, }, year: 1937,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Toyota', },
+},
+{
+	id: 'vag', title: 'VAG', country: { deu: 1, }, year: 1937,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Volkswagen_AG', },
+},
+{
 	id: 'vestfrost', title: 'Vestfrost', country: { dnk: 1, }, year: 1963, 
 	hash: { hhtech: 1, }, 
 	internet: { wiki_ru: 'Vestfrost', },
+},
+{
+	id: 'volkswagen', title: 'Volkswagen', country: { deu: 1, }, year: 1937,
+	parent: 'vag',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Volkswagen', },
+},
+{
+	id: 'volvo', title: 'Volvo', country: { swe: 1, }, year: 1927,
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Volvo', },
 },
 {
 	id: 'whirlpool', title: 'Whirlpool', country: { usa: 1, }, year: 1911, 
@@ -403,7 +684,7 @@ title 		: '', wiki: { ru: '', },
 	year 		: 1909,
 	country 	: 'deu',
 	internet 	: { wiki_ua: 'Audi', },
-	hash: { transport: 1, cars: 1, },
+	hash: { transport: 1, car: 1, },
 	models: [ 
 		{ id: 'audi_80' 		, 'title': '80' 		, },
 		{ id: 'audi_100' 		, 'title': '100' 		, },
@@ -543,7 +824,7 @@ title 		: '', wiki: { ru: '', },
 	year 		: 1907,
 	country 	: 'jpn',
 	internet 	: { wiki_ru: 'Daihatsu', avtopro: 'daihatsu/', },
-	hash: { transport: 1, cars: 1, },
+	hash: { transport: 1, car: 1, },
 	model: [
 		{ id: 'daihatsu_applause' 		, 'title': 'Applause' 	, },
 		{ id: 'daihatsu_charade' 		, 'title': 'Charade' 	, },
