@@ -33,8 +33,9 @@ class ComponentSpoyler {
 			//'class' 		: '', 
 			//'name' 		: '', 
 			//'title' 		: '', 
-			//'data-key' 	: '', 
 			'data-id' 		: objData.id,
+			'data-cmp' 		: objData.cmp,
+			//'data-key' 	: '', 
 			//'onclick' 		: `${ this.name }.hideMenu()`,
 			//'selected' 	: '', 
 			//'defer' 		: '', 
@@ -106,10 +107,11 @@ class ComponentSpoyler {
 		//console.log( 'elem: ', elem );
 
 
-		let elemParent 	= elem.closest( 'cmp-spoyler' );
+		//let elemParent 	= elem.closest( 'cmp-spoyler' );
 		let id 			= elem.dataset.id;
 		let cmpName 	= elem.dataset.cmp;
-		let elemBody 	= elemParent.querySelector( '.body' );
+		//let elemBody 	= elemParent.querySelector( '.body' );
+		let elemBody 	= elem.querySelector( '.body' );
 
 
 		if ( !elemBody.innerHTML ) 

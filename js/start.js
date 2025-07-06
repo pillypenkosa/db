@@ -33,11 +33,17 @@ document.querySelector( 'app' ).addEventListener( 'click', function( e ) {
 	//console.log( elem );
 
 
-	if ( elem.classList.contains( 'spoiler-title' )) {
+	let elemParent = elem.closest( 'cmp-spoyler' );
+	//console.log( elemParent );
 
-		ComponentSpoyler.clc( elem );
+
+
+	//if ( elem.classList.contains( 'spoiler-title' )) {
+	if ( elemParent ) {
+
 
 		//console.log( elem );
+		ComponentSpoyler.clc( elemParent );
 
 		//let elemParent = elem.closest( 'cmp-spoyler' );
 		//console.log( elemParent );

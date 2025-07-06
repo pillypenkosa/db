@@ -375,6 +375,11 @@ const arrMovies = [
 	cast: { tom_hanks_09071956: 1, kevin_bacon_08071958: 1, bill_paxton_17051955: 1, ed_harris_28111950: 1, }, director: { ron_howard_31031954: 1, }, composer: { james_horner_14081953: 1, }, 
 },
 {
+	id: 'apocalipsis_z_2024', title: { ua: 'Апокаліпсис Z: Початок кінця', en: 'Apocalipsis Z: El principio del fin', }, year: 2024, country: { esp: 1, },
+	genre: { sci_fi: 1, }, hash: { zombie: 1, surviving: 1, },
+	internet: { imdb: '27599851', },
+},
+{
 	id: 'upgrade_2018', title: { ua: 'Апгрейд', en: 'Upgrade', }, year: 2018, country: { aus: 1, },
 	genre: { sci_fi: 1, thriller: 1, }, 
 	internet: { imdb: '6499752', wiki_ua: '%D0%90%D0%BF%D0%B3%D1%80%D0%B5%D0%B9%D0%B4_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
