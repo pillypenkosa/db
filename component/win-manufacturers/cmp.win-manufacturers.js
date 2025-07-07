@@ -113,30 +113,6 @@ class ComponentWinManufacturers {
 		//console.log( 'fooName: ', fooName ); 
 		//console.log( 'elem:', elem ); 
 
-
-
-/*
-
-		let innerBody = elem.closest( '.each-people' ).querySelector( '.body' ).innerHTML;
-
-		//console.log( 'innerBody: ', innerBody ); 
-
-		let elemParent = elem.closest( '.each-people' );
-		let uid = elemParent.dataset.id;
-
-		//console.log( 'uid: ', uid ); 
-
-
-		if ( !innerBody ) 
-			elem.closest( '.each-people' ).querySelector( '.body' ).innerHTML = this.getPeopleHTML( uid );
-
-		else 
-			elem.closest( '.each-people' ).querySelector( '.body' ).classList.toggle( 'unvisible' );
-
-*/
-
-
-
 	} 
  
  
@@ -148,94 +124,20 @@ class ComponentWinManufacturers {
 		//console.log( 'fooName', fooName );
 		//console.log( 'data', data );
 
-		//document.querySelector( '.nav-menu' ).classList.toggle( 'unvisible' );
-
-/*
-		let htmlOptionCountry = '';
-		arrCountry.forEach( k => {
-			htmlOptionCountry += `<option value="${ k.id }">${ k.title ? ( k.title.ua ? k.title.ua : '' ) : '' }</option>`;
-		});
 
 
-		let htmlSelectCountry = `<select>
-			<option value="all">- Країна ---</option>
-			${ htmlOptionCountry }
-		</select>`;
+		const arrFilter = [
 
-*/
+
+			{ win: 'manufacturers' 	, cat: 'select' 	, key: 'country' 	, clc: '' 	, arr: [] 			, },
+			{ win: 'manufacturers' 	, cat: 'select' 	, key: 'hash' 		, clc: '' 	, arr: [] 			, },
+
+
+		];
 
 
 
- 		let htmlOptionCountry = '<option value="all">- Країна ---</option>';
- 		let colorCountry = '';
- 		arrCountry.forEach( k => {
- 			
-
-			//htmlOptionCountry += `<option value="${ k.id }">${ k.title ? ( k.title.ua ? k.title.ua : '' ) : '' }</option>`;
-
- 			
- 			let attrSelected = '';
-	 		if ( Router.urlGET ) {
-	 			if ( Router.urlGET.win == 'manufacturers' ) {
-	 				if ( Router.urlGET.country ) {
-	 					if ( k.id ) {
-				 			if ( k.id == Router.urlGET.country ) {
-				 				attrSelected = 'selected';
-				 				colorCountry = 'color';
-				 			}
-	 					}
-	 				}
-	 			}
-	 		}
-
-			if ( k.title ) {
-				if ( k.title.ua ) 
-					htmlOptionCountry += `<option value="${ k.id }" ${ attrSelected }>${ k.title.ua }</option>`;
-			}
- 			
- 		});
-
-
-
-
-
-
- 		let htmlOptionHash = '<option value="all">- Хештеги ---</option>';
- 		let colorHash = '';
- 		arrManufacturerHash.forEach( k => {
-
- 			let attrSelected = '';
-			let name = '';
-	 		if ( Router.urlGET ) {
-	 			if ( Router.urlGET.win == 'manufacturers' ) {
-	 				if ( Router.urlGET.hash ) {
-			 			if ( k.id && k.id == Router.urlGET.hash ) {
-			 				attrSelected = 'selected';
-				 			colorHash = 'color';
-			 			}
-			 		}
-			 	}
-			}
-
- 			htmlOptionHash += `<option value="${ k.id }" ${ attrSelected }>${ k.title }</option>`;
- 		});
-
-
-
- 		let html = `
- 			<div class="wrap">
-
-	 			<div>
-	 				<select class="${ colorCountry }" data-id="country" onchange="ComponentHeader.changeFilter( this )">${ htmlOptionCountry }</select>
-	 			</div>
-	 			<div>
-	 				<select class="${ colorHash }" data-id="hash" onchange="ComponentHeader.changeFilter( this )">${ htmlOptionHash }</select>
-	 			</div>
-	 		</div>
- 		`;
-
-
-		return html;
+		return Component( 'Filter', arrFilter );
 	}
 
 

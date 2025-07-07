@@ -489,6 +489,12 @@ const arrMovies = [
 	cast: { billy_zane_24021966: 1, brenda_bakke_15051963: 1, },
 },
 {
+	id: 'ballerina_2025', title: { ua: 'Балерина', en: 'Ballerina', }, year: 2025, country: { hun: 1, },
+	genre: { action: 1, },
+	internet: { imdb: '7181546', wiki_ua: '%D0%91%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { keanu_reeves_02091964: 1, ana_de_armas_30041988: 1, },
+},
+{
 	id: 'bangkok_hilton_1989', title: { ua: 'Бангкок Гілтон', en: 'Bangkok Hilton', }, year: 1989, country: { aus: 1, },
 	genre: { serial: 1, thriller: 1, crime: 1, }, hash: { prison: 1, escape: 1, },
 	internet: { imdb: '0096540', wiki_ru: '%D0%91%D0%B0%D0%BD%D0%B3%D0%BA%D0%BE%D0%BA_%D0%A5%D0%B8%D0%BB%D1%82%D0%BE%D0%BD', },

@@ -59,8 +59,9 @@ class ComponentSpoyler {
 
  
 			//<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
+			//<div class="spoiler-title" data-id="${ objData.id }" data-cmp="${ objData.cmp }">
 		let html = `
-			<div class="spoiler-title" data-id="${ objData.id }" data-cmp="${ objData.cmp }">
+			<div class="spoiler-title">
 				<div class="txt">${ htmlTitle }</div>
 				<div class="pm" title="Розгорнути / згорнути">${ this.pmClose }</div>
 			</div>

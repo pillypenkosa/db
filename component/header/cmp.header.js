@@ -152,6 +152,12 @@ class ComponentHeader {
 				html = ComponentWinCountry.getHtmlFilter();
 			
 
+			if ( Router.urlGET.win == 'manufacturers' ) 
+				html = ComponentWinManufacturers.getHtmlFilter();
+			
+
+
+
 
 
 
