@@ -31,7 +31,7 @@ class ComponentWinPeople {
  
  
  
-		let html = ''; 
+
  
 		//console.log( fooName ); 
 		//console.log( objData ); 
@@ -58,7 +58,8 @@ class ComponentWinPeople {
 		//console.log( objData );
 
 
-
+		let html = ''; 
+		let htmlSpoilersList = '';
 
 
 		if ( objData ) {
@@ -131,17 +132,19 @@ class ComponentWinPeople {
 
 
 
-
-
 			arrSelected.forEach( k => {
-				html += `${ 
+				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
 						id 		: k.id, 
 						title 	: `${ k.name.n ? k.name.n : '' } ${ k.name.s ? k.name.s : '' }`, 
-						cmp 	: 'Spoyler-Body-People', // для вставки в body спойлера
 						tf 		: tfOpenCloseSpoyler,
 					})}`;
 			});
+
+
+
+			if ( htmlSpoilersList )
+				html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-People">${ htmlSpoilersList }</div>`;
 		}
 
 		return { tagParam, html };  

@@ -34,7 +34,7 @@ class ComponentSpoyler {
 			//'name' 		: '', 
 			//'title' 		: '', 
 			'data-id' 		: objData.id,
-			'data-cmp' 		: objData.cmp,
+			//'data-cmp' 		: objData.cmp,
 			//'data-key' 	: '', 
 			//'onclick' 		: `${ this.name }.hideMenu()`,
 			//'selected' 	: '', 
@@ -99,7 +99,7 @@ class ComponentSpoyler {
 
 
 
-	static clc( elem ) { 
+	static clc( elem, cmp ) { 
 		const fooName = this.name + '.clc()'; 
 		//console.log( 'fooName: ', fooName ); 
 
@@ -110,16 +110,15 @@ class ComponentSpoyler {
 
 		//let elemParent 	= elem.closest( 'cmp-spoyler' );
 		let id 			= elem.dataset.id;
-		let cmpName 	= elem.dataset.cmp;
-		//let elemBody 	= elemParent.querySelector( '.body' );
+		//let cmpName 	= elem.dataset.cmp;
 		let elemBody 	= elem.querySelector( '.body' );
 
 
 		if ( !elemBody.innerHTML ) 
-			elemBody.innerHTML = Component( cmpName, id ); 
+			elemBody.innerHTML = Component( cmp, id ); 
 
 		else 
-			elemBody.classList.toggle( 'unvisible' );
+			elemBody.hidden = !elemBody.hidden;
 
 	} 
  

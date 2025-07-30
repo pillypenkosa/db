@@ -32,6 +32,7 @@ class ComponentWinCountry {
  
  
 		let html = ''; 
+		let htmlSpoilersList = '';
  
  
  
@@ -257,45 +258,26 @@ class ComponentWinCountry {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		} else {
 
 			arrSelected.forEach( k => {
-				html += `${ 
+				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
 						id 		: k.id, 
 						title 	: `${ k.title ? ( k.title.ua ? k.title.ua : '' ) : '' }`, 
 						cmp 	: 'Spoyler-Body-Country', // для вставки в body спойлера
 					})}`;
 			});
+
+
+
+			if ( htmlSpoilersList )
+				html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-Country">${ htmlSpoilersList }</div>`;
+
+
+
+
 		}
-
-
-
-
-
-
-
 
 
 

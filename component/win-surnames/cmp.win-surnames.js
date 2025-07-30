@@ -32,6 +32,7 @@ class ComponentWinSurnames {
  
  
 		let html = ''; 
+		let htmlSpoilersList = '';
  
  
  
@@ -49,16 +50,17 @@ class ComponentWinSurnames {
 
 
 		arrListSurnames.forEach( k => {
-			html += `${ 
+			htmlSpoilersList += `${ 
 				Component( 'Spoyler', { 
 					id 		: k.id, 
 					title 	: `${ k.title ? k.title : '' }`, 
-					cmp 	: 'Spoyler-Body-Surnames', // для вставки в body спойлера
+					//cmp 	: 'Spoyler-Body-Surnames', // для вставки в body спойлера
 				})}`;
 		});
 
 
-
+		if ( htmlSpoilersList )
+			html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-Surnames">${ htmlSpoilersList }</div>`;
 
 
 

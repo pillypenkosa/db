@@ -1,4 +1,4 @@
-// © 2024 DJS 
+// © 2025 DJS 
  
  
  
@@ -8,14 +8,14 @@ class ComponentTableKeyVal {
  
  
  
-	static args = {}; 
+	//static args = {}; 
  
  
  
 	static html( objData = {} ) { 
 		const fooName = this.name + '.html()'; 
  
-		this.args = objData.args ? objData.args : {}; 
+		//this.args = objData.args ? objData.args : {}; 
  
  
  
@@ -36,54 +36,38 @@ class ComponentTableKeyVal {
 		//console.log( 'objData: ', objData ); 
  
 		let htmlTBody = ''; 
-		objData.forEach( k => {
+		objData.forEach( tr => {
+
+			//console.log( 'tr: ', tr ); 
 
 
-			//let htmlKey = '';
-			let htmlVal = k.val;
+			let htmlKey, htmlVal = '';
 
-			if ( k.key == 'internet.official' ) 
-				htmlVal = `<a href="${ k.val }" target="_blank">Official${ htmlHrefSign }</a>`;
-			
+			if ( tr.k || tr.v ) {
 
+				if ( tr.k ) 
+					htmlKey = tr.k;
+				
+				if ( tr.v ) {
 
-			if ( k.key == 'internet.imdb' ) {
-				if ( k.id == 'people' )
-					htmlVal = `<a href="https://www.imdb.com/name/nm${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
+					if ( tr.href ) {
+						htmlVal = `<a href="${ tr.href }" target="_blank">${ tr.v } ${ HTML_HREF_SIGN }</a>`;
+					
+					} else
+						htmlVal = tr.v;
+				} 
 
-				if ( k.id == 'movies' )
-					htmlVal = `<a href="https://www.imdb.com/title/tt${ k.val }/" target="_blank">IMDb${ htmlHrefSign }</a>`;
+				htmlTBody += `<tr>
+					<td class="txt-key">${ htmlKey }</td>
+					<td class="txt-val">${ htmlVal }</td>
+				</tr>`;
 			}
 
-
-
-			if ( k.key == 'internet.wiki_ua' ) 
-				htmlVal = `<a href="https://uk.wikipedia.org/wiki/${ k.val }" target="_blank">WikiUa${ htmlHrefSign }</a>`;
+			if ( tr.backspace ) 
+				htmlTBody += `<tr><td class="tr-separator" colspan="2">&nbsp;</td></tr>`;
 			
 
-
-			if ( k.key == 'internet.wiki_ru' ) 
-				htmlVal = `<a href="https://ru.wikipedia.org/wiki/${ k.val }" target="_blank">WikiRu${ htmlHrefSign }</a>`;
-			
-
-
-			if ( k.key == 'internet.avtopro' ) 
-				htmlVal = `<a href="https://avtopro.ua/makers/${ k.val }" target="_blank">AvtoPro${ htmlHrefSign }</a>`;
-			
-
-
-			if ( k.key == 'internet.hd_vip' ) 
-				htmlVal = `<a href="https://ashdi.vip/vod/${ k.val }" target="_blank">HDvip${ htmlHrefSign }</a>`;
-			
-
-
-			if ( k.key == 'internet.auliki7' ) 
-				htmlVal = `<a href="http://auliki7.xyz/stream.php?name=films/${ k.val }.mp4" target="_blank">Auliki7${ htmlHrefSign }</a>`;
-			
-
-
-
-			htmlTBody += `<tr><td class="key">${ k.key }</td><td class="val">${ htmlVal }</td></tr>`;
+			//htmlTBody += `<tr><td class="key">${ k.key }</td><td class="val">${ htmlVal }</td></tr>`;
 		});
 
  		if ( htmlTBody )

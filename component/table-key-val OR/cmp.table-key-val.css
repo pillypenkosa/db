@@ -6,8 +6,7 @@ cmp-table-key-val {
 		padding: 0 10px;
 		text-align: left;
 	} 
-		cmp-table-key-val td.txt-key {
-			/*font-style: oblique;*/
+		cmp-table-key-val td.key {
 			color: #999;
 		} 
 
@@ -16,11 +15,11 @@ cmp-table-key-val {
 		text-decoration: none;
 		color: #ff0;
 	}
-/*
-	cmp-table-key-val .tr-separator {
-		background: linear-gradient( to top, #000, #009 );
-	}
-*/
+
+
+
+
+
 
 
 

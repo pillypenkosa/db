@@ -1,4 +1,4 @@
-// © 2024 DJS 
+// © 2025 DJS 
  
  
  
@@ -46,21 +46,25 @@ class ComponentSpoylerBodyCountry {
 			//console.log( obj ); 
 
 
-			let arr = [];
+			let arrKeyVal = [];
 			if ( obj ) {
 
 				if ( obj.id )	
-					arr.push( { key: 'id', val: obj.id, } );
+					arrKeyVal.push( { k: 'id', v: obj.id, } );
+
+
+				//arrKeyVal.push( { backspace: true, } );
+				//arrKeyVal.push( { backspace: true, } );
 
 
 
 				if ( obj.title ) {
 
 					if ( obj.title.ua ) 
-						arr.push( { key: 'title.ua', val: obj.title.ua, } );
+						arrKeyVal.push( { k: 'title.ua', v: obj.title.ua, } );
 
 					if ( obj.title.en ) 
-						arr.push( { key: 'title.en', val: obj.title.en, } )
+						arrKeyVal.push( { k: 'title.en', v: obj.title.en, } )
 				}
 
 
@@ -81,7 +85,7 @@ class ComponentSpoylerBodyCountry {
 						}
 						*/
 
-						arr.push( { key: 'geo.capital', val } );
+						arrKeyVal.push( { k: 'geo.capital', v: val } );
 					}
 
 					if ( obj.geo.part ) {
@@ -97,24 +101,36 @@ class ComponentSpoylerBodyCountry {
 						}
 						*/
 
-						arr.push( { key: 'geo.part', val } );
+						arrKeyVal.push( { k: 'geo.part', v: val } );
 					}
 				}
 
 
 
 				if ( obj.internet ) {
-					for ( let k in obj.internet ) 
-						arr.push({ 
-							key: 'internet.' + k, 
-							val: obj.internet[ k ], 
-						});
+					for ( let k in obj.internet ) {
+
+						//console.log( 'k: ', k  );
+						//console.log( 'obj: ', obj.internet );
+						//console.log( obj.internet[ k ] );
+
+
+						let tr = {};
+						if ( k == 'wiki_ua' ) {
+
+							tr.k = `internet.${ k }`;
+							tr.v = 'WikiUA';
+							tr.href = 'https://uk.wikipedia.org/wiki/' + obj.internet[ k ];
+						}
+
+						arrKeyVal.push( tr );
+					}
 				}
 
 
 
 				if ( obj.not_exist )	
-					arr.push( { key: 'not_exist', val: obj.not_exist, } );
+					arrKeyVal.push( { k: 'not_exist', v: obj.not_exist, } );
 
 
 
@@ -135,26 +151,15 @@ class ComponentSpoylerBodyCountry {
 					htmlSymbol = `<div class="symbol center">${ htmlSymbol }</div>`;
 			}	
 
-
-
-
-
-
-
-
-
-
-
+			//console.log( arrKeyVal );
 
 			html = `
 				${ htmlSymbol }
 				<div class="tvk">
-					${ Component( 'Table-Key-Val', arr ) }
+					${ Component( 'Table-Key-Val', arrKeyVal ) }
 				</div>
 			`;
 		}
-
-
 
 		return { tagParam, html };  
 	} 

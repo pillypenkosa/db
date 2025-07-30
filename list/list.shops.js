@@ -423,18 +423,24 @@ let arrListShop = [
 	title 		: 'Сантехника',
 	locality 	: 'merefa',
 },
-
-
-
+{
+	id 			: 'slovyansk_chudo_1_shop_1',
+	title 		: 'Кіоск в супермаркеті',
+	locality 	: 'slovyansk',
+	adress 		: 'Слов\'янськ, Донецька обл., вул. Свободи, 13',
+},
 {
 	id 			: 'slovyansk_vodafon_1',
 	title 		: 'Vodafon',
 	locality 	: 'slovyansk',
-	adress 		: 'Слов\'янськ, Донецька обл., вул. Свободи, 7-Б, ',
+	adress 		: 'Слов\'янськ, Донецька обл., вул. Свободи, 7-Б',
 },
-
-
-
+{
+	id 			: 'slovyansk_pc_repair',
+	title 		: 'Магазин б/у техніки',
+	locality 	: 'slovyansk',
+	adress 		: 'Слов\'янськ, Донецька обл., вул. Університетська',
+},
 
 
 

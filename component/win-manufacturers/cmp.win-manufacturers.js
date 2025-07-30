@@ -44,6 +44,7 @@ class ComponentWinManufacturers {
 
  
 		let html = ''; 
+		let htmlSpoilersList = '';
  
 		//console.log( fooName ); 
 		//console.log( objData ); 
@@ -89,13 +90,19 @@ class ComponentWinManufacturers {
 
 
 		arrSelected.forEach( k => {
-			html += `${ 
+			htmlSpoilersList += `${ 
 				Component( 'Spoyler', { 
 					id 		: k.id, 
 					title 	: `${ k.title ? k.title : '' }`, 
-					cmp 	: 'Spoyler-Body-Manufacturer', // для вставки в body спойлера
 				})}`;
 		});
+
+
+	
+		if ( htmlSpoilersList )
+			html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-Manufacturer">${ htmlSpoilersList }</div>`;
+	
+
 
 
 		return { tagParam, html };  

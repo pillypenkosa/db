@@ -40,9 +40,9 @@ class ComponentWinMovies {
 		//console.log( arrSelected );
 
 		let html = '';
+		let htmlSpoilersList = '';
+
 		if ( objData ) {
-
-
 
 			let tfOpenCloseSpoyler = false; 	 	// true - відкритий 	// false або відсутній як такий - закритий
 
@@ -166,16 +166,21 @@ class ComponentWinMovies {
 				}
 
 
-
-				html += `${ 
+				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
 						id 		: k.id, 
 						title 	: `${ k.title.ua } (${ k.year })${ htmlRating }`, 
-						cmp 	: 'Spoyler-Body-Movie', // для вставки в body спойлера
 						tf 		: tfOpenCloseSpoyler,
 					})}`;
 			});
+		
+
+		
+			if ( htmlSpoilersList )
+				html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-Movie">${ htmlSpoilersList }</div>`;
 		}
+
+
 
 
 
