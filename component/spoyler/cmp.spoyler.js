@@ -53,9 +53,11 @@ class ComponentSpoyler {
 
 
 		let htmlBody = '';
-		if ( objData.tf ) 		// відкритий спойлер
+		if ( objData.tf ) {		// відкритий спойлер
+			console.log( objData );
+			//htmlBody = Component( objData.cmp, objData.id );
 			htmlBody = Component( objData.cmp, objData.id );
-
+		}
 
  
 			//<div class="title" data-id="${ objData.id }" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
@@ -99,13 +101,14 @@ class ComponentSpoyler {
 
 
 
-	static clc( elem, cmp ) { 
+	static clc( elem, cmpBodyName ) { 
 		const fooName = this.name + '.clc()'; 
 		//console.log( 'fooName: ', fooName ); 
 
 
 
 		//console.log( 'elem: ', elem );
+		//console.log( 'cmpBodyName: ', cmpBodyName );
 
 
 		//let elemParent 	= elem.closest( 'cmp-spoyler' );
@@ -115,7 +118,7 @@ class ComponentSpoyler {
 
 
 		if ( !elemBody.innerHTML ) 
-			elemBody.innerHTML = Component( cmp, id ); 
+			elemBody.innerHTML = Component( cmpBodyName, id ); 
 
 		else 
 			elemBody.hidden = !elemBody.hidden;

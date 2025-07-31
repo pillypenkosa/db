@@ -32,7 +32,7 @@ class ComponentSpoylerBodyMovie {
 
 
  
-		//console.log( 'data: ', data ); 
+		console.log( 'data: ', data ); 
  
  
 		let html = ''; 

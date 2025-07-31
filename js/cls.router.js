@@ -1,3 +1,7 @@
+
+
+
+
 class Router {
 
 	static name = 'Router';
@@ -314,6 +318,7 @@ class Router {
 
 		//console.log( this.urlGET );
 		//console.log( params );
+		//console.log( arrParams );
 
 		//console.log( 'fooName: ', fooName );
 

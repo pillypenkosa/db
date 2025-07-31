@@ -166,16 +166,26 @@ class ComponentWinMovies {
 				}
 
 
+				//console.log( k.id );
+				//console.log( `${ k.title.ua } (${ k.year })${ htmlRating }` );
+				//console.log( tfOpenCloseSpoyler );
+
+
 				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
+						cmp 	: 'Spoyler-Body-Movie',
 						id 		: k.id, 
 						title 	: `${ k.title.ua } (${ k.year })${ htmlRating }`, 
 						tf 		: tfOpenCloseSpoyler,
 					})}`;
+
+
+
+
+
 			});
 		
 
-		
 			if ( htmlSpoilersList )
 				html = `<div class="spoilers-list" data-body-cmp-name="Spoyler-Body-Movie">${ htmlSpoilersList }</div>`;
 		}

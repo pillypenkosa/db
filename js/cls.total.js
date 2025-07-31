@@ -2,7 +2,7 @@
 
 
 
-class TotalApp {
+class Total {
 
 	static year = 2025;
 

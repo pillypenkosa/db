@@ -657,7 +657,7 @@ const arrMovies = [
 	cast: { winona_ryder_29101971: 1, catherine_ohara_04031954: 1, jenna_ortega_27092002: 1, monica_bellucci_30091964: 1, willem_dafoe_22071955: 1, },
 },
 {
-	id: 'the_blue_lagoon_1980', title: { ua: 'Блакитна лагуна', en: 'The Blue Lagoon', }, year: 1980, country: { usa: 1, }, rating: 5,
+	id: 'the_blue_lagoon_1980', title: { ua: 'Блакитна лагуна', en: 'The Blue Lagoon', }, year: 1980, country: { usa: 1, }, rating: 5, franchise: 'blue_lagoon',
 	genre: { adventure: 1, }, hash: { island: 1, tropic: 1, beach: 1, },
 	internet: { imdb: '0080453', wiki_ua: '%D0%91%D0%BB%D0%B0%D0%BA%D0%B8%D1%82%D0%BD%D0%B0_%D0%BB%D0%B0%D0%B3%D1%83%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1980)', },
 	cast: { brooke_shields_31051965: 1, },
@@ -5209,7 +5209,7 @@ const arrMovies = [
 	internet: { imdb: '0085079', wiki_ua: '%D0%9F%D0%BE%D0%B2%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B4%D0%BE_%D0%95%D0%B4%D0%B5%D0%BC%D1%83_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)', },	
 },
 {
-	id: 'return_to_the_blue_lagoon_1991', title: { ua: 'Повернення у Блакитну лагуну', en: 'Return to the Blue Lagoon', }, year: 1991, country: { usa: 1, }, rating: 5,
+	id: 'return_to_the_blue_lagoon_1991', title: { ua: 'Повернення у Блакитну лагуну', en: 'Return to the Blue Lagoon', }, year: 1991, country: { usa: 1, }, rating: 5, franchise: 'blue_lagoon',
 	genre: { adventure: 1, }, hash: { island: 1, tropic: 1, beach: 1, },
 	internet: { imdb: '0102782', wiki_ua: '%D0%9F%D0%BE%D0%B2%D0%B5%D1%80%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B4%D0%BE_%D0%B1%D0%BB%D0%B0%D0%BA%D0%B8%D1%82%D0%BD%D0%BE%D1%97_%D0%BB%D0%B0%D0%B3%D1%83%D0%BD%D0%B8', },
 	cast: { milla_jovovich_17121975: 1, },

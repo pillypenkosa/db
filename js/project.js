@@ -104,10 +104,11 @@ function Component( txt, obj = {} ) { 		// txt - назва компонента
 
 	const name = 'Component()';
 
+	//console.log( 'txt:', txt );
+	//console.log( 'obj:', obj );
 
 
 	let arr = txt.split( '-' );
-	//console.log( 'arr:', arr );
 
 	let className = 'Component';
 	arr.forEach( k => {

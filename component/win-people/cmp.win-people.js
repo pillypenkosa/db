@@ -135,6 +135,7 @@ class ComponentWinPeople {
 			arrSelected.forEach( k => {
 				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
+						cmp 	: 'Spoyler-Body-People',
 						id 		: k.id, 
 						title 	: `${ k.name.n ? k.name.n : '' } ${ k.name.s ? k.name.s : '' }`, 
 						tf 		: tfOpenCloseSpoyler,

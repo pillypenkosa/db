@@ -1,11 +1,14 @@
 
-
 LoadDependences.load();
 
 
 
+
 window.onload = function() { 
-	
+
+
+
+
 	Router.loadApp();
 
 
@@ -39,6 +42,8 @@ document.querySelector( 'app' ).addEventListener( 'click', function( e ) {
 
 			let cmpBodyName = cmpSpoilersList.dataset.bodyCmpName || '';
 			let elemParent = elem.closest( 'cmp-spoyler' );
+
+			//console.log( cmpBodyName );
 
 			ComponentSpoyler.clc( elemParent, cmpBodyName );
 		}

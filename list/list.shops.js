@@ -425,7 +425,7 @@ let arrListShop = [
 },
 {
 	id 			: 'slovyansk_chudo_1_shop_1',
-	title 		: 'Кіоск в супермаркеті',
+	title 		: 'MobiWorld // кіоск в супермаркеті',
 	locality 	: 'slovyansk',
 	adress 		: 'Слов\'янськ, Донецька обл., вул. Свободи, 13',
 },
