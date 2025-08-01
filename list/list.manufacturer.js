@@ -431,6 +431,11 @@ title 		: '', wiki: { ru: '', },
 	internet: { wiki_ua: 'LG_Electronics', },
 },
 {
+	id: 'lesjofors', title: 'Lesjofors', country: { swe: 1, }, year: 1852, 
+	hash: { transport: 1, parts: 1, },
+	internet: { avtopro: 'lesjofors/', },
+},
+{
 	id: 'lexus', title: 'Lexus', country: { jpn: 1, }, year: 1989,
 	parent: 'toyota',
 	hash: { car: 1, },
@@ -1152,15 +1157,7 @@ title 		: '', wiki: { ru: '', },
 	hash: { transport: 1, parts: 1, },
 	hash 		: '#подвескa #тормоза #рулевое',
 },
-{
-	id 			: 'lesjofors',
-	title 		: 'Lesjofors',
-	year 		: 1852,
-	country 	: 'swe',
-	internet 	: { avtopro: 'lesjofors/', },
-	hash: { transport: 1, parts: 1, },
 
-},
 {
 	id 			: 'liqui_moly',
 	title 		: 'Liqui Moly',
