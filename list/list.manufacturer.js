@@ -3,6 +3,7 @@ const arrManufacturerHash = [
 
 { id: 'carparts' 				, title: 'Автозапчастини' 		, },
 { id: 'car' 					, title: 'Автомобілі' 			, },
+{ id: 'carparts' 				, title: 'Автозапчастини' 		, },
 { id: 'electronic' 				, title: 'Електроніка' 			, }, 
 { id: 'eltech' 					, title: 'Електротехніка' 		, }, 
 { id: 'tools' 					, title: 'Інструмент' 			, }, 
@@ -432,7 +433,7 @@ title 		: '', wiki: { ru: '', },
 },
 {
 	id: 'lesjofors', title: 'Lesjofors', country: { swe: 1, }, year: 1852, 
-	hash: { transport: 1, parts: 1, },
+	hash: { carparts: 1, },
 	internet: { avtopro: 'lesjofors/', },
 },
 {
@@ -471,6 +472,12 @@ title 		: '', wiki: { ru: '', },
 	id: 'mercedes', title: 'Mercedes', country: { deu: 1, }, year: 1926,
 	hash: { car: 1, },
 	internet: { wiki_ua: 'Mercedes-Benz', },
+},
+{
+	id: 'meyle', title: 'Meyle', country: { deu: 1, }, year: 1958,
+	parent: 'Wulf Gaertner Autoparts AG',
+	hash: { carparts: 1, },
+	internet: { wiki_ru: 'Wulf_Gaertner_Autoparts_AG', avtopro: 'meyle/', },
 },
 {
 	id: 'mini', title: 'Mini', country: { gbr: 1, }, year: 1959,
@@ -1241,15 +1248,9 @@ title 		: '', wiki: { ru: '', },
 	hash: { transport: 1, parts: 1, },
 	note 		: 'Упаковщик',
 },
-{
-	id 			: 'meyle',
-	title 		: 'Meyle',
-	year 		: 1958,
-	country 	: 'deu',
-	parent 		: 'Wulf Gaertner Autoparts AG',
-	internet 	: { wiki_ru: 'Wulf_Gaertner_Autoparts_AG', avtopro: 'meyle/', },
-	hash: { transport: 1, parts: 1, },
-},
+
+
+
 {
 	id 			: 'michelin',
 	title 		: 'Michelin',
