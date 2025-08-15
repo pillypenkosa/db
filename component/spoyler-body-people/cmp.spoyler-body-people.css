@@ -86,8 +86,14 @@ cmp-spoyler-body-people {
 				position: absolute;
 				top: 0;
 				left: 0;
-				height: 512px;
-				width: 512px;
+				/*height: 512px;
+				width: 512px;*/
+
+				height: 100%;
+				width: 100%;
+
+
+
 			}
 
 

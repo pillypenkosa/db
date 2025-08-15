@@ -359,7 +359,6 @@ const arrMovies = [
 	id: 'anora_2024', title: { ua: 'Анора', en: 'Anora', }, year: 2024, country: { usa: 1, },
 	genre: { drama: 1, }, 
 	internet: { imdb: '28607951', wiki_ua: '%D0%90%D0%BD%D0%BE%D1%80%D0%B0', },
-	cast: { olexy_valery_serebryakov_03071964: 1, }, 
 },
 {
 	id: 'apex_2021', title: { ua: 'Апекс: Смертельний квест', en: 'Apex', }, year: 2021, country: { usa: 1, },
@@ -899,7 +898,6 @@ const arrMovies = [
 	id: 'headless_horseman_1973', title: { ua: 'Вершник без голови', en: 'Headless horseman', }, year: 1973, country: { sun: 1, cub: 1, }, 
 	genre: { western: 1, }, hash: { cowboy: 1, },
 	internet: { imdb: '0202080', wiki_ua: '%D0%92%D0%B5%D1%80%D1%88%D0%BD%D0%B8%D0%BA_%D0%B1%D0%B5%D0%B7_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1973)', },
-	cast: { oleg_borys_vidov_11061943: 1, },
 },
 {
 	id: 'my_best_friend_s_wedding_1997', title: { ua: 'Весілля найкращого друга', en: 'My Best Friend\'s Wedding', }, year: 1997, country: { usa: 1, },
@@ -1810,7 +1808,7 @@ const arrMovies = [
 	id: 'wild_orchid_1989', title: { ua: 'Дика орхідея', en: 'Wild Orchid', }, year: 1989, country: { usa: 1, },
 	genre: { drama: 1, erotica: 1, },
 	internet: { imdb: '0100934', wiki_ua: '%D0%94%D0%B8%D0%BA%D0%B0_%D0%BE%D1%80%D1%85%D1%96%D0%B4%D0%B5%D1%8F', },
-	cast: { mickey_rourke_16091952: 1, oleg_borys_vidov_11061943: 1, },
+	cast: { mickey_rourke_16091952: 1, },
 },
 {
 	id: 'wild_orchid_2_1991', title: { ua: 'Дика орхідея - 2', en: 'Wild Orchid II: Two Shades of Blue', }, year: 1991, country: { usa: 1, },
@@ -2527,7 +2525,7 @@ const arrMovies = [
 	id: 'deep_impact_1998', title: { ua: 'Зіткнення з безоднею', en: 'Deep Impact', }, year: 1998, country: { usa: 1, }, 
 	genre: { disaster: 1, sci_fi: 1, }, hash: { space: 1, },
 	internet: { imdb: '0120647', wiki_ua: '%D0%97%D1%96%D1%82%D0%BA%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B7_%D0%B1%D0%B5%D0%B7%D0%BE%D0%B4%D0%BD%D0%B5%D1%8E_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { elijah_wood_28011981: 1, morgan_freeman_01061937: 1, olexandr_mykola_baluev_06121958: 1, },
+	cast: { elijah_wood_28011981: 1, morgan_freeman_01061937: 1, },
 },
 {
 	id: 'broken_arrow_1996', title: { ua: 'Зламана стріла', en: 'Broken Arrow', }, year: 1996, country: { usa: 1, },
@@ -2762,6 +2760,12 @@ const arrMovies = [
 	genre: { thriller: 1, }, hash: { plane: 1, children: 1, },
 	internet: { imdb: '0408790', wiki_ru: '%D0%98%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D1%8F_%D0%BF%D0%BE%D0%BB%D1%91%D1%82%D0%B0', hd_vip: '8322', },
 	cast: { jodie_foster_19111962: 1, sean_bean_17041959: 1, },
+},
+{
+	id: 'ilyuzia_strahu_2008', title: { ua: 'Ілюзія страху', en: 'Ілюзія страху', }, year: 2008, country: { ukr: 1, },
+	genre: { thriller: 1, }, 
+	internet: { imdb: '1334009', wiki_ua: '%D0%86%D0%BB%D1%8E%D0%B7%D1%96%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D1%85%D1%83',  },
+	cast: { olexy_sergy_gorbunov_29101961: 1, },
 },
 {
 	id: 'l_empire_2024', title: { ua: 'Імперія', en: 'L\'empire', }, year: 2024, country: { fra: 1, ita: 1, deu: 1, bel: 1, prt: 1, },
@@ -3863,6 +3867,12 @@ const arrMovies = [
 	cast: { mel_gibson_03011956: 1, barry_pepper_04041970: 1, },
 },
 {
+	id: 'the_peacemaker_1997', title: { ua: 'Миротворець', en: 'The Peacemaker', }, year: 1997, country: { usa: 1, },
+	genre: { thriller: 1, drama: 1, }, hash: { nuclear_bomb: 1, },
+	internet: { imdb: '0119874', wiki_ua: '%D0%9C%D0%B8%D1%80%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1997,_%D0%A1%D0%A8%D0%90)', },
+	cast: { george_clooney_06051961: 1, nicole_kidman_20061967: 1, },
+},
+{
 	id: 'hansel_gretel_witch_hunters_2013', title: { ua: 'Мисливці за відьмами', en: 'Hansel & Gretel: Witch Hunters', }, year: 2013, country: { usa: 1, deu: 1, },
 	genre: { action: 1, fantasy: 1, horror: 1, }, hash: { witch: 1, },
 	internet: { imdb: '1428538', wiki_ua: '%D0%9C%D0%B8%D1%81%D0%BB%D0%B8%D0%B2%D1%86%D1%96_%D0%B7%D0%B0_%D0%B2%D1%96%D0%B4%D1%8C%D0%BC%D0%B0%D0%BC%D0%B8', },
@@ -3952,7 +3962,7 @@ const arrMovies = [
 	id: 'mission_impossible_4_2011', title: { ua: 'Місія неможлива - 4', en: 'Mission: Impossible - Ghost Protocol', }, year: 2011, country: { usa: 1, }, rating: 5, franchise: 'mission_impossible',
 	genre: { action: 1, thriller: 1, },
 	internet: { imdb: '1229238', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%BD%D0%B5%D0%B7%D0%B4%D1%96%D0%B9%D1%81%D0%BD%D0%B5%D0%BD%D0%BD%D0%B0:_%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB_%C2%AB%D0%A4%D0%B0%D0%BD%D1%82%D0%BE%D0%BC%C2%BB', },
-	cast: { tom_cruise_03071962: 1, paula_patton_05121975: 1, ving_rhames_12051959: 1, volodymyr_lev_mashkov_27111963: 1, },
+	cast: { tom_cruise_03071962: 1, paula_patton_05121975: 1, ving_rhames_12051959: 1, },
 },
 {
 	id: 'mission_impossible_5_2015', title: { ua: 'Місія неможлива - 5', en: 'Mission: Impossible - Rogue Nation', }, year: 2015, country: { usa: 1, }, rating: 5, franchise: 'mission_impossible',
@@ -4024,7 +4034,7 @@ const arrMovies = [
 	id: 'mio_min_mio_1987', title: { ua: 'Міо мій Міо', en: 'Mio min Mio', }, year: 1987, country: { swe: 1, nor: 1, sun: 1, },
 	genre: { fairytale: 1, fantasy: 1, },
 	internet: { imdb: '0093543', wiki_ua: '%D0%9C%D1%96%D0%BE,_%D0%BC%D1%96%D0%B9_%D0%9C%D1%96%D0%BE', },
-	cast: { christian_bale_30011974: 1, igor_mykola_yasulovich_24091941: 1, },
+	cast: { christian_bale_30011974: 1, },
 },
 {
 	id: 'die_hart_2023', title: { ua: 'Міцний Гарт: Фільм', en: 'Die Hart', }, year: 2023, country: { usa: 1, }, 
@@ -4362,12 +4372,18 @@ const arrMovies = [
 	cast: { daniel_craig_02031968: 1, judi_dench_09121934: 1, rami_malek_12051981: 1, ana_de_armas_30041988: 1, naomie_harris_06091976: 1, },
 },
 {
+	id: 'flight_risk_2025', title: { ua: 'Небезпечний рейс', en: 'Flight Risk', }, year: 2025, country: { usa: 1, },
+	genre: { action: 1, crime: 1, }, hash: { plane: 1, },
+	internet: { imdb: '10078772', wiki_ua: '%D0%9D%D0%B5%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%BD%D0%B8%D0%B9_%D1%80%D0%B5%D0%B9%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { mark_wahlberg_05061971: 1, },
+},
+{
 	id: 'dangerous_waters_2023', title: { ua: 'Небезпечні води', en: 'Dangerous Waters', }, year: 2023, country: { usa: 1, },
 	genre: { thriller: 1, }, hash: { sea: 1, ship: 1, },
 	internet: { imdb: '20024428',  },
 },
 {
-	id: 'la_chevre_1981', title: { ua: 'Невдахи', en: 'La chèvre', }, year: 1981, country: { fra: 1, mex: 1, fmlt: 1, },
+	id: 'la_chevre_1981', title: { ua: 'Невдахи', en: 'La chèvre', }, year: 1981, country: { fra: 1, mex: 1, },
 	genre: { comedy: 1, crime: 1, },
 	internet: { imdb: '0082183', wiki_ua: '%D0%9D%D0%B5%D0%B2%D0%B4%D0%B0%D1%85%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1981)', },
 	cast: { pierre_richard_16081934: 1, gerard_depardieu_27121948: 1, },
@@ -4776,7 +4792,7 @@ const arrMovies = [
 	id: 'wanted_2008', title: { ua: 'Особливо небезпечний', en: 'Wanted', }, year: 2008, country: { usa: 1, },	
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0493464', wiki_ua: '%D0%9E%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%BE_%D0%BD%D0%B5%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%BD%D0%B8%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { morgan_freeman_01061937: 1, angelina_jolie_04061975: 1, kostyantyn_jury_habensky_11011972: 1, },
+	cast: { morgan_freeman_01061937: 1, angelina_jolie_04061975: 1, },
 },
 {
 	id: 'high_crimes_2002', title: { ua: 'Особливо тяжкі злочини', en: 'High Crimes', }, year: 2002, country: { usa: 1, },
@@ -5266,7 +5282,7 @@ const arrMovies = [
 	studio: { columbia: 1, netflix: 1, },
 	genre: { action: 1, comedy: 1, }, 
 	internet: { imdb: '0172156', wiki_ua: '%D0%9F%D0%BE%D0%B3%D0%B0%D0%BD%D1%96_%D1%85%D0%BB%D0%BE%D0%BF%D1%86%D1%96_2', },
-	cast: { will_smith_25091968: 1, martin_lawrence_16041965: 1, oleg_mykola_taktarov_26081967: 1, }, director: { michael_bay_17021965: 1, },
+	cast: { will_smith_25091968: 1, martin_lawrence_16041965: 1, }, director: { michael_bay_17021965: 1, },
 },
 {
 	id: 'bad_boys_3_2020', title: { ua: 'Погані хлопці назавжди', en: 'Bad Boys for Life', }, year: 2020, country: { usa: 1, }, franchise: 'bad_boys',
@@ -5595,7 +5611,7 @@ const arrMovies = [
 	id: 'righteous_kill_2008', title: { ua: 'Право на вбивство', en: 'Righteous Kill', }, year: 2008, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '1034331', wiki_ua: '%D0%9F%D1%80%D0%B0%D0%B2%D0%BE_%D0%BD%D0%B0_%D0%B2%D0%B1%D0%B8%D0%B2%D1%81%D1%82%D0%B2%D0%BE', hd_vip: '16744', },
-	cast: { al_pacino_25041940: 1, robert_de_niro_17081943: 1, oleg_mykola_taktarov_26081967: 1, },
+	cast: { al_pacino_25041940: 1, robert_de_niro_17081943: 1, },
 },
 {
 	id: 'il_bisbetico_domato_1980', title: { ua: 'Приборкання норовливого', en: 'Il bisbetico domato', }, year: 1980, country: { ita: 1, },
@@ -6334,7 +6350,7 @@ const arrMovies = [
 	id: 'national_treasure_2004', title: { ua: 'Скарб нації', en: 'National Treasure', }, year: 2004, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, adventure: 1, },
 	internet: { imdb: '0368891', wiki_ua: '%D0%A1%D0%BA%D0%B0%D1%80%D0%B1_%D0%BD%D0%B0%D1%86%D1%96%D1%97', hd_vip: '11597', },
-	cast: { nicolas_cage_07011964: 1, sean_bean_17041959: 1, jon_voight_29121938: 1, christopher_plummer_13121929: 1, oleg_mykola_taktarov_26081967: 1, },
+	cast: { nicolas_cage_07011964: 1, sean_bean_17041959: 1, jon_voight_29121938: 1, christopher_plummer_13121929: 1, },
 },
 {
 	id: 'cliffhanger_1995', title: { ua: 'Скелелаз', en: 'Cliffhanger', }, year: 1995, country: { usa: 1, }, rating: 5,
@@ -6752,7 +6768,7 @@ const arrMovies = [
 	id: 'tango_cash_1989', title: { ua: 'Танго і Кеш', en: 'Tango & Cash', }, year: 1989, country: { usa: 1, },
 	genre: { action: 1, comedy: 1, crime: 1, },
 	internet: { imdb: '0098439', wiki_ua: '%D0%A2%D0%B0%D0%BD%D0%B3%D0%BE_%D1%96_%D0%9A%D0%B5%D1%88', },
-	cast: { sylvester_stallone_06071946: 1, kurt_russell_17031951: 1, savely_viktor_kramarov_13101934: 1, },
+	cast: { sylvester_stallone_06071946: 1, kurt_russell_17031951: 1, },
 },
 {
 	id: 'disco_dancer_1982', title: { ua: 'Танцюрист диско', en: 'Disco Dancer', }, year: 1982, country: { ind: 1, },
@@ -7152,7 +7168,7 @@ const arrMovies = [
 	id: 'the_tourist_2010', title: { ua: 'Турист', en: 'The Tourist', }, year: 2010, country: { usa: 1, gbr: 1, fra: 1, ita: 1, },
 	genre: { action: 1, }, 
 	internet: { imdb: '1243957', wiki_ua: '%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { johnny_depp_09061963: 1, angelina_jolie_04061975: 1, timothy_dalton_21031946: 1, igor_vitaly_zhyzhykin_08101965: 1, },
+	cast: { johnny_depp_09061963: 1, angelina_jolie_04061975: 1, timothy_dalton_21031946: 1, },
 },
 {
 	id: 'tootsie_1982', title: { ua: 'Тутсі', en: 'Tootsie', }, year: 1982, country: { usa: 1, },
@@ -7716,7 +7732,7 @@ const arrMovies = [
 	id: 'red_heat_1988', title: { ua: 'Червона спека', en: 'Red Heat', }, year: 1988, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, crime: 1, }, hash: { police: 1, },
 	internet: { imdb: '0095963', wiki_ua: '%D0%A7%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B0_%D1%81%D0%BF%D0%B5%D0%BA%D0%B0', },
-	cast: { arnold_schwarzenegger_30071947: 1, james_belushi_15061954: 1, gina_gershon_10061962: 1, laurence_fishburne_30071961: 1, savely_viktor_kramarov_13101934: 1, oleg_borys_vidov_11061943: 1, }, composer: { james_horner_14081953: 1, },
+	cast: { arnold_schwarzenegger_30071947: 1, james_belushi_15061954: 1, gina_gershon_10061962: 1, laurence_fishburne_30071961: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
 	id: 'red_notice_2021', title: { ua: 'Червоне повідомлення', en: 'Red Notice', }, year: 2021, country: { usa: 1, },
