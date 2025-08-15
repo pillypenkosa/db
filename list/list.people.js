@@ -14667,7 +14667,7 @@ let arrPeople = [
 {
 	id: 'hulk_hogan_11081953', 
 	name: { n: 'Hulk', s: 'Hogan', },
-	life: { bd: 11, bm: 8, by: 1953, },
+	life: { bd: 11, bm: 8, by: 1953, dd: 24, dm: 7, dy: 2025, },
 	img: [ 1, 1 ],
 	sex: 1,
 	country: { usa: 1, },
@@ -17381,7 +17381,7 @@ let arrPeople = [
 	id: 'ozzy_osbourne_03121948', 
 	name: { n: 'Ozzy', s: 'Osbourne', },
 	sex: 1,
-	life: { bd: 3, bm: 12, by: 1948, },
+	life: { bd: 3, bm: 12, by: 1948, dd: 22, dm: 7, dy: 2025,},
 	country: { gbr: 1, },
 	hash: { music: 1, singer: 1, },
 	internet: { wiki_ua: '%D0%9E%D0%B7%D0%B7%D1%96_%D0%9E%D1%81%D0%B1%D0%BE%D1%80%D0%BD', },
