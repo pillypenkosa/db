@@ -1038,7 +1038,7 @@ const arrMovies = [
 	id: 'the_wolf_of_wall_street_2013', title: { ua: 'Вовк з Уолл-стріт', en: 'The Wolf of Wall Street', }, year: 2013, country: { usa: 1, },
 	genre: { comedy: 1, biography: 1, crime: 1, }, hash: { finance: 1, },
 	internet: { imdb: '0993846', wiki_ua: '%D0%92%D0%BE%D0%B2%D0%BA_%D0%B7_%D0%A3%D0%BE%D0%BB%D0%BB-%D1%81%D1%82%D1%80%D1%96%D1%82', },
-	cast: { leonardo_dicaprio_11111974: 1, margot_robbie_02071990: 1, kyle_chandler_17091965: 1, },
+	cast: { leonardo_dicaprio_11111974: 1, margot_robbie_02071990: 1, kyle_chandler_17091965: 1, matthew_mcconaughey_04111969: 1, },
 },
 {
 	id: 'wolf_creek_2_2013', title: { ua: 'Вовча яма - 2', en: 'Wolf Creek 2', }, year: 2013, country: { aus: 1, },
