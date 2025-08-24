@@ -12,6 +12,7 @@ const arrMoviesHash = [
 	{ id: 'truckers' 		, title: 'далекобійники' 		, app: { movies: 1, }, },
 	{ id: 'children' 		, title: 'діти' 				, app: { movies: 1, }, },
 	{ id: 'bond' 			, title: 'ДжеймсБонд' 			, app: { movies: 1, }, }, 
+	{ id: 'woman' 			, title: 'жінка' 				, app: { movies: 1, }, },
 	{ id: 'hostage' 		, title: 'заручники' 			, app: { movies: 1, }, },
 	{ id: 'killer' 			, title: 'кілери' 				, app: { movies: 1, }, },
 	{ id: 'cowboy' 			, title: 'ковбої' 				, app: { movies: 1, }, },

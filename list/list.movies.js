@@ -374,18 +374,13 @@ const arrMovies = [
 	cast: { tom_hanks_09071956: 1, kevin_bacon_08071958: 1, bill_paxton_17051955: 1, ed_harris_28111950: 1, }, director: { ron_howard_31031954: 1, }, composer: { james_horner_14081953: 1, }, 
 },
 {
-	id: 'apocalipsis_z_2024', title: { ua: 'Апокаліпсис Z: Початок кінця', en: 'Apocalipsis Z: El principio del fin', }, year: 2024, country: { esp: 1, },
-	genre: { sci_fi: 1, }, hash: { zombie: 1, surviving: 1, },
-	internet: { imdb: '27599851', },
-},
-{
 	id: 'upgrade_2018', title: { ua: 'Апгрейд', en: 'Upgrade', }, year: 2018, country: { aus: 1, },
 	genre: { sci_fi: 1, thriller: 1, }, 
 	internet: { imdb: '6499752', wiki_ua: '%D0%90%D0%BF%D0%B3%D1%80%D0%B5%D0%B9%D0%B4_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 },
 {
 	id: 'apocalypse_z_el_principio_del_fin_2024', title: { ua: 'Апокаліпсис Z: Початок кінця', en: 'Apocalypse Z: El principio del fin', }, year: 2024, country: { esp: 1, },
-	genre: { sci_fi: 1, horror: 1, thriller: 1, }, hash: { zombie: 1, },
+	genre: { sci_fi: 1, horror: 1, thriller: 1, }, hash: { zombie: 1, surviving: 1, },
 	internet: { imdb: '27599851', },
 },
 {
@@ -424,7 +419,7 @@ const arrMovies = [
 },
 {
 	id: 'atomic_blonde_2017', title: { ua: 'Атомна блондинка', en: 'Atomic Blonde', }, year: 2017, country: { usa: 1, },
-	genre: { action: 1, },
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '2406566', wiki_ua: '%D0%90%D1%82%D0%BE%D0%BC%D0%BD%D0%B0_%D0%B1%D0%BB%D0%BE%D0%BD%D0%B4%D0%B8%D0%BD%D0%BA%D0%B0', },
 	cast: { charlize_theron_07081975: 1, sofia_boutella_03041982: 1, },
 },
@@ -489,7 +484,7 @@ const arrMovies = [
 },
 {
 	id: 'ballerina_2025', title: { ua: 'Балерина', en: 'Ballerina', }, year: 2025, country: { hun: 1, },
-	genre: { action: 1, },
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '7181546', wiki_ua: '%D0%91%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
 	cast: { keanu_reeves_02091964: 1, ana_de_armas_30041988: 1, },
 },
@@ -1467,7 +1462,7 @@ const arrMovies = [
 },
 {
 	id: 'gravity_2013', title: { ua: 'Гравітація', en: 'Gravity', }, year: 2013, country: { usa: 1, }, rating: 5,
-	genre: { thriller: 1, sci_fi: 1, drama: 1, }, hash: { trap: 1, space: 1, },
+	genre: { thriller: 1, sci_fi: 1, drama: 1, }, hash: { trap: 1, space: 1, woman: 1, },
 	internet: { imdb: '1454468', wiki_ua: '%D0%93%D1%80%D0%B0%D0%B2%D1%96%D1%82%D0%B0%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '13715', },
 	cast: { sandra_bullock_26071964: 1, george_clooney_06051961: 1, ed_harris_28111950: 1, },
 },
@@ -1928,7 +1923,7 @@ const arrMovies = [
 },
 {
 	id: 'dominique_2024', title: { ua: 'Домініка', en: 'Dominique', }, year: 2024, country: { usa: 1, col: 1, },
-	genre: { action: 1, crime: 1, },
+	genre: { action: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '14972766', },
 },
 {
@@ -2210,7 +2205,7 @@ const arrMovies = [
 },
 {
 	id: 'catwoman_2004', title: { ua: 'Жінка-кішка', en: 'Catwoman', }, year: 2004, country: { usa: 1, }, 
-	genre: { fantasy: 1, crime: 1, },
+	genre: { fantasy: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0327554', wiki_ua: '%D0%96%D1%96%D0%BD%D0%BA%D0%B0-%D0%BA%D1%96%D1%88%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { halle_berry_14081966: 1, sharon_stone_10031958: 1, },
 },
@@ -2410,7 +2405,7 @@ const arrMovies = [
 },
 {
 	id: 'detained_2024', title: { ua: 'Затримана', en: 'Detained', }, year: 2024, country: { bul: 1, },
-	genre: { thriller: 1, }, hash: { psycho: 1, police: 1, },
+	genre: { thriller: 1, }, hash: { psycho: 1, police: 1, woman: 1, },
 	internet: { imdb: '8178762', },
 	cast: { moon_bloodgood_20081975: 1, },
 },
@@ -3092,7 +3087,7 @@ const arrMovies = [
 },
 {
 	id: 'canary_black_2024', title: { ua: 'Код Чорна канарка', en: 'Canary Black', }, year: 2024, country: { usa: 1, gbr: 1, hrv: 1, },
-	genre: { action: 1, }, 
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '20048582', wiki_ua: '%D0%9A%D0%BE%D0%B4_%C2%AB%D0%A7%D0%BE%D1%80%D0%BD%D0%B0_%D0%BA%D0%B0%D0%BD%D0%B0%D1%80%D0%BA%D0%B0%C2%BB', hd_vip: '151502', },
 	cast: { kate_beckinsale_26071973: 1, },
 },
@@ -3328,7 +3323,7 @@ const arrMovies = [
 },
 {
 	id: 'jolt_2021', title: { ua: 'Красуня на драйві', en: 'Jolt', }, year: 2021, country: { usa: 1, }, 
-	genre: { action: 1, crime: 1, comedy: 1, },
+	genre: { action: 1, crime: 1, comedy: 1, }, hash: { woman: 1, },
 	internet: { imdb: '10228134', wiki_ua: '%D0%9A%D1%80%D0%B0%D1%81%D1%83%D0%BD%D1%8F_%D0%BD%D0%B0_%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D1%96', },
 	cast: { kate_beckinsale_26071973: 1, },
 },
@@ -3468,14 +3463,14 @@ const arrMovies = [
 },
 {
 	id: 'lara_kroft_2001', title: { ua: 'Лара Крофт', en: 'Lara Croft: Tomb Raider', }, year: 2001, country: { usa: 1, gbr: 1, deu: 1, jpn: 1, }, rating: 5,
-	genre: { action: 1, adventure: 1, }, hash: { treasure: 1, travel: 1, },
+	genre: { action: 1, adventure: 1, }, hash: { treasure: 1, travel: 1, woman: 1, },
 	internet: { imdb: '0146316', wiki_ua: '%D0%9B%D0%B0%D1%80%D0%B0_%D0%9A%D1%80%D0%BE%D1%84%D1%82:_%D0%A0%D0%BE%D0%B7%D0%BA%D1%80%D0%B0%D0%B4%D0%B0%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { angelina_jolie_04061975: 1, daniel_craig_02031968: 1, jon_voight_29121938: 1, },
 },
 {
 	id: 'lara_kroft_2_2003', title: { ua: 'Лара Крофт - 2', en: 'Lara Croft Tomb Raider: The Cradle of Life', }, year: 2003, country: { usa: 1, gbr: 1, deu: 1, jpn: 1, }, rating: 5,
 	studio: { paramount: 1, },
-	genre: { action: 1, adventure: 1, }, hash: { treasure: 1, travel: 1, },
+	genre: { action: 1, adventure: 1, }, hash: { treasure: 1, travel: 1, woman: 1, },
 	internet: { imdb: '0325703', wiki_ua: '%D0%9B%D0%B0%D1%80%D0%B0_%D0%9A%D1%80%D0%BE%D1%84%D1%82_%D1%80%D0%BE%D0%B7%D0%BA%D1%80%D0%B0%D0%B4%D0%B0%D1%87%D0%BA%D0%B0_%D0%B3%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D1%86%D1%8C:_%D0%BA%D0%BE%D0%BB%D0%B8%D1%81%D0%BA%D0%B0_%D0%B6%D0%B8%D1%82%D1%82%D1%8F', },
 	cast: { angelina_jolie_04061975: 1, gerard_butler_13111969: 1, graham_mc_tavish_04011961: 1, }, director: { jan_de_bont_22101943: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
@@ -3642,7 +3637,7 @@ const arrMovies = [
 },
 {
 	id: 'lucy_2014', title: { ua: 'Люсі', en: 'Lucy', }, year: 2014, country: { can: 1, fra: 1, deu: 1, twn: 1, },
-	genre: { sci_fi: 1, action: 1, crime: 1, },
+	genre: { sci_fi: 1, action: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '2872732', wiki_ua: '%D0%9B%D1%8E%D1%81%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2014)', },
 	cast: { scarlett_johansson_22111984: 1, morgan_freeman_01061937: 1, }, director: { luc_besson_18031959: 1, },
 },
@@ -3681,7 +3676,7 @@ const arrMovies = [
 },
 {
 	id: 'madame_web_2024', title: { ua: 'Мадам Павутина', en: 'Madame Web', }, year: 2024, country: { usa: 1, },
-	genre: { sci_fi: 1, action: 1, }, hash: { spider: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { spider: 1, woman: 1, },
 	internet: { imdb: '11057302', wiki_ua: '%D0%9C%D0%B0%D0%B4%D0%B0%D0%BC_%D0%9F%D0%B0%D0%B2%D1%83%D1%82%D0%B8%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '123783', },
 	cast: { dakota_johnson_04101989: 1, },
 },
@@ -3913,13 +3908,13 @@ const arrMovies = [
 },
 {
 	id: 'miss_congeniality_2000', title: { ua: 'Міс Конгеніальність', en: 'Miss Congeniality', }, year: 2000, country: { usa: 1, aus: 1, },
-	genre: { action: 1, comedy: 1, crime: 1, },
+	genre: { action: 1, comedy: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0212346', wiki_ua: '%D0%9C%D1%96%D1%81_%D0%9A%D0%BE%D0%BD%D0%B3%D0%B5%D0%BD%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%D1%81%D1%82%D1%8C', },
 	cast: { sandra_bullock_26071964: 1, },
 },
 {
 	id: 'miss_congeniality_2_2005', title: { ua: 'Міс Конгеніальність - 2', en: 'Miss Congeniality 2: Armed & Fabulous', }, year: 2005, country: { usa: 1, },
-	genre: { action: 1, comedy: 1, crime: 1, },
+	genre: { action: 1, comedy: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0385307', wiki_ua: '%D0%9C%D1%96%D1%81_%D0%9A%D0%BE%D0%BD%D0%B3%D0%B5%D0%BD%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D1%96%D1%81%D1%82%D1%8C_2:_%D0%9E%D0%B7%D0%B1%D1%80%D0%BE%D1%94%D0%BD%D0%B0_%D1%96_%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%BD%D0%B0', },
 	cast: { sandra_bullock_26071964: 1, },
 },
@@ -3996,7 +3991,7 @@ const arrMovies = [
 },
 {
 	id: 'heart_of_stone_2023', title: { ua: 'Місія Стоун', en: 'Heart of Stone', }, year: 2023, country: { usa: 1, },
-	genre: { action: 1, },
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '13603966', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%A1%D1%82%D0%BE%D1%83%D0%BD', hd_vip: '98847', },
 	cast: { gal_gadot_30041985: 1, },
 },
@@ -4355,7 +4350,7 @@ const arrMovies = [
 },
 {
 	id: 'barb_wire_1996', title: { ua: 'Не називай мене маленькою', en: 'Barb Wire', }, year: 1996, country: { usa: 1, },
-	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, },
+	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, woman: 1, },
 	internet: { imdb: '0115624', wiki_ua: '%D0%9D%D0%B5_%D0%BD%D0%B0%D0%B7%D0%B8%D0%B2%D0%B0%D0%B9_%D0%BC%D0%B5%D0%BD%D0%B5_%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D1%8E', },
 	cast: { pamela_anderson_01071967: 1, },
 },
@@ -4477,7 +4472,7 @@ const arrMovies = [
 },
 {
 	id: 'subservience_2024', title: { ua: 'Непокірна Еліс', en: 'Subservience', }, year: 2024, country: { usa: 1, },
-	genre: { sci_fi: 1, thriller: 1, }, hash: { robot: 1, },
+	genre: { sci_fi: 1, thriller: 1, }, hash: { robot: 1, woman: 1, },
 	internet: { imdb: '24871974', hd_vip: '142742', },
 	cast: { megan_fox_16051986: 1, },
 },
@@ -4569,7 +4564,7 @@ const arrMovies = [
 },
 {
 	id: 'night_train_2023', title: { ua: 'Нічний поїзд', en: 'Night Train', }, year: 2023, country: { usa: 1, },
-	genre: { action: 1, crime: 1, }, 
+	genre: { action: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '15727212', },
 	cast: { daniel_c_ryan_09061993: 1, },
 },
@@ -4748,7 +4743,7 @@ const arrMovies = [
 },
 {
 	id: 'resident_evil_2002', title: { ua: 'Оселя зла', en: 'Resident Evil', }, year: 2002, country: { usa: 1, }, rating: 5,
-	genre: { action: 1, sci_fi: 1, horror: 1, },
+	genre: { action: 1, sci_fi: 1, horror: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0120804', wiki_ua: '%D0%9E%D1%81%D0%B5%D0%BB%D1%8F_%D0%B7%D0%BB%D0%B0', },
 	cast: { milla_jovovich_17121975: 1, michelle_rodriguez_12071978: 1, }, composer: { marco_beltrami_07101966: 1, },
 },
@@ -5067,7 +5062,7 @@ const arrMovies = [
 	id: 'free_guy_2021', title: { ua: 'Персонаж', en: 'Free Guy', }, year: 2021, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, fantasy: 1, comedy: 1, }, hash: { cyber: 1, world: 1, },
 	internet: { imdb: '6264654', wiki_ua: '%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', hd_vip: '48814', },
-	cast: { ryan_reynolds_23101976: 1, },
+	cast: { ryan_reynolds_23101976: 1, jodie_comer_11031993: 1, },
 },
 {
 	id: 'ready_player_one_2018', title: { ua: 'Першому гравцю приготуватися', en: 'Ready Player One', }, year: 2018, country: { usa: 1, },
@@ -5317,7 +5312,7 @@ const arrMovies = [
 },
 {
 	id: 'double_threat_2022', title: { ua: 'Подвійна загроза', en: 'Double Threat', }, year: 2022, country: { usa: 1, },
-	genre: { action: 1, comedy: 1, },
+	genre: { action: 1, comedy: 1, }, hash: { woman: 1, },
 	internet: { imdb: '13302660', hd_vip: '118783', },
 	cast: { daniel_c_ryan_09061993: 1, },
 },
@@ -5668,7 +5663,7 @@ const arrMovies = [
 },
 {
 	id: 'ghosted_2023', title: { ua: 'Примарні', en: 'Ghosted', }, year: 2023, country: { usa: 1, }, rating: 5,
-	genre: { action: 1, comedy: 1, adventure: 1, },
+	genre: { action: 1, comedy: 1, adventure: 1, }, hash: { woman: 1, },
 	internet: { imdb: '15326988', wiki_ua: '%D0%9D%D0%B5%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D1%87%D0%BD%D0%B5_%D0%BF%D0%BE%D0%B1%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F', hd_vip: '93706', },
 	cast: { chris_evans_13061981: 1, ana_de_armas_30041988: 1, adrien_brody_14041973: 1, ryan_reynolds_23101976: 1, },
 },
@@ -6110,7 +6105,7 @@ const arrMovies = [
 },
 {
 	id: 'role_play_2024', title: { ua: 'Рольові ігри', en: 'Role Play', }, year: 2024, country: { usa: 1, },
-	genre: { action: 1, sci_fi: 1, crime: 1, },
+	genre: { action: 1, sci_fi: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '12964320', wiki_ua: '%D0%A0%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D1%96_%D1%96%D0%B3%D1%80%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '129335', },
 },
 {
@@ -6476,7 +6471,7 @@ const arrMovies = [
 },
 {
 	id: 'salt_2010', title: { ua: 'Солт', en: 'Salt', }, year: 2010, country: { usa: 1, },
-	genre: { action: 1, }, 
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0944835', wiki_ua: '%D0%A1%D0%BE%D0%BB%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { angelina_jolie_04061975: 1, }, composer: { james_newton_howard_09061951: 1, },
 },
@@ -6553,7 +6548,7 @@ const arrMovies = [
 },
 {
 	id: 'the_real_mccoy_1993', title: { ua: 'Справжня Маккой', en: 'The Real McCoy', }, year: 1993, country: { usa: 1, }, rating: 5,
-	genre: { thriller: 1, crime: 1, }, hash: { robbery: 1, },
+	genre: { thriller: 1, crime: 1, }, hash: { robbery: 1, woman: 1, },
 	internet: { imdb: '0107927', wiki_ua: '%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%B6%D0%BD%D1%8F_%D0%9C%D0%B0%D0%BA%D0%BA%D0%BE%D0%B9', hd_vip: '17052', },
 	cast: { kim_basinger_08121953: 1, val_kilmer_31121959: 1, }, composer: { brad_fiedel_10031951: 1, },
 },
@@ -7236,7 +7231,7 @@ const arrMovies = [
 },
 {
 	id: 'kill_bill_vol_1', title: { ua: 'Убити Білла', en: 'Kill Bill: Vol. 1', }, year: 2003, country: { usa: 1, chn: 1, },
-	genre: { action: 1, crime: 1, },
+	genre: { action: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '0266697', wiki_ua: '%D0%A3%D0%B1%D0%B8%D1%82%D0%B8_%D0%91%D1%96%D0%BB%D0%BB%D0%B0._%D0%A4%D1%96%D0%BB%D1%8C%D0%BC_1', },
 	cast: { uma_thurman_29041970: 1, }, director: { quentin_tarantino_27031963: 1, },
 },
@@ -7511,7 +7506,7 @@ const arrMovies = [
 },
 {
 	id: 'mad_max_5_2024', title: { ua: 'Фуріоза: Шалений Макс. Сага', en: 'Furiosa: A Mad Max Saga', }, year: 2024, country: { usa: 1, aus: 1, }, franchise: 'mad_max',
-	genre: { action: 1, sci_fi: 1, }, hash: { utopia: 1, future: 1, road: 1, },
+	genre: { action: 1, sci_fi: 1, }, hash: { utopia: 1, future: 1, road: 1, woman: 1, },
 	internet: { imdb: '12037194', wiki_ua: '%D0%A4%D1%83%D1%80%D1%96%D0%BE%D0%B7%D0%B0:_%D0%A8%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_%D0%9C%D0%B0%D0%BA%D1%81._%D0%A1%D0%B0%D0%B3%D0%B0', },
 	cast: { chris_hemsworth_11081983: 1, },
 },
@@ -7742,7 +7737,7 @@ const arrMovies = [
 },
 {
 	id: 'red_sparrow_2018', title: { ua: 'Червоний горобець', en: 'Red Sparrow', }, year: 2018, country: { usa: 1, },
-	genre: { action: 1, },
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '2873282', wiki_ua: '%D0%A7%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B8%D0%B9_%D0%B3%D0%BE%D1%80%D0%BE%D0%B1%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { jennifer_lawrence_15081990: 1, },
 },
