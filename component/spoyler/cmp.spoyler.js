@@ -54,7 +54,7 @@ class ComponentSpoyler {
 
 		let htmlBody = '';
 		if ( objData.tf ) {		// відкритий спойлер
-			console.log( objData );
+			//console.log( objData );
 			//htmlBody = Component( objData.cmp, objData.id );
 			htmlBody = Component( objData.cmp, objData.id );
 		}

@@ -31,7 +31,7 @@ class ComponentTableKeyVal {
  
  
  
-		let html = ''; 
+		let html = '456'; 
  
 		//console.log( 'objData: ', objData ); 
  
@@ -43,18 +43,18 @@ class ComponentTableKeyVal {
 
 			let htmlKey, htmlVal = '';
 
-			if ( tr.k || tr.v ) {
+			if ( tr.key || tr.val ) {
 
-				if ( tr.k ) 
-					htmlKey = tr.k;
+				if ( tr.key ) 
+					htmlKey = tr.key;
 				
-				if ( tr.v ) {
+				if ( tr.val ) {
 
 					if ( tr.href ) {
-						htmlVal = `<a href="${ tr.href }" target="_blank">${ tr.v } ${ HTML_HREF_SIGN }</a>`;
+						htmlVal = `<a href="${ tr.href }" target="_blank">${ tr.val } ${ HTML_HREF_SIGN }</a>`;
 					
 					} else
-						htmlVal = tr.v;
+						htmlVal = tr.val;
 				} 
 
 				htmlTBody += `<tr>

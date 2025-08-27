@@ -7598,6 +7598,12 @@ const arrMovies = [
 	cast: { paul_walker_12091973: 1, matt_dillon_18021964: 1, elijah_wood_28011981: 1, },
 },
 {
+	id: 'the_chronicles_of_narnia_2005', title: { ua: 'Хроніки Нарнії: Лев, чаклунка і чарівна шафа', en: 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe', }, year: 2005, country: { usa: 1, gbr: 1, }, 
+	genre: { fantasy: 1, }, hash: { battle: 1, },
+	internet: { imdb: '0363771', wiki_ua: '%D0%A5%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B8_%D0%9D%D0%B0%D1%80%D0%BD%D1%96%D1%97:_%D0%9B%D0%B5%D0%B2,_%D1%87%D0%B0%D0%BA%D0%BB%D1%83%D0%BD%D0%BA%D0%B0_%D1%82%D0%B0_%D1%88%D0%B0%D1%84%D0%B0', },
+	cast: { tilda_swinton_05111960: 1, },
+},
+{
 	id: 'the_chronicles_of_riddick_2004', title: { ua: 'Хроніки Ріддіка', en: 'The Chronicles of Riddick', }, year: 2004, country: { usa: 1, }, 
 	genre: { sci_fi: 1, action: 1, }, hash: { space: 1, utopia: 1, planet: 1, },
 	internet: { imdb: '0296572', wiki_ua: '%D0%A5%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B8_%D0%A0%D1%96%D0%B4%D0%B4%D1%96%D0%BA%D0%B0', },
