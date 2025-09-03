@@ -7282,7 +7282,7 @@ let arrPeople = [
 	id: 'andry_volodymyr_paruby_31011971', 
 	name: { n: 'Андрій', s: 'Парубій', p: 'Володимирович', },
 	sex: 1,
-	life: { bd: 31, bm: 1, by: 1971, },
+	life: { bd: 31, bm: 1, by: 1971, dd: 30, dm: 8, dy: 2025, },
 	img: [ 1, 1 ],
 	country: { ukr: 1, },
 	hash: { politics: 1, },
