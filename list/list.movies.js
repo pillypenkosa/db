@@ -1984,6 +1984,12 @@ const arrMovies = [
 	cast: { ryan_gosling_12111980: 1, ron_perlman_13041950: 1, },
 },
 {
+	id: 'muzzle_2023', title: { ua: 'Друг', en: 'Muzzle', }, year: 2023, country: { usa: 1, },
+	genre: { action: 1, crime: 1,  }, hash: { dog: 1, police: 1, },
+	internet: { imdb: '17663876', },
+	cast: { aaron_eckhart_12031968: 1, },	
+},
+{
 	id: 'the_astronaut_s_wife_1999', title: { ua: 'Дружина астронавта', en: 'The Astronaut\'s Wife', }, year: 1999, country: { usa: 1, },
 	genre: { drama: 1, thriller: 1, sci_fi: 1, }, hash: { aliens: 1, },
 	internet: { imdb: '0138304', wiki_ua: '%D0%94%D1%80%D1%83%D0%B6%D0%B8%D0%BD%D0%B0_%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B0', },
@@ -3221,12 +3227,6 @@ const arrMovies = [
 	genre: { action: 1, thriller: 1, adventure: 1, }, hash: { bond: 1, },
 	internet: { imdb: '1074638', wiki_ua: '007:_%D0%9A%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%B8_%C2%AB%D0%A1%D0%BA%D0%B0%D0%B9%D1%84%D0%BE%D0%BB%D0%BB%C2%BB', hd_vip: '2534', },
 	cast: { daniel_craig_02031968: 1, judi_dench_09121934: 1, naomie_harris_06091976: 1, },
-},
-{
-	id: 'muzzle_2023', title: { ua: 'Коп і Пес', en: 'Muzzle', }, year: 2023, country: { usa: 1, },
-	genre: { action: 1, crime: 1,  }, hash: { dog: 1, police: 1, },
-	internet: { imdb: '17663876', },
-	cast: { aaron_eckhart_12031968: 1, },	
 },
 {
 	id: 'king_solomon_s_mines_1985', title: { ua: 'Копальні царя Соломона', en: 'King Solomon\'s Mines', }, year: 1985, country: { usa: 1, }, rating: '5+',
