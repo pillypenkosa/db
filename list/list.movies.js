@@ -273,6 +273,20 @@ const arrMovies = [
 	cast: { jason_statham_26071967: 1, amy_smart_26031976: 1, },
 },
 {
+	id: 'airplane_1980', title: { ua: 'Аероплан', en: 'Airplane', }, year: 1980, country: { usa: 1, }, franchise: 'airplane',
+	studio: { paramount: 1, },
+	genre: { comedy: 1, }, hash: { plane: 1, },
+	internet: { imdb: '0080339', wiki_ua: '%D0%90%D0%B5%D1%80%D0%BE%D0%BF%D0%BB%D0%B0%D0%BD!', },
+	cast: { leslie_nielsen_11021926: 1, lloyd_bridges_15011913: 1, },
+},
+{
+	id: 'airplane_2_1982', title: { ua: 'Аероплан - 2', en: 'Airplane II: The Sequel', }, year: 1982, country: { usa: 1, }, franchise: 'airplane',
+	studio: { paramount: 1, },
+	genre: { comedy: 1, }, hash: { plane: 1, space: 1, },
+	internet: { imdb: '0083530', wiki_ru: '%D0%90%D1%8D%D1%80%D0%BE%D0%BF%D0%BB%D0%B0%D0%BD_II:_%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5', },
+	cast: { lloyd_bridges_15011913: 1, },
+},
+{
 	id: 'i_t_2016', title: { ua: 'Ай Ті', en: 'I.T.', }, year: 2016, country: { irl: 1, fra: 1, usa: 1, },
 	genre: { thriller: 1, }, hash: { cyber: 1, },
 	internet: { imdb: '2679552', wiki_ru: '%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82._%D0%94%D0%BE%D1%81%D1%82%D1%83%D0%BF_%D0%BD%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD', },
@@ -6758,6 +6772,11 @@ const arrMovies = [
 	genre: { action: 1, comedy: 1, crime: 1, }, hash: { cars: 1, police: 1, },
 	internet: { imdb: '0804540', wiki_ua: '%D0%A2%D0%B0%D0%BA%D1%81%D1%96_4', },
 	cast: { samy_naceri_02071961: 1, },
+},
+{
+	id: 'taxi_5_2018', title: { ua: 'Таксі - 5', en: 'Taxi 5', }, year: 2018, country: { fra: 1, mar: 1, }, franchise: 'taxi',
+	genre: { action: 1, comedy: 1, crime: 1, }, hash: { cars: 1, police: 1, },
+	internet: { imdb: '7238392', wiki_ua: '%D0%A2%D0%B0%D0%BA%D1%81%D1%96_5', },
 },
 {
 	id: 'tango_cash_1989', title: { ua: 'Танго і Кеш', en: 'Tango & Cash', }, year: 1989, country: { usa: 1, },
