@@ -13440,7 +13440,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 3, bm: 11, by: 1957, },
 	img: [ 1, 1 ],
-	country: { usa: 1, },
+	country: { swe: 1, },
 	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, karate: 1, },
 	internet: { imdb: '0000185', wiki_ua: '%D0%94%D0%BE%D0%BB%D1%8C%D1%84_%D0%9B%D1%83%D0%BD%D0%B4%D0%B3%D1%80%D0%B5%D0%BD', },
 },

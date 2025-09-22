@@ -772,6 +772,12 @@ const arrMovies = [
 	cast: { steven_seagal_10041952: 1, brenda_bakke_15051963: 1, peter_greene_08101965: 1, },
 },
 {
+	id: 'wanted_man_2024', title: { ua: 'В розшуку', en: 'Wanted Man', }, year: 2024, country: { usa: 1, },
+	genre: { action: 1, crime: 1, }, hash: { police: 1, },
+	internet: { imdb: '15791574', },
+	cast: { dolph_lundgren_03111957: 1, michael_pare_09101958: 1, },
+},
+{
 	id: 'take_cover_2024', title: { ua: 'В укриття', en: 'Take Cover', }, year: 2024, country: { gbr: 1, },
 	genre: { thriller: 1, }, hash: { killer: 1, },
 	internet: { imdb: '28129054',  },
