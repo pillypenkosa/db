@@ -87,6 +87,7 @@ class ComponentMenu {
 			//{ href: 'names' 				, title: 'Імена' 		, },
 			{ href: 'movies' 				, title: 'Фільми' 		, },
 			{ href: 'manufacturers' 		, title: 'Виробники' 	, },
+			{ href: 'remember' 				, title: 'Пригадайка' 	, },
 			
 		];
 

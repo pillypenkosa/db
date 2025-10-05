@@ -32,7 +32,8 @@ const dependences = [
 	{ arr: 'people'				, },  
 	{ arr: 'movies.hash'		, },  
 	{ arr: 'movies.set'			, },  
-	{ arr: 'movies'				, }, 
+	{ arr: 'movies'				, },
+	{ arr: 'movies.remember'	, },
 
 
 
@@ -99,8 +100,11 @@ const dependences = [
 	{ cmp: 'Win-Movies' 		, win: /^movies$/ 			, }, 	
 	{ cmp: 'Win-People' 		, win: /^people$/ 			, }, 	
 	{ cmp: 'Win-Names' 			, win: /^names$/ 			, }, 	
+	{ cmp: 'Win-Remember' 		, win: /^remember$/ 		, }, 	
 	{ cmp: 'Win-Surnames' 		, win: /^surnames$/ 		, }, 	
-	
+
+
+
 
 	//{ cmp: 'Win-Uid' 					, win: /^user\/[0-9A-Za-z]+$/ 		, }, 	// user/{ txt }
 

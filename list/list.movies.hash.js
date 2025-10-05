@@ -73,7 +73,6 @@ const arrMoviesHash = [
 	{ id: 'war' 			, title: 'війна' 					, app: { movies: 1, }, }, 
 	{ id: 'war1w' 			, title: 'першаСвітоваВійна' 		, app: { movies: 1, }, }, 
 	{ id: 'war2w' 			, title: 'другаСвітоваВійна' 		, app: { movies: 1, }, }, 
-	{ id: 'nuclear_bomb' 	, title: 'ядернаБомба' 				, app: { movies: 1, }, }, 
 
 
 
@@ -123,6 +122,7 @@ const arrMoviesHash = [
 	{ id: 'police' 			, title: 'поліція' 					, app: { movies: 1, }, },
 	{ id: 'hunting' 		, title: 'полюванняНаЛюдину' 		, app: { movies: 1, }, },
 	{ id: 'terrorist' 		, title: 'терористи' 				, app: { movies: 1, }, },
+	{ id: 'nuclear_bomb' 	, title: 'ядернаБомба' 				, app: { movies: 1, }, }, 
 
 
 

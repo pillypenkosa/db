@@ -282,7 +282,7 @@ const arrMovies = [
 {
 	id: 'airplane_2_1982', title: { ua: 'Аероплан - 2', en: 'Airplane II: The Sequel', }, year: 1982, country: { usa: 1, }, franchise: 'airplane',
 	studio: { paramount: 1, },
-	genre: { comedy: 1, }, hash: { plane: 1, space: 1, },
+	genre: { comedy: 1, }, hash: { plane: 1, space: 1, }, remembered: 1,
 	internet: { imdb: '0083530', wiki_ru: '%D0%90%D1%8D%D1%80%D0%BE%D0%BF%D0%BB%D0%B0%D0%BD_II:_%D0%9F%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5', },
 	cast: { lloyd_bridges_15011913: 1, },
 },
@@ -928,7 +928,7 @@ const arrMovies = [
 },
 {
 	id: 'wanted_dead_or_alive_1986', title: { ua: 'Взяти живим або мертвим', en: 'Wanted: Dead or Alive', }, year: 1986, country: { usa: 1, },
-	genre: { action: 1, crime: 1, }, 
+	genre: { action: 1, crime: 1, }, remembered: 1,
 	internet: { imdb: '0094293', wiki_ua: '%D0%92%D0%B7%D1%8F%D1%82%D0%B8_%D0%B6%D0%B8%D0%B2%D0%B8%D0%BC_%D0%B0%D0%B1%D0%BE_%D0%BC%D0%B5%D1%80%D1%82%D0%B2%D0%B8%D0%BC', },
 	cast: { rutger_hauer_23011944: 1, },
 },
@@ -1333,6 +1333,11 @@ const arrMovies = [
 	id: 'gueules_noires_2023', title: { ua: 'Глибока темрява', en: 'Gueules noires', }, year: 2023, country: { fra: 1, },
 	genre: { horror: 1, sci_fi: 1, },
 	internet: { imdb: '20452218', },
+},
+{
+	id: 'deep_star_six_1989', title: { ua: 'Глибинна зірка шість', en: 'DeepStar Six', }, year: 1989, country: { usa: 1, },
+	genre: { horror: 1, sci_fi: 1, }, hash: { sea: 1, underwater: 1, aliens: 1, creature: 1, }, remembered: 1,
+	internet: { wiki_ua: '%D0%93%D0%BB%D0%B8%D0%B1%D0%B8%D0%BD%D0%BD%D0%B0_%D0%B7%D1%96%D1%80%D0%BA%D0%B0_%D1%88%D1%96%D1%81%D1%82%D1%8C', imdb: '0097179', },
 },
 {
 	id: 'wrath_of_man_2021', title: { ua: 'Гнів людський', en: 'Wrath of Man', }, year: 2021, country: { usa: 1, gbr: 1, },
@@ -2922,6 +2927,11 @@ const arrMovies = [
 	cast: { brie_larson_01101989: 1, samuel_l_jackson_21121948: 1, don_cheadle_29111964: 1, },
 },
 {
+	id: 'captain_sindbad_1963', title: { ua: 'Капітан Сіндбад', en: 'Captain Sindbad', }, year: 1963, country: { usa: 1, },
+	genre: { fantasy: 1, adventure: 1, }, remembered: 1,
+	internet: { imdb: '0056904', },
+},
+{
 	id: 'chapel_2024', title: { ua: 'Каплиця', en: 'Chapel', }, year: 2024, country: { usa: 1, },
 	genre: { thriller: 1, mystic: 1, },
 	internet: { imdb: '12881604', },
@@ -3888,7 +3898,7 @@ const arrMovies = [
 },
 {
 	id: 'the_peacemaker_1997', title: { ua: 'Миротворець', en: 'The Peacemaker', }, year: 1997, country: { usa: 1, },
-	genre: { thriller: 1, drama: 1, }, hash: { nuclear_bomb: 1, },
+	genre: { thriller: 1, drama: 1, }, hash: { nuclear_bomb: 1, }, remembered: 1,
 	internet: { imdb: '0119874', wiki_ua: '%D0%9C%D0%B8%D1%80%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1997,_%D0%A1%D0%A8%D0%90)', },
 	cast: { george_clooney_06051961: 1, nicole_kidman_20061967: 1, },
 },
@@ -5718,7 +5728,7 @@ const arrMovies = [
 },
 {
 	id: 'the_hidden_1987', title: { ua: 'Прихований ворог', en: 'The Hidden', }, year: 1987, country: { usa: 1, }, rating: 5,
-	genre: { sci_fi: 1, thriller: 1,horror: 1, }, hash: { aliens: 1, },
+	genre: { sci_fi: 1, thriller: 1,horror: 1, }, hash: { aliens: 1, }, remembered: 1,
 	internet: { imdb: '0093185', wiki_ua: '%D0%9F%D1%80%D0%B8%D1%85%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9_%D0%B2%D0%BE%D1%80%D0%BE%D0%B3', hd_vip: '21363', },
 	cast: { kyle_maclachlan_22021959: 1, },
 },
@@ -7325,7 +7335,7 @@ const arrMovies = [
 {
 	id: 'freejack_1992', title: { ua: 'Утікач із того світу', en: 'Freejack', }, year: 1992, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, sci_fi: 1, crime: 1, }, hash: { time: 1, future: 1, },
-	internet: { imdb: '0104299', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D1%96%D1%8F_%C2%AB%D0%91%D0%B5%D0%B7%D1%81%D0%BC%D0%B5%D1%80%D1%82%D1%8F%C2%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '20376', },
+	internet: { imdb: '0104299', wiki_ua: '%D0%9A%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D1%96%D1%8F_%C2%AB%D0%91%D0%B5%D0%B7%D1%81%D0%BC%D0%B5%D1%80%D1%82%D1%8F%C2%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '176097', },
 	cast: { emilio_estevez_12051962: 1, mick_jagger_26071943: 1, rene_russo_17021954: 1, anthony_hopkins_31121937: 1, esai_morales_01101962: 1, },
 },
 {

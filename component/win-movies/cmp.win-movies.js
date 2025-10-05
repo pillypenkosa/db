@@ -148,6 +148,11 @@ class ComponentWinMovies {
 							return true;
 					}
 
+					if ( objData.set == 'remembered' ) {
+
+						if ( k.remembered )
+							return true;
+					}
 				});
 			}
 
