@@ -1205,7 +1205,7 @@ const arrMovies = [
 {
 	id: 'deadlocked_escape_from_zone_14_1995', title: { ua: 'Втеча з зони 14', en: 'Deadlocked: Escape from Zone 14', }, year: 1995, country: { usa: 1, }, rating: '5+',
 	genre: { sci_fi: 1, action: 1, adventure: 1, }, hash: { future: 1, prison: 1, escape: 1, techno: 1, },
-	internet: { imdb: '0112822', },
+	internet: { imdb: '0112822', hd_vip: '178655', },
 	cast: { esai_morales_01101962: 1, nia_peeples_10121961: 1, },
 },
 {
@@ -1234,6 +1234,11 @@ const arrMovies = [
 	id: 'weekend_in_taipei_2024', title: { ua: 'Втеча на вікенд', en: 'Weekend in Taipei', }, year: 2024, country: { usa: 1, fra: 1, tha: 1,},
 	genre: { action: 1, drama: 1, },
 	internet: { imdb: '28142896', },
+},
+{
+	id: 'goemool_2006', title: { ua: 'Вторгнення динозавра', en: 'Goemool', }, year: 2006, country: { kor: 1, jpn: 1, },
+	genre: { sci_fi: 1, comedy: 1, }, hash: { creature: 1, biomedlab: 1, },
+	internet: { imdb: '0468492', },
 },
 {
 	id: 'street_fighter_1994', title: { ua: 'Вуличний боєць', en: 'Street Fighter', }, year: 1994, country: { usa: 1, aus: 1, jpn: 1, hkg: 1, },
@@ -4249,7 +4254,7 @@ const arrMovies = [
 	id: 'back_to_the_future_2_1989', title: { ua: 'Назад у майбутнє - 2', en: 'Back to the Future Part II', }, year: 1989, country: { usa: 1, }, rating: '5+', franchise: 'back_to_the_future',
 	genre: { adventure: 1, sci_fi: 1, }, hash: { time: 1, young: 1, },
 	internet: { imdb: '0096874', wiki_ua: '%D0%9D%D0%B0%D0%B7%D0%B0%D0%B4_%D1%83_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%94_2', hd_vip: '290', gid_online: '343', moviestape: 'Nazad.u.majbutnje.2', },
-	cast: { michael_j_fox_09061961: 1, christopher_lloyd_22101938: 1, crispin_glover_20041964: 1, elisabeth_shue_06101963: 1, billy_zane_24021966: 1, jason_scott_lee_19111966: 1, }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
+	cast: { michael_j_fox_09061961: 1, christopher_lloyd_22101938: 1, crispin_glover_20041964: 1, elisabeth_shue_06101963: 1, billy_zane_24021966: 1, jason_scott_lee_19111966: 1, elijah_wood_28011981: 1, }, director: { robert_zemeckis_14051952: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'back_to_the_future_3_1990', title: { ua: 'Назад у майбутнє - 3', en: 'Back to the Future Part III', }, year: 1990, country: { usa: 1, }, rating: '5+', franchise: 'back_to_the_future',
