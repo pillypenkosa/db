@@ -868,6 +868,12 @@ const arrMovies = [
 	cast: { julianne_moore_03121960: 1, steve_buscemi_13121957: 1, },
 },
 {
+	id: 'big_trouble_in_little_china_1986', title: { ua: 'Великий переполох у малому Китаї', en: 'Big Trouble in Little China', }, year: 1986, country: { usa: 1, },
+	genre: { comedy: 1, fantasy: 1, },
+	internet: { imdb: '0090728', wiki_ua: '%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%BB%D0%BE%D1%85_%D1%83_%D0%BC%D0%B0%D0%BB%D0%BE%D0%BC%D1%83_%D0%9A%D0%B8%D1%82%D0%B0%D1%97', },
+	cast: { kurt_russell_17031951: 1, },
+},
+{
 	id: 'big_daddy_1999', title: { ua: 'Великий тато', en: 'Big Daddy', }, year: 1999, country: { usa: 1, },
 	genre: { comedy: 1, drama: 1, },
 	internet: { imdb: '0142342', wiki_ua: '%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D1%82%D0%BE_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1999)', },
@@ -1130,6 +1136,11 @@ const arrMovies = [
 	cast: { ed_harris_28111950: 1, },
 },
 {
+	id: 'alienator_1990', title: { ua: 'Ворожий прибулець', en: 'Alienator', }, year: 1990, country: { usa: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { aliens: 1, },
+	internet: { imdb: '0096786', wiki_ru: '%D0%92%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%B8%D1%88%D0%B5%D0%BB%D0%B5%D1%86', },
+},
+{
 	id: 'the_crow_1994', title: { ua: 'Ворон', en: 'The Crow', }, year: 1994, country: { usa: 1, }, franchise: 'the_crow',
 	genre: { action: 1, crime: 1, mystic: 1, },
 	internet: { imdb: '0109506', wiki_ua: '%D0%92%D0%BE%D1%80%D0%BE%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1994)', },
@@ -1237,7 +1248,7 @@ const arrMovies = [
 },
 {
 	id: 'goemool_2006', title: { ua: 'Вторгнення динозавра', en: 'Goemool', }, year: 2006, country: { kor: 1, jpn: 1, },
-	genre: { sci_fi: 1, comedy: 1, }, hash: { creature: 1, biomedlab: 1, },
+	genre: { sci_fi: 1, comedy: 1, }, hash: { creature: 1, biomedlab: 1, }, remembered: 1,
 	internet: { imdb: '0468492', },
 },
 {
@@ -1363,7 +1374,13 @@ const arrMovies = [
 	cast: { tom_sizemore_29111961: 1, steven_seagal_10041952: 1, dennis_hopper_17051936: 1, peter_greene_08101965: 1, ice_t_16021958: 1, },
 },
 {
-	id: 'the_hunger_games_5_2023', title: { ua: 'Голодні ігри - 5', en: 'The Hunger Games: The Ballad of Songbirds & Snakes', }, year: 2023, country: { usa: 1, },
+	id: 'the_hunger_games_2012', title: { ua: 'Голодні ігри', en: 'The Hunger Games', }, year: 2012, country: { usa: 1, }, franchise: 'hunger_games',
+	genre: { fantasy: 1, action: 1, }, hash: { utopia: 1, young: 1, },
+	internet: { imdb: '1392170', wiki_ua: '%D0%93%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%96_%D1%96%D0%B3%D1%80%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { jennifer_lawrence_15081990: 1, donald_sutherland_17071935: 1, },
+},
+{
+	id: 'the_hunger_games_5_2023', title: { ua: 'Голодні ігри - 5', en: 'The Hunger Games: The Ballad of Songbirds & Snakes', }, year: 2023, country: { usa: 1, }, franchise: 'hunger_games',
 	genre: { fantasy: 1, }, hash: { utopia: 1, young: 1, },
 	internet: { imdb: '10545296', wiki_ua: '%D0%93%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%96_%D1%96%D0%B3%D1%80%D0%B8:_%D0%91%D0%B0%D0%BB%D0%B0%D0%B4%D0%B0_%D0%BF%D1%80%D0%BE_%D1%81%D0%BF%D1%96%D0%B2%D0%BE%D1%87%D0%B8%D1%85_%D0%BF%D1%82%D0%B0%D1%88%D0%BE%D0%BA_%D1%96_%D0%B7%D0%BC%D1%96%D0%B9', },
 	cast: { peter_dinklage_11061969: 1, },
@@ -3671,6 +3688,11 @@ const arrMovies = [
 	cast: { anthony_hopkins_31121937: 1, },
 },
 {
+	id: 'man_from_atlantis_1977', title: { ua: 'Людина з Атлантиди', en: 'Man from Atlantis', }, year: 1977, country: { usa: 1, },
+	genre: { sci_fi: 1, }, hash: { sea: 1, },
+	internet: { imdb: '0075533', },
+},
+{
 	id: 'lucy_2014', title: { ua: 'Люсі', en: 'Lucy', }, year: 2014, country: { can: 1, fra: 1, deu: 1, twn: 1, },
 	genre: { sci_fi: 1, action: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '2872732', wiki_ua: '%D0%9B%D1%8E%D1%81%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2014)', },
@@ -4506,6 +4528,11 @@ const arrMovies = [
 	internet: { imdb: '0113948', wiki_ua: '%D0%9D%D0%B5%D0%BC%D0%B5%D0%B7%D0%B8%D0%B4%D0%B0_2:_%D0%A2%D1%83%D0%BC%D0%B0%D0%BD%D0%BD%D1%96%D1%81%D1%82%D1%8C', },
 },
 {
+	id: 'through_naked_eyes_1983', title: { ua: 'Неозброєним оком', en: 'Through Naked Eyes', }, year: 1983, country: { usa: 1, }, 
+	genre: { thriller: 1, }, remembered: 1,
+	internet: { imdb: '0088265', },
+},
+{
 	id: 'subservience_2024', title: { ua: 'Непокірна Еліс', en: 'Subservience', }, year: 2024, country: { usa: 1, },
 	genre: { sci_fi: 1, thriller: 1, }, hash: { robot: 1, woman: 1, },
 	internet: { imdb: '24871974', hd_vip: '142742', },
@@ -4787,6 +4814,12 @@ const arrMovies = [
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '6906106', },
 	cast: { don_johnson_15121949: 1, },
+},
+{
+	id: 'osiris_2025', title: { ua: 'Осіріс', en: 'Osiris', }, year: 2025, country: { usa: 1, },
+	genre: { sci_fi: 1, action: 1, horror: 1, },
+	internet: { imdb: '31179712', },
+	cast: { linda_hamilton_26091956: 1, },
 },
 {
 	id: 'basic_instinct_1992', title: { ua: 'Основний інстинкт', en: 'Basic Instinct', }, year: 1992, country: { usa: 1, }, franchise: 'basic_instinct',
@@ -5650,6 +5683,11 @@ const arrMovies = [
 	cast: { adriano_celentano_06011938: 1, ornella_muti_09031955: 1, },
 },
 {
+	id: 'down_periscope_1996', title: { ua: 'Прибрати перископ', en: 'Down Periscope', }, year: 1996, country: { usa: 1, },
+	genre: { comedy: 1, }, hash: { army: 1, sea: 1, },
+	internet: { imdb: '0116130', wiki_ua: '%D0%9F%D1%80%D0%B8%D0%B1%D1%80%D0%B0%D1%82%D0%B8_%D0%BF%D0%B5%D1%80%D0%B8%D1%81%D0%BA%D0%BE%D0%BF', },
+},
+{
 	id: 'arrival_2016', title: { ua: 'Прибуття', en: 'Arrival', }, year: 2016, country: { usa: 1, can: 1, },
 	genre: { sci_fi: 1, }, hash: { aliens: 1, },
 	internet: { imdb: '2543164', wiki_ua: '%D0%9F%D1%80%D0%B8%D0%B1%D1%83%D1%82%D1%82%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2016)', },
@@ -6142,6 +6180,7 @@ const arrMovies = [
 	id: 'role_play_2024', title: { ua: 'Рольові ігри', en: 'Role Play', }, year: 2024, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, crime: 1, }, hash: { woman: 1, },
 	internet: { imdb: '12964320', wiki_ua: '%D0%A0%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D1%96_%D1%96%D0%B3%D1%80%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '129335', },
+	cast: { connie_nielsen_03071965: 1, },
 },
 {
 	id: 'romancing_the_stone_1984', title: { ua: 'Роман з каменем', en: 'Romancing the Stone', }, year: 1984, country: { usa: 1, mex: 1, }, rating: 5, franchise: 'romancing_the_stone',
