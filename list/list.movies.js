@@ -1349,6 +1349,7 @@ const arrMovies = [
 	id: 'deep_star_six_1989', title: { ua: 'Глибинна зірка шість', en: 'DeepStar Six', }, year: 1989, country: { usa: 1, },
 	genre: { horror: 1, sci_fi: 1, }, hash: { sea: 1, underwater: 1, aliens: 1, creature: 1, }, remembered: 1,
 	internet: { wiki_ua: '%D0%93%D0%BB%D0%B8%D0%B1%D0%B8%D0%BD%D0%BD%D0%B0_%D0%B7%D1%96%D1%80%D0%BA%D0%B0_%D1%88%D1%96%D1%81%D1%82%D1%8C', imdb: '0097179', },
+	cast: { nia_peeples_10121961: 1, miguel_ferrer_07021955: 1, },
 },
 {
 	id: 'wrath_of_man_2021', title: { ua: 'Гнів людський', en: 'Wrath of Man', }, year: 2021, country: { usa: 1, gbr: 1, },
@@ -7143,7 +7144,7 @@ const arrMovies = [
 	id: 'traffic_2000', title: { ua: 'Трафік', en: 'Traffic', }, year: 2000, country: { usa: 1, },
 	genre: { thriller: 1, drama: 1, crime: 1, }, hash: { drugs: 1, },
 	internet: { imdb: '0181865', wiki_ua: '%D0%A2%D1%80%D0%B0%D1%84%D1%96%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { michael_douglas_25091944: 1, catherine_zeta_jones_25091969: 1, salma_hayek_02091966: 1, don_cheadle_29111964: 1, },
+	cast: { michael_douglas_25091944: 1, catherine_zeta_jones_25091969: 1, salma_hayek_02091966: 1, don_cheadle_29111964: 1, miguel_ferrer_07021955: 1, },
 },
 {
 	id: 'crisis_2021', title: { ua: 'Трафік', en: 'Crisis', }, year: 2021, country: { usa: 1, },
