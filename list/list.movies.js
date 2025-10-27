@@ -4654,6 +4654,11 @@ const arrMovies = [
 	cast: { daniel_craig_02031968: 1, ana_de_armas_30041988: 1, christopher_plummer_13121929: 1, chris_evans_13061981: 1, jamie_lee_curtis_22111958: 1, don_johnson_15121949: 1, },
 },
 {
+	id: 'nu_ty_i_vidma_1992', title: { ua: 'Ну ти й відьма', en: 'Ну ти й відьма', }, year: 1992, country: { ukr: 1, },
+	genre: { mysticst: 1, drama: 1, }, 
+	internet: { imdb: '', wiki_ua: '%D0%9D%D1%83_%D1%82%D0%B8_%D0%B9_%D0%B2%D1%96%D0%B4%D1%8C%D0%BC%D0%B0...', },
+},
+{
 	id: 'new_york_taxi_2004', title: { ua: 'Нью-Йоркське таксі', en: 'Taxi', }, year: 2004, country: { usa: 1, fra: 1, },
 	genre: { comedy: 1, crime: 1, }, 
 	internet: { imdb: '0316732', wiki_ua: '%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA%D1%81%D1%8C%D0%BA%D0%B5_%D1%82%D0%B0%D0%BA%D1%81%D1%96', },
