@@ -368,6 +368,7 @@ const arrMovies = [
 	studio: { netflix: 1, },
 	genre: { sci_fi: 1, crime: 1, }, hash: { future: 1, utopia: 1, world: 1, },
 	internet: { imdb: '5397194', wiki_ua: '%D0%90%D0%BD%D0%BE%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { clive_owen_03101964: 1, },
 },
 {
 	id: 'anora_2024', title: { ua: 'Анора', en: 'Anora', }, year: 2024, country: { usa: 1, },
@@ -1598,7 +1599,7 @@ const arrMovies = [
 	id: 'gemini_man_2019', title: { ua: 'Двійник', en: 'Gemini Man', }, year: 2019, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, 
 	internet: { imdb: '1025100', wiki_ua: '%D0%94%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2019)', },
-	cast: { will_smith_25091968: 1, },
+	cast: { will_smith_25091968: 1, clive_owen_03101964: 1, },
 },
 {
 	id: 'the_devil_s_double_20011', title: { ua: 'Двійник диявола', en: 'The Devil\'s Double', }, year: 2011, country: { bel: 1, },
@@ -2767,7 +2768,7 @@ const arrMovies = [
 	id: 'the_bourne_identity_2002', title: { ua: 'Ідентифікація Борна', en: 'The Bourne Identity', }, year: 2002, country: { usa: 1, }, rating: 5, franchise: 'bourne',
 	genre: { action: 1, thriller: 1, },
 	internet: { imdb: '0258463', wiki_ua: '%D0%86%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D1%96%D0%BA%D0%B0%D1%86%D1%96%D1%8F_%D0%91%D0%BE%D1%80%D0%BD%D0%B0', },
-	cast: { matt_damon_08101970: 1, },
+	cast: { matt_damon_08101970: 1, clive_owen_03101964: 1, },
 },
 {
 	id: 'the_outsiders_1983', title: { ua: 'Ізгої', en: 'The Outsiders', }, year: 1983, country: { usa: 1, },
@@ -5840,6 +5841,11 @@ const arrMovies = [
 	cast: { patrick_swayze_18081952: 1, charlize_theron_07081975: 1, },
 },
 {
+	id: 'propala_gramota_1972', title: { ua: 'Пропала грамота', en: 'Пропала грамота', }, year: 1972, country: { ukr: 1, },
+	genre: { fantasy: 1, }, 
+	internet: { imdb: '0175075', wiki_ua: '%D0%9F%D1%80%D0%BE%D0%BF%D0%B0%D0%BB%D0%B0_%D0%B3%D1%80%D0%B0%D0%BC%D0%BE%D1%82%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+{
 	id: 'simplemente_maria_1989', title: { ua: 'Просто Марія', en: 'Simplemente Maria', }, year: 1989, country: { mex: 1, }, 
 	genre: { serial: 1, drama: 1, }, 
 	internet: { imdb: '0211866', wiki_ua: '%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE_%D0%9C%D0%B0%D1%80%D1%96%D1%8F_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB,_1989)', },
@@ -5860,7 +5866,7 @@ const arrMovies = [
 	id: 'killer_elite_2011', title: { ua: 'Професіонал', en: 'Killer Elite', }, year: 2011, country: { usa: 1, gbr: 1, aus: 1, jor: 1, mar: 1, },
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '1448755', wiki_ua: '%D0%9F%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%96%D0%BE%D0%BD%D0%B0%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2011)', },
-	cast: { robert_de_niro_17081943: 1, jason_statham_26071967: 1, },
+	cast: { robert_de_niro_17081943: 1, jason_statham_26071967: 1, clive_owen_03101964: 1, },
 },
 {
 	id: 'a_working_man_2025', title: { ua: 'Профі', en: 'A Working Man', }, year: 2025, country: { usa: 1, gbr: 1, },
@@ -7207,7 +7213,7 @@ const arrMovies = [
 	id: 'the_informer_2019', title: { ua: 'Три секунди', en: 'The Informer', }, year: 2019, country: { gbr: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '1833116', wiki_ua: '%D0%A2%D1%80%D0%B8_%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D0%B8', },
-	cast: { rosamund_pike_27011979: 1, ana_de_armas_30041988: 1, },
+	cast: { clive_owen_03101964: 1, rosamund_pike_27011979: 1, ana_de_armas_30041988: 1, },
 },
 {
 	id: 'ocean_s_thirteen_2007', title: { ua: 'Тринадцять друзів Оушена', en: 'Ocean\'s Thirteen', }, year: 2007, country: { usa: 1, },
@@ -7772,7 +7778,7 @@ const arrMovies = [
 	id: 'derailed_2005', title: { ua: 'Ціна зради', en: 'Derailed', }, year: 2005, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0398017', wiki_ua: '%D0%A6%D1%96%D0%BD%D0%B0_%D0%B7%D1%80%D0%B0%D0%B4%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { jennifer_aniston_11021969: 1, },
+	cast: { jennifer_aniston_11021969: 1, clive_owen_03101964: 1, },
 },
 {
 	id: 'maleficent_2014', title: { ua: 'Чaклунка', en: 'Maleficent', }, year: 2014, country: { gbr: 1, usa: 1, },

@@ -13025,6 +13025,16 @@ let arrPeople = [
 	internet: { imdb: '0000142', wiki_ua: '%D0%9A%D0%BB%D1%96%D0%BD%D1%82_%D0%86%D1%81%D1%82%D0%B2%D1%83%D0%B4', kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/hollywood/51803/works/', },
 },
 {
+	id: 'clive_owen_03101964', 
+	name: { n: 'Clive', s: 'Owen', },
+	sex: 1,
+	life: { bd: 3, bm: 10, by: 1964, },
+	img: [ 1, 1 ],
+	country: { gbr: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0654110', wiki_ua: '%D0%9A%D0%BB%D0%B0%D0%B9%D0%B2_%D0%9E%D1%83%D0%B5%D0%BD', },
+},
+{
 	id: 'coco_chanel_19081883', 
 	name: { n: 'Coco', s: 'Chanel', },
 	life: { bd: 19, bm: 8, by: 1883, dd: 10, dm: 1, dy: 1971, },
