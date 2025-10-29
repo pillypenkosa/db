@@ -9281,17 +9281,14 @@ let arrPeople = [
 	internet: { wiki_ua: '%D0%A1%D1%82%D1%80%D0%B5%D0%BC%D0%BE%D1%83%D1%81%D0%BE%D0%B2_%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BE_%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
-	id: 'bogdan_stupka_27081941', 
-	name: { n: 'Богдан', s: 'Ступка', },
+	id: 'bogdan_sylvestr_stupka_27081941', 
+	name: { n: 'Богдан', s: 'Ступка', p: 'Сильвестрович', },
 	sex: 1,
 	life: { bd: 27, bm: 8, by: 1941, dd: 22, dm: 7, dy: 2012, },
-	country: { rus: 1, our: { sun: 1, }, },
-	movie: { actor: {}, },
-	internet: {
-		imdb: '0836273', 
-		wiki_ru: '%D0%A1%D1%82%D1%83%D0%BF%D0%BA%D0%B0,_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD_%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87', 
-		kinoteatr: 'https://www.kino-teatr.ru/kino/acter/m/post/4161/works/', 
-	},
+	img: [ 1, 1 ],
+	country: { sun: 1, ukr: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0836273', wiki_ua: '%D0%A1%D1%82%D1%83%D0%BF%D0%BA%D0%B0_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD_%D0%A1%D0%B8%D0%BB%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
 	id: 'vasyl_semen_stus_06011938', 
@@ -9370,7 +9367,7 @@ let arrPeople = [
 },
 {
 	id: 'natalya_vyacheslav_sumska_25041956', 
-	name: { n: 'Наталя', s: 'Сумська', p: 'В\'ячеславівна', },
+	name: { n: 'Наталія', s: 'Сумська', p: 'В\'ячеславівна', },
 	life: { bd: 25, bm: 4, by: 1956, },
 	img: [ 1, 1 ],
 	country: { sun: 1, ukr: 1, },

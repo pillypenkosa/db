@@ -767,6 +767,12 @@ const arrMovies = [
 	cast: { john_malkovich_09121953: 1, john_cusack_28061966: 1, cameron_diaz_30081972: 1, charlie_sheen_03091965: 1, },
 },
 {
+	id: 'v_biy_idut_tilky_staryky_1974', title: { ua: 'В бій ідуть тільки старики', en: 'В бій ідуть тільки старики', }, year: 1974, country: { sun: 1, }, 
+	genre: { drama: 1, }, hash: { war: 1, war2w: 1, plane: 1, },
+	internet: { imdb: '0070861', wiki_ua: '%D0%92_%D0%B1%D1%96%D0%B9_%D1%96%D0%B4%D1%83%D1%82%D1%8C_%D1%82%D1%96%D0%BB%D1%8C%D0%BA%D0%B8_%C2%AB%D1%81%D1%82%D0%B0%D1%80%D0%B8%D0%BA%D0%B8%C2%BB', },
+	cast: { leonid_fedir_bykov_12121928: 1, volodymyr_dmytro_talashko_06031946: 1, },
+},
+{
 	id: 'under_siege_1992', title: { ua: 'В облозі', en: 'Under Siege', }, year: 1992, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, }, hash: { fight: 1, terrorist: 1, ship: 1, sea: 1, },
 	internet: { imdb: '0105690', wiki_ua: '%D0%92_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B7%D1%96', },
@@ -3469,6 +3475,12 @@ const arrMovies = [
 	genre: { action: 1, adventure: 1, comedy: 1, }, hash: { travel: 1, },
 	internet: { imdb: '0870154', wiki_ua: '%D0%9A%D1%80%D1%83%D1%97%D0%B7_%D0%BF%D0%BE_%D0%B4%D0%B6%D1%83%D0%BD%D0%B3%D0%BB%D1%8F%D1%85', },
 	cast: { dwayne_johnson_02051972: 1, emily_blunt_23021983: 1, }, composer: { james_newton_howard_09061951: 1, },
+},
+{
+	id: 'kruty_1918_2019', title: { ua: 'Крути 1918', en: 'Крути 1918', }, year: 2019, country: { ukr: 1, },
+	genre: { action: 1, crime: 1, }, hash: { war: 1, war1w: 1, },
+	internet: { imdb: '8009354', wiki_ua: '%D0%9A%D1%80%D1%83%D1%82%D0%B8_1918', },
+	cast: { eugen_oleg_lamah_29061996: 1, },
 },
 {
 	id: 'lat_sau_san_taam_1992', title: { ua: 'Круто зварені', en: 'Lat sau san taam', }, year: 1992, country: { hkg: 1, },

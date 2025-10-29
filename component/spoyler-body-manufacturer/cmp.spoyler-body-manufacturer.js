@@ -97,11 +97,31 @@ class ComponentSpoylerBodyManufacturer {
 
 
 				if ( obj.internet ) {
-					for ( let k in obj.internet ) 
-						arr.push({ 
-							key: 'internet.' + k, 
-							val: obj.internet[ k ], 
-						});
+					for ( let k in obj.internet ) {
+
+
+						//console.log( k );
+
+						if ( k == 'avtopro' ) {
+
+							arr.push({ 
+								key: 'internet.' + k, 
+								val: `<a href="https://avtopro.ua/makers/${ obj.internet[ k ] }" target="_blank">${ obj.internet[ k ] }${ Total.htmlLinkSign }</a>`, 
+							});
+						}
+
+
+						if ( k == 'wiki_ua' ) {
+
+							arr.push({ 
+								key: 'internet.' + k, 
+								val: `<a href="https://uk.wikipedia.org/wiki/${ obj.internet[ k ] }" target="_blank">${ obj.internet[ k ] }${ Total.htmlLinkSign }</a>`, 
+							});
+						}
+
+
+
+					}
 				}
 			}
 

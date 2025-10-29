@@ -50,7 +50,7 @@ class ComponentSpoylerBodyCountry {
 			if ( obj ) {
 
 				if ( obj.id )	
-					arrKeyVal.push( { k: 'id', v: obj.id, } );
+					arrKeyVal.push( { key: 'id', val: obj.id, } );
 
 
 				//arrKeyVal.push( { backspace: true, } );
@@ -61,10 +61,10 @@ class ComponentSpoylerBodyCountry {
 				if ( obj.title ) {
 
 					if ( obj.title.ua ) 
-						arrKeyVal.push( { k: 'title.ua', v: obj.title.ua, } );
+						arrKeyVal.push( { key: 'title.ua', val: obj.title.ua, } );
 
 					if ( obj.title.en ) 
-						arrKeyVal.push( { k: 'title.en', v: obj.title.en, } )
+						arrKeyVal.push( { key: 'title.en', val: obj.title.en, } )
 				}
 
 
@@ -85,7 +85,7 @@ class ComponentSpoylerBodyCountry {
 						}
 						*/
 
-						arrKeyVal.push( { k: 'geo.capital', v: val } );
+						arrKeyVal.push( { key: 'geo.capital', val: val } );
 					}
 
 					if ( obj.geo.part ) {
@@ -101,7 +101,7 @@ class ComponentSpoylerBodyCountry {
 						}
 						*/
 
-						arrKeyVal.push( { k: 'geo.part', v: val } );
+						arrKeyVal.push( { key: 'geo.part', val: val } );
 					}
 				}
 
@@ -110,7 +110,7 @@ class ComponentSpoylerBodyCountry {
 				if ( obj.internet ) {
 					for ( let k in obj.internet ) {
 
-						//console.log( 'k: ', k  );
+						//console.log( 'key: ', k  );
 						//console.log( 'obj: ', obj.internet );
 						//console.log( obj.internet[ k ] );
 
@@ -118,8 +118,8 @@ class ComponentSpoylerBodyCountry {
 						let tr = {};
 						if ( k == 'wiki_ua' ) {
 
-							tr.k = `internet.${ k }`;
-							tr.v = 'WikiUA';
+							tr.key = `internet.${ k }`;
+							tr.val = 'WikiUA';
 							tr.href = 'https://uk.wikipedia.org/wiki/' + obj.internet[ k ];
 						}
 
@@ -130,7 +130,7 @@ class ComponentSpoylerBodyCountry {
 
 
 				if ( obj.not_exist )	
-					arrKeyVal.push( { k: 'not_exist', v: obj.not_exist, } );
+					arrKeyVal.push( { key: 'not_exist', val: obj.not_exist, } );
 
 
 
@@ -151,7 +151,7 @@ class ComponentSpoylerBodyCountry {
 					htmlSymbol = `<div class="symbol center">${ htmlSymbol }</div>`;
 			}	
 
-			//console.log( arrKeyVal );
+			console.log( arrKeyVal );
 
 			html = `
 				${ htmlSymbol }
