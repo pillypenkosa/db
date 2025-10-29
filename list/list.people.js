@@ -136,7 +136,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 24, bm: 2, by: 1964, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
+	country: { sun: 1, rus: 1, },
 	movie: { actor: {}, },
 	internet: {
 		imdb: '0008118', 
@@ -150,7 +150,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 29, bm: 5, by: 1953, dd: 3, dm: 1, dy: 2008, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
+	country: { sun: 1, rus: 1, },
 	movie: { actor: {}, },
 	internet: {
 		imdb: '0008311', 
@@ -174,7 +174,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 18, bm: 9, by: 1957, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
+	country: { sun: 1, rus: 1, },
 	show: { humor: {}, },
 	internet: {
 		imdb: '6292681', 
@@ -200,7 +200,7 @@ let arrPeople = [
 	id: 'zhanna_aguzarova_07071962', 
 	name: { n: 'Жанна', s: 'Агузарова', },
 	life: { bd: 7, bm: 7, by: 1962, },
-	country: { rus: 1, },
+	country: { sun: 1, rus: 1, },
 	music: { singer: 1, },
 	internet: {
 		imdb: '0013811', 
@@ -260,7 +260,7 @@ let arrPeople = [
 	sex: 1,
 	life: { bd: 1, bm: 12, by: 1956, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
+	country: { sun: 1, rus: 1, },
 	show: { illusion: 1, },
 	internet: {
 		imdb: '0015508', 
@@ -1551,8 +1551,8 @@ let arrPeople = [
 	},
 },
 {
-	id: 'leonid_bykov_12121928', 
-	name: { n: 'Леонід', s: 'Биков', },
+	id: 'leonid_fedir_bykov_12121928', 
+	name: { n: 'Леонід', s: 'Биков', p: 'Федорович', },
 	sex: 1,
 	life: { bd: 12, bm: 12, by: 1928, dd: 11, dm: 4, dy: 1979, },
 	img: [ 1, 1 ],

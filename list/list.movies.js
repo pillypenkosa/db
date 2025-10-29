@@ -427,6 +427,12 @@ const arrMovies = [
 	internet: { imdb: '24326398', },
 },
 {
+	id: 'aty_baty_ishly_soldaty_1977', title: { ua: 'Ати-бати, йшли солдати', en: 'Ати-бати, йшли солдати', }, year: 1977, country: { sun: 1, },
+	genre: { drama: 1, }, hash: { war: 1, war2w: 1, },
+	internet: { imdb: '0074161', wiki_ua: '%D0%90%D1%82%D0%B8-%D0%B1%D0%B0%D1%82%D0%B8,_%D0%B9%D1%88%D0%BB%D0%B8_%D1%81%D0%BE%D0%BB%D0%B4%D0%B0%D1%82%D0%B8%E2%80%A6', },
+	cast: { leonid_fedir_bykov_12121928: 1,  bogdan_myhaylo_benyuk_26051957: 1, },
+},
+{
 	id: 'atlas_2024', title: { ua: 'Атлас', en: 'Atlas', }, year: 2024, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { space: 1, robot: 1, battle: 1, },
 	internet: { imdb: '14856980', wiki_ua: '%D0%90%D1%82%D0%BB%D0%B0%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '128280', },
@@ -1999,6 +2005,12 @@ const arrMovies = [
 	cast: { barry_pepper_04041970: 1, },
 },
 {
+	id: 'doroga_v_peklo_1988', title: { ua: 'Дорога в пекло', en: 'Дорога в ад', }, year: 1988, country: { sun: 1, },
+	genre: { crime: 1, }, hash: { drugs: 1, },
+	internet: { imdb: '4487564', wiki_ru: '%D0%94%D0%BE%D1%80%D0%BE%D0%B3%D0%B0_%D0%B2_%D0%B0%D0%B4_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1988)', },
+	cast: { bogdan_myhaylo_benyuk_26051957: 1, },
+},
+{
 	id: 'highway_to_hell_1991', title: { ua: 'Дорога в пекло', en: 'Highway to Hell', }, year: 1991, country: { usa: 1, }, rating: 5,
 	genre: { comedy: 1, adventure: 1, fantasy: 1, }, hash: { road: 1, },
 	internet: { imdb: '0104418', wiki_ru: '%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82_%D1%81_%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B8_%D0%B2_%D0%B0%D0%B4', },
@@ -2938,6 +2950,12 @@ const arrMovies = [
 	genre: { action: 1, thriller: 1, adventure: 1, }, hash: { bond: 1, },
 	internet: { imdb: '0381061', wiki_ua: '%D0%9A%D0%B0%D0%B7%D0%B8%D0%BD%D0%BE_%D0%A0%D0%BE%D1%8F%D0%BB%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2006)', },
 	cast: { daniel_craig_02031968: 1, judi_dench_09121934: 1, },
+},
+{
+	id: 'kandagar_2010', title: { ua: 'Кандагар', en: 'Кандагар', }, year: 2010, country: { rus: 1, }, 
+	genre: { action: 1, }, hash: { plane: 1, hostage: 1, },
+	internet: { imdb: '1272018', wiki_ua: '%D0%9A%D0%B0%D0%BD%D0%B4%D0%B0%D0%B3%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2010)', },
+	cast: { bogdan_myhaylo_benyuk_26051957: 1, olexandr_mykola_baluev_06121958: 1, },
 },
 {
 	id: 'captain_marvel_2019', title: { ua: 'Капітан Марвел', en: 'Captain Marvel', }, year: 2019, country: { usa: 1, },
