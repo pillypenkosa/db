@@ -352,6 +352,12 @@ const arrMovies = [
 	internet: { imdb: '23561236', wiki_ua: '%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B5_%D1%87%D1%82%D0%B8%D0%B2%D0%BE', },
 },
 {
+	id: 'american_boy_1992', title: { ua: 'Америкен бой', en: 'Америкен бой', }, year: 1992, country: { ukr: 1, },
+	genre: { action: 1, }, 
+	internet: { imdb: '0103668', wiki_ua: '%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B5%D0%BD_%D0%B1%D0%BE%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { anatoly_georgy_hostikoev_15021953: 1, },
+},
+{
 	id: 'anaconda_1997', title: { ua: 'Анаконда', en: 'Anaconda', }, year: 1997, country: { usa: 1, }, rating: 5,
 	studio: { columbia: 1, sony: 1, },
 	genre: { adventure: 1, horror: 1, }, hash: { snake: 1, jungle: 1, },
@@ -982,6 +988,12 @@ const arrMovies = [
 	cast: { nicolas_cage_07011964: 1, angelina_jolie_04061975: 1, timothy_olyphant_20051968: 1, },
 },
 {
+	id: 'vykup_1994', title: { ua: 'Викуп', en: 'Викуп', }, year: 1994, country: { ukr: 1, },
+	genre: { action: 1, crime: 1, comedy: 1, }, 
+	internet: { imdb: '0202669', wiki_ru: '%D0%92%D1%8B%D0%BA%D1%83%D0%BF_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1994)', },
+	cast: { anatoly_georgy_hostikoev_15021953: 1, },
+},
+{
 	id: 'ransom_1996', title: { ua: 'Викуп', en: 'Ransom', }, year: 1996, country: { usa: 1, },
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '0117438', wiki_ua: '%D0%92%D0%B8%D0%BA%D1%83%D0%BF_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1996)', },
@@ -1061,6 +1073,11 @@ const arrMovies = [
 	genre: { action: 1, adventure: 1, }, hash: { middleAges: 1, },
 	internet: { imdb: '0096446', wiki_ua: '%D0%92%D1%96%D0%BB%D0%BB%D0%BE%D1%83_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { val_kilmer_31121959: 1, kevin_pollak_30101957: 1, }, director: { ron_howard_31031954: 1, }, composer: { james_horner_14081953: 1, },
+},
+{
+	id: 'vinchannya_zi_smertyu_1992', title: { ua: 'Вінчання зі смертю', en: 'Вінчання зі смертю', }, year: 1992, country: { ukr: 1, },
+	genre: { drama: 1, },
+	internet: { imdb: '0105727', wiki_ua: '%D0%92%D1%96%D0%BD%D1%87%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B7%D1%96_%D1%81%D0%BC%D0%B5%D1%80%D1%82%D1%8E', },
 },
 {
 	id: 'virus_1999', title: { ua: 'Вірус', en: 'Virus', }, year: 1999, country: { usa: 1, gbr: 1, fra: 1, deu: 1, jpn: 1, }, 
@@ -2836,6 +2853,12 @@ const arrMovies = [
 	cast: { olexy_sergy_gorbunov_29101961: 1, },
 },
 {
+	id: 'imitator_1991', title: { ua: 'Імітатор', en: 'Імітатор', }, year: 1991, country: { ukr: 1, },
+	genre: { comedy: 1, }, 
+	internet: { imdb: '0136263', wiki_ua: '%D0%86%D0%BC%D1%96%D1%82%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1990)',  },
+	cast: { sergy_anatoly_syvoho_08021969: 1, bogdan_myhaylo_benyuk_26051957: 1, lyudmila_mark_gurchenko_12111935: 1, },
+},
+{
 	id: 'l_empire_2024', title: { ua: 'Імперія', en: 'L\'empire', }, year: 2024, country: { fra: 1, ita: 1, deu: 1, bel: 1, prt: 1, },
 	genre: { sci_fi: 1, }, hash: { space: 1, },
 	internet: { imdb: '17375596', },	
@@ -4507,6 +4530,12 @@ const arrMovies = [
 	cast: { bruce_willis_19031955: 1, samuel_l_jackson_21121948: 1, },
 },
 {
+	id: 'nezlamna_2015', title: { ua: 'Незламна', en: 'Незламна', }, year: 2015, country: { ukr: 1, rus: 1, },
+	genre: { drama: 1, }, hash: { war: 1, war2w: 1, },
+	internet: { imdb: '4084744', wiki_ua: '%D0%9D%D0%B5%D0%B7%D0%BB%D0%B0%D0%BC%D0%BD%D0%B0', },
+	cast: { stanislav_volodymyr_boklan_12011960: 1, },
+},
+{
 	id: 'stranger_in_the_woods_2024', title: { ua: 'Незнайомець у лісі', en: 'Stranger in the Woods', }, year: 2024, country: { usa: 1, },
 	genre: { thriller: 1, }, hash: { forest: 1, },
 	internet: { imdb: '19316408', },
@@ -4686,8 +4715,8 @@ const arrMovies = [
 },
 {
 	id: 'nu_ty_i_vidma_1992', title: { ua: 'Ну ти й відьма', en: 'Ну ти й відьма', }, year: 1992, country: { ukr: 1, },
-	genre: { mysticst: 1, drama: 1, }, 
-	internet: { imdb: '', wiki_ua: '%D0%9D%D1%83_%D1%82%D0%B8_%D0%B9_%D0%B2%D1%96%D0%B4%D1%8C%D0%BC%D0%B0...', },
+	genre: { mystic: 1, drama: 1, }, 
+	internet: { wiki_ua: '%D0%9D%D1%83_%D1%82%D0%B8_%D0%B9_%D0%B2%D1%96%D0%B4%D1%8C%D0%BC%D0%B0...', },
 },
 {
 	id: 'new_york_taxi_2004', title: { ua: 'Нью-Йоркське таксі', en: 'Taxi', }, year: 2004, country: { usa: 1, fra: 1, },
@@ -6393,6 +6422,11 @@ const arrMovies = [
 	id: 'dragon_heart_1996', title: { ua: 'Серце дракона', en: 'DragonHeart', }, year: 1996, country: { usa: 1, },
 	genre: { fantasy: 1, adventure: 1, }, hash: { dragon: 1, middleAges: 1, },
 	internet: { imdb: '0116136', wiki_ua: '%D0%A1%D0%B5%D1%80%D1%86%D0%B5_%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1996)', },
+},
+{
+	id: 'sercya_tryoh_1992', title: { ua: 'Серця трьох', en: 'Серця трьох', }, year: 1992, country: { ukr: 1, },
+	genre: { adventure: 1, }, 
+	internet: { imdb: '0963997', wiki_ua: '%D0%A1%D0%B5%D1%80%D1%86%D1%8F_%D1%82%D1%80%D1%8C%D0%BE%D1%85_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1992)', },
 },
 {
 	id: 'siberia_2018', title: { ua: 'Сибір', en: 'Siberia', }, year: 2018, country: { can: 1, usa: 1, deu: 1, },

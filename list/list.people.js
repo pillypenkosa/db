@@ -2896,17 +2896,13 @@ let arrPeople = [
 	},
 },
 {
-	id: 'lyudmila_gurchenko_12111935', 
-	name: { n: 'Людмила', s: 'Гурченко', },
+	id: 'lyudmila_mark_gurchenko_12111935', 
+	name: { n: 'Людмила', s: 'Гурченко', p: 'Марківна', },
 	life: { bd: 12, bm: 11, by: 1935, dd: 30, dm: 3, dy: 2011, },
 	img: [ 1, 1 ],
-	country: { rus: 1, our: { sun: 1, }, },
-	movie: { actor: {}, },
-	internet: {
-		imdb: '0348558', 
-		wiki_ru: '%D0%93%D1%83%D1%80%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,_%D0%9B%D1%8E%D0%B4%D0%BC%D0%B8%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%BD%D0%B0', 
-		kinoteatr: 'https://www.kino-teatr.ru/kino/acter/w/ros/1164/works/', 
-	},
+	country: { sun: 1, rus: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0348558', wiki_ru: '%D0%93%D1%83%D1%80%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,_%D0%9B%D1%8E%D0%B4%D0%BC%D0%B8%D0%BB%D0%B0_%D0%9C%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%D0%BD%D0%B0', },
 },
 {
 	id: 'natalya_guseva_15021972', 
@@ -10316,6 +10312,17 @@ let arrPeople = [
 	},
 },
 {
+	id: 'irina_hakamada_15041955', 
+	name: { n: 'Ирина', s: 'Хакамада', },
+	sex: 1,
+	life: { bd: 15, bm: 4, by: 1955, },
+	country: { rus: 1, },
+	internet: {
+		wiki_ru: '%D0%A5%D0%B0%D0%BA%D0%B0%D0%BC%D0%B0%D0%B4%D0%B0,_%D0%98%D1%80%D0%B8%D0%BD%D0%B0_%D0%9C%D1%83%D1%86%D1%83%D0%BE%D0%B2%D0%BD%D0%B0', 
+	},
+	note: 'Экономист, политический и государственный деятель, журналист и публицист, писательница, телеведущая и радиоведущая',
+},
+{
 	id: 'dmitry_haratyan_21011960', 
 	name: { n: 'Дмитрий', s: 'Харатьян', },
 	sex: 1,
@@ -10413,15 +10420,14 @@ let arrPeople = [
 	},
 },
 {
-	id: 'irina_hakamada_15041955', 
-	name: { n: 'Ирина', s: 'Хакамада', },
+	id: 'anatoly_georgy_hostikoev_15021953', 
+	name: { n: 'Анатолій', s: 'Хостікоєв', p: 'Георгійович', },
 	sex: 1,
-	life: { bd: 15, bm: 4, by: 1955, },
-	country: { rus: 1, },
-	internet: {
-		wiki_ru: '%D0%A5%D0%B0%D0%BA%D0%B0%D0%BC%D0%B0%D0%B4%D0%B0,_%D0%98%D1%80%D0%B8%D0%BD%D0%B0_%D0%9C%D1%83%D1%86%D1%83%D0%BE%D0%B2%D0%BD%D0%B0', 
-	},
-	note: 'Экономист, политический и государственный деятель, журналист и публицист, писательница, телеведущая и радиоведущая',
+	life: { bd: 15, bm: 2, by: 1953, },
+	img: [ 2, 1 ],
+	country: { ukr: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0451857', wiki_ua: '%D0%A5%D0%BE%D1%81%D1%82%D1%96%D0%BA%D0%BE%D1%94%D0%B2_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%96%D0%B9_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87', },
 },
 {
 	id: 'oleg_hromov_13011966', 
