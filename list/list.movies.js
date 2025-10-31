@@ -370,7 +370,7 @@ const arrMovies = [
 	internet: { imdb: '2536436', wiki_ua: '%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D1%97%D0%B4_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2013)', hd_vip: '113205', },
 },
 {
-	id: 'anon_2018', title: { ua: 'Анон', en: 'Anon', }, year: 2018, country: { usa: 1, },
+	id: 'anon_2018', title: { ua: 'Анонім', en: 'Anon', }, year: 2018, country: { usa: 1, },
 	studio: { netflix: 1, },
 	genre: { sci_fi: 1, crime: 1, }, hash: { future: 1, utopia: 1, world: 1, },
 	internet: { imdb: '5397194', wiki_ua: '%D0%90%D0%BD%D0%BE%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -436,7 +436,7 @@ const arrMovies = [
 	id: 'aty_baty_ishly_soldaty_1977', title: { ua: 'Ати-бати, йшли солдати', en: 'Ати-бати, йшли солдати', }, year: 1977, country: { sun: 1, },
 	genre: { drama: 1, }, hash: { war: 1, war2w: 1, },
 	internet: { imdb: '0074161', wiki_ua: '%D0%90%D1%82%D0%B8-%D0%B1%D0%B0%D1%82%D0%B8,_%D0%B9%D1%88%D0%BB%D0%B8_%D1%81%D0%BE%D0%BB%D0%B4%D0%B0%D1%82%D0%B8%E2%80%A6', },
-	cast: { leonid_fedir_bykov_12121928: 1,  bogdan_myhaylo_benyuk_26051957: 1, },
+	cast: { leonid_fedir_bykov_12121928: 1,  bogdan_myhaylo_benyuk_26051957: 1, sergy_petro_ivanov_22051951: 1, },
 },
 {
 	id: 'atlas_2024', title: { ua: 'Атлас', en: 'Atlas', }, year: 2024, country: { usa: 1, },
@@ -776,7 +776,7 @@ const arrMovies = [
 	id: 'v_biy_idut_tilky_staryky_1974', title: { ua: 'В бій ідуть тільки старики', en: 'В бій ідуть тільки старики', }, year: 1974, country: { sun: 1, }, 
 	genre: { drama: 1, }, hash: { war: 1, war2w: 1, plane: 1, },
 	internet: { imdb: '0070861', wiki_ua: '%D0%92_%D0%B1%D1%96%D0%B9_%D1%96%D0%B4%D1%83%D1%82%D1%8C_%D1%82%D1%96%D0%BB%D1%8C%D0%BA%D0%B8_%C2%AB%D1%81%D1%82%D0%B0%D1%80%D0%B8%D0%BA%D0%B8%C2%BB', },
-	cast: { leonid_fedir_bykov_12121928: 1, volodymyr_dmytro_talashko_06031946: 1, },
+	cast: { leonid_fedir_bykov_12121928: 1, volodymyr_dmytro_talashko_06031946: 1, sergy_petro_ivanov_22051951: 1, },
 },
 {
 	id: 'under_siege_1992', title: { ua: 'В облозі', en: 'Under Siege', }, year: 1992, country: { usa: 1, }, rating: 5,
@@ -4449,6 +4449,12 @@ const arrMovies = [
 	id: 'don_t_hang_up_2016', title: { ua: 'Не вішайте слухавку', en: 'Don\'t Hang Up', }, year: 2016, country: { gbr: 1, },
 	genre: { horror: 1, }, hash: { phone: 1, },
 	internet: { imdb: '3610746', wiki_ua: '%D0%9D%D0%B5_%D0%B2%D1%96%D1%88%D0%B0%D0%B9%D1%82%D0%B5_%D1%81%D0%BB%D1%83%D1%85%D0%B0%D0%B2%D0%BA%D1%83', },
+},
+{
+	id: 'inside_man_2006', title: { ua: 'Не впіймали - не злодій', en: 'Inside Man', }, year: 2006, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, hash: { bank: 1, robbery: 1, },
+	internet: { imdb: '0454848', wiki_ru: '%D0%9D%D0%B5_%D0%BF%D0%BE%D0%B9%D0%BC%D0%B0%D0%BD_%E2%80%94_%D0%BD%D0%B5_%D0%B2%D0%BE%D1%80_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2006)', },	
+	cast: { denzel_washington_28121954: 1, clive_owen_03101964: 1, jodie_foster_19111962: 1, christopher_plummer_13121929: 1, willem_dafoe_22071955: 1, },
 },
 {
 	id: 'a_fond_2016', title: { ua: 'Не гальмуй', en: 'À fond', }, year: 2016, country: { usa: 1, },
