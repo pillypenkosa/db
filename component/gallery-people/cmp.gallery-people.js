@@ -17,7 +17,9 @@ class ComponentGalleryPeople {
  
 		//this.args = objData.args ? objData.args : {}; 
  
- 
+ 		//console.log( objData );
+
+
 
 		let tagParam = { 
 			//'class' 		: '', 

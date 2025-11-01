@@ -55,13 +55,13 @@ const dependences = [
 
 	{ cmp: 'Filter' 						, },
 
+	{ cmp: 'Gallery-Cooperate-Actors' 		, },
 	{ cmp: 'Gallery-Movies' 				, },
 	{ cmp: 'Gallery-People' 				, },
 	{ cmp: 'Table-Key-Val' 					, },
 	{ cmp: 'Spoyler' 						, },
 	{ cmp: 'Menu' 							, },
 	
-
 
 
 	{ cmp: 'Spoyler-Body-Country' 			, },

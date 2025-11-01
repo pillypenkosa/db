@@ -39,10 +39,19 @@ class ComponentGalleryMovies {
 
 		//console.log( 'arrData: ', arrData ); 
 
+		// всі актори, які були знайдені у всіх фільмах з конкретної галереї фільмів
+		let totalActorObj = {};
+		
+		//console.log( 'totalActorObj: ', totalActorObj ); 
 
 		arrData.forEach( k => {
 			if ( objMovies[ k ] ) {
 
+				if ( objMovies[ k ] && objMovies[ k ].cast )  
+					totalActorObj = Object.assign( totalActorObj, objMovies[ k ].cast );
+
+
+		
 				let obj = objMovies[ k ];
 
 
@@ -61,6 +70,41 @@ class ComponentGalleryMovies {
 			}
 		});
 
+
+
+		let totalActorArr = [];
+		for ( let k in totalActorObj ) {
+			totalActorArr.push( k );
+		}
+
+
+		//console.log( 'totalActorArr: ', totalActorArr ); 
+
+		if ( totalActorArr.length ) {
+
+
+			//console.log( 'totalActorArr: ', totalActorArr ); 
+			
+
+			html += `<div class="gallery-coop-actors">
+				<div>
+					<br/>
+					<br/>
+					Перетин з акторамі по фільмографії ( ${ totalActorArr.length } )</div>
+					<br/>
+				<div>${ Component( 'Gallery-People', { arr: totalActorArr, year: 0, } ) }</div>
+			</div>`;
+		}
+
+
+
+
+
+		//html += Component( 'Gallery-Cooperate-Actors', totalActorObj );
+
+
+
+		//console.log( 'totalActorObj: ', totalActorObj ); 
 
 
 		return { tagParam, html };  

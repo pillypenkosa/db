@@ -227,6 +227,12 @@ const arrMovies = [
 	cast: { marilyn_monroe_01061926: 1, },
 },
 {
+	id: 'the_lost_bus_2025', title: { ua: 'Автобус у вогні', en: 'The Lost Bus', }, year: 2025, country: { usa: 1, },
+	genre: { disaster: 1, drama: 1, }, hash: { bus: 1, },
+	internet: { imdb: '21103218', wiki_ua: '%D0%90%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81_%D1%83_%D0%B2%D0%BE%D0%B3%D0%BD%D1%96', },
+	cast: { matthew_mcconaughey_04111969: 1, },
+},
+{
 	id: 'crash_1996', title: { ua: 'Автокатастрофа', en: 'Crash', }, year: 1996, country: { can: 1, gbr: 1, },
 	genre: { drama: 1, erotica: 1, },
 	internet: { imdb: '0115964', wiki_ua: '%D0%90%D0%B2%D1%82%D0%BE%D0%BA%D0%B0%D1%82%D0%B0%D1%81%D1%82%D1%80%D0%BE%D1%84%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -731,6 +737,12 @@ const arrMovies = [
 	cast: { robert_de_niro_17081943: 1, joe_pesci_09021943: 1, },
 },
 {
+	id: 'play_dirty_2025', title: { ua: 'Брудна гра', en: 'Play Dirty', }, year: 2025, country: { usa: 1, aus: 1, },
+	genre: { action: 1, drama: 1, },
+	internet: { imdb: '18392014', wiki_ua: '%D0%91%D1%80%D1%83%D0%B4%D0%BD%D0%B0_%D0%B3%D1%80%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { mark_wahlberg_05061971: 1, },
+},
+{
 	id: 'dirty_dancing_1987', title: { ua: 'Брудні танці', en: 'Dirty Dancing', }, year: 1987, country: { usa: 1, },
 	genre: { drama: 1, }, 
 	internet: { imdb: '0092890', wiki_ua: '%D0%91%D1%80%D1%83%D0%B4%D0%BD%D1%96_%D1%82%D0%B0%D0%BD%D1%86%D1%96', },
@@ -782,7 +794,7 @@ const arrMovies = [
 	id: 'under_siege_1992', title: { ua: 'В облозі', en: 'Under Siege', }, year: 1992, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, }, hash: { fight: 1, terrorist: 1, ship: 1, sea: 1, },
 	internet: { imdb: '0105690', wiki_ua: '%D0%92_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B7%D1%96', },
-	cast: { steven_seagal_10041952: 1, tommy_lee_jones_15091946: 1, gary_busey_29061944: 1, george_bush_12061924: 1, },
+	cast: { steven_seagal_10041952: 1, tommy_lee_jones_15091946: 1, gary_busey_29061944: 1, },
 },
 {
 	id: 'under_siege_2_1995', title: { ua: 'В облозі - 2', en: 'Under Siege 2: Dark Territory', }, year: 1995, country: { usa: 1, },
@@ -1654,6 +1666,11 @@ const arrMovies = [
 	cast: { ryan_reynolds_23101976: 1, },
 },
 {
+	id: 'deja_vu_1990', title: { ua: 'Дежа вю', en: 'Дежа вю', }, year: 1990, country: { pol: 1, sun: 1, },	
+	genre: { comedy: 1, crime: 1, },
+	internet: { imdb: '0097253', wiki_ua: '%D0%94%D0%B5%D0%B6%D0%B0_%D0%92%D1%8E_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1989)', },
+},
+{
 	id: 'deja_vu_2006', title: { ua: 'Дежа вю', en: 'Deja Vu', }, year: 2006, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, sci_fi: 1, crime: 1, },
 	internet: { imdb: '0453467', wiki_ua: '%D0%94%D0%B5%D0%B6%D0%B0_%D0%B2%D1%8E_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2006)', },
@@ -1916,6 +1933,11 @@ const arrMovies = [
 	genre: { action: 1, comedy: 1, crime: 1, }, hash: { police: 1, children: 1, },
 	internet: { imdb: '0099938', wiki_ua: '%D0%94%D0%B8%D1%82%D1%81%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9', },
 	cast: { arnold_schwarzenegger_30071947: 1, },
+},
+{
+	id: 'i_am_mother_2019', title: { ua: 'Дитя робота', en: 'I Am Mother', }, year: 2019, country: { aus: 1, }, 
+	genre: { sci_fi: 1, drama: 1, }, hash: { robot: 1, },
+	internet: { imdb: '6292852', wiki_ua: '%D0%94%D0%B8%D1%82%D1%8F_%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0', },
 },
 {
 	id: 'devil_2010', title: { ua: 'Диявол', en: 'Devil', }, year: 2010, country: { usa: 1, },
@@ -3106,6 +3128,11 @@ const arrMovies = [
 	genre: { comedy: 1, fantasy: 1, },
 	internet: { imdb: '1213663', wiki_ua: '%D0%9A%D1%96%D0%BD%D0%B5%D1%86%D1%8C_%D1%81%D0%B2%D1%96%D1%82%D1%83_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2013,_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0_%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%96%D1%8F)', },
 	cast: { rosamund_pike_27011979: 1, pierce_brosnan_16051953: 1, },
+},
+{
+	id: 'follow_me_2020', title: { ua: 'Клаустрофоби. Новий рівень', en: 'Follow Me', }, year: 2020, country: { usa: 1, }, 
+	genre: { horror: 1, thriller: 1, }, hash: { quest: 1, surviving: 1, },
+	internet: { imdb: '8160834', wiki_ua: '%D0%9A%D0%BB%D0%B0%D1%83%D1%81%D1%82%D1%80%D0%BE%D1%84%D0%BE%D0%B1%D0%B8:_%D0%9D%D0%BE%D0%B2%D0%B8%D0%B9_%D1%80%D1%96%D0%B2%D0%B5%D0%BD%D1%8C', },
 },
 {
 	id: 'double_blind_2023', title: { ua: 'Клаустрофоби: Без сну', en: 'Double Blind', }, year: 2023, country: { irl: 1, }, 
@@ -5127,6 +5154,12 @@ const arrMovies = [
 	cast: { michelle_monaghan_23031976: 1, },
 },
 {
+	id: 'transcendence_2014', title: { ua: 'Перевага ', en: 'Transcendence', }, year: 2014, country: { usa: 1, gbr: 1, }, 
+	genre: { sci_fi: 1, }, hash: { cyber: 1, },
+	internet: { imdb: '2209764', wiki_ua: '%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%B3%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { johnny_depp_09061963: 1, },
+},
+{
 	id: 'the_bourne_supremacy_2004', title: { ua: 'Перевага Борна', en: 'The Bourne Supremacy', }, year: 2004, country: { usa: 1, deu: 1, }, rating: 5, franchise: 'bourne',
 	genre: { action: 1, thriller: 1, },
 	internet: { imdb: '0372183', wiki_ua: '%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%B3%D0%B0_%D0%91%D0%BE%D1%80%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -6721,6 +6754,12 @@ const arrMovies = [
 	cast: { robert_de_niro_17081943: 1, rene_russo_17021954: 1, },
 },
 {
+	id: 'the_old_guard_2020', title: { ua: 'Стара гвардія', en: 'The Old Guard', }, year: 2020, country: { usa: 1, gbr: 1, mar: 1, },
+	genre: { action: 1, },
+	internet: { imdb: '7556122', wiki_ua: '%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { charlize_theron_07081975: 1, },
+},
+{
 	id: 'stealth_2005', title: { ua: 'Стелс', en: 'Stealth', }, year: 2005, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { plane: 1, techno: 1, },
 	internet: { imdb: '0382992', wiki_ru: '%D0%A1%D1%82%D0%B5%D0%BB%D1%81_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)', },
@@ -6970,6 +7009,12 @@ const arrMovies = [
 	genre: { serial: 1, mystic: 1, psycho: 1, },
 	internet: { imdb: '0098936', wiki_ua: '%D0%A2%D0%B2%D1%96%D0%BD_%D0%9F%D1%96%D0%BA%D1%81', },
 	cast: { kyle_maclachlan_22021959: 1, },
+},
+{
+	id: 'archive_2020', title: { ua: 'Творець', en: 'Archive', }, year: 2020, country: { usa: 1, gbr: 1, hun: 1, }, rating: 5,
+	genre: { sci_fi: 1, drama: 1, }, hash: { robot: 1, },
+	internet: { imdb: '6882604', wiki_ua: '%D0%A2%D0%B2%D0%BE%D1%80%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2020)', hd_vip: '39310', }, // https://hdvbua.pro/embed/1637
+	cast: { rhona_mitra_09081976: 1, },
 },
 {
 	id: 'the_creator_2023', title: { ua: 'Творець', en: 'The Creator', }, year: 2023, country: { usa: 1, },
