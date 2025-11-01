@@ -1512,7 +1512,7 @@ const arrMovies = [
 },
 {
 	id: 'squid_game_2021', title: { ua: 'Гра в кальмара', en: 'Squid Game', }, year: 2021, country: { kor: 1, },
-	genre: { serial: 1, horror: 1, surviving: 1, }, hash: { quest: 1, surviving: 1, },
+	genre: { serial: 1, horror: 1, }, hash: { quest: 1, surviving: 1, },
 	internet: { imdb: '10919420', wiki_ua: '%D0%93%D1%80%D0%B0_%D0%B2_%D0%BA%D0%B0%D0%BB%D1%8C%D0%BC%D0%B0%D1%80%D0%B0', },
 },
 {
@@ -1734,6 +1734,11 @@ const arrMovies = [
 	genre: { comedy: 1, crime: 1, },
 	internet: { imdb: '0112854', wiki_ru: '%D0%94%D0%B5%D1%81%D1%82%D0%B8%D0%BD%D0%B8_%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%B5%D1%82_%D1%80%D0%B0%D0%B4%D0%B8%D0%BE', },
 	cast: { quentin_tarantino_27031963: 1, james_belushi_15061954: 1, },
+},
+{
+	id: 'the_fare_2018', title: { ua: 'Десь у часі', en: 'The Fare', }, year: 2018, country: { usa: 1, },
+	genre: { fantasy: 1, }, hash: { groundhog: 1, },
+	internet: { imdb: '7293920', },
 },
 {
 	id: 'd_tox_2002', title: { ua: 'Детоксикація', en: 'D-Tox', }, year: 2002, country: { usa: 1, deu: 1, },
@@ -3699,6 +3704,12 @@ const arrMovies = [
 	genre: { comedy: 1, fantasy: 1, }, 
 	internet: { imdb: '0102250', wiki_ua: '%D0%9B%D0%BE%D1%81-%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B5%D1%81%D1%8C%D0%BA%D0%B0_%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F', },
 	cast: { kevin_pollak_30101957: 1, },
+},
+{
+	id: 'the_loft_2014', title: { ua: 'Лофт', en: 'The Loft', }, year: 2014, country: { usa: 1, bel: 1, },
+	genre: { detective: 1, crime: 1, }, 
+	internet: { imdb: '1850397', wiki_ua: '%D0%9B%D0%BE%D1%84%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { karl_urban_07061972: 1, james_marsden_18091973: 1, rhona_mitra_09081976: 1, },
 },
 {
 	id: 'the_ice_road_2021', title: { ua: 'Льодовий дрифт', en: 'The Ice Road', }, year: 2021, country: { usa: 1, },
@@ -7906,6 +7917,11 @@ const arrMovies = [
 	genre: { thriller: 1, sci_fi: 1, crime: 1, }, hash: { utopia: 1, },
 	internet: { imdb: '1637688', wiki_ua: '%D0%A7%D0%B0%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2011)', hd_vip: '6544', },
 	cast: { justin_timberlake_31011981: 1, },
+},
+{
+	id: 'old_2021', title: { ua: 'Час', en: 'Old', }, year: 2021, country: { usa: 1, jpn: 1, chn: 1, }, 
+	genre: { mystic: 1, }, hash: { sea: 1, beach: 1, },
+	internet: { imdb: '10954652', wiki_ua: '%D0%A7%D0%B0%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', },
 },
 {
 	id: 'a_time_to_kill_1996', title: { ua: 'Час вбивати', en: 'A Time to Kill', }, year: 1996, country: { usa: 1, },
