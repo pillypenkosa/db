@@ -14596,11 +14596,11 @@ let arrPeople = [
 {
 	id: 'hayley_atwell_05041982', 
 	name: { n: 'Hayley', s: 'Atwell', },
-	life: { bd: 5, bm: 4, by: 1882, },
-	img: [ 3, 1 ],
+	life: { bd: 5, bm: 4, by: 1982, },
+	img: [ 5, 5 ],
 	country: { gbr: 1, },
 	hash: { movie: 1, movie_actor: 1, },
-	internet: { wiki_ua: '%D0%93%D0%B5%D0%B9%D0%BB%D1%96_%D0%95%D1%82%D0%B2%D0%B5%D0%BB', },
+	internet: { imdb: '2017943', wiki_ua: '%D0%93%D0%B5%D0%B9%D0%BB%D1%96_%D0%95%D1%82%D0%B2%D0%B5%D0%BB', },
 },
 {
 	id: 'heather_locklear_25091961', 
@@ -18976,7 +18976,7 @@ let arrPeople = [
 	name: { n: 'Tom', s: 'Cruise ', },
 	sex: 1,
 	life: { bd: 3, bm: 7, by: 1962, },
-	img: [ 1, 1 ],
+	img: [ 5, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000129', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%9A%D1%80%D1%83%D0%B7', },

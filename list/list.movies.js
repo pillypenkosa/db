@@ -7604,9 +7604,9 @@ const arrMovies = [
 },
 {
 	id: 'philadelphia_1993', title: { ua: 'Філадельфія', en: 'Philadelphia', }, year: 1993, country: { usa: 1, },
-	genre: { drama: 1, },
+	genre: { drama: 1, }, hash: { justice: 1, },
 	internet: { imdb: '0107818', wiki_ua: '%D0%A4%D1%96%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C%D1%84%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { tom_hanks_09071956: 1, denzel_washington_28121954: 1, antonio_banderas_10081960: 1, charles_napier_12041936: 1, },
+	cast: { tom_hanks_09071956: 1, denzel_washington_28121954: 1, antonio_banderas_10081960: 1, charles_napier_12041936: 1, mary_steenburgen_08021953: 1, },
 },
 {
 	id: 'movie_43_2013', title: { ua: 'Фільм 43', en: 'Movie 43', }, year: 2013, country: { usa: 1, },
