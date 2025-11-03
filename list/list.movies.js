@@ -2507,7 +2507,7 @@ const arrMovies = [
 	id: 'loaded_weapon_1_1993', title: { ua: 'Заряджена зброя', en: 'Loaded Weapon 1', }, year: 1993, country: { usa: 1, }, rating: 5,
 	genre: { parody: 1, action: 1, crime: 1, }, 
 	internet: { imdb: '0107659', wiki_ua: '%D0%97%D0%B0%D1%80%D1%8F%D0%B4%D0%B6%D0%B5%D0%BD%D0%B0_%D0%B7%D0%B1%D1%80%D0%BE%D1%8F_1', },
-	cast: { emilio_estevez_12051962: 1, samuel_l_jackson_21121948: 1, bruce_willis_19031955: 1, charlie_sheen_03091965: 1, christopher_lambert_29031957: 1, whoopi_goldberg_13111955: 1, tim_curry_19041946: 1, denise_richards_17021971: 1, },
+	cast: { emilio_estevez_12051962: 1, samuel_l_jackson_21121948: 1, bruce_willis_19031955: 1, charlie_sheen_03091965: 1, christopher_lambert_29031957: 1, whoopi_goldberg_13111955: 1, tim_curry_19041946: 1, denise_richards_17021971: 1, charles_napier_12041936: 1, },
 },
 {
 	id: 'classified_2024', title: { ua: 'Засекречено', en: 'Classified', }, year: 2024, country: { bul: 1, },
@@ -3927,9 +3927,9 @@ const arrMovies = [
 },
 {
 	id: 'miami_blues_1990', title: { ua: 'Маямі Блюз', en: 'Miami Blues', }, year: 1990, country: { usa: 1, },
-	genre: { crime: 1, comedy: 1, thriller: 1, }, hash: { police: 1, },
+	genre: { thriller: 1, comedy: 1, crime: 1, }, hash: { police: 1, },
 	internet: { imdb: '0100143', wiki_ua: '%D0%9C%D0%B0%D1%8F%D0%BC%D1%96_%D0%91%D0%BB%D1%8E%D0%B7', },
-	cast: { alec_baldwin_03041958: 1,  },
+	cast: { alec_baldwin_03041958: 1, charles_napier_12041936: 1, },
 },
 {
 	id: 'maverick_1994', title: { ua: 'Меверік', en: 'Maverick', }, year: 1994, country: { usa: 1, },
@@ -4239,7 +4239,7 @@ const arrMovies = [
 	id: 'the_silence_of_the_lambs_1991', title: { ua: 'Мовчання ягнят', en: 'The Silence of the Lambs', }, year: 1991, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0102926', wiki_ua: '%D0%9C%D0%BE%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F_%D1%8F%D0%B3%D0%BD%D1%8F%D1%82', },
-	cast: { anthony_hopkins_31121937: 1, jodie_foster_19111962: 1, },
+	cast: { anthony_hopkins_31121937: 1, jodie_foster_19111962: 1, charles_napier_12041936: 1, },
 },
 {
 	id: 'mighty_joe_young_1998', title: { ua: 'Могутній Джо Янґ', en: 'Mighty Joe Young', }, year: 1998, country: { usa: 1, },
@@ -6152,7 +6152,7 @@ const arrMovies = [
 	id: 'rambo_2_1985', title: { ua: 'Рембо - 2', en: 'Rambo: First Blood Part II', }, year: 1985, country: { usa: 1, }, rating: 5, franchise: 'rambo',
 	genre: { action: 1, thriller: 1, }, hash: { army: 1, jungle: 1, },
 	internet: { imdb: '0089880', wiki_ua: '%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE:_%D0%9F%D0%B5%D1%80%D1%88%D0%B0_%D0%BA%D1%80%D0%BE%D0%B2,_%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_II', hd_vip: '984', },
-	cast: { sylvester_stallone_06071946: 1, richard_crenna_30111926: 1, martin_kove_06031947: 1, },
+	cast: { sylvester_stallone_06071946: 1, richard_crenna_30111926: 1, martin_kove_06031947: 1, charles_napier_12041936: 1, },
 },
 {
 	id: 'rambo_3_1988', title: { ua: 'Рембо - 3', en: 'Rambo III', }, year: 1988, country: { usa: 1, }, franchise: 'rambo',
@@ -7601,6 +7601,12 @@ const arrMovies = [
 	id: 'the_queens_gambit_2020', title: { ua: 'Ферзевий гамбіт', en: 'The Queen\'s Gambit', }, year: 2020, country: { usa: 1, },
 	genre: { serial: 1, drama: 1, }, hash: { chess: 1, genius: 1, },
 	internet: { imdb: '10048342', wiki_ua: '%D0%A4%D0%B5%D1%80%D0%B7%D0%B5%D0%B2%D0%B8%D0%B9_%D0%B3%D0%B0%D0%BC%D0%B1%D1%96%D1%82_(%D0%BC%D1%96%D0%BD%D1%96%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)', },
+},
+{
+	id: 'philadelphia_1993', title: { ua: 'Філадельфія', en: 'Philadelphia', }, year: 1993, country: { usa: 1, },
+	genre: { drama: 1, },
+	internet: { imdb: '0107818', wiki_ua: '%D0%A4%D1%96%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C%D1%84%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { tom_hanks_09071956: 1, denzel_washington_28121954: 1, antonio_banderas_10081960: 1, charles_napier_12041936: 1, },
 },
 {
 	id: 'movie_43_2013', title: { ua: 'Фільм 43', en: 'Movie 43', }, year: 2013, country: { usa: 1, },

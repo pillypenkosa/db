@@ -12754,6 +12754,16 @@ let arrPeople = [
 	note: 'Шотландія',
 },
 {
+	id: 'charles_napier_12041936',
+	name: { n: 'Charles', s: 'Napier', },
+	sex: 1,
+	life: { bd: 12, bm: 4, by: 1936, dd: 5, dm: 10, dy: 2011, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0621008', wiki_ru: '%D0%9D%D0%B0%D0%BF%D1%8C%D0%B5%D1%80,_%D0%A7%D0%B0%D1%80%D0%BB%D1%8C%D0%B7', },
+},
+{
 	id: 'charles_perrault_12011628', 
 	name: { n: 'Charles', s: 'Perrault', },
 	sex: 1,
