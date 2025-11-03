@@ -1639,7 +1639,7 @@ const arrMovies = [
 {
 	id: 'gemini_man_2019', title: { ua: 'Двійник', en: 'Gemini Man', }, year: 2019, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, 
-	internet: { imdb: '1025100', wiki_ua: '%D0%94%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2019)', },
+	internet: { imdb: '1025100', wiki_ua: '%D0%94%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2019)', hd_vip: '3315', },
 	cast: { will_smith_25091968: 1, clive_owen_03101964: 1, },
 },
 {
@@ -1916,6 +1916,12 @@ const arrMovies = [
 	genre: { serial: 1, drama: 1, }, 
 	internet: { imdb: '0211858', wiki_ua: '%D0%94%D0%B8%D0%BA%D0%B0_%D1%80%D0%BE%D0%B7%D0%B0', },
 	cast: { veronica_castro_19101952: 1, },
+},
+{
+	id: 'wild_wild_west_1999', title: { ua: 'Дикий дикий Вест', en: 'Wild Wild West', }, year: 1999, country: { usa: 1, }, 
+	genre: { western: 1, comedy: 1, }, 
+	internet: { imdb: '0120891', wiki_ua: '%D0%94%D0%B8%D0%BA%D0%B8%D0%B9,_%D0%B4%D0%B8%D0%BA%D0%B8%D0%B9_%D0%92%D0%B5%D1%81%D1%82', },
+	cast: { will_smith_25091968: 1, salma_hayek_02091966: 1, },
 },
 {
 	id: 'the_wild_robot_2024', title: { ua: 'Дикий робот', en: 'The Wild Robot', }, year: 2024, country: { usa: 1, jpn: 1, },
@@ -2690,7 +2696,7 @@ const arrMovies = [
 	internet: { imdb: '12349832', wiki_ua: '%D0%97%D0%BE%D0%B7%D1%83%D0%BB%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2024)', },
 },
 {
-	id: 'quien_sabe_1967', title: { ua: 'Золота куля', en: 'Quien sabe?', }, year: 1967, country: { ita: 1, esp: 1, }, 
+	id: 'quien_sabe_1967', title: { ua: 'Золота куля', en: 'Quien sabe?', }, year: 1967, country: { ita: 1, esp: 1, }, remembered: 1,
 	genre: { western: 1, }, 
 	internet: { imdb: '0061429', wiki_ua: '%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0_%D0%BA%D1%83%D0%BB%D1%8F', },
 },
@@ -3932,7 +3938,7 @@ const arrMovies = [
 	cast: { julia_roberts_28101967: 1, ed_harris_28111950: 1, },
 },
 {
-	id: 'miami_blues_1990', title: { ua: 'Маямі Блюз', en: 'Miami Blues', }, year: 1990, country: { usa: 1, },
+	id: 'miami_blues_1990', title: { ua: 'Маямі Блюз', en: 'Miami Blues', }, year: 1990, country: { usa: 1, }, remembered: 1,
 	genre: { thriller: 1, comedy: 1, crime: 1, }, hash: { police: 1, },
 	internet: { imdb: '0100143', wiki_ua: '%D0%9C%D0%B0%D1%8F%D0%BC%D1%96_%D0%91%D0%BB%D1%8E%D0%B7', },
 	cast: { alec_baldwin_03041958: 1, charles_napier_12041936: 1, },
@@ -4648,6 +4654,11 @@ const arrMovies = [
 	id: 'through_naked_eyes_1983', title: { ua: 'Неозброєним оком', en: 'Through Naked Eyes', }, year: 1983, country: { usa: 1, }, 
 	genre: { thriller: 1, }, remembered: 1,
 	internet: { imdb: '0088265', },
+},
+{
+	id: 'suddenly_1954', title: { ua: 'Неочікуваний', en: 'Suddenly', }, year: 1954, country: { usa: 1, }, remembered: 1,
+	genre: { thriller: 1, crime: 1, }, hash: { president: 1, train: 1,  }, 
+	internet: { imdb: '0047542', wiki_ru: '%D0%9D%D0%B5%D0%BE%D0%B6%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)', },
 },
 {
 	id: 'subservience_2024', title: { ua: 'Непокірна Еліс', en: 'Subservience', }, year: 2024, country: { usa: 1, },
