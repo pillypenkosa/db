@@ -3926,6 +3926,12 @@ const arrMovies = [
 	cast: { julia_roberts_28101967: 1, ed_harris_28111950: 1, },
 },
 {
+	id: 'miami_blues_1990', title: { ua: 'Маямі Блюз', en: 'Miami Blues', }, year: 1990, country: { usa: 1, },
+	genre: { crime: 1, comedy: 1, thriller: 1, }, hash: { police: 1, },
+	internet: { imdb: '0100143', wiki_ua: '%D0%9C%D0%B0%D1%8F%D0%BC%D1%96_%D0%91%D0%BB%D1%8E%D0%B7', },
+	cast: { alec_baldwin_03041958: 1,  },
+},
+{
 	id: 'maverick_1994', title: { ua: 'Меверік', en: 'Maverick', }, year: 1994, country: { usa: 1, },
 	genre: { action: 1, comedy: 1, adventure: 1, },
 	internet: { imdb: '0110478', wiki_ua: '%D0%9C%D0%B5%D0%B2%D0%B5%D1%80%D1%96%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -6326,6 +6332,11 @@ const arrMovies = [
 	genre: { thriller: 1, },
 	internet: { imdb: '0104389', wiki_ru: '%D0%A0%D1%83%D0%BA%D0%B0,_%D0%BA%D0%B0%D1%87%D0%B0%D1%8E%D1%89%D0%B0%D1%8F_%D0%BA%D0%BE%D0%BB%D1%8B%D0%B1%D0%B5%D0%BB%D1%8C', },
 	cast: { julianne_moore_03121960: 1, rebecca_de_mornay_29081959: 1, },
+},
+{
+	id: 'une_sirene_a_paris_2020', title: { ua: 'Русалка в Парижі', en: 'Une Sirene a Paris', }, year: 2020, country: { fra: 1, },
+	genre: { fantasy: 1, comedy: 1, },
+	internet: { imdb: '9209312', },
 },
 {
 	id: 'carry_on_2024', title: { ua: 'Ручна поклажа', en: 'Carry-On', }, year: 2024, country: { usa: 1, },
