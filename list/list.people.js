@@ -18976,7 +18976,7 @@ let arrPeople = [
 	name: { n: 'Tom', s: 'Cruise ', },
 	sex: 1,
 	life: { bd: 3, bm: 7, by: 1962, },
-	img: [ 5, 1 ],
+	img: [ 1, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000129', wiki_ua: '%D0%A2%D0%BE%D0%BC_%D0%9A%D1%80%D1%83%D0%B7', },
