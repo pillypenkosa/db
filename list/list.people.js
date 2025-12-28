@@ -12437,7 +12437,7 @@ let arrPeople = [
 {
 	id: 'brigitte_bardot_28061934', 
 	name: { n: 'Brigitte', s: 'Bardot', },
-	life: { bd: 28, bm: 9, by: 1934, },
+	life: { bd: 28, bm: 9, by: 1934, dd: 28, dm: 12, dy: 2025, },
 	img: [ 4, 1 ],
 	country: { fra: 1, },
 	hash: { movie: 1, movie_actor: 1, },

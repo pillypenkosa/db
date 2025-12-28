@@ -61,6 +61,97 @@ const arrMovies = [
 
 
 
+
+
+
+
+
+{
+	id: 'the_devil_s_tomb_2009', title: { ua: '000 // Гробниця диявола', en: 'The Devil\'s Tomb', }, year: 2009, country: { usa: 1, },
+	genre: { action: 1, horror: 1, }, 
+	internet: { imdb: '1147687', },
+	cast: { cuba_gooding_jr_02011968: 1, ron_perlman_13041950: 1, }, 
+},
+{
+	id: 'x_2022', title: { ua: '000 // Ікс', en: 'X', }, year: 2022, country: { usa: 1, nzl: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '13560574', wiki_ua: 'X_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
+	cast: { jenna_ortega_27092002: 1, }, 
+},
+{
+	id: 'parallel_2024', title: { ua: '000 // Паралель', en: 'Parallel', }, year: 2024, country: { usa: 1, },
+	genre: { sci_fi: 1, thriller: 1, }, 
+	internet: { imdb: '14637386', },
+},
+{
+	id: 'tremors_5_2015', title: { ua: '000 // Тремтіння землі - 5', en: 'Tremors 5: Bloodlines', }, year: 2015, country: { usa: 1, },
+	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
+	internet: { imdb: '4180514', wiki_ru: '%D0%94%D1%80%D0%BE%D0%B6%D1%8C_%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8_5:_%D0%9A%D1%80%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5_%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE', },
+},
+{
+	id: 'tremors_6_2018', title: { ua: '000 // Тремтіння землі - 6', en: 'Tremors: A Cold Day in Hell', }, year: 2018, country: { usa: 1, },
+	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
+	internet: { imdb: '6086082', wiki_ua: '%D0%A2%D1%80%D0%B5%D0%BC%D1%82%D1%96%D0%BD%D0%BD%D1%8F_%D0%B7%D0%B5%D0%BC%D0%BB%D1%96_6:_%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C_%D1%83_%D0%BF%D0%B5%D0%BA%D0%BB%D1%96', },
+},
+{
+	id: 'the_fourth_kind_2009', title: { ua: '000 // Четвертий вид', en: 'The Fourth Kind', }, year: 2009, country: { usa: 1, gbr: 1, bgr: 1,},
+	genre: { sci_fi: 1, horror: 1, }, 
+	internet: { imdb: '1220198', wiki_ua: '%D0%A7%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4', },
+	cast: { milla_jovovich_17121975: 1, }, 
+},
+{
+	id: '2001_a_space_travesty_2000', title: { ua: '000 // Шостий елемент', en: '2001: A Space Travesty', }, year: 2000, country: { usa: 1, can: 1, deu: 1, },
+	genre: { parody: 1, comedy: 1, }, 
+	internet: { imdb: '0157262', wiki_ua: '%D0%A8%D0%BE%D1%81%D1%82%D0%B8%D0%B9_%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { leslie_nielsen_11021926: 1, }, 
+},
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+{
+	id: '', title: { ua: '000 // ', en: 'zzz', }, year: 2022, country: { usa: 1, },
+
+	genre: { action: 1, adventure: 1, }, hash: { travel: 1, },
+	internet: { imdb: '', wiki_ua: '', hd_vip: '', },
+	cast: { qqq: 1, }, 
+},
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: '2_22_2017', title: { ua: '2:22', en: '2:22', }, year: 2017, country: { usa: 1, aus: 1, },
 	genre: { sci_fi: 1, drama: 1, }, hash: { plane: 1, },
@@ -8447,6 +8538,11 @@ const arrMovies = [
 	internet: { imdb: '1464335', wiki_ua: 'Uncharted:_%D0%9D%D0%B5%D0%B7%D0%B2%D1%96%D0%B4%D0%B0%D0%BD%D0%B5', hd_vip: '58328', },
 	cast: { antonio_banderas_10081960: 1, mark_wahlberg_05061971: 1, }, composer: { ramin_djawadi_19071974: 1, },
 },
+
+
+
+
+
 
 
 
