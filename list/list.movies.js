@@ -61,97 +61,6 @@ const arrMovies = [
 
 
 
-
-
-
-
-
-{
-	id: 'the_devil_s_tomb_2009', title: { ua: '000 // Гробниця диявола', en: 'The Devil\'s Tomb', }, year: 2009, country: { usa: 1, },
-	genre: { action: 1, horror: 1, }, 
-	internet: { imdb: '1147687', },
-	cast: { cuba_gooding_jr_02011968: 1, ron_perlman_13041950: 1, }, 
-},
-{
-	id: 'x_2022', title: { ua: '000 // Ікс', en: 'X', }, year: 2022, country: { usa: 1, nzl: 1, },
-	genre: { horror: 1, }, 
-	internet: { imdb: '13560574', wiki_ua: 'X_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
-	cast: { jenna_ortega_27092002: 1, }, 
-},
-{
-	id: 'parallel_2024', title: { ua: '000 // Паралель', en: 'Parallel', }, year: 2024, country: { usa: 1, },
-	genre: { sci_fi: 1, thriller: 1, }, 
-	internet: { imdb: '14637386', },
-},
-{
-	id: 'tremors_5_2015', title: { ua: '000 // Тремтіння землі - 5', en: 'Tremors 5: Bloodlines', }, year: 2015, country: { usa: 1, },
-	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
-	internet: { imdb: '4180514', wiki_ru: '%D0%94%D1%80%D0%BE%D0%B6%D1%8C_%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8_5:_%D0%9A%D1%80%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5_%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE', },
-},
-{
-	id: 'tremors_6_2018', title: { ua: '000 // Тремтіння землі - 6', en: 'Tremors: A Cold Day in Hell', }, year: 2018, country: { usa: 1, },
-	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
-	internet: { imdb: '6086082', wiki_ua: '%D0%A2%D1%80%D0%B5%D0%BC%D1%82%D1%96%D0%BD%D0%BD%D1%8F_%D0%B7%D0%B5%D0%BC%D0%BB%D1%96_6:_%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C_%D1%83_%D0%BF%D0%B5%D0%BA%D0%BB%D1%96', },
-},
-{
-	id: 'the_fourth_kind_2009', title: { ua: '000 // Четвертий вид', en: 'The Fourth Kind', }, year: 2009, country: { usa: 1, gbr: 1, bgr: 1,},
-	genre: { sci_fi: 1, horror: 1, }, 
-	internet: { imdb: '1220198', wiki_ua: '%D0%A7%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4', },
-	cast: { milla_jovovich_17121975: 1, }, 
-},
-{
-	id: '2001_a_space_travesty_2000', title: { ua: '000 // Шостий елемент', en: '2001: A Space Travesty', }, year: 2000, country: { usa: 1, can: 1, deu: 1, },
-	genre: { parody: 1, comedy: 1, }, 
-	internet: { imdb: '0157262', wiki_ua: '%D0%A8%D0%BE%D1%81%D1%82%D0%B8%D0%B9_%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { leslie_nielsen_11021926: 1, }, 
-},
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-{
-	id: '', title: { ua: '000 // ', en: 'zzz', }, year: 2022, country: { usa: 1, },
-
-	genre: { action: 1, adventure: 1, }, hash: { travel: 1, },
-	internet: { imdb: '', wiki_ua: '', hd_vip: '', },
-	cast: { qqq: 1, }, 
-},
-
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
 	id: '2_22_2017', title: { ua: '2:22', en: '2:22', }, year: 2017, country: { usa: 1, aus: 1, },
 	genre: { sci_fi: 1, drama: 1, }, hash: { plane: 1, },
@@ -850,6 +759,12 @@ const arrMovies = [
 	genre: { drama: 1, fantasy: 1, }, hash: { love: 1, time: 1, },
 	internet: { imdb: '0410297', wiki_ua: '%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B1%D1%96%D0%BB%D1%8F_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0', hd_vip: '13554', },
 	cast: { keanu_reeves_02091964: 1, sandra_bullock_26071964: 1, christopher_plummer_13121929: 1, },
+},
+{
+	id: 'house_at_the_end_of_the_street_2012', title: { ua: 'Будинок в кінці вулиці', en: 'House at the End of the Street', }, year: 2012, country: { usa: 1, can: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '1582507', wiki_ru: '%D0%94%D0%BE%D0%BC_%D0%B2_%D0%BA%D0%BE%D0%BD%D1%86%D0%B5_%D1%83%D0%BB%D0%B8%D1%86%D1%8B', },
+	cast: { jennifer_lawrence_15081990: 1, elisabeth_shue_06101963: 1, }, 
 },
 {
 	id: 'stonehearst_asylum_2014', title: { ua: 'Будинок проклятих', en: 'Stonehearst Asylum', }, year: 2014, country: { usa: 1, }, rating: 5,
@@ -1662,6 +1577,12 @@ const arrMovies = [
 	id: 'la_dame_de_monsoreau_1971', title: { ua: 'Графиня де Монсоро', en: 'La dame de Monsoreau', }, year: 1971, country: { fra: 1, },
 	genre: { serial: 1, drama: 1, }, hash: { middleAges: 1, },
 	internet: { imdb: '0224857', wiki_ua: '%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BD%D1%8F_%D0%B4%D0%B5_%D0%9C%D0%BE%D0%BD%D1%81%D0%BE%D1%80%D0%BE_(%D0%BC%D1%96%D0%BD%D1%96%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB,_1971)', },
+},
+{
+	id: 'the_devil_s_tomb_2009', title: { ua: 'Гробниця диявола', en: 'The Devil\'s Tomb', }, year: 2009, country: { usa: 1, },
+	genre: { action: 1, horror: 1, }, 
+	internet: { imdb: '1147687', },
+	cast: { cuba_gooding_jr_02011968: 1, ron_perlman_13041950: 1, }, 
 },
 {
 	id: 'pik_lik_foh_1995', title: { ua: 'Громобій', en: 'Pik lik foh', }, year: 1995, country: { hkg: 1, },
@@ -2953,6 +2874,12 @@ const arrMovies = [
 	cast: { ashley_judd_19041968: 1, },
 },
 {
+	id: 'x_2022', title: { ua: 'Ікс', en: 'X', }, year: 2022, country: { usa: 1, nzl: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '13560574', wiki_ua: 'X_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
+	cast: { jenna_ortega_27092002: 1, }, 
+},
+{
 	id: 'leave_the_world_behind_2023', title: { ua: 'Ілюзія безпеки', en: 'Leave the World Behind', }, year: 2023, country: { usa: 1, },
 	genre: { mystic: 1, thriller: 1, },
 	internet: { imdb: '12747748', wiki_ua: '%D0%86%D0%BB%D1%8E%D0%B7%D1%96%D1%8F_%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B8', },
@@ -3987,6 +3914,12 @@ const arrMovies = [
 	cast: { antonio_banderas_10081960: 1, anthony_hopkins_31121937: 1, catherine_zeta_jones_25091969: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
+	id: 'mother_2017', title: { ua: 'Мати', en: 'Mother', }, year: 2017, country: { usa: 1, can: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '5109784', wiki_ua: '%D0%9C%D0%B0%D1%82%D0%B8!', },
+	cast: { jennifer_lawrence_15081990: 1, ed_harris_28111950: 1, michelle_pfeiffer_29041958: 1, }, 
+},
+{
 	id: 'the_matrix_1999', title: { ua: 'Матриця', en: 'The Matrix', }, year: 1999, country: { usa: 1, aus: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { cyber: 1, world: 1, },
 	internet: { imdb: '0133093', wiki_ua: '%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '434', moviestape: 'The.Matrix', },
@@ -4614,6 +4547,12 @@ const arrMovies = [
 	internet: { imdb: '27534307', wiki_ua: '%D0%9D%D0%B5_%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8_%D0%B7%D1%96_%D0%B7%D0%BB%D0%BE%D0%BC_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2024)', },
 },
 {
+	id: 'don_t_look_up_2021', title: { ua: 'Не дивіться вгору', en: '', }, year: 2021, country: { usa: 1, can: 1, },
+	genre: { sci_fi: 1, drama: 1, },
+	internet: { imdb: '11286314', wiki_ua: '%D0%9D%D0%B5_%D0%B4%D0%B8%D0%B2%D1%96%D1%82%D1%8C%D1%81%D1%8F_%D0%B2%D0%B3%D0%BE%D1%80%D1%83', },
+	cast: { leonardo_dicaprio_11111974: 1, jennifer_lawrence_15081990: 1, cate_blanchett_14051969: 1, ron_perlman_13041950: 1, chris_evans_13061981: 1, }, 
+},
+{
 	id: 'barb_wire_1996', title: { ua: 'Не називай мене маленькою', en: 'Barb Wire', }, year: 1996, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, woman: 1, },
 	internet: { imdb: '0115624', wiki_ua: '%D0%9D%D0%B5_%D0%BD%D0%B0%D0%B7%D0%B8%D0%B2%D0%B0%D0%B9_%D0%BC%D0%B5%D0%BD%D0%B5_%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD%D1%8C%D0%BA%D0%BE%D1%8E', },
@@ -4664,6 +4603,12 @@ const arrMovies = [
 	genre: { thriller: 1, sci_fi: 1, },
 	internet: { imdb: '0164052', wiki_ua: '%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { kevin_bacon_08071958: 1, elisabeth_shue_06101963: 1, rhona_mitra_09081976: 1, }, director: { paul_verhoeven_18071938: 1, },
+},
+{
+	id: 'hollow_man_2_2006', title: { ua: 'Невидимка - 2', en: 'Hollow Man II', }, year: 2006, country: { usa: 1, },
+	genre: { thriller: 1, sci_fi: 1, },
+	internet: { imdb: '0469916', },
+	cast: { christian_slater_18081969: 1, }, 
 },
 {
 	id: 'the_invisibles_2024', title: { ua: 'Невидимки', en: 'The Invisibles', }, year: 2024, country: { can: 1, },
@@ -4974,6 +4919,11 @@ const arrMovies = [
 	internet: { imdb: '15552142', wiki_ru: '%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%9A%D0%B0%D0%B4%D0%B4%D0%BE_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)', hd_vip: '146382', },
 },
 {
+	id: 'the_omen_1976', title: { ua: 'Омен', en: 'The Omen', }, year: 1976, country: { usa: 1, gbr: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '0075005', wiki_ua: '%D0%9E%D0%BC%D0%B5%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1976)', },
+},
+{
 	id: 'operation_mozart_1989', title: { ua: 'Операція Моцарт', en: 'Operation Mozart', }, year: 1989, country: { fra: 1, }, 
 	genre: { serial: 1, adventure: 1, drama: 1, }, hash: { genius: 1, children: 1,  },
 	internet: { imdb: '0253415', },
@@ -5187,6 +5137,11 @@ const arrMovies = [
 	id: 'la_casa_de_papel_2017', title: { ua: 'Паперовий будинок', en: 'La casa de papel', }, year: 2017, country: { esp: 1, },
 	genre: { serial: 1, action: 1, crime: 1, }, hash: { robbery: 1, },
 	internet: { imdb: '6468322', wiki_ua: '%D0%9F%D0%B0%D0%BF%D0%B5%D1%80%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B1%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)', },
+},
+{
+	id: 'parallel_2024', title: { ua: 'Паралель', en: 'Parallel', }, year: 2024, country: { usa: 1, },
+	genre: { sci_fi: 1, thriller: 1, }, 
+	internet: { imdb: '14637386', },
 },
 {
 	id: 'paranormal_activity_2007', title: { ua: 'Паранормальне явище', en: 'Paranormal Activity', }, year: 2007, country: { usa: 1, },
@@ -6026,6 +5981,12 @@ const arrMovies = [
 	genre: { sci_fi: 1, }, hash: { space: 1, love: 1, }, 
 	internet: { imdb: '1355644', wiki_ua: '%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2016)', hd_vip: '6588', },
 	cast: { jennifer_lawrence_15081990: 1, chris_pratt_21061979: 1, },
+},
+{
+	id: 'retroactive_1997', title: { ua: 'Провал у часі', en: 'Retroactive', }, year: 1997, country: { usa: 1, },
+	genre: { sci_fi: 1, thriller: 1, crime: 1, }, hash: { groundhog: 1, },
+	internet: { imdb: '0117468', wiki_ua: '%D0%9F%D1%80%D0%BE%D0%B2%D0%B0%D0%BB_%D1%83_%D1%87%D0%B0%D1%81%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1997)', },
+	cast: { james_belushi_15061954: 1, }, 
 },
 {
 	id: 'the_adam_project_2022', title: { ua: 'Проєкт Адам', en: 'The Adam Project', }, year: 2022, country: { usa: 1, },
@@ -7415,6 +7376,16 @@ const arrMovies = [
 	cast: { kevin_bacon_08071958: 1, },
 },
 {
+	id: 'tremors_5_2015', title: { ua: 'Тремтіння землі - 5', en: 'Tremors 5: Bloodlines', }, year: 2015, country: { usa: 1, },
+	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
+	internet: { imdb: '4180514', wiki_ru: '%D0%94%D1%80%D0%BE%D0%B6%D1%8C_%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8_5:_%D0%9A%D1%80%D0%BE%D0%B2%D0%BD%D0%BE%D0%B5_%D1%80%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE', },
+},
+{
+	id: 'tremors_6_2018', title: { ua: 'Тремтіння землі - 6', en: 'Tremors: A Cold Day in Hell', }, year: 2018, country: { usa: 1, },
+	genre: { comedy: 1, horror: 1, }, hash: { creature: 1, trap: 1, surviving: 1, unreal_danger: 1, },
+	internet: { imdb: '6086082', wiki_ua: '%D0%A2%D1%80%D0%B5%D0%BC%D1%82%D1%96%D0%BD%D0%BD%D1%8F_%D0%B7%D0%B5%D0%BC%D0%BB%D1%96_6:_%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C_%D1%83_%D0%BF%D0%B5%D0%BA%D0%BB%D1%96', },
+},
+{
 	id: 'training_day_2001', title: { ua: 'Тренувальний день', en: 'Training Day', }, year: 2001, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0139654', wiki_ua: '%D0%A2%D1%80%D0%B5%D0%BD%D1%83%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -7477,6 +7448,11 @@ const arrMovies = [
 	genre: { action: 1, }, hash: { ancient: 1, },
 	internet: { imdb: '0332452', wiki_ua: '%D0%A2%D1%80%D0%BE%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { brad_pitt_18121963: 1, orlando_bloom_13011977: 1, sean_bean_17041959: 1, }, composer: { james_horner_14081953: 1, },
+},
+{
+	id: 'without_a_paddle_2_2009', title: { ua: 'Троє в каное - 2', en: 'Without a Paddle: Nature\'s Calling', }, year: 2009, country: { usa: 1, },
+	genre: { comedy: 1, adventure: 1, },
+	internet: { imdb: '1276107', },
 },
 {
 	id: '3_men_and_a_baby_1987', title: { ua: 'Троє чоловіків і немовля', en: '3 Men and a Baby', }, year: 1987, country: { usa: 1, },
@@ -8125,6 +8101,12 @@ const arrMovies = [
 	cast: { liam_neeson_07061952: 1, jai_courtney_15031986: 1, robert_patrick_05111958: 1, },
 },
 {
+	id: 'the_fourth_kind_2009', title: { ua: 'Четвертий вид', en: 'The Fourth Kind', }, year: 2009, country: { usa: 1, gbr: 1, bgr: 1,},
+	genre: { sci_fi: 1, horror: 1, }, 
+	internet: { imdb: '1220198', wiki_ua: '%D0%A7%D0%B5%D1%82%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4', },
+	cast: { milla_jovovich_17121975: 1, }, 
+},
+{
 	id: 'things_to_do_in_denver_when_you_re_dead_1995', title: { ua: 'Чим зайнятися мерцю в Денвері', en: 'Things to Do in Denver When You\'re Dead', }, year: 1995, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0114660', wiki_ua: '%D0%A7%D0%B8%D0%BC_%D0%B7%D0%B0%D0%B9%D0%BD%D1%8F%D1%82%D0%B8%D1%81%D1%8F_%D0%BC%D0%B5%D1%80%D1%86%D1%8E_%D0%B2_%D0%94%D0%B5%D0%BD%D0%B2%D0%B5%D1%80%D1%96',	},
@@ -8311,8 +8293,6 @@ const arrMovies = [
 	id: 'rubber_2010', title: { ua: 'Шина', en: 'Rubber ', }, year: 2010, country: { fra: 1, },
 	genre: { fantasy: 1, horror: 1, comedy: 1, },
 	internet: { imdb: '1612774', wiki_ua: '%D0%A8%D0%B8%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-
-
 },
 {
 	id: 'six_days_seven_nights_1998', title: { ua: 'Шість днів сім ночей', en: 'Six Days Seven Nights', }, year: 1998, country: { usa: 1, }, rating: 5,
@@ -8361,6 +8341,12 @@ const arrMovies = [
 	genre: { action: 1, mystic: 1, },
 	internet: { imdb: '0216216', wiki_ua: '%D0%A8%D0%BE%D1%81%D1%82%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C', hd_vip: '4456', },
 	cast: { arnold_schwarzenegger_30071947: 1, },
+},
+{
+	id: '2001_a_space_travesty_2000', title: { ua: 'Шостий елемент', en: '2001: A Space Travesty', }, year: 2000, country: { usa: 1, can: 1, deu: 1, },
+	genre: { parody: 1, comedy: 1, }, 
+	internet: { imdb: '0157262', wiki_ua: '%D0%A8%D0%BE%D1%81%D1%82%D0%B8%D0%B9_%D0%B5%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { leslie_nielsen_11021926: 1, }, 
 },
 {
 	id: 'tinker_tailor_soldier_spy_2011', title: { ua: 'Шпигун вийди геть', en: 'Tinker Tailor Soldier Spy', }, year: 2011, country: { usa: 1, fra: 1, gbr: 1, deu: 1, },
