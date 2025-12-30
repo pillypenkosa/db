@@ -57,10 +57,6 @@ const arrMovies = [
 
 
 
-
-
-
-
 {
 	id: '2_22_2017', title: { ua: '2:22', en: '2:22', }, year: 2017, country: { usa: 1, aus: 1, },
 	genre: { sci_fi: 1, drama: 1, }, hash: { plane: 1, },
@@ -1498,6 +1494,12 @@ const arrMovies = [
 	genre: { action: 1, mystic: 1, },
 	internet: { imdb: '0110027', wiki_ua: '%D0%93%D0%BE%D1%80%D0%B5%D1%86%D1%8C_3:_%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9_%D0%B2%D0%B8%D0%BC%D1%96%D1%80', },
 	cast: { christopher_lambert_29031957: 1, },
+},
+{
+	id: 'the_hotel_new_hampshire_1984', title: { ua: 'Готель Нью-Гемпшир', en: 'The Hotel New Hampshire', }, year: 1984, country: { usa: 1, can: 1, gbr: 1, },
+	genre: { drama: 1, }, 
+	internet: { imdb: '0087428', wiki_ua: '%D0%93%D0%BE%D1%82%D0%B5%D0%BB%D1%8C_%C2%AB%D0%9D%D1%8C%D1%8E-%D0%93%D0%B5%D0%BC%D0%BF%D1%88%D0%B8%D1%80%C2%BB', },
+	cast: { jodie_foster_19111962: 1, nastassja_kinski_24011961: 1, },
 },
 {
 	id: 'gothic_1986', title: { ua: 'Готика', en: 'Gothic', }, year: 1986, country: { usa: 1, },
@@ -2966,6 +2968,12 @@ const arrMovies = [
 	genre: { action: 1, crime: 1, }, hash: { robbery: 1, bank: 1, },
 	internet: { imdb: '0913354', wiki_ua: '%D0%86%D0%BD%D0%BA%D0%B0%D1%81%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2009)', },
 	cast: { jean_reno_30071948: 1, laurence_fishburne_30071961: 1, matt_dillon_18021964: 1, },
+},
+{
+	id: 'serendipity_2001', title: { ua: 'Інтуїція', en: 'Serendipity', }, year: 2001, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, 
+	internet: { imdb: '0240890', wiki_ua: '%D0%86%D0%BD%D1%82%D1%83%D1%97%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { john_cusack_28061966: 1, kate_beckinsale_26071973: 1, bridget_moynahan_28041971: 1, },
 },
 {
 	id: 'the_foreigner_2017', title: { ua: 'Іноземець', en: 'The Foreigner', }, year: 2017, country: { usa: 1, gbr: 1, chn: 1, ind: 1, che: 1, },
@@ -7442,6 +7450,12 @@ const arrMovies = [
 	genre: { drama: 1, thriller: 1, }, 
 	internet: { imdb: '0108162', wiki_ua: '%D0%A9%D0%B5%D0%BF%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { sharon_stone_10031958: 1, william_baldwin_21021963: 1, tom_berenger_31051949: 1, },
+},
+{
+	id: 'tron_ares_2025', title: { ua: 'Трон: Арес', en: 'Tron: Ares', }, year: 2025, country: { usa: 1, can: 1, nzl: 1, },
+	genre: { sci_fi: 1, action: 1, }, 
+	internet: { imdb: '6604188', wiki_ua: '%D0%A2%D1%80%D0%BE%D0%BD:_%D0%90%D1%80%D0%B5%D1%81', },
+	cast: { gillian_anderson_09081968: 1, },
 },
 {
 	id: 'troy_2004', title: { ua: 'Троя', en: 'Troy', }, year: 2004, country: { usa: 1, mlt: 1, gbr: 1, },
