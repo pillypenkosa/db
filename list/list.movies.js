@@ -54,6 +54,18 @@ const arrMovies = [
 
 
 
+{
+	id: 'migration_2023', title: { ua: '000 // Переліт', en: 'Migration', }, year: 2023, country: { usa: 1, jpn: 1, },
+	genre: { cartoon: 1, }, 
+	internet: { imdb: '6495056', wiki_ua: '%D0%9F%D0%B5%D1%80%D0%B5%D0%BB%D1%96%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+
+
+
+
+
+
+
 
 
 
