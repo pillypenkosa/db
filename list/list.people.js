@@ -15231,7 +15231,7 @@ let arrPeople = [
 	id: 'jennifer_lawrence_15081990', 
 	name: { n: 'Jennifer', s: 'Lawrence', },
 	life: { bd: 15, bm: 8, by: 1990, },
-	img: [ 10, 1 ],
+	img: [ 7, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '2225369', wiki_ua: '%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80_%D0%9B%D0%BE%D1%80%D0%B5%D0%BD%D1%81', },
