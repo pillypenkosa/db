@@ -62,6 +62,7 @@ const arrMovies = [
 
 
 
+
 {
 	id: '2_22_2017', title: { ua: '2:22', en: '2:22', }, year: 2017, country: { usa: 1, aus: 1, },
 	genre: { sci_fi: 1, drama: 1, }, hash: { plane: 1, },
@@ -111,6 +112,11 @@ const arrMovies = [
 	genre: { comedy: 1, fantasy: 1, }, 
 	internet: { imdb: '0974661', wiki_ua: '17_%D0%B7%D0%BD%D0%BE%D0%B2%D1%83', },
 	cast: { matthew_perry_19081969: 1, michelle_trachtenberg_11101985: 1, },
+},
+{
+	id: '21_bridges_2019', title: { ua: '21 міст', en: '21 Bridges', }, year: 2019, country: { usa: 1, },
+	genre: { action: 1, }, hash: { police: 1, },
+	internet: { imdb: '8688634', wiki_ua: '21_%D0%BC%D1%96%D1%81%D1%82', },
 },
 {
 	id: 'mile_22_2018', title: { ua: '22 милі', en: 'Mile 22', }, year: 2018, country: { usa: 1, },
@@ -199,6 +205,12 @@ const arrMovies = [
 	studio: { _20_century: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
 	internet: { imdb: '1630029', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80:_%D0%A8%D0%BB%D1%8F%D1%85_%D0%B2%D0%BE%D0%B4%D0%B8', hd_vip: '90444', },
+	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, }, director: { james_cameron_16081954: 1, }, 
+},
+{
+	id: 'avatar_3_2025', title: { ua: 'Аватар - 3', en: 'Avatar: Fire and Ash', }, year: 2025, country: { usa: 1, }, franchise: 'avatar',
+	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
+	internet: { imdb: '1757678', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80:_%D0%92%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D1%96_%D0%BF%D0%BE%D0%BF%D1%96%D0%BB', },
 	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, }, director: { james_cameron_16081954: 1, }, 
 },
 {
@@ -1537,7 +1549,7 @@ const arrMovies = [
 	id: 'the_killer_s_game_2024', title: { ua: 'Гра кілера', en: 'The Killer\'s Game', }, year: 2024, country: { usa: 1, }, 
 	genre: { action: 1, comedy: 1, crime: 1, },
 	internet: { imdb: '0327785', hd_vip: '144915', },
-	cast: { scott_adkins_17061976: 1, sofia_boutella_03041982: 1, },
+	cast: { dave_bautista_18011969: 1, sofia_boutella_03041982: 1, scott_adkins_17061976: 1, },
 },
 {
 	id: 'surviving_the_game_1994', title: { ua: 'Гра на виживання', en: 'Surviving the Game', }, year: 1994, country: { usa: 1, }, rating: 5,
@@ -2193,7 +2205,7 @@ const arrMovies = [
 	id: 'dune_2021', title: { ua: 'Дюна', en: 'Dune', }, year: 2021, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { battle: 1, },
 	internet: { imdb: '1160419', wiki_ua: '%D0%94%D1%8E%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', },
-	cast: { jason_momoa_01081979: 1, rebecca_ferguson_19101983: 1, }, composer: { hans_zimmer_12091957: 1, },
+	cast: { jason_momoa_01081979: 1, rebecca_ferguson_19101983: 1, dave_bautista_18011969: 1, }, composer: { hans_zimmer_12091957: 1, },
 },
 {
 	id: 'edward_scissorhands_1990', title: { ua: 'Едвард Руки-ножиці', en: 'Edward Scissorhands', }, year: 1990, country: { usa: 1, },
@@ -2642,6 +2654,12 @@ const arrMovies = [
 	internet: { imdb: '11866324', wiki_ua: '%D0%97%D0%B4%D0%BE%D0%B1%D0%B8%D1%87_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
 },
 {
+	id: 'die_my_love_2025', title: { ua: 'Здохни коханий', en: ' Die My Love', }, year: 2025, country: { usa: 1, can: 1, gbr: 1, },
+	genre: { drama: 1, },
+	internet: { imdb: '9362736', wiki_ua: '%D0%97%D0%B4%D0%BE%D1%85%D0%BD%D0%B8,_%D0%BA%D0%BE%D1%85%D0%B0%D0%BD%D0%B8%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { jennifer_lawrence_15081990: 1, },
+},
+{
 	id: 'from_2022', title: { ua: 'Ззовні', en: 'From', }, year: 2022, country: { usa: 1, },
 	genre: { serial: 1, horror: 1, fantasy: 1, }, hash: { unreal_danger: 1, },
 	internet: { imdb: '9813792', wiki_ua: '%D0%97%D0%B7%D0%BE%D0%B2%D0%BD%D1%96_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D1%96%D0%B0%D0%BB)', },
@@ -2657,6 +2675,12 @@ const arrMovies = [
 	genre: { fantasy: 1, adventure: 1, }, hash: { world: 1, },
 	internet: { imdb: '1964418', wiki_ua: '%D0%97%D0%B5%D0%BC%D0%BB%D1%8F_%D0%BC%D0%B0%D0%B9%D0%B1%D1%83%D1%82%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE:_%D0%A1%D0%B2%D1%96%D1%82_%D0%B7%D0%B0_%D0%BC%D0%B5%D0%B6%D0%B0%D0%BC%D0%B8', },
 	cast: { george_clooney_06051961: 1, },
+},
+{
+	id: 'winter_s_bone_2010', title: { ua: 'Зимова кістка', en: 'Winter\'s Bone', }, year: 2010, country: { usa: 1, }, 
+	genre: { drama: 1, crime: 1, }, 
+	internet: { imdb: '1399683', wiki_ua: '%D0%97%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0_%D0%BA%D1%96%D1%81%D1%82%D0%BA%D0%B0', },
+	cast: { jennifer_lawrence_15081990: 1, },
 },
 {
 	id: 'cash_out_2024', title: { ua: 'Зірвати банк', en: 'Cash Out', }, year: 2024, country: { usa: 1, }, 
@@ -2905,6 +2929,12 @@ const arrMovies = [
 	cast: { woody_harrelson_23071961: 1, morgan_freeman_01061937: 1, jesse_eisenberg_05101983: 1, },
 },
 {
+	id: 'now_you_see_me_3_2025', title: { ua: 'Ілюзія обману - 3', en: 'Now You See Me: Now You Don\'t', }, year: 2025, country: { usa: 1, can: 1, hun: 1, are: 1, }, franchise: 'you_see_me',
+	genre: { mystic: 1, thriller: 1, },
+	internet: { imdb: '4712810', wiki_ua: '%D0%86%D0%BB%D1%8E%D0%B7%D1%96%D1%8F_%D0%BE%D0%B1%D0%BC%D0%B0%D0%BD%D1%83_3', },
+	cast: { woody_harrelson_23071961: 1, morgan_freeman_01061937: 1, jesse_eisenberg_05101983: 1, rosamund_pike_27011979: 1,},
+},
+{
 	id: 'flightplan_2005', title: { ua: 'Ілюзія польоту', en: 'Flightplan', }, year: 2005, country: { usa: 1, }, rating: 5,
 	genre: { thriller: 1, }, hash: { plane: 1, children: 1, },
 	internet: { imdb: '0408790', wiki_ru: '%D0%98%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D1%8F_%D0%BF%D0%BE%D0%BB%D1%91%D1%82%D0%B0', hd_vip: '8322', },
@@ -3129,6 +3159,12 @@ const arrMovies = [
 	genre: { action: 1, }, hash: { fight: 1, sport: 1, },
 	internet: { imdb: '0097659', wiki_ua: '%D0%9A%D1%96%D0%BA%D0%B1%D0%BE%D0%BA%D1%81%D0%B5%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1989)', hd_vip: '17984', },
 	cast: { jean_claude_van_damme_18101960: 1, },
+},
+{
+	id: 'kickboxer_vengeance_2016', title: { ua: 'Кікбоксер: Помста', en: 'Kickboxer: Vengeance', }, year: 2016, country: { usa: 1, }, franchise: 'kickboxer',
+	genre: { action: 1, }, hash: { fight: 1, },
+	internet: { imdb: '3082898', wiki_ua: '%D0%9A%D1%96%D0%BA%D0%B1%D0%BE%D0%BA%D1%81%D0%B5%D1%80:_%D0%9F%D0%BE%D0%BC%D1%81%D1%82%D0%B0', },
+	cast: { jean_claude_van_damme_18101960: 1, dave_bautista_18011969: 1, },
 },
 {
 	id: 'kickboxer_retaliation_2018', title: { ua: 'Кікбоксер: Реванш', en: 'Kickboxer: Retaliation', }, year: 2018, country: { usa: 1, }, franchise: 'kickboxer',
@@ -3790,13 +3826,19 @@ const arrMovies = [
 	cast: { danny_devito_17111944: 1, }, composer: { hans_zimmer_12091957: 1, },
 },
 {
-	id: 'the_running_man_1987', title: { ua: 'Людина що біжить', en: 'The Running Man', }, year: 1987, country: { usa: 1, },
+	id: 'the_running_man_1987', title: { ua: 'Людина, що біжить', en: 'The Running Man', }, year: 1987, country: { usa: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { utopia: 1, future: 1, },
 	internet: { imdb: '0093894', wiki_ua: '%D0%9B%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0,_%D1%89%D0%BE_%D0%B1%D1%96%D0%B6%D0%B8%D1%82%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { arnold_schwarzenegger_30071947: 1, },
 },
 {
-	id: 'l_homme_qui_rit_1971', title: { ua: 'Людина яка сміється', en: 'L\'Homme qui rit', }, year: 1971, country: { fra: 1, },
+	id: 'l_homme_qui_a_vu_l_ours_2025', title: { ua: 'Людина, яка бачила ведмедя, який бачив людину', en: 'L\'homme qui a vu l\'ours qui a vu l\'homme', }, year: 2025, country: { fra: 1,  },
+	genre: { comedy: 1, }, 
+	internet: { imdb: '36364025', },
+	cast: { pierre_richard_16081934: 1, },
+},
+{
+	id: 'l_homme_qui_rit_1971', title: { ua: 'Людина, яка сміється', en: 'L\'Homme qui rit', }, year: 1971, country: { fra: 1, },
 	genre: { serial: 1, drama: 1, }, hash: { middleAges: 1, },
 	internet: { imdb: '1834254', wiki_ru: '%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA,_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9_%D1%81%D0%BC%D0%B5%D1%91%D1%82%D1%81%D1%8F_(%D0%BC%D0%B8%D0%BD%D0%B8-%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)', },
 },
@@ -4199,6 +4241,12 @@ const arrMovies = [
 	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '13603966', wiki_ua: '%D0%9C%D1%96%D1%81%D1%96%D1%8F_%D0%A1%D1%82%D0%BE%D1%83%D0%BD', hd_vip: '98847', },
 	cast: { gal_gadot_30041985: 1, },
+},
+{
+	id: 'causeway_2022', title: { ua: 'Міст', en: 'Causeway', }, year: 2022, country: { usa: 1, fin: 1, },
+	genre: { drama: 1, },
+	internet: { imdb: '10192406', wiki_ua: '%D0%9C%D1%96%D1%81%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2022)', },
+	cast: { jennifer_lawrence_15081990: 1, },
 },
 {
 	id: 'mr_mrs_smith_2005', title: { ua: 'Містер і місіс Сміт', en: 'Mr. & Mrs. Smith', }, year: 2005, country: { usa: 1, fra: 1, },
@@ -4824,10 +4872,22 @@ const arrMovies = [
 	internet: { imdb: '18973958', },
 },
 {
-	id: 'knives_out_2019', title: { ua: 'Ножі наголо', en: 'Knives Out', }, year: 2019, country: { usa: 1, },
-	genre: { comedy: 1, crime: 1, }, 
+	id: 'knives_out_2019', title: { ua: 'Ножі наголо', en: 'Knives Out', }, year: 2019, country: { usa: 1, }, franchise: 'knives_out',
+	genre: { comedy: 1, detective: 1, }, 
 	internet: { imdb: '8946378', wiki_ua: '%D0%9D%D0%BE%D0%B6%D1%96_%D0%BD%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE', },
 	cast: { daniel_craig_02031968: 1, ana_de_armas_30041988: 1, christopher_plummer_13121929: 1, chris_evans_13061981: 1, jamie_lee_curtis_22111958: 1, don_johnson_15121949: 1, },
+},
+{
+	id: 'knives_out_2_2022', title: { ua: 'Ножі наголо - 2', en: 'Glass Onion', }, year: 2022, country: { usa: 1, }, franchise: 'knives_out',
+	genre: { comedy: 1, detective: 1, }, 
+	internet: { imdb: '11564570', wiki_ua: '%D0%9D%D0%BE%D0%B6%D1%96_%D0%BD%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE:_%D0%A1%D0%BA%D0%BB%D1%8F%D0%BD%D0%B0_%D1%86%D0%B8%D0%B1%D1%83%D0%BB%D1%8F', },
+	cast: { daniel_craig_02031968: 1, dave_bautista_18011969: 1, },
+},
+{
+	id: 'knives_out_3_2025', title: { ua: 'Ножі наголо - 3', en: 'Wake Up Dead Man', }, year: 2025, country: { usa: 1, }, franchise: 'knives_out',
+	genre: { comedy: 1, detective: 1, }, 
+	internet: { imdb: '14364480', wiki_ua: '%D0%9D%D0%BE%D0%B6%D1%96_%D0%BD%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE:_%D0%9F%D1%80%D0%BE%D0%BA%D0%B8%D0%BD%D1%8C%D1%81%D1%8F,_%D0%BF%D0%BE%D0%BA%D1%96%D0%B9%D0%BD%D0%B8%D0%BA%D1%83', },
+	cast: { daniel_craig_02031968: 1, },
 },
 {
 	id: 'nu_ty_i_vidma_1992', title: { ua: 'Ну ти й відьма', en: 'Ну ти й відьма', }, year: 1992, country: { ukr: 1, },
@@ -6555,6 +6615,12 @@ const arrMovies = [
 	cast: { james_spader_07021960: 1, },
 },
 {
+	id: 'village_of_the_damned_1995', title: { ua: 'Селище проклятих', en: 'Village of the Damned', }, year: 1995, country: { usa: 1, }, remembered: 1,
+	genre: { sci_fi: 1, horror: 1, },
+	internet: { imdb: '0114852', wiki_ua: '%D0%9F%D1%80%D0%BE%D0%BA%D0%BB%D1%8F%D1%82%D0%B5_%D1%81%D0%B5%D0%BB%D0%B8%D1%89%D0%B5_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1995)', },
+	cast: { michael_pare_09101958: 1, },
+},
+{
 	id: 'sgt_bilko_1996', title: { ua: 'Сержант Білко', en: 'Sgt. Bilko', }, year: 1996, country: { usa: 1, },
 	genre: { comedy: 1, }, hash: { army: 1, },
 	internet: { imdb: '0117608', wiki_ua: '%D0%A1%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D1%82_%D0%91%D1%96%D0%BB%D0%BA%D0%BE', },
@@ -6801,7 +6867,7 @@ const arrMovies = [
 	id: 'spectre_2015', title: { ua: 'Спектр', en: 'Spectre', }, year: 2015, country: { gbr: 1, usa: 1, }, franchise: 'agent_007',
 	genre: { action: 1, thriller: 1, adventure: 1, }, hash: { bond: 1, },
 	internet: { imdb: '2379713', wiki_ua: '007:_%D0%A1%D0%BF%D0%B5%D0%BA%D1%82%D1%80', },
-	cast: { daniel_craig_02031968: 1, monica_bellucci_30091964: 1, naomie_harris_06091976: 1, },
+	cast: { daniel_craig_02031968: 1, monica_bellucci_30091964: 1, naomie_harris_06091976: 1, dave_bautista_18011969: 1, },
 },
 {
 	id: 'the_specialist_1994', title: { ua: 'Спеціаліст', en: 'The Specialist', }, year: 1994, country: { usa: 1, }, rating: 5,
@@ -8502,6 +8568,12 @@ const arrMovies = [
 	cast: { mel_gibson_03011956: 1, naomi_watts_28091968: 1, },
 },
 {
+	id: 'f1_2025', title: { ua: 'F1: Фільм', en: 'F1', }, year: 2025, country: { usa: 1, }, 
+	genre: { drama: 1, }, hash: { race: 1, sport: 1, },
+	internet: { imdb: '16311594', wiki_ua: 'F1_%D0%A4%D1%96%D0%BB%D1%8C%D0%BC', },
+	cast: { brad_pitt_18121963: 1, },
+},
+{
 	id: 'g_i_joe_2009', title: { ua: 'G.I. Joe: Атака кобри', en: 'G.I. Joe: The Rise of Cobra', }, year: 2009, country: { usa: 1, },
 	studio: { paramount: 1, dream_works: 1, netflix: 1, hasbro: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, team: 1, },
@@ -8548,6 +8620,16 @@ const arrMovies = [
 	internet: { imdb: '1464335', wiki_ua: 'Uncharted:_%D0%9D%D0%B5%D0%B7%D0%B2%D1%96%D0%B4%D0%B0%D0%BD%D0%B5', hd_vip: '58328', },
 	cast: { antonio_banderas_10081960: 1, mark_wahlberg_05061971: 1, }, composer: { ramin_djawadi_19071974: 1, },
 },
+{
+	id: 'v_for_vendetta_2005', title: { ua: 'V означає Вендетта', en: 'V for Vendetta', }, year: 2005, country: { usa: 1, gbr: 1, deu: 1, },
+	genre: { sci_fi: 1, }, hash: { utopia: 1, },
+	internet: { imdb: '0434409', wiki_ua: 'V_%D0%BE%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D1%94_%D0%92%D0%B5%D0%BD%D0%B4%D0%B5%D1%82%D1%82%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2005)', },
+	cast: { natalie_portman_09061981: 1, hugo_weaving_04041960: 1, }, 
+},
+
+
+
+
 
 
 
