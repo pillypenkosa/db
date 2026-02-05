@@ -60,6 +60,253 @@ const arrMovies = [
 
 
 
+/*
+
+
+{
+	id: '', title: { ua: '', en: '', }, year: 20, country: { usa: 1, can: 1, },
+	genre: { comedy: 1, action: 1, }, hash: { qwerty: 1, }, date: 20260203,
+	internet: { imdb: '', wiki_ua: '', },
+	cast: { li_07061952: 1,  },
+},
+
+
+
+*/
+
+
+
+
+
+{
+	id: ' the_box_2009', title: { ua: 'Посилка', en: 'The Box', }, year: 2009, country: { usa: 1, },
+	genre: { thriller: 1, mystic: 1, }, date: 20260203,
+	internet: { imdb: '0362478', wiki_ua: '%D0%9F%D0%BE%D1%81%D0%B8%D0%BB%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2009)', },
+	cast: { cameron_diaz_30081972: 1, james_marsden_18091973: 1, },
+},
+{
+	id: 'cats_dogs_2001', title: { ua: 'Кішки проти собак', en: 'Cats & Dogs', }, year: 2001, country: { usa: 1, aus: 1, },
+	genre: { comedy: 1, }, hash: { animal: 1, dog: 1, }, date: 20260203,
+	internet: { imdb: '0239395', wiki_ua: '%D0%9A%D1%96%D1%88%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D1%82%D0%B8_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA', },
+},
+{
+	id: 'collision_course_2012', title: { ua: 'Курс на зіткнення', en: 'Collision Course', }, year: 2012, country: { usa: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { plane: 1, }, date: 20260204,
+	internet: { imdb: '2474984', },
+	cast: { tia_carrere_02011967: 1,  },
+},
+{
+	id: 'the_steam_experiment_2009', title: { ua: 'Парниковий експеримент', en: 'The Steam Experiment', }, year: 2009, country: { usa: 1, },
+	genre: { thriller: 1, }, date: 20260203,
+	internet: { imdb: '1289437', wiki_ua: '%D0%9F%D0%B0%D1%80%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82', },
+	cast: { val_kilmer_31121959: 1, },
+},
+{
+	id: 'zootopia_2025', title: { ua: 'Зоотрополіс 2', en: 'Zootopia 2', }, year: 2025, country: { usa: 1, }, franchise: 'zootopia',
+	genre: { cartoon: 1, }, hash: { police: 1, }, date: 20260204,
+	internet: { imdb: '26443597', wiki_ua: '%D0%97%D0%BE%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%81_2', },
+},
+{
+	id: 'falcon_express_2025', title: { ua: 'Місія Звіропотяг', en: 'Falcon Express', }, year: 2025, country: { usa: 1, fra: 1, },
+	genre: { cartoon: 1, }, date: 20260204,
+	internet: { imdb: '36424914', },
+},
+{
+	id: 'ooops_noah_is_gone_2015', title: { ua: 'Упс! Ной відплив...', en: 'Ooops! Noah Is Gone...', }, year: 2015, country: { usa: 1, deu: 1, irl: 1, bel: 1, lux: 1, },
+	genre: { cartoon: 1, }, date: 20260204,
+	internet: { imdb: '3411432', },
+},
+{
+	id: 'anaconda_2025', title: { ua: 'Анаконда', en: 'Anaconda', }, year: 2025, country: { usa: 1, },
+	genre: { comedy: 1, adventure: 1, }, hash: { snake: 1, }, date: 20260204,
+	internet: { imdb: '33244668', wiki_ua: '%D0%90%D0%BD%D0%B0%D0%BA%D0%BE%D0%BD%D0%B4%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { jack_black_28081969: 1, thandie_newton_06111972: 1, },
+},
+{
+	id: 'alarum_2025', title: { ua: 'Аларум', en: 'Alarum', }, year: 2025, country: { usa: 1, },
+	genre: { action: 1, crime: 1, }, date: 20260204,
+	internet: { imdb: '31456973', wiki_ua: '', },
+	cast: { sylvester_stallone_06071946: 1,  },
+},
+{
+	id: 'the_sound_2025', title: { ua: 'Звук', en: 'The Sound', }, year: 2025, country: { usa: 1, },
+	genre: { thriller: 1, sci_fi: 1, }, hash: { mountains: 1, }, date: 20260204,
+	internet: { imdb: '21824986', },
+},
+{
+	id: 'goliath_awaits_1981', title: { ua: 'Голіаф чекає', en: 'Goliath Awaits', }, year: 1981, country: { usa: 1, gbr: 1, },
+	genre: { sci_fi: 1, }, hash: { underwater: 1, utopia: 1, }, 
+	internet: { imdb: '0082461', wiki_ua: '%D0%9E%D1%87%D1%96%D0%BA%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%C2%AB%D0%93%D0%BE%D0%BB%D1%96%D0%B0%D1%84%D0%B0%C2%BB', },
+},
+{
+	id: 'la_course_du_lievre_a_travers_les_champs_1972', title: { ua: 'Біг зайця через поля', en: 'La course du lièvre à travers les champs', }, year: 1972, country: { fra: 1, can: 1, ita: 1, },
+	genre: { drama: 1, crime: 1, }, 
+	internet: { imdb: '0068420', wiki_ua: '%D0%91%D1%96%D0%B3_%D0%B7%D0%B0%D0%B9%D1%86%D1%8F_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%BF%D0%BE%D0%BB%D1%8F', },
+},
+{
+	id: 'the_astronaut_2025', title: { ua: 'Астронавт', en: 'The Astronaut', }, year: 2025, country: { usa: 1, },
+	genre: { sci_fi: 1, }, hash: { aliens: 1, }, date: 20260204,
+	internet: { imdb: '13964560', },
+	cast: { laurence_fishburne_30071961: 1, },
+},
+{
+	id: 'burglar_1987', title: { ua: 'Злодійка', en: 'Burglar', }, year: 1987, country: { usa: 1, can: 1, },
+	genre: { comedy: 1, crime: 1, },
+	internet: { imdb: '0092710', },
+	cast: { whoopi_goldberg_13111955: 1, },
+},
+{
+	id: 'the_wrecking_crew_2026', title: { ua: 'Команда руйнивників', en: 'The Wrecking Crew', }, year: 2026, country: { usa: 1, nzl: 1, },
+	genre: { action: 1, }, date: 20260205,
+	internet: { imdb: '33046197', wiki_ua: '', },
+	cast: { jason_momoa_01081979: 1, dave_bautista_18011969: 1, },
+},
+{
+	id: 'mr_bean_s_holiday_2007', title: { ua: 'Містер Бін на відпочинку', en: 'Mr. Bean\'s Holiday', }, year: 2007, country: { usa: 1, fra: 1, gbr: 1, deu: 1, },
+	genre: { comedy: 1, }, date: 20260205,
+	internet: { imdb: '0453451', wiki_ua: '%D0%9C%D1%96%D1%81%D1%82%D0%B5%D1%80_%D0%91%D1%96%D0%BD_%D0%BD%D0%B0_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83', },
+	cast: { rowan_atkinson_06011955: 1, willem_dafoe_22071955: 1, },
+},
+{
+	id: 'the_housemaid_2025', title: { ua: 'Служниця', en: 'The Housemaid', }, year: 2025, country: { usa: 1, },
+	genre: { drama: 1, thriller: 1, }, date: 20260205,
+	internet: { imdb: '27543632', wiki_ua: '%D0%A1%D0%BB%D1%83%D0%B6%D0%BD%D0%B8%D1%86%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+},
+
+
+
+{
+	id: 'the_naked_gun_2025', title: { ua: 'Голий пістолет', en: 'The Naked Gun', }, year: 2025, country: { usa: 1, can: 1, },
+	genre: { comedy: 1, action: 1, }, hash: { police: 1, }, date: 20260129,
+	internet: { imdb: '3402138', wiki_ua: '%D0%93%D0%BE%D0%BB%D0%B8%D0%B9_%D0%BF%D1%96%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { liam_neeson_07061952: 1, pamela_anderson_01071967: 1, },
+},
+{
+	id: 'the_rip_2026', title: { ua: 'Зрив', en: 'The Rip', }, year: 2026, country: { usa: 1, },
+	genre: { action: 1, crime: 1, }, hash: { police: 1, }, date: 20260131,
+	internet: { imdb: '32642706', wiki_ua: 'The_RIP_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { matt_damon_08101970: 1, ben_affleck_15081972: 1, scott_adkins_17061976: 1, },
+},
+{
+	id: 'code_3_2025', title: { ua: 'Код 3', en: 'Code 3', }, year: 2025, country: { usa: 1, },
+	genre: { drama: 1, }, date: 20260129,
+	internet: { imdb: '26394837', wiki_ua: '%D0%9A%D0%BE%D0%B4_3', },
+},
+{
+	id: 'the_running_man_2025', title: { ua: 'Людина, що біжить', en: 'The Running Man', }, year: 2025, country: { usa: 1, gbr: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { utopia: 1, }, date: 20260127,
+	internet: { imdb: '14107334', wiki_ua: '%D0%9B%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0,_%D1%89%D0%BE_%D0%B1%D1%96%D0%B6%D0%B8%D1%82%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+	cast: { glen_powell_21101988: 1, },
+},
+{
+	id: 'the_young_and_prodigious_ts_spivet_2013', title: { ua: 'Неймовірна подорож містера Співета', en: 'The Young and Prodigious T.S. Spivet', }, year: 2013, country: { can: 1, fra: 1, aus: 1, },
+	genre: { adventure: 1, }, hash: { children: 1, },
+	internet: { imdb: '1981107', wiki_ua: '%D0%9D%D0%B5%D0%B9%D0%BC%D0%BE%D0%B2%D1%96%D1%80%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6_%D0%BC%D1%96%D1%81%D1%82%D0%B5%D1%80%D0%B0_%D0%A1%D0%BF%D1%96%D0%B2%D0%B5%D1%82%D0%B0', },
+},
+{
+	id: 'judgment_night_1993', title: { ua: 'Ніч страшного суду', en: 'Judgment Night', }, year: 1993, country: { usa: 1, jpn: 1, }, remembered: 1,
+	genre: { crime: 1, thriller: 1, }, hash: { surviving: 1, }, 
+	internet: { imdb: '0107286', wiki_ua: '%D0%9D%D1%96%D1%87_%D1%81%D1%82%D1%80%D0%B0%D1%88%D0%BD%D0%BE%D0%B3%D0%BE_%D1%81%D1%83%D0%B4%D1%83', },
+	cast: { cuba_gooding_jr_02011968: 1, emilio_estevez_12051962: 1, peter_greene_08101965: 1, },
+},
+{
+	id: 'novocaine_2025', title: { ua: 'Новокаїн', en: 'Novocaine', }, year: 2025, country: { usa: 1, can: 1, zaf: 1, },
+	genre: { action: 1, crime: 1, }, date: 20260129,
+	internet: { imdb: '29603959', wiki_ua: '%D0%9D%D0%BE%D0%B2%D0%BE%D0%BA%D0%B0%D1%97%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+},
+{
+	id: 'air_force_one_down_2024', title: { ua: 'Падіння борту №1', en: 'Air Force One Down', }, year: 2024, country: { usa: 1, bgr: 1, },
+	genre: { action: 1, crime: 1, }, hash: { president: 1, }, date: 20260131,
+	internet: { imdb: '27708700', },
+},
+{
+	id: 'the_pickup_2025', title: { ua: 'Пограбування', en: 'The Pickup', }, year: 2025, country: { usa: 1, },
+	genre: { action: 1, comedy: 1, }, hash: { robbery: 1, }, date: 20260129,
+	internet: { imdb: '30445556', },
+	cast: { eddie_murphy_03041961: 1, },
+},
+{
+	id: 'replicas_2018', title: { ua: 'Репродукція', en: 'Replicas', }, year: 2018, country: { usa: 1, gbr: 1, chn: 1, pri: 1, },
+	genre: { sci_fi: 1, }, date: 20260130,
+	internet: { imdb: '4154916', wiki_ua: '%D0%A0%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { keanu_reeves_02091964: 1, },
+},
+{
+	id: 'jurassic_world_2025', title: { ua: 'Світ Юрського періоду: Відродження', en: 'Jurassic World: Rebirth', }, year: 2025, country: { usa: 1, gbr: 1, jpn: 1, ind: 1, twn: 1, mlt: 1, },
+	genre: { sci_fi: 1, }, hash: { dinosaur: 1, }, date: 20260128,
+	internet: { imdb: '31036941', wiki_ua: '%D0%A1%D0%B2%D1%96%D1%82_%D0%AE%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4%D1%83:_%D0%92%D1%96%D0%B4%D1%80%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F', },
+	cast: { scarlett_johansson_22111984: 1, },
+},
+{
+	id: 'tesla_2020', title: { ua: 'Тесла', en: 'Tesla', }, year: 2020, country: { usa: 1, },
+	genre: { drama: 1, history: 1, biography: 1, }, date: 20260131,
+	internet: { imdb: '5259822', wiki_ua: '%D0%A2%D0%B5%D1%81%D0%BB%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { kyle_maclachlan_22021959: 1, peter_greene_08101965: 1, },
+},
+{
+	id: 'in_the_lost_lands_2025', title: { ua: 'У загублених землях', en: 'In the Lost Lands', }, year: 2025, country: { usa: 1, can: 1, gbr: 1, pol: 1, che: 1, },
+	genre: { fantasy: 1, }, date: 20260128,
+	internet: { imdb: '4419684', wiki_ua: '%D0%A3_%D0%B7%D0%B0%D0%B3%D1%83%D0%B1%D0%BB%D0%B5%D0%BD%D0%B8%D1%85_%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F%D1%85', },
+	cast: { milla_jovovich_17121975: 1, dave_bautista_18011969: 1, },
+},
+{
+	id: 'ctrl_alt_delete_2016', title: { ua: 'Хакери', en: 'Ctrl Alt Delete', }, year: 2016, country: { usa: 1, },
+	genre: { sci_fi: 1, action: 1, }, date: 20260205,
+	internet: { imdb: '4362644', },
+},
+{
+	id: 'predator_badlands_2025', title: { ua: 'Хижак: Дикі землі', en: 'Predator: Badlands', }, year: 2025, country: { usa: 1, can: 1, deu: 1, aus: 1, nzl: 1, },
+	genre: { sci_fi: 1, }, date: 20260128,
+	internet: { imdb: '31227572', wiki_ua: '%D0%A5%D0%B8%D0%B6%D0%B0%D0%BA:_%D0%94%D0%B8%D0%BA%D1%96_%D0%B7%D0%B5%D0%BC%D0%BB%D1%96', },
+},
+{
+	id: 'cold_zone_2017', title: { ua: 'Холодна зона', en: 'Cold Zone', }, year: 2017, country: { usa: 1, },
+	genre: { sci_fi: 1, disaster: 1, }, hash: { winter: 1, }, date: 20260130,
+	internet: { imdb: '6516590', },
+},
+
+
+
+
+
+
+
+
+
+{
+	id: '000', title: { ua: '----------------------------------------------------------', en: '', }, year: 20, country: { usa: 1, },
+	genre: { action: 1, }, hash: { dinosaur: 1, }, date: 2026,
+	internet: { imdb: '', },
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -757,7 +1004,7 @@ const arrMovies = [
 },
 {
 	id: 'dirty_dancing_1987', title: { ua: 'Брудні танці', en: 'Dirty Dancing', }, year: 1987, country: { usa: 1, },
-	genre: { drama: 1, }, 
+	genre: { drama: 1, }, date: 20260205,
 	internet: { imdb: '0092890', wiki_ua: '%D0%91%D1%80%D1%83%D0%B4%D0%BD%D1%96_%D1%82%D0%B0%D0%BD%D1%86%D1%96', },
 	cast: { patrick_swayze_18081952: 1, },
 },
@@ -2771,7 +3018,7 @@ const arrMovies = [
 	internet: { imdb: '0098369', wiki_ru: '%D0%97%D0%BE%D0%BD%D0%B0_%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B8', },
 },
 {
-	id: 'zootopia_2016', title: { ua: 'Зоотрополіс', en: 'Zootopia', }, year: 2016, country: { usa: 1, },
+	id: 'zootopia_2016', title: { ua: 'Зоотрополіс', en: 'Zootopia', }, year: 2016, country: { usa: 1, }, franchise: 'zootopia',
 	genre: { cartoon: 1, }, hash: { police: 1, },
 	internet: { imdb: '2948356', wiki_ua: '%D0%97%D0%BE%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%81', hd_vip: '454', },
 },
@@ -3827,7 +4074,7 @@ const arrMovies = [
 },
 {
 	id: 'the_running_man_1987', title: { ua: 'Людина, що біжить', en: 'The Running Man', }, year: 1987, country: { usa: 1, },
-	genre: { action: 1, sci_fi: 1, }, hash: { utopia: 1, future: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { utopia: 1, future: 1, },
 	internet: { imdb: '0093894', wiki_ua: '%D0%9B%D1%8E%D0%B4%D0%B8%D0%BD%D0%B0,_%D1%89%D0%BE_%D0%B1%D1%96%D0%B6%D0%B8%D1%82%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { arnold_schwarzenegger_30071947: 1, },
 },
@@ -4936,7 +5183,7 @@ const arrMovies = [
 },
 {
 	id: 'scarface_1983', title: { ua: 'Обличчя зі шрамом', en: 'Scarface', }, year: 1983, country: { usa: 1, },
-	genre: { drama: 1, crime: 1, },
+	genre: { drama: 1, crime: 1, }, date: 20260205,
 	internet: { imdb: '0086250', wiki_ua: '%D0%9E%D0%B1%D0%BB%D0%B8%D1%87%D1%87%D1%8F_%D0%B7%D1%96_%D1%88%D1%80%D0%B0%D0%BC%D0%BE%D0%BC_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1983)', },
 	cast: { al_pacino_25041940: 1, michelle_pfeiffer_29041958: 1, },
 },
@@ -8024,7 +8271,7 @@ const arrMovies = [
 	cast: { lena_headey_03101973: 1, },
 },
 {
-	id: 'mr_brooks_2007', title: { ua: 'Хто Ви містере Брукс', en: 'Mr. Brooks', }, year: 2007, country: { usa: 1, },
+	id: 'mr_brooks_2007', title: { ua: 'Хто Ви, містере Брукс', en: 'Mr. Brooks', }, year: 2007, country: { usa: 1, },
 	genre: { thriller: 1, drama: 1, crime: 1, },
 	internet: { imdb: '0780571', wiki_ua: '%D0%A5%D1%82%D0%BE_%D0%B2%D0%B8,_%D0%BC%D1%96%D1%81%D1%82%D0%B5%D1%80%D0%B5_%D0%91%D1%80%D1%83%D0%BA%D1%81%3F', },
 	cast: { kevin_costner_18011955: 1, demi_moore_11111962: 1, }, composer: { ramin_djawadi_19071974: 1, },
