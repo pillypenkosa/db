@@ -78,34 +78,29 @@ const arrMovies = [
 
 
 
+
 {
-	id: ' the_box_2009', title: { ua: 'Посилка', en: 'The Box', }, year: 2009, country: { usa: 1, },
+	id: 'the_box_2009', title: { ua: 'Посилка', en: 'The Box', }, year: 2009, country: { usa: 1, },
 	genre: { thriller: 1, mystic: 1, }, date: 20260203,
 	internet: { imdb: '0362478', wiki_ua: '%D0%9F%D0%BE%D1%81%D0%B8%D0%BB%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2009)', },
 	cast: { cameron_diaz_30081972: 1, james_marsden_18091973: 1, },
 },
-{
-	id: 'cats_dogs_2001', title: { ua: 'Кішки проти собак', en: 'Cats & Dogs', }, year: 2001, country: { usa: 1, aus: 1, },
-	genre: { comedy: 1, }, hash: { animal: 1, dog: 1, }, date: 20260203,
-	internet: { imdb: '0239395', wiki_ua: '%D0%9A%D1%96%D1%88%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D1%82%D0%B8_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA', },
-},
-{
-	id: 'collision_course_2012', title: { ua: 'Курс на зіткнення', en: 'Collision Course', }, year: 2012, country: { usa: 1, },
-	genre: { sci_fi: 1, action: 1, }, hash: { plane: 1, }, date: 20260204,
-	internet: { imdb: '2474984', },
-	cast: { tia_carrere_02011967: 1,  },
-},
+
+
+
 {
 	id: 'the_steam_experiment_2009', title: { ua: 'Парниковий експеримент', en: 'The Steam Experiment', }, year: 2009, country: { usa: 1, },
 	genre: { thriller: 1, }, date: 20260203,
 	internet: { imdb: '1289437', wiki_ua: '%D0%9F%D0%B0%D1%80%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B5%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82', },
 	cast: { val_kilmer_31121959: 1, },
 },
-{
-	id: 'zootopia_2025', title: { ua: 'Зоотрополіс 2', en: 'Zootopia 2', }, year: 2025, country: { usa: 1, }, franchise: 'zootopia',
-	genre: { cartoon: 1, }, hash: { police: 1, }, date: 20260204,
-	internet: { imdb: '26443597', wiki_ua: '%D0%97%D0%BE%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%81_2', },
-},
+
+
+
+
+
+
+
 {
 	id: 'falcon_express_2025', title: { ua: 'Місія Звіропотяг', en: 'Falcon Express', }, year: 2025, country: { usa: 1, fra: 1, },
 	genre: { cartoon: 1, }, date: 20260204,
@@ -1115,6 +1110,16 @@ const arrMovies = [
 	cast: { jean_reno_30071948: 1, carole_bouquet_18081957: 1, },
 },
 {
+	id: 'moana_2016', title: { ua: 'Ваяна', en: 'Moana', }, year: 2016, country: { usa: 1, }, franchise: 'moana',
+	genre: { cartoon: 1, }, 
+	internet: { imdb: '3521164', wiki_ua: '%D0%92%D0%B0%D1%8F%D0%BD%D0%B0', },
+},
+{
+	id: 'moana_2_2024', title: { ua: 'Ваяна - 2', en: 'Moana', }, year: 2024, country: { usa: 1, can: 1,}, franchise: 'moana',
+	genre: { cartoon: 1, }, 
+	internet: { imdb: '13622970', wiki_ua: '%D0%92%D0%B0%D1%8F%D0%BD%D0%B0_2', },
+},
+{
 	id: 'the_killer_2023', title: { ua: 'Вбивця', en: 'The Killer', }, year: 2023, country: { usa: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '1136617', wiki_ua: '%D0%92%D0%B1%D0%B8%D0%B2%D1%86%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2023)', },
@@ -1409,13 +1414,13 @@ const arrMovies = [
 	internet: { imdb: '0910970', wiki_ua: '%D0%92%D0%9E%D0%9B%D0%9B%C2%B7%D0%86', hd_vip: '3303', },
 },
 {
-	id: 'Wall_street_1987', title: { ua: 'Волл-стріт', en: 'Wall Street', }, year: 1987, country: { usa: 1, },
+	id: 'wall_street_1987', title: { ua: 'Волл-стріт', en: 'Wall Street', }, year: 1987, country: { usa: 1, },
 	genre: { drama: 1, crime: 1, }, hash: { finance: 1, },
 	internet: { imdb: '0094291', wiki_ua: '%D0%92%D0%BE%D0%BB%D0%BB-%D1%81%D1%82%D1%80%D1%96%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { charlie_sheen_03091965: 1, martin_sheen_03081940: 1, michael_douglas_25091944: 1, sean_young_20111959: 1, }, director: { oliver_stone_15091946: 1, },
 },
 {
-	id: 'Wall_street_2010', title: { ua: 'Волл-стріт: Гроші не сплять', en: 'Wall Street: Money Never Sleeps', }, year: 2010, country: { usa: 1, },
+	id: 'wall_street_2010', title: { ua: 'Волл-стріт: Гроші не сплять', en: 'Wall Street: Money Never Sleeps', }, year: 2010, country: { usa: 1, },
 	genre: { drama: 1, crime: 1, }, hash: { finance: 1, },
 	internet: { imdb: '1027718', wiki_ua: '%D0%92%D0%BE%D0%BB%D0%BB-%D1%81%D1%82%D1%80%D1%96%D1%82:_%D0%B3%D1%80%D0%BE%D1%88%D1%96_%D0%BD%D0%B5_%D1%81%D0%BF%D0%BB%D1%8F%D1%82%D1%8C', },
 	cast: { shia_labeouf_11061986: 1, michael_douglas_25091944: 1, charlie_sheen_03091965: 1, oliver_stone_15091946: 1, jason_clarke_17071969: 1, }, director: { oliver_stone_15091946: 1, },
@@ -3023,6 +3028,11 @@ const arrMovies = [
 	internet: { imdb: '2948356', wiki_ua: '%D0%97%D0%BE%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%81', hd_vip: '454', },
 },
 {
+	id: 'zootopia_2_2025', title: { ua: 'Зоотрополіс - 2', en: 'Zootopia 2', }, year: 2025, country: { usa: 1, }, franchise: 'zootopia',
+	genre: { cartoon: 1, }, hash: { police: 1, }, date: 20260204,
+	internet: { imdb: '26443597', wiki_ua: '%D0%97%D0%BE%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%81_2', },
+},
+{
 	id: 'stargate_1994', title: { ua: 'Зоряна брама', en: 'Stargate', }, year: 1994, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, sci_fi: 1, }, hash: { planet: 1, battle: 1, desert: 1, },
 	internet: { imdb: '0111282', wiki_ua: '%D0%97%D0%BE%D1%80%D1%8F%D0%BD%D0%B0_%D0%B1%D1%80%D0%B0%D0%BC%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -3461,6 +3471,11 @@ const arrMovies = [
 	cast: { rosamund_pike_27011979: 1, pierce_brosnan_16051953: 1, },
 },
 {
+	id: 'cats_dogs_2001', title: { ua: 'Кішки проти собак', en: 'Cats & Dogs', }, year: 2001, country: { usa: 1, aus: 1, },
+	genre: { comedy: 1, }, hash: { animal: 1, dog: 1, }, date: 20260203,
+	internet: { imdb: '0239395', wiki_ua: '%D0%9A%D1%96%D1%88%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D1%82%D0%B8_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA', },
+},
+{
 	id: 'follow_me_2020', title: { ua: 'Клаустрофоби. Новий рівень', en: 'Follow Me', }, year: 2020, country: { usa: 1, }, 
 	genre: { horror: 1, thriller: 1, }, hash: { quest: 1, surviving: 1, },
 	internet: { imdb: '8160834', wiki_ua: '%D0%9A%D0%BB%D0%B0%D1%83%D1%81%D1%82%D1%80%D0%BE%D1%84%D0%BE%D0%B1%D0%B8:_%D0%9D%D0%BE%D0%B2%D0%B8%D0%B9_%D1%80%D1%96%D0%B2%D0%B5%D0%BD%D1%8C', },
@@ -3896,6 +3911,12 @@ const arrMovies = [
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0115781', wiki_ru: '%D0%9F%D1%83%D0%BB%D1%8F_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_1996)', },
 	cast: { mickey_rourke_16091952: 1, adrien_brody_14041973: 1, peter_dinklage_11061969: 1, },
+},
+{
+	id: 'collision_course_2012', title: { ua: 'Курс на зіткнення', en: 'Collision Course', }, year: 2012, country: { usa: 1, },
+	genre: { sci_fi: 1, action: 1, }, hash: { plane: 1, }, date: 20260204,
+	internet: { imdb: '2474984', },
+	cast: { tia_carrere_02011967: 1,  },
 },
 {
 	id: 'curly_sue_1991', title: { ua: 'Кучерявка Сью', en: 'Curly Sue', }, year: 1991, country: { usa: 1, }, rating: 5,
