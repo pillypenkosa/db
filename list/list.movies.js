@@ -84,12 +84,7 @@ const arrMovies = [
 
 
 
-
 /*
-
-
-
-
 
 
 
@@ -101,12 +96,8 @@ const arrMovies = [
 
 
 
+
 */
-
-
-
-
-
 
 
 
@@ -966,6 +957,12 @@ const arrMovies = [
 	id: 'moana_2_2024', title: { ua: 'Ваяна - 2', en: 'Moana', }, year: 2024, country: { usa: 1, can: 1,}, franchise: 'moana',
 	genre: { cartoon: 1, }, 
 	internet: { imdb: '13622970', wiki_ua: '%D0%92%D0%B0%D1%8F%D0%BD%D0%B0_2', },
+},
+{
+	id: 'murder_on_the_orient_express_2017', title: { ua: 'Вбивство у Східному експресі', en: 'Murder on the Orient Express', }, year: 2017, country: { usa: 1, gbr: 1, mlt: 1, },
+	genre: { detective: 1, }, hash: { train: 1, }, date: 20260202,
+	internet: { imdb: '3402236', wiki_ua: '%D0%92%D0%B1%D0%B8%D0%B2%D1%81%D1%82%D0%B2%D0%BE_%D1%83_%C2%AB%D0%A1%D1%85%D1%96%D0%B4%D0%BD%D0%BE%D0%BC%D1%83_%D0%B5%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D1%81%D1%96%C2%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2017)', },
+	cast: { johnny_depp_09061963: 1, michelle_pfeiffer_29041958: 1, judi_dench_09121934: 1, penelope_cruz_28041974: 1, willem_dafoe_22071955: 1, },
 },
 {
 	id: 'the_killer_2023', title: { ua: 'Вбивця', en: 'The Killer', }, year: 2023, country: { usa: 1, },
@@ -8771,6 +8768,16 @@ const arrMovies = [
 	genre: { comedy: 1, adventure: 1, }, hash: { road: 1, race: 1, },
 	internet: { imdb: '0250687', wiki_ua: '%D0%A9%D1%83%D1%80%D1%8F%D1%87%D1%96_%D0%BF%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%BD%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { amy_smart_26031976: 1, cuba_gooding_jr_02011968: 1, whoopi_goldberg_13111955: 1, rowan_atkinson_06011955: 1, },
+},
+{
+	id: 'i_know_what_you_did_last_summer_1997', title: { ua: 'Я знаю, що ви скоїли минулого літа', en: 'I Know What You Did Last Summer', }, year: 1997, country: { usa: 1, }, franchise: 'last_summer',
+	genre: { horror: 1, }, hash: { young: 1, }, 
+	internet: { imdb: '0119345', wiki_ua: '%D0%AF_%D0%B7%D0%BD%D0%B0%D1%8E,_%D1%89%D0%BE_%D0%B2%D0%B8_%D1%81%D0%BA%D0%BE%D1%97%D0%BB%D0%B8_%D0%BC%D0%B8%D0%BD%D1%83%D0%BB%D0%BE%D0%B3%D0%BE_%D0%BB%D1%96%D1%82%D0%B0', },
+},
+{
+	id: 'i_still_know_what_you_did_last_summer_1998', title: { ua: 'Я досі знаю, що ви скоїли минулого літа', en: 'I Still Know What You Did Last Summer', }, year: 1998, country: { usa: 1, mex: 1, }, franchise: 'last_summer',
+	genre: { horror: 1, }, hash: { young: 1, }, date: 20260202,
+	internet: { imdb: '0130018', wiki_ua: '%D0%AF_%D0%B4%D0%BE%D1%81%D1%96_%D0%B7%D0%BD%D0%B0%D1%8E,_%D1%89%D0%BE_%D0%B2%D0%B8_%D1%81%D0%BA%D0%BE%D1%97%D0%BB%D0%B8_%D0%BC%D0%B8%D0%BD%D1%83%D0%BB%D0%BE%D0%B3%D0%BE_%D0%BB%D1%96%D1%82%D0%B0', },
 },
 {
 	id: 'i_am_legend_2007', title: { ua: 'Я - легенда', en: 'I Am Legend', }, year: 2007, country: { usa: 1, }, rating: 5,
