@@ -177,6 +177,12 @@ title 		: '', wiki: { ru: '', },
 	internet: { avtopro: 'abs/', },
 },
 {
+	id: 'acura', title: 'Acura', country: { jpn: 1, }, year: 1986,
+	parent: 'honda',
+	hash: { car: 1, },
+	internet: { wiki_ua: 'Acura', },
+},
+{
 	id: 'adriauto', title: 'Adriauto', country: { ita: 1, }, year: 1984,
 	hash: { carparts: 1, },
 	internet: { avtopro: 'adriauto/', },

@@ -18846,6 +18846,16 @@ let arrPeople = [
 	internet: { wiki_ua: '%D0%A1%D1%82%D1%96%D0%B2_%D0%94%D0%B6%D0%BE%D0%B1%D1%81', },
 },
 {
+	id: 'steven_berkoff_03081937', 
+	name: { n: 'Steven', s: 'Berkoff', },
+	sex: 1,
+	life: { bd: 3, bm: 8, by: 1937, },
+	img: [ 1, 1 ],
+	country: { gbr: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0000925', wiki_ru: '%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D1%84%D1%84,_%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD', },
+},
+{
 	id: 'steven_seagal_10041952', 
 	name: { n: 'Steven', s: 'Seagal', },
 	sex: 1,

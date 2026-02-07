@@ -65,7 +65,7 @@ const arrMovies = [
 
 {
 	id: '', title: { ua: '', en: '', }, year: 20, country: { usa: 1, can: 1, },
-	genre: { comedy: 1, action: 1, }, hash: { qwerty: 1, }, date: 20260203,
+	genre: { sci_fi: 1, action: 1, drama: 1, thriller: 1, comedy: 1, crime: 1, }, hash: { qwerty: 1, }, date: 20260207,
 	internet: { imdb: '', wiki_ua: '', },
 	cast: { li_07061952: 1,  },
 },
@@ -73,12 +73,6 @@ const arrMovies = [
 
 
 */
-
-
-
-
-
-
 
 
 
@@ -1319,7 +1313,7 @@ const arrMovies = [
 	id: 'octopussy_1983', title: { ua: 'Восьминiжка', en: 'Octopussy', }, year: 1983, country: { gbr: 1, }, franchise: 'agent_007',
 	genre: { action: 1, thriller: 1, adventure: 1, }, hash: { bond: 1, },
 	internet: { imdb: '0086034', wiki_ua: '%D0%92%D0%BE%D1%81%D1%8C%D0%BC%D0%B8%D0%BD%D1%96%D0%B6%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '2701', },
-	cast: { roger_moore_14101927: 1, },
+	cast: { roger_moore_14101927: 1, steven_berkoff_03081937: 1, },
 },
 {
 	id: 'the_octopuses_from_the_second_floor_1987', title: { ua: 'Восьминіжки з другого поверху', en: 'The Octopuses from the Second Floor', }, year: 1987, country: { csk: 1, deu: 1, },
@@ -2116,7 +2110,7 @@ const arrMovies = [
 	id: 'the_girl_with_the_dragon_tattoo_2011', title: { ua: 'Дівчина з тату дракона', en: 'The Girl with the Dragon Tattoo', }, year: 2011, country: { usa: 1, swe: 1, },
 	genre: { crime: 1, drama: 1, },
 	internet: { imdb: '1568346', wiki_ua: '%D0%94%D1%96%D0%B2%D1%87%D0%B8%D0%BD%D0%B0_%D0%B7_%D1%82%D0%B0%D1%82%D1%83_%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2011)', },
-	cast: { daniel_craig_02031968: 1, christopher_plummer_13121929: 1, },
+	cast: { daniel_craig_02031968: 1, christopher_plummer_13121929: 1, steven_berkoff_03081937: 1, },
 },
 {
 	id: 'house_of_Gucci_2021', title: { ua: 'Дім Ґуччі', en: 'House of Gucci', }, year: 2021, country: { usa: 1, },
@@ -3912,6 +3906,12 @@ const arrMovies = [
 	genre: { cartoon: 1, }, hash: { aliens: 1, },
 	internet: { imdb: '0275847', wiki_ua: '%D0%9B%D1%96%D0%BB%D0%BE_%D1%96_%D0%A1%D1%82%D1%96%D1%87', },
 	composer: { alan_silvestri_26031950: 1, },
+},
+{
+	id: 'a_line_of_fire_2025', title: { ua: 'Лінія вогню', en: 'A Line of Fire', }, year: 2025, country: { usa: 1, },
+	genre: { action: 1, crime: 1, }, date: 20260207,
+	internet: { imdb: '33712667', },
+	cast: { cuba_gooding_jr_02011968: 1, },
 },
 {
 	id: 'planes_2013', title: { ua: 'Літачки', en: 'Planes', }, year: 2013, country: { usa: 1, ind: 1, }, franchise: 'cars',
@@ -5982,7 +5982,7 @@ const arrMovies = [
 	id: 'beverly_hills_cop_1984', title: { ua: 'Поліцейський із Беверлі-Гіллз', en: 'Beverly Hills Cop', }, year: 1984, country: { usa: 1, }, franchise: 'beverly_hills_cop',
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, cop: 1, },
 	internet: { imdb: '0086960', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%96%D0%B7_%D0%91%D0%B5%D0%B2%D0%B5%D1%80%D0%BB%D1%96-%D0%93%D1%96%D0%BB%D0%BB%D0%B7', },
-	cast: { eddie_murphy_03041961: 1, },
+	cast: { eddie_murphy_03041961: 1, steven_berkoff_03081937: 1, },
 },
 {
 	id: 'beverly_hills_cop_2_1987', title: { ua: 'Поліцейський із Беверлі-Гіллз - 2', en: 'Beverly Hills Cop II', }, year: 1987, country: { usa: 1, }, franchise: 'beverly_hills_cop',
@@ -6460,7 +6460,7 @@ const arrMovies = [
 	id: 'red_2_2013', title: { ua: 'РЕД - 2', en: 'RED 2', }, year: 2013, country: { usa: 1, fra: 1, can: 1, },
 	genre: { action: 1, crime: 1, comedy: 1, },
 	internet: { imdb: '1821694', wiki_ua: '%D0%A0%D0%95%D0%94_2', },
-	cast: { bruce_willis_19031955: 1, john_malkovich_09121953: 1, catherine_zeta_jones_25091969: 1, anthony_hopkins_31121937: 1, }, composer: { alan_silvestri_26031950: 1, },
+	cast: { bruce_willis_19031955: 1, john_malkovich_09121953: 1, catherine_zeta_jones_25091969: 1, anthony_hopkins_31121937: 1, steven_berkoff_03081937: 1, }, composer: { alan_silvestri_26031950: 1, },
 },
 {
 	id: 'serbuan_maut_2011', title: { ua: 'Рейд', en: 'Serbuan maut', }, year: 2011, country: { usa: 1, fra: 1, idn: 1,}, 
@@ -6507,7 +6507,7 @@ const arrMovies = [
 	id: 'rambo_2_1985', title: { ua: 'Рембо - 2', en: 'Rambo: First Blood Part II', }, year: 1985, country: { usa: 1, }, rating: 5, franchise: 'rambo',
 	genre: { action: 1, thriller: 1, }, hash: { army: 1, jungle: 1, },
 	internet: { imdb: '0089880', wiki_ua: '%D0%A0%D0%B5%D0%BC%D0%B1%D0%BE:_%D0%9F%D0%B5%D1%80%D1%88%D0%B0_%D0%BA%D1%80%D0%BE%D0%B2,_%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D0%B0_II', hd_vip: '984', },
-	cast: { sylvester_stallone_06071946: 1, richard_crenna_30111926: 1, martin_kove_06031947: 1, charles_napier_12041936: 1, },
+	cast: { sylvester_stallone_06071946: 1, richard_crenna_30111926: 1, martin_kove_06031947: 1, charles_napier_12041936: 1, steven_berkoff_03081937: 1, },
 },
 {
 	id: 'rambo_3_1988', title: { ua: 'Рембо - 3', en: 'Rambo III', }, year: 1988, country: { usa: 1, }, franchise: 'rambo',
@@ -7134,6 +7134,11 @@ const arrMovies = [
 	id: 'pokusa_2023', title: { ua: 'Спокуса', en: 'Pokusa', }, year: 2023, country: { pol: 1, },
 	genre: { drama: 1, },
 	internet: { imdb: '24464438', },
+},
+{
+	id: 'the_voyeurs_2021', title: { ua: 'Спостерігачі', en: 'The Voyeurs', }, year: 2021, country: { usa: 1, },
+	genre: { thriller: 1, }, date: 20260207,
+	internet: { imdb: '11235772', wiki_ua: '%D0%A1%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D1%96%D0%B3%D0%B0%D1%87%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', },
 },
 {
 	id: 'the_real_mccoy_1993', title: { ua: 'Справжня Маккой', en: 'The Real McCoy', }, year: 1993, country: { usa: 1, }, rating: 5,
@@ -7796,7 +7801,7 @@ const arrMovies = [
 	id: 'the_tourist_2010', title: { ua: 'Турист', en: 'The Tourist', }, year: 2010, country: { usa: 1, gbr: 1, fra: 1, ita: 1, },
 	genre: { action: 1, }, 
 	internet: { imdb: '1243957', wiki_ua: '%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { johnny_depp_09061963: 1, angelina_jolie_04061975: 1, timothy_dalton_21031946: 1, },
+	cast: { johnny_depp_09061963: 1, angelina_jolie_04061975: 1, timothy_dalton_21031946: 1, steven_berkoff_03081937: 1, },
 },
 {
 	id: 'tootsie_1982', title: { ua: 'Тутсі', en: 'Tootsie', }, year: 1982, country: { usa: 1, },
@@ -8439,7 +8444,7 @@ const arrMovies = [
 	studio: { warner: 1, netflix: 1, },
 	genre: { action: 1, thriller: 1, crime: 1, },
 	internet: { imdb: '0113010', wiki_ua: '%D0%A7%D0%B5%D1%81%D0%BD%D0%B0_%D0%B3%D1%80%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1995)', hd_vip: '19784', },
-	cast: { william_baldwin_21021963: 1, cindy_crawford_20021966: 1, salma_hayek_02091966: 1, }, composer: { mark_mancina_09031957: 1, },
+	cast: { william_baldwin_21021963: 1, cindy_crawford_20021966: 1, salma_hayek_02091966: 1, steven_berkoff_03081937: 1, }, composer: { mark_mancina_09031957: 1, },
 },
 {
 	id: 'honest_thief_2020', title: { ua: 'Чесний злодій', en: 'Honest Thief', }, year: 2020, country: { usa: 1, },
