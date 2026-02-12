@@ -307,7 +307,7 @@ const arrMovies = [
 	id: 'runaway_car_1997', title: { ua: 'Автомобіль-утікач', en: 'Runaway Car', }, year: 1997, country: { usa: 1, }, rating: '5+',
 	genre: { thriller: 1, }, hash: { trap: 1, cars: 1, road: 1, },
 	internet: { imdb: '0120041', hd_vip: '127571', },
-	cast: { nina_siemaszko_14071970: 1, },
+	cast: { nina_siemaszko_14071970: 1, judge_reinhold_21051957: 1, },
 },
 {
 	id: 'the_hitchhikers_guide_to_the_galaxy_2005', title: { ua: 'Автостопом по галактиці', en: 'The Hitchhiker\'s Guide to the Galaxy', }, year: 2005, country: { usa: 1, },
@@ -742,7 +742,7 @@ const arrMovies = [
 	cast: { brad_pitt_18121963: 1, },
 },
 {
-	id: 'bill_ted_2020', title: { ua: 'Білл і Тед', en: 'Bill & Ted Face the Music', }, year: 2020, country: { usa: 1, },
+	id: 'bill_ted_2020', title: { ua: 'Білл і Тед', en: 'Bill & Ted Face the Music', }, year: 2020, country: { usa: 1, }, franchise: 'bill_ted',
 	genre: { comedy: 1, adventure: 1, },
 	internet: { imdb: '1086064', wiki_ua: '%D0%91%D1%96%D0%BB%D0%BB_%D1%96_%D0%A2%D0%B5%D0%B4', },
 	cast: { keanu_reeves_02091964: 1, william_sadler_13041950: 1, },
@@ -1172,6 +1172,11 @@ const arrMovies = [
 	genre: { action: 1, },
 	internet: { imdb: '0233469', wiki_ua: '%D0%92%D1%96%D0%B4%D1%88%D0%BA%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%B7%D0%B1%D0%B8%D1%82%D0%BA%D1%96%D0%B2_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { arnold_schwarzenegger_30071947: 1, },
+},
+{
+	id: 'the_blair_witch_project_1999', title: { ua: 'Відьма з Блер', en: 'The Blair Witch Project', }, year: 1999, country: { usa: 1, },
+	genre: { horror: 1, }, date: 20260211,
+	internet: { imdb: '0185937', wiki_ua: '%D0%92%D1%96%D0%B4%D1%8C%D0%BC%D0%B0_%D0%B7_%D0%91%D0%BB%D0%B5%D1%80:_%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%B0_%D0%B7_%D1%82%D0%BE%D0%B3%D0%BE_%D1%81%D0%B2%D1%96%D1%82%D1%83', },
 },
 {
 	id: 'war_for_the_planet_of_the_apes_2017', title: { ua: 'Війна за планету мавп', en: 'War for the Planet of the Apes', }, year: 2017, country: { usa: 1, },
@@ -1638,6 +1643,12 @@ const arrMovies = [
 	cast: { michael_douglas_25091944: 1, sean_penn_17081960: 1, },
 },
 {
+	id: 'fair_game_2010', title: { ua: 'Гра без правил', en: 'Fair Game', }, year: 2010, country: { usa: 1, }, 
+	genre: { thriller: 1, drama: 1, }, date: 20260211,
+	internet: { imdb: '0977855', wiki_ua: '%D0%93%D1%80%D0%B0_%D0%B1%D0%B5%D0%B7_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { naomi_watts_28091968: 1, sean_penn_17081960: 1, },
+},
+{
 	id: 'squid_game_2021', title: { ua: 'Гра в кальмара', en: 'Squid Game', }, year: 2021, country: { kor: 1, },
 	genre: { serial: 1, horror: 1, }, hash: { quest: 1, surviving: 1, },
 	internet: { imdb: '10919420', wiki_ua: '%D0%93%D1%80%D0%B0_%D0%B2_%D0%BA%D0%B0%D0%BB%D1%8C%D0%BC%D0%B0%D1%80%D0%B0', },
@@ -1755,7 +1766,14 @@ const arrMovies = [
 {
 	id: 'gremlins_1984', title: { ua: 'Ґремліни', en: 'Gremlins', }, year: 1984, country: { usa: 1, },
 	genre: { comedy: 1, fantasy: 1, horror: 1, }, hash: { creature: 1, },
-	internet: { imdb: '0087363', wiki_ua: '%D0%93%D1%80%D0%B5%D0%BC%D0%BB%D1%96%D0%BD%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },	
+	internet: { imdb: '0087363', wiki_ua: '%D0%93%D1%80%D0%B5%D0%BC%D0%BB%D1%96%D0%BD%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { judge_reinhold_21051957: 1, },		
+},
+{
+	id: 'the_gift_2000', title: { ua: 'Дар', en: 'The Gift', }, year: 2000, country: { usa: 1, },
+	genre: { thriller: 1, crime: 1, mystic: 1, }, date: 20260212,
+	internet: { imdb: '0219699', wiki_ua: '%D0%94%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2000)', },
+	cast: { keanu_reeves_02091964: 1, cate_blanchett_14051969: 1, },
 },
 {
 	id: 'ocean_s_twelve_2004', title: { ua: 'Дванадцять друзів Оушена', en: 'Ocean\'s Twelve', }, year: 2004, country: { usa: 1, },
@@ -1878,6 +1896,11 @@ const arrMovies = [
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0160184', wiki_ua: '%D0%94%D0%B5%D1%82%D0%BE%D0%BA%D1%81%D0%B8%D0%BA%D0%B0%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { sylvester_stallone_06071946: 1, tom_berenger_31051949: 1, robert_patrick_05111958: 1, kris_kristofferson_22061936: 1, robert_prosky_13121930: 1, },
+},
+{
+	id: 'primer_2004', title: { ua: 'Детонатор', en: 'Primer', }, year: 2004, country: { usa: 1, },
+	genre: { sci_fi: 1, }, date: 20260210,
+	internet: { imdb: '0390384', wiki_ua: '%D0%94%D0%B5%D1%82%D0%BE%D0%BD%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2004)', },
 },
 {
 	id: 'the_thing_2011', title: { ua: 'Дещо', en: 'The Thing', }, year: 2011, country: { usa: 1, can: 1, }, rating: 5,
@@ -3715,6 +3738,11 @@ const arrMovies = [
 	cast: { john_travolta_18021954: 1, samuel_l_jackson_21121948: 1, bruce_willis_19031955: 1, uma_thurman_29041970: 1, ving_rhames_12051959: 1, quentin_tarantino_27031963: 1, peter_greene_08101965: 1, steve_buscemi_13121957: 1, }, director: { quentin_tarantino_27031963: 1, },
 },
 {
+	id: 'crystal_skulls_2014', title: { ua: 'Кришталеві черепи', en: 'Crystal Skulls', }, year: 2014, country: { usa: 1, bgr: 1, },
+	genre: { drama: 1, crime: 1, }, date: 20260209,
+	internet: { imdb: '3981112', },
+},
+{
 	id: 'christine_1983', title: { ua: 'Крістіна', en: 'Christine', }, year: 1983, country: { usa: 1, }, rating: 5,
 	genre: { horror: 1, thriller: 1, }, hash: { cars: 1, },
 	internet: { imdb: '0085333', wiki_ua: '%D0%9A%D1%80%D1%96%D1%81%D1%82%D1%96%D0%BD%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1983)', },
@@ -4887,9 +4915,9 @@ const arrMovies = [
 	cast: { robert_downey_jr_01041965: 1, liv_tyler_01071977: 1, },
 },
 {
-	id: 'bill_ted_1989', title: { ua: 'Неймовірні пригоди Білла і Теда', en: ' Bill & Ted\'s Excellent Adventure', }, year: 1989, country: { usa: 1, },
-	genre: { comedy: 1, adventure: 1, },
-	internet: { imdb: '0096928', },
+	id: 'bill_ted_1989', title: { ua: 'Неймовірні пригоди Білла і Теда', en: 'Bill & Ted\'s Excellent Adventure', }, year: 1989, country: { usa: 1, }, franchise: 'bill_ted',
+	genre: { comedy: 1, adventure: 1, }, date: 20260212,
+	internet: { imdb: '0096928', wiki_ru: '%D0%9D%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F_%D0%91%D0%B8%D0%BB%D0%BB%D0%B0_%D0%B8_%D0%A2%D0%B5%D0%B4%D0%B0', },
 	cast: { keanu_reeves_02091964: 1, },
 },
 {
@@ -5041,7 +5069,7 @@ const arrMovies = [
 	internet: { imdb: '29603959', wiki_ua: '%D0%9D%D0%BE%D0%B2%D0%BE%D0%BA%D0%B0%D1%97%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
 },
 {
-	id: 'bill_ted_1991', title: { ua: 'Нові пригоди Білла і Теда', en: 'Bill & Ted\'s Bogus Journey', }, year: 1991, country: { usa: 1, }, rating: 5,
+	id: 'bill_ted_1991', title: { ua: 'Нові пригоди Білла і Теда', en: 'Bill & Ted\'s Bogus Journey', }, year: 1991, country: { usa: 1, }, rating: 5, franchise: 'bill_ted',
 	genre: { comedy: 1, adventure: 1, },
 	internet: { imdb: '0101452', wiki_ua: '%D0%9D%D0%BE%D0%B2%D1%96_%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D0%B4%D0%B8_%D0%91%D1%96%D0%BB%D0%BB%D0%B0_%D1%96_%D0%A2%D0%B5%D0%B4%D0%B0', },
 	cast: { keanu_reeves_02091964: 1, william_sadler_13041950: 1, },
@@ -5156,8 +5184,14 @@ const arrMovies = [
 },
 {
 	id: 'army_of_one_2020', title: { ua: 'Одна в полі воїн', en: 'Army of One', }, year: 2020, country: { usa: 1, },
-	genre: { action: 1, },
+	genre: { action: 1, }, hash: { woman: 1, },
 	internet: { imdb: '7153488', },
+},
+{
+	id: 'one_battle_after_another_2025', title: { ua: 'Одна битва за іншою', en: 'One Battle After Another', }, year: 2025, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, date: 20260211,
+	internet: { imdb: '30144839', wiki_ua: '%D0%9E%D0%B4%D0%BD%D0%B0_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0_%D0%B7%D0%B0_%D1%96%D0%BD%D1%88%D0%BE%D1%8E', },
+	cast: { leonardo_dicaprio_11111974: 1, sean_penn_17081960: 1, },
 },
 {
 	id: 'once_upon_a_time_in_hollywood_2019', title: { ua: 'Одного разу... в Голлівуді', en: 'Once Upon a Time in... Hollywood', }, year: 2019, country: { usa: 1, gbr: 1, chn: 1, },
@@ -5649,6 +5683,12 @@ const arrMovies = [
 	cast: { pierce_brosnan_16051953: 1, linda_hamilton_26091956: 1, }, composer: { james_newton_howard_09061951: 1, },
 },
 {
+	id: 'mr_popper_s_penguins_2011', title: { ua: 'Пінгвіни містера Поппера', en: 'Mr. Popper\'s Penguins', }, year: 2011, country: { usa: 1, }, 
+	genre: { fantasy: 1, comedy: 1, }, date: 20260209,
+	internet: { imdb: '1396218', wiki_ua: '%D0%9F%D1%96%D0%BD%D0%B3%D0%B2%D1%96%D0%BD%D0%B8_%D0%BC%D1%96%D1%81%D1%82%D0%B5%D1%80%D0%B0_%D0%9F%D0%BE%D0%BF%D0%BF%D0%B5%D1%80%D0%B0', },
+	cast: { jim_carrey_17011962: 1, },
+},
+{
 	id: 'pirates_of_the_caribbean_2003', title: { ua: 'Пірати Карибського моря', en: 'Pirates of the Caribbean: The Curse of the Black Pearl', }, year: 2003, country: { usa: 1, }, rating: 5, franchise: 'caribbean',
 	genre: { adventure: 1, fantasy: 1, }, hash: { sea: 1, ship: 1, pirates: 1, middleAges: 1, },
 	internet: { imdb: '0325980', wiki_ua: '%D0%9F%D1%96%D1%80%D0%B0%D1%82%D0%B8_%D0%9A%D0%B0%D1%80%D0%B8%D0%B1%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BC%D0%BE%D1%80%D1%8F:_%D0%9F%D1%80%D0%BE%D0%BA%D0%BB%D1%8F%D1%82%D1%82%D1%8F_%C2%AB%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D1%97_%D0%BF%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B8%C2%BB', },
@@ -5982,25 +6022,25 @@ const arrMovies = [
 	id: 'beverly_hills_cop_1984', title: { ua: 'Поліцейський із Беверлі-Гіллз', en: 'Beverly Hills Cop', }, year: 1984, country: { usa: 1, }, franchise: 'beverly_hills_cop',
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, cop: 1, },
 	internet: { imdb: '0086960', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%96%D0%B7_%D0%91%D0%B5%D0%B2%D0%B5%D1%80%D0%BB%D1%96-%D0%93%D1%96%D0%BB%D0%BB%D0%B7', },
-	cast: { eddie_murphy_03041961: 1, steven_berkoff_03081937: 1, },
+	cast: { eddie_murphy_03041961: 1, steven_berkoff_03081937: 1, judge_reinhold_21051957: 1, },
 },
 {
 	id: 'beverly_hills_cop_2_1987', title: { ua: 'Поліцейський із Беверлі-Гіллз - 2', en: 'Beverly Hills Cop II', }, year: 1987, country: { usa: 1, }, franchise: 'beverly_hills_cop',
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, cop: 1, },
 	internet: { imdb: '0092644', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%96%D0%B7_%D0%91%D0%B5%D0%B2%D0%B5%D1%80%D0%BB%D1%96-%D0%93%D1%96%D0%BB%D0%BB%D0%B7_2', },
-	cast: { eddie_murphy_03041961: 1, },
+	cast: { eddie_murphy_03041961: 1, judge_reinhold_21051957: 1, },
 },
 {
 	id: 'beverly_hills_cop_3_1994', title: { ua: 'Поліцейський із Беверлі-Гіллз - 3', en: 'Beverly Hills Cop III', }, year: 1994, country: { usa: 1, }, franchise: 'beverly_hills_cop',
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, cop: 1, },
 	internet: { imdb: '0109254', },
-	cast: { eddie_murphy_03041961: 1, },
+	cast: { eddie_murphy_03041961: 1, judge_reinhold_21051957: 1, },
 },
 {
 	id: 'beverly_hills_cop_4_2024', title: { ua: 'Поліцейський із Беверлі-Гіллз - 4', en: 'Beverly Hills Cop: Axel F', }, year: 2024, country: { usa: 1, }, franchise: 'beverly_hills_cop',
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, cop: 1, },
 	internet: { imdb: '3083016', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%86%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%96%D0%B7_%D0%91%D0%B5%D0%B2%D0%B5%D1%80%D0%BB%D1%96-%D0%93%D1%96%D0%BB%D0%BB%D0%B7:_%D0%90%D0%BA%D1%81%D0%B5%D0%BB%D1%8C_%D0%A4.', hd_vip: '132698', },
-	cast: { eddie_murphy_03041961: 1, kevin_bacon_08071958: 1, },
+	cast: { eddie_murphy_03041961: 1, kevin_bacon_08071958: 1, judge_reinhold_21051957: 1, },
 },
 {
 	id: 'martial_outlaw_1993', title: { ua: 'Поліцейський поза законом', en: 'Martial Outlaw', }, year: 1993, country: { usa: 1, },
@@ -7136,6 +7176,12 @@ const arrMovies = [
 	internet: { imdb: '24464438', },
 },
 {
+	id: 'the_watcher_2000', title: { ua: 'Спостерігач', en: 'The Watcher', }, year: 2000, country: { usa: 1, can: 1, vnm: 1, },
+	genre: { thriller: 1, crime: 1, }, date: 20260211,
+	internet: { imdb: '0204626', wiki_ru: '%D0%9D%D0%B0%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2000)', },
+	cast: { keanu_reeves_02091964: 1, james_spader_07021960: 1, },
+},
+{
 	id: 'the_voyeurs_2021', title: { ua: 'Спостерігачі', en: 'The Voyeurs', }, year: 2021, country: { usa: 1, },
 	genre: { thriller: 1, }, date: 20260207,
 	internet: { imdb: '11235772', wiki_ua: '%D0%A1%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D1%96%D0%B3%D0%B0%D1%87%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', },
@@ -7191,6 +7237,12 @@ const arrMovies = [
 	genre: { action: 1, comedy: 1, }, hash: { police: 1, },
 	internet: { imdb: '0105477', wiki_ua: '%D0%A1%D1%82%D1%96%D0%B9,_%D0%B0%D0%B1%D0%BE_%D0%BC%D0%BE%D1%8F_%D0%BC%D0%B0%D0%BC%D0%B0_%D1%81%D1%82%D1%80%D1%96%D0%BB%D1%8F%D1%82%D0%B8%D0%BC%D0%B5', hd_vip: '14024', },
 	cast: { sylvester_stallone_06071946: 1, ving_rhames_12051959: 1, }, composer: { alan_silvestri_26031950: 1, },
+},
+{
+	id: 'stillwater_2021', title: { ua: 'Стілвотер', en: 'Stillwater', }, year: 2021, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, date: 20260210,
+	internet: { imdb: '10696896', wiki_ua: '%D0%A1%D1%82%D1%96%D0%BB%D0%B2%D0%BE%D1%82%D0%B5%D1%80', },
+	cast: { matt_damon_08101970: 1, },
 },
 {
 	id: 'cellular_2004', title: { ua: 'Стільниковий', en: 'Cellular', }, year: 2004, country: { usa: 1, deu: 1, },
@@ -7762,6 +7814,11 @@ const arrMovies = [
 	genre: { drama: 1, thriller: 1, }, 
 	internet: { imdb: '0108162', wiki_ua: '%D0%A9%D0%B5%D0%BF%D0%BA%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { sharon_stone_10031958: 1, william_baldwin_21021963: 1, tom_berenger_31051949: 1, },
+},
+{
+	id: 'knocked_up_2007', title: { ua: 'Трішки вагітна', en: 'Knocked Up', }, year: 2007, country: { usa: 1, },
+	genre: { comedy: 1, }, date: 20260208,
+	internet: { imdb: '0478311', wiki_ua: '%D0%A2%D1%80%D1%96%D1%88%D0%BA%D0%B8_%D0%B2%D0%B0%D0%B3%D1%96%D1%82%D0%BD%D0%B0', },
 },
 {
 	id: 'tron_ares_2025', title: { ua: 'Трон: Арес', en: 'Tron: Ares', }, year: 2025, country: { usa: 1, can: 1, nzl: 1, },
@@ -8545,6 +8602,11 @@ const arrMovies = [
 	cast: { sigourney_weaver_08101949: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
+	id: 'shazam_2019', title: { ua: 'Шазам', en: 'Shazam', }, year: 2019, country: { usa: 1, can: 1, },
+	genre: { fantasy: 1, }, hash: { superhero: 1, }, date: 20260210,
+	internet: { imdb: '0448115', wiki_ua: '%D0%A8%D0%B0%D0%B7%D0%B0%D0%BC!_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+{
 	id: 'the_jackal_1997', title: { ua: 'Шакал', en: 'The Jackal', }, year: 1997, country: { usa: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0119395', wiki_ua: '%D0%A8%D0%B0%D0%BA%D0%B0%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
@@ -8755,6 +8817,11 @@ const arrMovies = [
 	genre: { horror: 1, trash: 1, }, 
 	internet: { imdb: '1999995', wiki_ua: '%D0%A9%D0%BE%D0%B1_%D0%B2%D0%B8_%D0%B7%D1%80%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%E2%80%A6', },
 	cast: { sasha_grey_14031988: 1, },
+},
+{
+	id: 'chernobyl_diaries_2012', title: { ua: 'Щоденники Чорнобиля', en: 'Chernobyl Diaries', }, year: 2012, country: { usa: 1, srb: 1, },
+	genre: { horror: 1, }, 
+	internet: { imdb: '1991245', wiki_ua: '%D0%A9%D0%BE%D0%B4%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8_%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B1%D0%B8%D0%BB%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 },
 {
 	id: 'over_the_top_1987', title: { ua: 'Щосили', en: 'Over the Top', }, year: 1987, country: { usa: 1, }, rating: 5,

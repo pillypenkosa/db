@@ -15747,6 +15747,16 @@ let arrPeople = [
 	internet: { imdb: '0001326', wiki_ua: '%D0%94%D0%B6%D0%BE%D1%88_%D0%93%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%82%D1%82', },
 },
 {
+	id: 'judge_reinhold_21051957', 
+	name: { n: 'Judge', s: 'Reinhold', },
+	sex: 1,
+	life: { bd: 21, bm: 5, by: 1957, },
+	img: [ 1, 1 ],
+	country: { usa: 1, },
+	hash: { movie: 1, movie_actor: 1, },
+	internet: { imdb: '0001662', wiki_ua: '%D0%94%D0%B6%D0%B0%D0%B4%D0%B6_%D0%A0%D0%B5%D0%B9%D0%BD%D0%B3%D0%BE%D0%BB%D1%8C%D0%B4', },
+},
+{
 	id: 'judi_dench_09121934', 
 	name: { n: 'Judi', s: 'Dench', },
 	life: { bd: 9, bm: 12, by: 1934, },
