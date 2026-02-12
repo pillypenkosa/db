@@ -17255,7 +17255,7 @@ let arrPeople = [
 	id: 'nia_peeples_10121961', 
 	name: { n: 'Nia', s: 'Peeples', },
 	life: { bd: 10, bm: 12, by: 1961, },
-	img: [ 1, 1 ],
+	img: [ 2, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0001604', wiki_ru: '%D0%9F%D0%B8%D0%BF%D0%BB%D0%B7,_%D0%9D%D0%B8%D0%B0', },
