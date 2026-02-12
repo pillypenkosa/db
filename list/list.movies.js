@@ -8235,6 +8235,12 @@ const arrMovies = [
 	cast: { chris_hemsworth_11081983: 1, },
 },
 {
+	id: 'hackers_1995', title: { ua: 'Хакери', en: 'Hackers', }, year: 1995, country: { usa: 1, },
+	genre: { drama: 1, crime: 1, }, date: 20260212,
+	internet: { imdb: '0113243', wiki_ua: '%D0%A5%D0%B0%D0%BA%D0%B5%D1%80%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { angelina_jolie_04061975: 1, },
+},
+{
 	id: 'ctrl_alt_delete_2016', title: { ua: 'Хакери', en: 'Ctrl Alt Delete', }, year: 2016, country: { usa: 1, },
 	genre: { sci_fi: 1, action: 1, }, date: 20260205,
 	internet: { imdb: '4362644', },

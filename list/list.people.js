@@ -13407,7 +13407,7 @@ let arrPeople = [
 	id: 'denise_richards_17021971', 
 	name: { n: 'Denise', s: 'Richards', },
 	life: { bd: 17, bm: 2, by: 1971, },
-	img: [ 3, 1 ],
+	img: [ 5, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, },
 	internet: { imdb: '0000612', wiki_ua: '%D0%94%D0%B5%D0%BD%D1%96%D0%B7_%D0%A0%D1%96%D1%87%D0%B0%D1%80%D0%B4%D1%81', },

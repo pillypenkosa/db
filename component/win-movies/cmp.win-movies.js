@@ -134,26 +134,77 @@ class ComponentWinMovies {
 			if ( objData.set ) {
 
 				//console.log( objData.genre );
-				arrSelected = arrSelected.filter( k => {
 
-					if ( objData.set == '_5' ) {
 
-						if ( k.rating && ( k.rating == 5 || k.rating == '5+' )) 
+				if ( objData.set == 'date' ) {
+					//alert();
+
+
+					arrSelected = arrSelected.filter( k_movie => {
+
+
+						if ( k_movie.date ) {
 							return true;
-					}
 
-					if ( objData.set == '_5+' ) {
+						}
 
-						if ( k.rating && k.rating == '5+' )
-							return true;
-					}
+					});
 
-					if ( objData.set == 'remembered' ) {
 
-						if ( k.remembered )
-							return true;
-					}
-				});
+
+    				function sortUp( a, b ) { 
+    					return ( a.date < b.date ) ? 1 : -1; 
+    				}
+
+
+    				arrSelected.sort( sortUp );
+
+
+
+				}
+
+
+
+
+				if ( objData.set == '_5' || objData.set == '_5+' || objData.set == 'remembered' ) {
+
+
+
+					arrSelected = arrSelected.filter( k => {
+
+						if ( objData.set == '_5' ) {
+
+							if ( k.rating && ( k.rating == 5 || k.rating == '5+' )) 
+								return true;
+						}
+
+						if ( objData.set == '_5+' ) {
+
+							if ( k.rating && k.rating == '5+' )
+								return true;
+						}
+
+						if ( objData.set == 'remembered' ) {
+
+							if ( k.remembered )
+								return true;
+						}
+					});
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
 			}
 
 

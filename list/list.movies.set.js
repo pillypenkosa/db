@@ -1,8 +1,12 @@
 const arrMovieSet = [
 
-	{ id: '_5+' 		, title: '&#10030; 5+' 		, },
-	{ id: '_5' 			, title: '&#10003; 5' 		, },
-	{ id: 'remembered' 	, title: 'Згадані' 			, },
+	{ id: '_5+' 		, title: '&#10030; 5+' 			, },
+	{ id: '_5' 			, title: '&#10003; 5' 			, },
+	{ id: 'remembered' 	, title: 'Згадані' 				, },
+	{ id: 'date' 		, title: 'За датою перегляду' 	, },
+
+
+
 	// { id: 'kinoman' 	, title: 'Кіноман' 			, },
 	//{ id: '_007' 	, title: 'Агент 007' 	, },
 
