@@ -132,6 +132,104 @@ class ComponentWinPeople {
 
 
 
+
+
+			if ( objData.set ) {
+
+				if ( objData.set == 'w' ) {
+
+					//console.log( 111 );
+
+					arrSelected = [];
+					arrPeopleSympathyWomenSet.forEach( k_uid => {
+
+						if ( objPeople && objPeople[ k_uid ] ) {
+
+							arrSelected.push( objPeople[ k_uid ] );
+						}
+					});
+
+				}
+
+
+
+				if ( objData.set == '_1980' ) {
+
+					arrSelected = arrSelected.filter( k_user => {
+
+						if ( k_user.life && k_user.life.by && k_user.life.by == 1980 ) 
+							return true;
+			
+					});
+				}
+
+
+
+				if ( objData.set == 'w_1982' ) {
+
+					//console.log( 1982 );
+
+					arrSelected = arrSelected.filter( k_user => {
+
+
+						if ( k_user.life && k_user.life.by ) {
+
+							if ( !k_user.sex && k_user.life.by == 1982 ) {
+
+								//console.log( k_user );
+								return true;
+							}
+						}
+
+					});
+
+				}
+
+
+
+
+
+
+
+				if ( objData.set == '_0311' ) {
+
+					//console.log( 'w_0311' );
+
+					arrSelected = arrSelected.filter( k_user => {
+
+
+						if ( k_user.life && k_user.life.bm && k_user.life.bd ) {
+
+							if ( k_user.life.bm == 3 && k_user.life.bd == 11 ) {
+
+								//console.log( k_user );
+								return true;
+							}
+						}
+
+					});
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			}
+
+
+
+
+
 			arrSelected.forEach( k => {
 				htmlSpoilersList += `${ 
 					Component( 'Spoyler', { 
@@ -220,6 +318,9 @@ class ComponentWinPeople {
 			{ win: 'people' 	, cat: 'select' 	, key: 'year' 		, clc: '' 	, arr: [] 			, },
 			{ win: 'people' 	, cat: 'select' 	, key: 'country' 	, clc: '' 	, arr: [] 			, },
 			{ win: 'people' 	, cat: 'select' 	, key: 'hash' 		, clc: '' 	, arr: [] 			, },
+
+			{ win: 'people' 	, cat: 'select' 	, key: 'set' 		, clc: '' 	, arr: [] 			, },
+
 
 
 		];

@@ -250,20 +250,20 @@ const arrMovies = [
 	studio: { _20_century: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
 	internet: { imdb: '0499549', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '331', gid_online: '647', },
-	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, michelle_rodriguez_12071978: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
+	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, michelle_rodriguez_12071978: 1, giovanni_ribisi_17121974: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
 	id: 'avatar_2_2022', title: { ua: 'Аватар - 2', en: 'Avatar: The Way of Water', }, year: 2022, country: { usa: 1, }, franchise: 'avatar',
 	studio: { _20_century: 1, },
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
 	internet: { imdb: '1630029', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80:_%D0%A8%D0%BB%D1%8F%D1%85_%D0%B2%D0%BE%D0%B4%D0%B8', hd_vip: '90444', },
-	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, }, director: { james_cameron_16081954: 1, }, 
+	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, giovanni_ribisi_17121974: 1, }, director: { james_cameron_16081954: 1, }, 
 },
 {
 	id: 'avatar_3_2025', title: { ua: 'Аватар - 3', en: 'Avatar: Fire and Ash', }, year: 2025, country: { usa: 1, }, franchise: 'avatar',
 	genre: { action: 1, sci_fi: 1, }, hash: { future: 1, planet: 1, world: 1, battle: 1, },
 	internet: { imdb: '1757678', wiki_ua: '%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80:_%D0%92%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D1%96_%D0%BF%D0%BE%D0%BF%D1%96%D0%BB', },
-	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, }, director: { james_cameron_16081954: 1, }, 
+	cast: { sam_worthington_02081976: 1, zoe_saldana_19061978: 1, sigourney_weaver_08101949: 1, kate_winslet_05101975: 1, giovanni_ribisi_17121974: 1, }, director: { james_cameron_16081954: 1, }, 
 },
 {
 	id: 'august_rush_2007', title: { ua: 'Август Раш', en: 'August Rush', }, year: 2007, country: { usa: 1,  }, 
@@ -1107,7 +1107,7 @@ const arrMovies = [
 	id: 'gone_in_sixty_seconds_2000', title: { ua: 'Викрасти за 60 секунд', en: 'Gone in Sixty Seconds', }, year: 2000, country: { usa: 1, },
 	genre: { action: 1, crime: 1, }, hash: { cars: 1, },
 	internet: { imdb: '0187078', wiki_ua: '%D0%92%D0%B8%D0%BA%D1%80%D0%B0%D1%81%D1%82%D0%B8_%D0%B7%D0%B0_60_%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4', },
-	cast: { nicolas_cage_07011964: 1, angelina_jolie_04061975: 1, timothy_olyphant_20051968: 1, },
+	cast: { nicolas_cage_07011964: 1, angelina_jolie_04061975: 1, timothy_olyphant_20051968: 1, giovanni_ribisi_17121974: 1, },
 },
 {
 	id: 'vykup_1994', title: { ua: 'Викуп', en: 'Викуп', }, year: 1994, country: { ukr: 1, },
@@ -1250,7 +1250,7 @@ const arrMovies = [
 	id: 'walker_texas_ranger_1993', title: { ua: 'Вокер, техаський рейнджер', en: 'Walker, Texas Ranger', }, year: 1993, country: { usa: 1, }, 
 	genre: { serial: 1, action: 1, crime: 1, western: 1, }, hash: { cop: 1, },
 	internet: { imdb: '0106168', wiki_ua: '%D0%92%D0%BE%D0%BA%D0%B5%D1%80,_%D1%82%D0%B5%D1%85%D0%B0%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%80%D0%B5%D0%B9%D0%BD%D0%B4%D0%B6%D0%B5%D1%80', },
-	cast: { chuck_norris_10031940: 1, },
+	cast: { chuck_norris_10031940: 1, giovanni_ribisi_17121974: 1, },
 },
 {
 	id: 'wall_e_2008', title: { ua: 'ВОЛЛ-І', en: 'WALL·E', }, year: 2008, country: { usa: 1, }, rating: 5,
@@ -1340,7 +1340,7 @@ const arrMovies = [
 	id: 'saving_private_Ryan_1998', title: { ua: 'Врятувати рядового Раяна', en: 'Saving Private Ryan', }, year: 1998, country: { usa: 1, }, rating: 5,
 	genre: { war: 1, history: 1, }, hash: { war: 1, war2w: 1, },
 	internet: { imdb: '0120815', wiki_ua: '%D0%92%D1%80%D1%8F%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8_%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_%D0%A0%D0%B0%D1%8F%D0%BD%D0%B0',		 },
-	cast: { tom_hanks_09071956: 1, matt_damon_08101970: 1, tom_sizemore_29111961: 1, barry_pepper_04041970: 1, vin_diesel_18071967: 1, }, director: { steven_spielberg_18121946: 1, },
+	cast: { tom_hanks_09071956: 1, matt_damon_08101970: 1, tom_sizemore_29111961: 1, barry_pepper_04041970: 1, vin_diesel_18071967: 1, giovanni_ribisi_17121974: 1, }, director: { steven_spielberg_18121946: 1, },
 },
 {
 	id: 'world_war_z_2013', title: { ua: 'Всесвітня війна Z', en: 'World War Z', }, year: 2013, country: { usa: 1, },
@@ -1773,7 +1773,7 @@ const arrMovies = [
 	id: 'the_gift_2000', title: { ua: 'Дар', en: 'The Gift', }, year: 2000, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, mystic: 1, }, date: 20260212,
 	internet: { imdb: '0219699', wiki_ua: '%D0%94%D0%B0%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2000)', },
-	cast: { keanu_reeves_02091964: 1, cate_blanchett_14051969: 1, },
+	cast: { keanu_reeves_02091964: 1, cate_blanchett_14051969: 1, giovanni_ribisi_17121974: 1, },
 },
 {
 	id: 'ocean_s_twelve_2004', title: { ua: 'Дванадцять друзів Оушена', en: 'Ocean\'s Twelve', }, year: 2004, country: { usa: 1, },
@@ -3020,7 +3020,7 @@ const arrMovies = [
 	id: 'perfect_stranger_2007', title: { ua: 'Ідеальний незнайомець', en: 'Perfect Stranger', }, year: 2007, country: { usa: 1, },
 	genre: { thriller: 1, drama: 1, },
 	internet: { imdb: '0457433', wiki_ua: '%D0%86%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BD%D0%B5%D0%B7%D0%BD%D0%B0%D0%B9%D0%BE%D0%BC%D0%B5%D1%86%D1%8C', },
-	cast: { bruce_willis_19031955: 1, halle_berry_14081966: 1, },
+	cast: { bruce_willis_19031955: 1, halle_berry_14081966: 1, giovanni_ribisi_17121974: 1, },
 },
 {
 	id: 'identity_2003', title: { ua: 'Ідентифікація', en: 'Identity', }, year: 2003, country: { usa: 1, },
@@ -5360,6 +5360,12 @@ const arrMovies = [
 	cast: { vin_diesel_18071967: 1, rose_leslie_09021987: 1, elijah_wood_28011981: 1, },
 },
 {
+	id: 'le_dernier_mercenaire_2021', title: { ua: 'Останній найманець', en: 'Le dernier mercenaire', }, year: 2021, country: { fra: 1, },
+	genre: { comedy: 1, },
+	internet: { imdb: '12808182', wiki_ua: '%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9_%D0%BD%D0%B0%D0%B9%D0%BC%D0%B0%D0%BD%D0%B5%D1%86%D1%8C_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2021)', },
+	cast: { jean_claude_van_damme_18101960: 1,  },
+},
+{
 	id: 'freud_s_last_session_2023', title: { ua: 'Останній сеанс Фрейда', en: 'Freud\'s Last Session', }, year: 2023, country: { usa: 1, gbr: 1, irl: 1, },
 	genre: { drama: 1, },
 	internet: { imdb: '20420628', wiki_ua: '%D0%9E%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9_%D1%81%D0%B5%D0%B0%D0%BD%D1%81_%D0%A4%D1%80%D0%B5%D0%B9%D0%B4%D0%B0', },
@@ -5968,7 +5974,7 @@ const arrMovies = [
 	id: 'flight_of_the_phoenix_2004', title: { ua: 'Політ Фенікса', en: 'Flight of the Phoenix', }, year: 2004, country: { usa: 1, },
 	genre: { drama: 1, adventure: 1, }, hash: { planet: 1, },
 	internet: { imdb: '0377062', wiki_ua: '%D0%9F%D0%BE%D0%BB%D1%96%D1%82_%D0%A4%D0%B5%D0%BD%D1%96%D0%BA%D1%81%D0%B0_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2004)', hd_vip: '16261', },
-	composer: { marco_beltrami_07101966: 1, },
+	cast: { giovanni_ribisi_17121974: 1, }, composer: { marco_beltrami_07101966: 1, },
 },
 {
 	id: 'police_academy_1984', title: { ua: 'Поліцейська академія', en: 'Police Academy', }, year: 1984, country: { usa: 1, }, franchise: 'police_academy',
@@ -7005,6 +7011,12 @@ const arrMovies = [
 	genre: { horror: 1, sci_fi: 1,  },
 	internet: { imdb: '6823368', wiki_ua: '%D0%A1%D0%BA%D0%BB%D0%BE_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2019)', },
 	cast: { bruce_willis_19031955: 1, samuel_l_jackson_21121948: 1, },
+},
+{
+	id: 'wake_of_death_2004', title: { ua: 'Слід смерті', en: 'Wake of Death', }, year: 2004, country: { usa: 1, }, 
+	genre: { action: 1, }, date: 20260212,
+	internet: { imdb: '0367478', wiki_ua: '%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%BC%D0%B5%D1%80%D1%82%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2004)', },
+	cast: { jean_claude_van_damme_18101960: 1, },
 },
 {
 	id: 'blind_fury_1989', title: { ua: 'Сліпа лють', en: 'Blind Fury', }, year: 1989, country: { usa: 1, }, rating: 5,

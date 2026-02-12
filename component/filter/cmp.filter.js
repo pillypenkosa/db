@@ -362,6 +362,42 @@ class ComponentFilter {
 								${ htmlOption }
 							</select>`;
 						}
+
+
+
+						if ( k.key == 'set' ) {
+
+							let htmlOption = '';
+					 		let color = '';
+
+
+
+					 		arrPeopleSet.forEach( k_peopleSet => {
+
+								let attrSelected = '';
+
+
+								htmlOption += `<option value="${ k_peopleSet.id }" ${ attrSelected }>${ k_peopleSet.title }</option>`;
+
+
+					 		});
+
+
+
+
+
+
+
+
+
+
+							html += `<select ${ color } onchange="${ this.name }.changePeopleSet( this )">
+								<option value="all">- Підбірки ---</option>
+								${ htmlOption }
+							</select>`;
+
+						}
+
 					}
 				}
 
@@ -769,6 +805,58 @@ class ComponentFilter {
 			{ k: 'year', v: val, },
 		]);
 	}
+
+
+
+
+
+
+
+	static changePeopleSet( elem ) { 
+		const fooName = this.name + '.changePeopleSet()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'elem: ', elem ); 
+
+		let val = elem.value;
+
+
+
+
+
+		if ( val == 'all' )
+			elem.style.color = '#000';
+
+		else
+			elem.style.color = '#f00';
+
+
+		//Router.urlGET = {}; 
+		delete( Router.urlGET.id ); 
+
+		
+		Router.link([
+			{ k: 'set', v: val, },
+		]);
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
