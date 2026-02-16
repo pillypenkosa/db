@@ -102,9 +102,35 @@ const arrMovies = [
 
 
 
+{
+	id: 'lucky_number_slevin_2006', title: { ua: 'Щасливе число Слевіна', en: 'Lucky Number Slevin', }, year: 2006, country: { usa: 1, can: 1, gbr: 1, deu: 1, },
+	genre: { thriller: 1, crime: 1, comedy: 1, }, date: 20260216,
+	internet: { imdb: '0425210', wiki_ua: '%D0%A9%D0%B0%D1%81%D0%BB%D0%B8%D0%B2%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE_%D0%A1%D0%BB%D0%B5%D0%B2%D1%96%D0%BD%D0%B0', },
+	cast: { josh_hartnett_21071978: 1, bruce_willis_19031955: 1, morgan_freeman_01061937: 1, },
+},
+{
+	id: 'the_prestige_2006', title: { ua: 'Престиж', en: 'The Prestige', }, year: 2006, country: { usa: 1, gbr: 1, },
+	genre: { thriller: 1, }, date: 20260215,
+	internet: { imdb: '0482571', wiki_ua: '%D0%9F%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%B6_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { hugh_jackman_12101968: 1, christian_bale_30011974: 1, scarlett_johansson_22111984: 1, david_bowie_08011947: 1, },
+},
+{
+	id: 'the_jacket_2005', title: { ua: 'Піджак', en: 'The Jacket', }, year: 2005, country: { usa: 1, deu: 1, },
+	genre: { sci_fi: 1, fantasy: 1, thriller: 1, }, date: 20260215,
+	internet: { imdb: '0366627', wiki_ua: '%D0%9F%D1%96%D0%B4%D0%B6%D0%B0%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2005)', },
+	cast: { adrien_brody_14041973: 1, keira_knightley_26031985: 1, kris_kristofferson_22061936: 1, daniel_craig_02031968: 1, },
+},
+{
+	id: 'companion_2025', title: { ua: 'Компаньйон', en: 'Companion', }, year: 2025, country: { usa: 1, },
+	genre: { sci_fi: 1, thriller: 1, comedy: 1, }, hash: { robot: 1, }, date: 20260214,
+	internet: { imdb: '26584495', wiki_ua: '%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D1%8C%D0%B9%D0%BE%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2025)', },
+},
+{
+	id: 'grand_prix_of_europe_2025', title: { ua: 'Шалені перегони. Гран-прі Європи', en: 'Grand Prix of Europe', }, year: 2025, country: { deu: 1, },
+	genre: { cartoon: 1, }, date: 20260213,
+	internet: { imdb: '32897929',  },
 
-
-
+},
 
 
 
