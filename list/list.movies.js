@@ -65,7 +65,7 @@ const arrMovies = [
 
 {
 	id: '', title: { ua: '', en: '', }, year: 20, country: { usa: 1, can: 1, },
-	genre: { sci_fi: 1, action: 1, drama: 1, thriller: 1, comedy: 1, crime: 1, }, hash: { qwerty: 1, }, date: 20260207,
+	genre: { sci_fi: 1, action: 1, drama: 1, thriller: 1, comedy: 1, crime: 1, }, hash: { qwerty: 1, }, date: 20260221,
 	internet: { imdb: '', wiki_ua: '', },
 	cast: { li_07061952: 1,  },
 },
@@ -101,7 +101,45 @@ const arrMovies = [
 
 
 
-
+{
+	id: 'focus_2015', title: { ua: 'Фокус', en: 'Focus', }, year: 2015, country: { usa: 1, arg: 1, },
+	genre: { comedy: 1, crime: 1, }, date: 20260220,
+	internet: { imdb: '2381941', wiki_ua: '%D0%A4%D0%BE%D0%BA%D1%83%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { will_smith_25091968: 1, margot_robbie_02071990: 1, },
+},
+{
+	id: 'brick_2005', title: { ua: 'Цегла', en: 'Brick', }, year: 2005, country: { usa: 1, },
+	genre: { sci_fi: 1, thriller: 1, crime: 1, }, hash: { quest: 1, }, date: 20260219,
+	internet: { imdb: '31806049', },
+},
+{
+	id: 'annihilation_2018', title: { ua: 'Анігіляція', en: 'Annihilation', }, year: 2018, country: { usa: 1, gbr: 1, },
+	genre: { sci_fi: 1, action: 1, }, date: 20260219,
+	internet: { imdb: '2798920', wiki_ua: '%D0%90%D0%BD%D1%96%D0%B3%D1%96%D0%BB%D1%8F%D1%86%D1%96%D1%8F_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { natalie_portman_09061981: 1,  },
+},
+{
+	id: 'all_the_old_knives_2022', title: { ua: 'Усі старі ножі ', en: 'All the Old Knives', }, year: 2022, country: { usa: 1, can: 1, },
+	genre: { thriller: 1, }, date: 20260218,
+	internet: { imdb: '3706352', wiki_ua: '%D0%A3%D1%81%D1%96_%D1%81%D1%82%D0%B0%D1%80%D1%96_%D0%BD%D0%BE%D0%B6%D1%96', hd_vip: '155230', },
+	cast: { chris_pine_26081980: 1, thandie_newton_06111972: 1, laurence_fishburne_30071961: 1, },
+},
+{
+	id: 'silent_hill_2006', title: { ua: 'Сайлент Хілл', en: 'Silent Hill', }, year: 2006, country: { usa: 1, can: 1, fra: 1, jpn: 1, },
+	genre: { horror: 1, }, date: 20260218,
+	internet: { imdb: '0384537', wiki_ua: '%D0%A1%D0%B0%D0%B9%D0%BB%D0%B5%D0%BD%D1%82_%D0%A5%D1%96%D0%BB%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+},
+{
+	id: 'wrecked_2010', title: { ua: 'Потерпілий', en: 'Wrecked', }, year: 2010, country: { usa: 1, can: 1, },
+	genre: { drama: 1, thriller: 1, }, hash: { oneman: 1, }, date: 20260218,
+	internet: { imdb: '1316622', wiki_ua: '%D0%9F%D0%BE%D1%82%D0%B5%D1%80%D0%BF%D1%96%D0%BB%D0%B8%D0%B9_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
+	cast: { adrien_brody_14041973: 1,  },
+},
+{
+	id: 'rats_2003', title: { ua: 'Щури', en: 'Rats', }, year: 2003, country: { usa: 1, },
+	genre: { sci_fi: 1, horror: 1, }, hash: { animal: 1, }, date: 20260218,
+	internet: { imdb: '0277986', },
+},
 {
 	id: 'lucky_number_slevin_2006', title: { ua: 'Щасливе число Слевіна', en: 'Lucky Number Slevin', }, year: 2006, country: { usa: 1, can: 1, gbr: 1, deu: 1, },
 	genre: { thriller: 1, crime: 1, comedy: 1, }, date: 20260216,
