@@ -12984,7 +12984,7 @@ let arrPeople = [
 	id: 'chuck_norris_10031940', 
 	name: { n: 'Chuck', s: 'Norris', },
 	sex: 1,
-	life: { bd: 10, bm: 3, by: 1940, },
+	life: { bd: 10, bm: 3, by: 1940, dd: 19, dm: 3, dy: 2026, },
 	img: [ 1, 1 ],
 	country: { usa: 1, },
 	hash: { movie: 1, movie_actor: 1, sport: 1, fighter: 1, karate: 1, },
