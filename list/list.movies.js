@@ -158,6 +158,7 @@ const arrMovies = [
 	id: '21_bridges_2019', title: { ua: '21 міст', en: '21 Bridges', }, year: 2019, country: { usa: 1, },
 	genre: { action: 1, }, hash: { police: 1, },
 	internet: { imdb: '8688634', wiki_ua: '21_%D0%BC%D1%96%D1%81%D1%82', },
+	cast: { j_k_simmons_09011955: 1, },
 },
 {
 	id: 'mile_22_2018', title: { ua: '22 милі', en: 'Mile 22', }, year: 2018, country: { usa: 1, },
@@ -538,13 +539,13 @@ const arrMovies = [
 	id: 'the_accountant_2016', title: { ua: 'Аудитор', en: 'The Accountant', }, year: 2016, country: { usa: 1, }, franchise: 'accountant',
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '2140479', wiki_ua: '%D0%90%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_2016)', },
-	cast: { ben_affleck_15081972: 1, },
+	cast: { ben_affleck_15081972: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'the_accountant_2_2025', title: { ua: 'Аудитор - 2', en: 'The Accountant 2', }, year: 2025, country: { usa: 1, }, franchise: 'accountant',
 	genre: { action: 1, crime: 1, }, 
 	internet: { imdb: '7068946', wiki_ua: '%D0%90%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80_2', },
-	cast: { ben_affleck_15081972: 1, },
+	cast: { ben_affleck_15081972: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'outback_2019', title: { ua: 'Аутбек', en: 'Outback', }, year: 2019, country: { aus: 1, },
@@ -919,7 +920,7 @@ const arrMovies = [
 	id: 'hard_target_1993', title: { ua: 'Важка мішень', en: 'Hard Target', }, year: 1993, country: { usa: 1, }, rating: 5,
 	genre: { action: 1, thriller: 1, crime: 1, }, hash: { fight: 1, hunting: 1, },
 	internet: { imdb: '0107076', wiki_ua: '%D0%92%D0%B0%D0%B6%D0%BA%D0%B0_%D0%BC%D1%96%D1%88%D0%B5%D0%BD%D1%8C', hd_vip: '19859', },
-	cast: { jean_claude_van_damme_18101960: 1, yancy_butler_02071970: 1, arnold_vosloo_16061962: 1, }, director: { john_woo_01051946: 1, },
+	cast: { jean_claude_van_damme_18101960: 1, yancy_butler_02071970: 1, arnold_vosloo_16061962: 1, lance_henriksen_05051940: 1, }, director: { john_woo_01051946: 1, },
 },
 {
 	id: 'ggeutggaji_ganda_2014', title: { ua: 'Важкий день', en: 'Ggeutggaji ganda', }, year: 2014, country: { kor: 1, }, 
@@ -981,6 +982,12 @@ const arrMovies = [
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0227445', wiki_ua: '%D0%92%D0%B5%D0%B4%D0%BC%D0%B5%D0%B6%D0%B0%D1%82%D0%BD%D0%B8%D0%BA_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { robert_de_niro_17081943: 1, marlon_brando_03041924: 1, },
+},
+{
+	id: 'the_get_out_2026', title: { ua: 'Ведмежий капкан', en: 'The Get Out', }, year: 2026, country: { usa: 1, aus: 1, },
+	genre: { thriller: 1, },
+	internet: { imdb: '32321803', wiki_ua: '%D0%92%D0%B5%D0%B4%D0%BC%D0%B5%D0%B6%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BF%D0%BA%D0%B0%D0%BD_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', }, date: 20260725,
+	cast: { russell_crowe_07041964: 1, },
 },
 {
 	id: 'l_ours_1988', title: { ua: 'Ведмідь', en: 'L\'ours', }, year: 1988, country: { fra: 1, }, rating: 5,
@@ -1989,7 +1996,7 @@ const arrMovies = [
 	id: 'jobs_2013', title: { ua: 'Джобс: Імперія спокуси', en: 'Jobs', }, year: 2013, country: { usa: 1, },
 	genre: { biography: 1, drama: 1, },
 	internet: { imdb: '2357129', wiki_ua: '%D0%94%D0%B6%D0%BE%D0%B1%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { ashton_kutcher_07021978: 1, },
+	cast: { ashton_kutcher_07021978: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'joe_versus_the_volcano_1990', title: { ua: 'Джо проти вулкану', en: 'Joe Versus the Volcano', }, year: 1990, country: { usa: 1, },
@@ -2677,6 +2684,11 @@ const arrMovies = [
 	genre: { action: 1, crime: 1, }, hash: { justice: 1, },
 	internet: { imdb: '1197624', wiki_ua: '%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%BE%D1%81%D0%BB%D1%83%D1%85%D0%BD%D1%8F%D0%BD%D0%B8%D0%B9_%D0%B3%D1%80%D0%BE%D0%BC%D0%B0%D0%B4%D1%8F%D0%BD%D0%B8%D0%BD', },
 	cast: { gerard_butler_13111969: 1, }, composer: { brian_tyler_08051972: 1, },
+},
+{
+	id: 'backrooms_2026', title: { ua: 'Залаштунки', en: 'Backrooms', }, year: 2026, country: { usa: 1, can: 1, },
+	genre: { horror: 1, sci_fi: 1, }, 
+	internet: { imdb: '26657236', wiki_ua: '%D0%97%D0%B0%D0%BB%D0%B0%D1%88%D1%82%D1%83%D0%BD%D0%BA%D0%B8_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 },
 {
 	id: 'iron_man_2008', title: { ua: 'Залізна людина', en: 'Iron Man', }, year: 2008, country: { usa: 1, },
@@ -3391,6 +3403,11 @@ const arrMovies = [
 	internet: { imdb: '0095452', wiki_ua: '%D0%9A%D1%96%D0%BD%D0%B3%D1%81%D0%B0%D0%B9%D0%B7_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '137117', },
 },
 {
+	id: 'the_end_of_oak_street_2026', title: { ua: 'Кінець Оук-Стріт', en: 'The End of Oak Street', }, year: 2026, country: { usa: 1, can: 1, aus: 1, },
+	genre: { sci_fi: 1, }, hash: { dinosaur: 1, },
+	internet: { imdb: '27165187', wiki_ua: '%D0%9A%D1%96%D0%BD%D0%B5%D1%86%D1%8C_%D0%9E%D1%83%D0%BA-%D0%A1%D1%82%D1%80%D1%96%D1%82', }, date: 20260921,
+},
+{
 	id: 'end_of_days_1999', title: { ua: 'Кінець світу', en: 'End of Days', }, year: 1999, country: { usa: 1, },
 	genre: { action: 1, mystic: 1, },
 	internet: { imdb: '0146675', wiki_ua: '%D0%9A%D1%96%D0%BD%D0%B5%D1%86%D1%8C_%D1%81%D0%B2%D1%96%D1%82%D1%83_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC,_1999)', hd_vip: '4460', },
@@ -3518,7 +3535,7 @@ const arrMovies = [
 	id: 'red_one_2024', title: { ua: 'Кодове ім\'я Червоний', en: 'Red One', }, year: 2024, country: { usa: 1, can: 1, },
 	genre: { fantasy: 1, action: 1, comedy: 1, }, hash: { new_year: 1, },
 	internet: { imdb: '14948432', wiki_ua: '%D0%9A%D0%BE%D0%B4%D0%BE%D0%B2%D0%B5_%D1%96%D0%BC%27%D1%8F_%C2%AB%D0%A7%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B8%D0%B9%C2%BB', },
-	cast: { dwayne_johnson_02051972: 1, chris_evans_13061981: 1, },
+	cast: { dwayne_johnson_02051972: 1, chris_evans_13061981: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'cohen_and_tate_1988', title: { ua: 'Коен та Тейт', en: 'Cohen and Tate', }, year: 1988, country: { fra: 1, },
@@ -3541,7 +3558,7 @@ const arrMovies = [
 	id: 'color_of_night_1994', title: { ua: 'Колір ночі', en: 'Color of Night', }, year: 1994, country: { usa: 1, },
 	genre: { drama: 1, erotica: 1, },
 	internet: { imdb: '0109456', wiki_ua: '%D0%9A%D0%BE%D0%BB%D1%96%D1%80_%D0%BD%D0%BE%D1%87%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { bruce_willis_19031955: 1, jane_march_20031973: 1, },
+	cast: { bruce_willis_19031955: 1, jane_march_20031973: 1, lance_henriksen_05051940: 1, },
 },
 {
 	id: 'colombiana_2011', title: { ua: 'Коломбіана', en: 'colombiana', }, year: 2011, country: { fra: 1, usa: 1, },
@@ -3741,7 +3758,7 @@ const arrMovies = [
 	id: 'johnny_handsome_1989', title: { ua: 'Красунчик Джонні', en: 'Johnny Handsome', }, year: 1989, country: { usa: 1, },
 	genre: { thriller: 1, crime: 1, },
 	internet: { imdb: '0097626', wiki_ua: '%D0%9A%D1%80%D0%B0%D1%81%D1%83%D0%BD%D1%87%D0%B8%D0%BA_%D0%94%D0%B6%D0%BE%D0%BD%D0%BD%D1%96', },
-	cast: { mickey_rourke_16091952: 1, morgan_freeman_01061937: 1, forest_whitaker_15071961: 1, },
+	cast: { mickey_rourke_16091952: 1, morgan_freeman_01061937: 1, forest_whitaker_15071961: 1, lance_henriksen_05051940: 1, },
 },
 {
 	id: 'pretty_woman_1990', title: { ua: 'Красуня', en: 'Pretty Woman', }, year: 1990, country: { usa: 1, }, rating: 5,
@@ -6436,7 +6453,7 @@ const arrMovies = [
 	id: 'juror_2_2024', title: { ua: 'Присяжний #2', en: ' Juror #2', }, year: 2024, country: { usa: 1, },
 	genre: { drama: 1, crime: 1, }, hash: { justice: 1, },
 	internet: { imdb: '27403986', wiki_ua: '%D0%9F%D1%80%D0%B8%D1%81%D1%8F%D0%B6%D0%BD%D0%B8%D0%B9_%E2%84%962', },
-	cast: { kiefer_sutherland_21121966: 1, }, director: { clint_eastwood_31051930: 1, }, composer: { mark_mancina_09031957: 1, },
+	cast: { kiefer_sutherland_21121966: 1, j_k_simmons_09011955: 1, }, director: { clint_eastwood_31051930: 1, }, composer: { mark_mancina_09031957: 1, },
 },
 {
 	id: 'the_hidden_1987', title: { ua: 'Прихований ворог', en: 'The Hidden', }, year: 1987, country: { usa: 1, }, rating: 5,
@@ -6688,6 +6705,11 @@ const arrMovies = [
 	genre: { action: 1, adventure: 1, disaster: 1, }, hash: { plane: 1, island: 1, },
 	internet: { imdb: '5884796', wiki_ua: '%D0%A0%D0%B5%D0%B9%D1%81_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
 	cast: { gerard_butler_13111969: 1, },
+},
+{
+	id: 'black_box_2026', title: { ua: 'Рейс 298', en: 'Black Box', }, year: 2026, country: { usa: 1, },
+	genre: { sci_fi: 1, }, hash: { plane: 1, },
+	internet: { imdb: '32315584', }, date: 20260721,
 },
 {
 	id: 'chariot_2022', title: { ua: 'Реінкарнація: Збій системи', en: 'Chariot', }, year: 2022, country: { usa: 1, },
@@ -7357,7 +7379,7 @@ const arrMovies = [
 	id: 'the_union_2024', title: { ua: 'Спілка', en: 'The Union', }, year: 2024, country: { usa: 1, },
 	genre: { action: 1, comedy: 1, adventure: 1, }, 
 	internet: { imdb: '12610390', hd_vip: '137706', },
-	cast: { mark_wahlberg_05061971: 1, halle_berry_14081966: 1,},
+	cast: { mark_wahlberg_05061971: 1, halle_berry_14081966: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'original_sin_2001', title: { ua: 'Спокуса', en: 'Original Sin', }, year: 2001, country: { usa: 1, fra: 1, },
@@ -7754,7 +7776,7 @@ const arrMovies = [
 	id: 'terminator_1_1984', title: { ua: 'Термінатор', en: 'The Terminator', }, year: 1984, country: { usa: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, robot: 1, police: 1, },
 	internet: { imdb: '0088247', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', hd_vip: '3499', gid_online: '505',  moviestape: 'Terminator', },
-	cast: { arnold_schwarzenegger_30071947: 1, linda_hamilton_26091956: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, }, director: { james_cameron_16081954: 1, }, composer: { brad_fiedel_10031951: 1, }, 
+	cast: { arnold_schwarzenegger_30071947: 1, linda_hamilton_26091956: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, lance_henriksen_05051940: 1, }, director: { james_cameron_16081954: 1, }, composer: { brad_fiedel_10031951: 1, }, 
 },
 {
 	id: 'terminator_2_1991', title: { ua: 'Термінатор - 2', en: 'Terminator 2: Judgment Day', }, year: 1991, country: { usa: 1, }, rating: '5+', franchise: 'terminator',
@@ -7778,7 +7800,7 @@ const arrMovies = [
 	id: 'terminator_5_2015', title: { ua: 'Термінатор - 5', en: 'Terminator Genisys', }, year: 2015, country: { usa: 1, }, rating: 5, franchise: 'terminator',
 	genre: { action: 1, sci_fi: 1, }, hash: { time: 1, apocalypse: 1, techno: 1, robot: 1, },
 	internet: { imdb: '1340138', wiki_ua: '%D0%A2%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%B0%D1%82%D0%BE%D1%80:_%D0%93%D0%B5%D0%BD%D0%B5%D0%B7%D0%B8%D1%81', hd_vip: '3575', gid_online: '1457', moviestape: 'Terminator.Genisys', },
-	cast: { arnold_schwarzenegger_30071947: 1, emilia_clarke_23101986: 1, jai_courtney_15031986: 1, jason_clarke_17071969: 1, },
+	cast: { arnold_schwarzenegger_30071947: 1, emilia_clarke_23101986: 1, jai_courtney_15031986: 1, jason_clarke_17071969: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'terminator_6_2019', title: { ua: 'Термінатор - 6', en: 'Terminator: Dark Fate', }, year: 2019, country: { usa: 1, esp: 1, hun: 1, chn: 1, }, rating: 5, franchise: 'terminator',
@@ -7857,7 +7879,7 @@ const arrMovies = [
 	id: 'jennifer_s_body_2009', title: { ua: 'Тіло Дженніфер', en: 'Jennifer\'s Body', }, year: 2009, country: { usa: 1, can: 1, },
 	genre: { horror: 1, fantasy: 1, }, hash: { young: 1, werewolf: 1, },
 	internet: { imdb: '1131734', wiki_ua: '%D0%A2%D1%96%D0%BB%D0%BE_%D0%94%D0%B6%D0%B5%D0%BD%D0%BD%D1%96%D1%84%D0%B5%D1%80', },
-	cast: { megan_fox_16051986: 1, },
+	cast: { megan_fox_16051986: 1, lance_henriksen_05051940: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'the_shadow_1994', title: { ua: 'Тінь', en: 'The Shadow', }, year: 1994, country: { usa: 1, },
@@ -8836,7 +8858,7 @@ const arrMovies = [
 	id: 'alien_3_1992', title: { ua: 'Чужий - 3', en: 'Alien - 3', }, year: 1992, country: { usa: 1, }, franchise: 'alien',
 	genre: { sci_fi: 1, horror: 1, }, hash: { space: 1, aliens: 1, },
 	internet: { imdb: '0103644', wiki_ua: '%D0%A7%D1%83%D0%B6%D0%B8%D0%B9_3', },
-	cast: { sigourney_weaver_08101949: 1, },
+	cast: { sigourney_weaver_08101949: 1, lance_henriksen_05051940: 1, },
 },
 {
 	id: 'alien_romulus_2024', title: { ua: 'Чужий: Ромул', en: 'Alien: Romulus', }, year: 2024, country: { usa: 1, }, franchise: 'alien',
@@ -8847,7 +8869,7 @@ const arrMovies = [
 	id: 'aliens_1986', title: { ua: 'Чужі', en: 'Aliens', }, year: 1986, country: { usa: 1, }, franchise: 'alien',
 	genre: { sci_fi: 1, horror: 1, }, hash: { space: 1, aliens: 1, },
 	internet: { imdb: '0090605', wiki_ua: '%D0%A7%D1%83%D0%B6%D1%96_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { sigourney_weaver_08101949: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
+	cast: { sigourney_weaver_08101949: 1, michael_biehn_31071956: 1, bill_paxton_17051955: 1, lance_henriksen_05051940: 1, }, director: { james_cameron_16081954: 1, }, composer: { james_horner_14081953: 1, },
 },
 {
 	id: 'shazam_2019', title: { ua: 'Шазам', en: 'Shazam', }, year: 2019, country: { usa: 1, can: 1, },
@@ -8858,7 +8880,7 @@ const arrMovies = [
 	id: 'the_jackal_1997', title: { ua: 'Шакал', en: 'The Jackal', }, year: 1997, country: { usa: 1, },
 	genre: { action: 1, crime: 1, },
 	internet: { imdb: '0119395', wiki_ua: '%D0%A8%D0%B0%D0%BA%D0%B0%D0%BB_(%D1%84%D1%96%D0%BB%D1%8C%D0%BC)', },
-	cast: { bruce_willis_19031955: 1, richard_gere_31081949: 1, jack_black_28081969: 1, },
+	cast: { bruce_willis_19031955: 1, richard_gere_31081949: 1, jack_black_28081969: 1, j_k_simmons_09011955: 1, },
 },
 {
 	id: 'jing_wu_men_1972', title: { ua: 'Шалений кулак', en: 'Jing wu men', }, year: 1972, country: { usa: 1, },
